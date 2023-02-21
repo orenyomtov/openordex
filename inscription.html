@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://openordex.org/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>OpenOrdex - Open Ordinals Decentralized Exchange</title>
+    <meta name="author" content="Themesberg">
+    <meta name="description" content="OpenOrdex is a Trustless Bitcoin NFT Marketplace">
+    <meta name="keywords"
+        content="ordinals, bitcoin, nfts, nft, nft, btc, inscriptions, digital artifacts, marketplace" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://openordex.org/">
+    <meta property="og:title" content="OpenOrdex - Open Ordinals Decentralized Exchange">
+    <meta property="og:description"
+        content="OpenOrdex is an open source zero-fee trustless Bitcoin NFT marketplace based on partially signed bitcoin transactions">
+    <meta property="og:image" content="img/screenshot.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://openordex.org/">
+    <meta property="twitter:title" content="OpenOrdex - Open Ordinals Decentralized Exchange">
+    <meta property="twitter:description"
+        content="OpenOrdex is an open source zero-fee trustless Bitcoin NFT marketplace based on partially signed bitcoin transactions">
+    <meta property="twitter:image" content="img/screenshot.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link type="text/css" rel="stylesheet" href="css/w95.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGT03XEJ4W"></script>
+    <script>   window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-PGT03XEJ4W'); </script>
+</head>
+
+<body>
+    <header class="header-global">
+        <nav id="navbar-main"
+            class="navbar d-flex flex-row align-items-center navbar-main navbar-expand-lg navbar-dark justify-content-between">
+            <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
+                <li class="nav-item">
+                    <a href="/" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">OpenOrdex <span id="networkName"></span></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/orenyomtov/openordex" target="_blank" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">GitHub</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://twitter.com/orenyomtov" target="_blank" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="time text-center">
+                <span id="time" class="text-uppercase"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Section -->
+        <section class="min-vh-100 d-flex align-items-center bg-secondary">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="card card-tertiary w-100 fmxw-500">
+                            <div class="card-header text-center">
+                                <span>Inscription #<span class="inscriptionNumber"></span></span>
+                            </div>
+                            <div class="card-body">
+                                <form action="#" class="mt-0" onsubmit="listInscriptionForSale(); return false;">
+                                    <iframe id="preview" sandbox=allow-scripts scrolling=no loading=lazy></iframe>
+
+                                    <!-- Form -->
+                                    <div class="form-group">
+                                        <label for="inscriptionId" class="mb-2">ID</label>
+                                        <input id="inscriptionId" type="text" class="form-control" placeholder="Loading..."
+                                            required />
+
+                                        <label for="owner" class="mb-2">Owner</label>
+                                        <input id="owner" type="text" class="form-control" placeholder="Loading..."
+                                            required />
+
+                                        <label for="utxo" class="mb-2">UTXO</label>
+                                        <input id="utxo" type="text" class="form-control" placeholder="Loading..."
+                                            required />
+
+                                        <label for="utxoValue" class="mb-2">UTXO Value</label>
+                                        <input id="utxoValue" type="text" class="form-control" placeholder="Loading..."
+                                            required />
+                                    </div>
+                                    <!-- End of Form -->
+                                    <button type="submit" id="btnBuyInscriptionNow" class="btn btn-block btn-tertiary"
+                                        style="display: none" onclick="buyInscriptionNow(); return false"></button>
+                                    <button type="submit" id="btnListInscriptionForSale"
+                                        class="btn btn-block btn-primary">List Inscription For Sale</button>
+                                </form>
+                                <div class="justify-content-center align-items-center mt-4 text-center">
+                                    <p class="font-weight-normal">
+                                        <a href="" class="font-weight-bold" id="explorerLink" target="_blank">View on
+                                            ordinals explorer</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- List Dialog -->
+        <dialog id="listDialog" style="top:0; padding:0; background-color: transparent; border: 0">
+            <section class="min-vh-100 d-flex align-items-center" style="background-color: transparent;">
+                <div class="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="card card-tertiary w-100 fmxw-400">
+                                <div class="card-header text-center">
+                                    <span>List Inscription For Sale</span>
+                                </div>
+                                <div class="card-body">
+                                    <form id="saleStep1" action="#" class="mt-0"
+                                        onsubmit="generateSalePsbt(); return false;">
+                                        <!-- Form -->
+                                        <div class="form-group">
+                                            <label for="price" class="mb-2">Price (in BTC)</label>
+                                            <input id="price" type="number" step="any" class="form-control"
+                                                placeholder="0.1" required />
+
+                                            <label for="paymentAddress" class="mb-2">Address to receive payment to
+                                                (default: current owner)</label>
+                                            <input id="paymentAddress" type="text" class="form-control" required />
+                                        </div>
+                                        <!-- End of Form -->
+                                        <button type="submit" class="btn btn-block btn-primary">Create a Partially
+                                            Signed Bitcoin
+                                            Transaction</button>
+                                    </form>
+
+                                    <form id="saleStep2" action="#" class="mt-0" onsubmit="return false;"
+                                        style="display: none;">
+                                        <!-- Form -->
+                                        <div class="form-group">
+                                            <label for="price" class="mb-2">Created PSBT for selling inscription
+                                                #<span class="inscriptionNumber"></span> for <span class="price"></span>
+                                                BTC:</label>
+                                            <textarea id="generatedSalePsbt" class="form-control"></textarea>
+                                        </div>
+                                        <!-- End of Form -->
+                                        <button class="btn btn-secondary"
+                                            onclick="copyInput(this, 'generatedSalePsbt')">Copy PSBT</button>
+                                        <button class="btn btn-secondary mb-2" style="float: right"
+                                            onclick="downloadInput('generatedSalePsbt', `listInscription${inscriptionNumber}.psbt`)">Download
+                                            PSBT</button>
+
+                                        <div class="form-group">
+                                            <label for="signedSalePsbt" class="mb-2">Sign the above and paste the signed
+                                                PSBT (or signed transaction) here:</label>
+                                            <textarea id="signedSalePsbt" class="form-control"></textarea>
+                                        </div>
+
+                                        <div class="justify-content-center align-items-center text-center mt-2">
+                                            <p class="font-weight-normal">
+                                                bitcoin-cli walletprocesspsbt "..." true "SINGLE|ANYONECANPAY"
+                                            </p>
+                                        </div>
+
+
+                                        <button id="btnSubmitSignedSalePsbt" class="btn btn-block btn-primary"
+                                            onclick="submitSignedSalePsbt()">List
+                                            inscription for sale</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </dialog>
+
+        <!-- Buy Dialog -->
+        <dialog id="buyDialog" style="top:0; padding:0; background-color: transparent; border: 0">
+            <section class="min-vh-100 d-flex align-items-center" style="background-color: transparent;">
+                <div class="">
+                    <div class="row justify-content-center">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="card card-tertiary w-100 fmxw-400">
+                                <div class="card-header text-center">
+                                    <span>Buy Inscription <span class="inscriptionNumber"></span> for <span
+                                            class="price"></span></span>
+                                </div>
+                                <div class="card-body">
+                                    <div id="buyStep1">
+                                        <form action="#" class="mt-0" onsubmit="return false;">
+                                            <!-- Form -->
+                                            <div class="form-group">
+                                                <label for="payerAddress" class="mb-2">Buyer's address:</label>
+                                                <input id="payerAddress" type="text" class="form-control" required
+                                                    oninput="updatePayerAddress()" />
+
+                                                <div class="justify-content-center align-items-center mt-2 text-center dummy"
+                                                    style="padding:0 0.1em;">
+                                                    <p class="font-weight-normal">
+                                                        No dummy UTXOs (i.e. value &lt; <span
+                                                            class="dummyUtxoValue"></span>) found for your address, so
+                                                        you first need to
+                                                        create one
+                                                    </p>
+                                                </div>
+
+                                                <div class="justify-content-center align-items-center text-center mt-2"
+                                                    style="padding:0 0.1em; display: none;" id="loadingUTXOs">
+                                                    <p class="font-weight-normal">
+                                                        Loading your UTXOs...
+                                                    </p>
+                                                </div>
+
+                                                <label for="receiverAddress" class="mb-2 notDummy">Inscription receiver
+                                                    address
+                                                    (default: buyer)</label>
+                                                <input id="receiverAddress" type="text" class="form-control notDummy" />
+                                            </div>
+                                            <!-- End of Form -->
+                                            <button type="submit" id="btnGenerateDummyUtxos"
+                                                class="btn btn-block btn-primary dummy">Create
+                                                a Dummy UTXO</button>
+                                            <button type="submit" id="btnBuyInscription"
+                                                class="btn btn-block btn-primary notDummy">Buy
+                                                Inscription</button>
+                                        </form>
+                                        <div class="justify-content-center align-items-center text-center mt-4 dummy">
+                                            <p class="font-weight-normal">
+                                                Why do I need a dummy UTXO?
+                                                <a href="https://github.com/casey/ord/issues/802"
+                                                    class="font-weight-bold">Learn more</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <form id="buyStep2" action="#" class="mt-0" onsubmit="return false;"
+                                        style="display: none;">
+                                        <!-- Form -->
+                                        <div class="form-group">
+                                            <label for="generatedBuyPsbt" class="mb-2"
+                                                id="generatedBuyPsbtTitle"></label>
+                                            <textarea id="generatedBuyPsbt" class="form-control"></textarea>
+                                        </div>
+
+                                        <button class="btn btn-secondary"
+                                            onclick="copyInput(this, 'generatedBuyPsbt')">Copy PSBT</button>
+                                        <button class="btn btn-secondary mb-2" style="float: right"
+                                            onclick="downloadInput('generatedBuyPsbt', `buyInscription${inscriptionNumber}.psbt`)">Download
+                                            PSBT</button>
+
+                                        <div id="buyPsbtQrCode" class="text-center"></div>
+
+                                        <div class="justify-content-center align-items-center text-center mt-4">
+                                            <p class="font-weight-normal" id="buyStatusMessage">
+                                                Waiting to see the transaction in the mempool...
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </dialog>
+    </main>
+    <script src="js/secp256k1.js"></script>
+    <script type="module">import "./js/bitcoinjs-lib.js";</script>
+    <script src="js/qrcode.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

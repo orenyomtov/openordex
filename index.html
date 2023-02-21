@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://openordex.org/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>OpenOrdex - Open Ordinals Decentralized Exchange</title>
+    <meta name="author" content="Themesberg">
+    <meta name="description" content="OpenOrdex is a Trustless Bitcoin NFT Marketplace">
+    <meta name="keywords"
+        content="ordinals, bitcoin, nfts, nft, nft, btc, inscriptions, digital artifacts, marketplace" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://openordex.org/">
+    <meta property="og:title" content="OpenOrdex - Open Ordinals Decentralized Exchange">
+    <meta property="og:description"
+        content="OpenOrdex is an open source zero-fee trustless Bitcoin NFT marketplace based on partially signed bitcoin transactions">
+    <meta property="og:image" content="img/screenshot.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://openordex.org/">
+    <meta property="twitter:title" content="OpenOrdex - Open Ordinals Decentralized Exchange">
+    <meta property="twitter:description"
+        content="OpenOrdex is an open source zero-fee trustless Bitcoin NFT marketplace based on partially signed bitcoin transactions">
+    <meta property="twitter:image" content="img/screenshot.png">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pixel CSS -->
+    <link type="text/css" rel="stylesheet" href="css/w95.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGT03XEJ4W"></script>
+    <script>   window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-PGT03XEJ4W'); </script>
+</head>
+
+<body>
+    <header class="header-global">
+        <nav id="navbar-main"
+            class="navbar d-flex flex-row align-items-center navbar-main navbar-expand-lg navbar-dark justify-content-between">
+            <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
+                <li class="nav-item">
+                    <a href="/" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">OpenOrdex <span id="networkName"></span></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/orenyomtov/openordex" target="_blank" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">GitHub</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://twitter.com/orenyomtov" target="_blank" class="nav-link" role="button">
+                        <span class="nav-link-inner-text">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="time text-center">
+                <span id="time" class="text-uppercase"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Section -->
+        <section class="min-vh-100 d-flex align-items-center bg-secondary">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="card card-tertiary w-100 fmxw-400">
+                            <div class="card-header text-center">
+                                <span>Open Inscription</span>
+                            </div>
+                            <div class="card-body">
+                                <form action="inscription.html" class="mt-0" method="GET">
+                                    <!-- Form -->
+                                    <div class="form-group">
+                                        <label for="number" class="mb-2">Inscription number or id</label>
+                                        <input id="number" name="number" class="form-control"
+                                            placeholder="652" required />
+                                    </div>
+                                    <!-- End of Form -->
+                                    <button type="submit" class="btn btn-block btn-primary">Open Inscription</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
