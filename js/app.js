@@ -3,7 +3,7 @@ const ordinalsExplorerUrl = isProduction ? "https://ordinals.com" : "https://exp
 const baseMempoolUrl = isProduction ? "https://mempool.space" : "https://mempool.space/signet"
 const baseMempoolApiUrl = `${baseMempoolUrl}/api`
 const bitcoinPriceApiUrl = "https://blockchain.info/ticker?cors=true"
-const feeLevel = "fastestFee" // "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
+const feeLevel = "halfHourFee" // "fastestFee" || "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
 const dummyUtxoValue = 1_000
 const txHexByIdCache = {}
 const urlParams = new URLSearchParams(window.location.search)
