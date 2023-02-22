@@ -51,7 +51,9 @@ async function selectUtxos(utxos, amount, vins, vouts, recommendedFeeRate) {
     }
 
     if (selectedAmount < amount) {
-        throw new Error(`Not enough cardinal spendable funds. Found ${satToBtc(selectedAmount)} BTC, but requires ${satToBtc(amount)} BTC.`)
+        throw new Error(`Not enough cardinal spendable funds.
+Address has:  ${satToBtc(selectedAmount)} BTC
+Needed:          ${satToBtc(amount)} BTC`)
     }
 
     return selectedUtxos
@@ -487,6 +489,7 @@ async function inscriptionPage() {
     generatePSBTBuyingInscription = async (payerAddress, receiverAddress, price, paymentUtxos, dummyUtxo) => {
         const psbt = new bitcoin.Psbt({ network });
         let totalValue = 0
+        let totalPaymentValue = 0
 
         // Add dummy utxo input
         const tx = bitcoin.Transaction.fromHex(await getTxHexById(dummyUtxo.txid))
@@ -531,6 +534,7 @@ async function inscriptionPage() {
             });
 
             totalValue += utxo.value
+            totalPaymentValue += utxo.value
         }
 
         // Create a new dummy utxo output for the next purchase
@@ -538,14 +542,18 @@ async function inscriptionPage() {
             address: payerAddress,
             value: dummyUtxoValue,
         })
-        totalValue += dummyUtxoValue
 
         const fee = calculateFee(psbt.txInputs.length, psbt.txOutputs.length, await recommendedFeeRate)
 
-        const changeValue = totalValue - (dummyUtxo.value + Number(inscription['output value'])) - price - fee
+        const changeValue = totalValue - dummyUtxo.value - price - fee
 
         if (changeValue < 0) {
-            return alert(`Your wallet address doesn't have enough funds to buy this inscription.\nIt costs ${satToBtc(price)} BTC and you're missing ${satToBtc(-changeValue)} BTC`)
+            throw `Your wallet address doesn't have enough funds to buy this inscription.
+Price:          ${satToBtc(price)} BTC
+Fees:       ${satToBtc(fee + dummyUtxoValue)} BTC
+You have:   ${satToBtc(totalPaymentValue)} BTC
+Required:   ${satToBtc(totalValue - changeValue)} BTC
+Missing:     ${satToBtc(-changeValue)} BTC`
         }
 
         // Change utxo
@@ -583,7 +591,11 @@ See transaction details on <a href="${baseMempoolUrl}/tx/${txId}" target="_blank
         const receiverAddress = document.getElementById('receiverAddress').value || document.getElementById('receiverAddress').placeholder
         const payerAddress = document.getElementById('payerAddress').value
 
-        psbt = await generatePSBTBuyingInscription(payerAddress, receiverAddress, price, paymentUtxos, dummyUtxo)
+        try {
+            psbt = await generatePSBTBuyingInscription(payerAddress, receiverAddress, price, paymentUtxos, dummyUtxo)
+        } catch (e) {
+            return alert(e)
+        }
 
         const sellerOutputValueBtc = satToBtc(price)
         const sellPriceText = `${sellerOutputValueBtc} BTC ($${(sellerOutputValueBtc * await bitcoinPrice).toFixed(2)})`
