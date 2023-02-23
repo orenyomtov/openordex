@@ -39,7 +39,7 @@ async function selectUtxos(utxos, amount, vins, vouts, recommendedFeeRate) {
 
     for (const utxo of utxos) {
         // Never spend a utxo that contains an inscription for cardinal purposes
-        if (await dummyUtxoContainsInscription(utxo)) {
+        if (await doesUtxoContainInscription(utxo)) {
             continue
         }
         selectedUtxos.push(utxo)
@@ -59,8 +59,8 @@ Needed:          ${satToBtc(amount)} BTC`)
     return selectedUtxos
 }
 
-async function dummyUtxoContainsInscription(potentialDummyUtxo) {
-    const html = await fetch(`${ordinalsExplorerUrl}/output/${potentialDummyUtxo.txid}:${potentialDummyUtxo.vout}`)
+async function doesUtxoContainInscription(utxo) {
+    const html = await fetch(`${ordinalsExplorerUrl}/output/${utxo.txid}:${utxo.vout}`)
         .then(response => response.text())
 
     return html.match(/class=thumbnails/) !== null
@@ -404,7 +404,7 @@ async function inscriptionPage() {
         dummyUtxo = undefined
 
         for (const potentialDummyUtxo of potentialDummyUtxos) {
-            if (!(await dummyUtxoContainsInscription(potentialDummyUtxo))) {
+            if (!(await doesUtxoContainInscription(potentialDummyUtxo))) {
                 hideDummyUtxoElements()
                 dummyUtxo = potentialDummyUtxo
                 break
