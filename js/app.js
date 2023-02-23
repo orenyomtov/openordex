@@ -118,7 +118,7 @@ async function getInscriptionIdByNumber(inscriptionNumber) {
 function copyInput(btn, inputId) {
     const input = document.getElementById(inputId)
     input.select()
-    input.setSelectionRange(0, 99999)
+    input.setSelectionRange(0, 9999999)
 
     navigator.clipboard.writeText(input.value)
 
