@@ -7268,6 +7268,7 @@ function witnessStackToScriptWitness(witness) {
   return buffer;
 }
 exports.witnessStackToScriptWitness = witnessStackToScriptWitness;
+window.witnessStackToScriptWitness = witnessStackToScriptWitness;
 function pubkeyPositionInScript(pubkey, script) {
   const pubkeyHash = (0, crypto_1.hash160)(pubkey);
   const pubkeyXOnly = pubkey.slice(1, 33); // slice before calling?

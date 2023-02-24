@@ -325,7 +325,7 @@ async function inscriptionPage() {
                 }
                 if (sellerSignedInput?.witness?.[0]?.length) {
                     signedSalePsbt.updateInput(0, {
-                        finalScriptWitness: sellerSignedInput.witness[0],
+                        finalScriptWitness: witnessStackToScriptWitness(sellerSignedInput.witness),
                     })
                 }
 
