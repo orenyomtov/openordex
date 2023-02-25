@@ -8041,23 +8041,16 @@ dialog {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    /* flex-direction: row; */
     flex-wrap: wrap;
-
 }
 
-#inscriptionsContainer iframe {
-    pointer-events: none;
-    max-width: 185px;
-}
-
-#inscriptionsContainer iframe {
+#inscriptionsContainer iframe, #collectionsContainer iframe {
     pointer-events: none;
     max-width: 185px;
 }
 
 @media (max-width: 767.98px) {
-    #inscriptionsContainer .fmxw-300 {
+    #inscriptionsContainer .fmxw-300, #collectionsContainer .fmxw-300 {
         max-width: 155px !important;
     }
 }

@@ -131,6 +131,12 @@ async function getCollection(collectionSlug) {
     }
 }
 
+async function getCollections() {
+    return fetch(`/static/collections.json`)
+        .then(response => response.json())
+        .then(collections => collections.sort((a, b) => 0.5 - Math.random()))
+}
+
 function copyInput(btn, inputId) {
     const input = document.getElementById(inputId)
     input.select()
@@ -235,6 +241,8 @@ async function main() {
         }, 50)
     } else if (window.location.pathname.startsWith('/collection')) {
         collectionPage()
+    } else {
+        homePage()
     }
 }
 
@@ -673,6 +681,35 @@ async function collectionPage() {
     } catch (e) {
         console.error(e)
         alert(`Error fetching collection ${collectionSlug}:\n` + e.message)
+    }
+}
+
+async function homePage() {
+    try {
+        const collections = await getCollections()
+
+        const collectionsContainer = document.getElementById('collectionsContainer')
+
+        for (const collection of collections) {
+            const collectionElement = document.createElement('a')
+            collectionElement.href = `/collection.html?slug=${collection.slug}`
+            collectionElement.target = `_blank`
+            collectionElement.innerHTML = `
+                <div class="card card-tertiary w-100 fmxw-300">
+                    <div class="card-header text-center">
+                        <span id="inscriptionName">${sanitizeHTML(collection.name)}</span>
+                    </div>
+                    <div class="card-body" style="padding: 6px 7px 7px 7px">
+                        <iframe id="collectionIcon" style="pointer-events: none" sandbox=allow-scripts
+                            scrolling=no loading=lazy
+                            src="${ordinalsExplorerUrl}/preview/${collection.inscription_icon.replaceAll('"', '')}"></iframe>
+                    </div>
+                </div>`
+            collectionsContainer.appendChild(collectionElement)
+        }
+    } catch (e) {
+        console.error(e)
+        console.error(`Error fetching collections:\n` + e.message)
     }
 }
 
