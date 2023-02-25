@@ -3,6 +3,7 @@ const ordinalsExplorerUrl = isProduction ? "https://ordinals.com" : "https://exp
 const baseMempoolUrl = isProduction ? "https://mempool.space" : "https://mempool.space/signet"
 const baseMempoolApiUrl = `${baseMempoolUrl}/api`
 const bitcoinPriceApiUrl = "https://blockchain.info/ticker?cors=true"
+const collectionsRepo = "ordinals-wallet/ordinals-collections"
 const feeLevel = "hourFee" // "fastestFee" || "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
 const dummyUtxoValue = 1_000
 const txHexByIdCache = {}
@@ -10,6 +11,7 @@ const urlParams = new URLSearchParams(window.location.search)
 const numberOfDummyUtxosToCreate = 1
 
 let inscriptionIdentifier = urlParams.get('number')
+let collectionSlug = urlParams.get('slug')
 let inscriptionNumber
 let bitcoinPrice
 let recommendedFeeRate
@@ -115,6 +117,20 @@ async function getInscriptionIdByNumber(inscriptionNumber) {
     return html.match(/\/inscription\/(.*?)>/)[1]
 }
 
+async function getCollection(collectionSlug) {
+    const [meta, inscriptions] = await Promise.all([
+        fetch(`https://raw.githubusercontent.com/${collectionsRepo}/main/collections/${collectionSlug}/meta.json`)
+            .then(response => response.json()),
+        fetch(`https://raw.githubusercontent.com/${collectionsRepo}/main/collections/${collectionSlug}/inscriptions.json`)
+            .then(response => response.json()),
+    ])
+
+    return {
+        ...meta,
+        inscriptions,
+    }
+}
+
 function copyInput(btn, inputId) {
     const input = document.getElementById(inputId)
     input.select()
@@ -153,6 +169,12 @@ async function getInscriptionDataById(inscriptionId, verifyIsInscriptionNumber) 
     }
 
     return data
+}
+
+function sanitizeHTML(str) {
+    var temp = document.createElement('div');
+    temp.textContent = str;
+    return temp.innerHTML;
 }
 
 function getHashQueryStringParam(paramName) {
@@ -211,6 +233,8 @@ async function main() {
                 inscriptionPage()
             }
         }, 50)
+    } else if (window.location.pathname.startsWith('/collection')) {
+        collectionPage()
     }
 }
 
@@ -603,6 +627,53 @@ See transaction details on <a href="${baseMempoolUrl}/tx/${txId}" target="_blank
     }
 
     processSellerPsbt()
+}
+
+async function collectionPage() {
+    try {
+        const collection = await getCollection(collectionSlug)
+
+        document.getElementById('collectionName').textContent = collection.name
+        document.getElementById('supply').textContent = `${collection.inscriptions.length}/${collection.supply}`
+        document.getElementById('collectionIcon').src = `${ordinalsExplorerUrl}/preview/${collection.inscription_icon}`
+        document.getElementById('collectionDescription').textContent = collection.description.replaceAll("\n", "<br>")
+
+        if (collection.twitter_link) {
+            document.getElementById('twitter').href = collection.twitter_link
+            document.getElementById('twitter').style.display = 'revert'
+        }
+        if (collection.discord_link) {
+            document.getElementById('discord').href = collection.discord_link
+            document.getElementById('discord').style.display = 'revert'
+        }
+        if (collection.website_link) {
+            document.getElementById('website').href = collection.website_link
+            document.getElementById('website').style.display = 'revert'
+        }
+
+        const inscriptionsContainer = document.getElementById('inscriptionsContainer')
+
+        for (const inscription of collection.inscriptions) {
+            const inscriptionElement = document.createElement('a')
+            inscriptionElement.href = `/inscription.html?number=${inscription.id}`
+            inscriptionElement.target = `_blank`
+            inscriptionElement.innerHTML = `
+                <div class="card card-tertiary w-100 fmxw-300">
+                    <div class="card-header text-center">
+                        <span id="inscriptionName">${sanitizeHTML(inscription.meta.name)}</span>
+                    </div>
+                    <div class="card-body" style="padding: 6px 7px 7px 7px">
+                        <iframe id="collectionIcon" style="pointer-events: none" sandbox=allow-scripts
+                            scrolling=no loading=lazy
+                            src="${ordinalsExplorerUrl}/preview/${inscription.id.replaceAll('"', '')}"></iframe>
+                    </div>
+                </div>`
+            inscriptionsContainer.appendChild(inscriptionElement)
+        }
+    } catch (e) {
+        console.error(e)
+        alert(`Error fetching collection ${collectionSlug}:\n` + e.message)
+    }
 }
 
 main()
