@@ -8054,3 +8054,7 @@ dialog {
         max-width: 155px !important;
     }
 }
+
+section.min-vh-100.bg-secondary {
+    padding-bottom: 3.5rem;
+}
