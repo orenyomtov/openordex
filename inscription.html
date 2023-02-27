@@ -85,8 +85,8 @@
                                     <!-- Form -->
                                     <div class="form-group">
                                         <label for="inscriptionId" class="mb-2">ID</label>
-                                        <input id="inscriptionId" type="text" class="form-control" placeholder="Loading..."
-                                            required />
+                                        <input id="inscriptionId" type="text" class="form-control"
+                                            placeholder="Loading..." required />
 
                                         <label for="owner" class="mb-2">Owner</label>
                                         <input id="owner" type="text" class="form-control" placeholder="Loading..."
@@ -152,12 +152,16 @@
                                     <form id="saleStep2" action="#" class="mt-0" onsubmit="return false;"
                                         style="display: none;">
                                         <!-- Form -->
-                                        <div class="form-group">
+                                        <div class="form-group mb-2">
                                             <label for="price" class="mb-2">Created PSBT for selling inscription
                                                 #<span class="inscriptionNumber"></span> for <span class="price"></span>
                                                 BTC:</label>
                                             <textarea id="generatedSalePsbt" class="form-control"></textarea>
                                         </div>
+                                        <p
+                                            class="justify-content-center align-items-center text-center font-weight-normal mb-2">
+                                            bitcoin-cli walletprocesspsbt "..." true "SINGLE|ANYONECANPAY"
+                                        </p>
                                         <!-- End of Form -->
                                         <button class="btn btn-secondary"
                                             onclick="copyInput(this, 'generatedSalePsbt')">Copy PSBT</button>
@@ -165,20 +169,25 @@
                                             onclick="downloadInput('generatedSalePsbt', `listInscription${inscriptionNumber}.psbt`)">Download
                                             PSBT</button>
 
-                                        <div class="form-group">
+                                        <hr class="my-2">
+
+                                        <div>
                                             <label for="signedSalePsbt" class="mb-2">Sign the above and paste the signed
                                                 PSBT (or signed transaction) here:</label>
                                             <textarea id="signedSalePsbt" class="form-control"></textarea>
                                         </div>
 
-                                        <div class="justify-content-center align-items-center text-center mt-2">
-                                            <p class="font-weight-normal">
-                                                bitcoin-cli walletprocesspsbt "..." true "SINGLE|ANYONECANPAY"
-                                            </p>
+                                        <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                                <input id="publicPsbt" class="form-check-input" type="checkbox"
+                                                    checked="">
+                                                <span class="form-check-x"></span>
+                                                <span class="form-check-sign"></span>
+                                                Publish PSBT to public decentralized order book
+                                            </label>
                                         </div>
 
-
-                                        <button id="btnSubmitSignedSalePsbt" class="btn btn-block btn-primary"
+                                        <button id="btnSubmitSignedSalePsbt" class="btn btn-block btn-primary mt-2"
                                             onclick="submitSignedSalePsbt()">List
                                             inscription for sale</button>
                                     </form>
@@ -198,7 +207,7 @@
                         <div class="col-12 d-flex align-items-center justify-content-center">
                             <div class="card card-tertiary w-100 fmxw-400">
                                 <div class="card-header text-center">
-                                    <span>Buy Inscription <span class="inscriptionNumber"></span> for <span
+                                    <span>Buy Inscription #<span class="inscriptionNumber"></span> for <span
                                             class="price"></span></span>
                                 </div>
                                 <div class="card-body">
@@ -237,7 +246,7 @@
                                                 class="btn btn-block btn-primary dummy">Create
                                                 a Dummy UTXO</button>
                                             <button type="submit" id="btnBuyInscription"
-                                                class="btn btn-block btn-primary notDummy">Buy
+                                                class="btn btn-block btn-primary notDummy" disabled>Buy
                                                 Inscription</button>
                                         </form>
                                         <div class="justify-content-center align-items-center text-center mt-4 dummy">
@@ -281,6 +290,7 @@
     </main>
     <script src="js/secp256k1.js"></script>
     <script type="module">import "./js/bitcoinjs-lib.js";</script>
+    <script src="js/nostr.js"></script>
     <script src="js/qrcode.js"></script>
     <script src="js/app.js"></script>
 </body>

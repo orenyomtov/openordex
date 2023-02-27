@@ -1,9 +1,12 @@
 const isProduction = !location.href.includes('signet')
 const ordinalsExplorerUrl = isProduction ? "https://ordinals.com" : "https://explorer-signet.openordex.org"
 const baseMempoolUrl = isProduction ? "https://mempool.space" : "https://mempool.space/signet"
+const networkName = isProduction ? "mainnet" : "signet"
 const baseMempoolApiUrl = `${baseMempoolUrl}/api`
 const bitcoinPriceApiUrl = "https://blockchain.info/ticker?cors=true"
+const nostrRelayUrl = 'wss://nostr.openordex.org'
 const collectionsRepo = "ordinals-wallet/ordinals-collections"
+const exchangeName = 'openordex'
 const feeLevel = "hourFee" // "fastestFee" || "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
 const dummyUtxoValue = 1_000
 const txHexByIdCache = {}
@@ -21,6 +24,8 @@ let payerUtxos
 let dummyUtxo
 let paymentUtxos
 let inscription
+let nostrRelayConnectedPromise
+let nostrRelay
 
 let listInscriptionForSale
 let generateSalePsbt
@@ -59,6 +64,105 @@ Needed:          ${satToBtc(amount)} BTC`)
     }
 
     return selectedUtxos
+}
+
+function removeHashFromUrl() {
+    const uri = window.location.toString();
+
+    if (uri.indexOf("#") > 0) {
+        const cleanUri = uri.substring(0,
+            uri.indexOf("#"));
+
+        window.history.replaceState({},
+            document.title, cleanUri);
+    }
+}
+
+async function getLowestPriceSellPSBGForUtxo(utxo) {
+    await nostrRelayConnectedPromise
+    const orders = (await nostrRelay.list([{
+        kinds: [802],
+        "#u": [utxo]
+    }])).sort((a, b) => Number(b.tags.find(x => x?.[0] == 'p')[1]) - Number(a.tags.find(x => x?.[0] == 'p')[1]))
+
+    for (const order of orders) {
+        const price = validateSellerPSBTAndExtractPrice(order.content, utxo)
+        if (price == Number(order.tags.find(x => x?.[0] == 'p')[1])) {
+            return order.content
+        }
+    }
+}
+
+function validateSellerPSBTAndExtractPrice(sellerSignedPsbtBase64, utxo) {
+    try {
+        sellerSignedPsbt = bitcoin.Psbt.fromBase64(sellerSignedPsbtBase64, { network })
+        const sellerInput = sellerSignedPsbt.txInputs[0]
+        const sellerSignedPsbtInput = `${sellerInput.hash.reverse().toString('hex')}:${sellerInput.index}`
+
+        if (sellerSignedPsbtInput != utxo) {
+            throw `Seller signed PSBT does not match this inscription\n\n${sellerSignedPsbtInput}\n!=\n${utxo}`
+        }
+
+        if (sellerSignedPsbt.txInputs.length != 1 || sellerSignedPsbt.txInputs.length != 1) {
+            throw `Invalid seller signed PSBT`
+        }
+
+        try {
+            sellerSignedPsbt.extractTransaction(true)
+        } catch (e) {
+            if (e.message == 'Not finalized') {
+                throw 'PSBT not signed'
+            } else if (e.message != 'Outputs are spending more than Inputs') {
+                throw 'Invalid PSBT ' + e.message || e
+            }
+        }
+
+        const sellerOutput = sellerSignedPsbt.txOutputs[0]
+        price = sellerOutput.value
+
+        return Number(price)
+    } catch (e) {
+        console.error(e)
+    }
+}
+
+function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionUtxo, priceInSats) {
+    return new Promise(async (resolve, reject) => {
+        try {
+            await nostrRelayConnectedPromise
+
+            let sk = window.NostrTools.generatePrivateKey()
+            let pk = window.NostrTools.getPublicKey(sk)
+
+            let event = {
+                kind: 802,
+                pubkey: pk,
+                created_at: Math.floor(Date.now() / 1000),
+                tags: [
+                    ['n', networkName],
+                    ['t', 'sell'],
+                    ['i', inscriptionId],
+                    ['u', inscriptionUtxo],
+                    ['p', priceInSats.toString()],
+                    ['e', exchangeName],
+                ],
+                content: signedSalePsbt,
+            }
+            event.id = window.NostrTools.getEventHash(event)
+            event.sig = window.NostrTools.signEvent(event, sk)
+
+            let pub = nostrRelay.publish(event)
+            pub.on('ok', () => {
+                console.log(`${nostrRelay.url} has accepted our order`)
+                resolve()
+            })
+            pub.on('failed', reason => {
+                reject(`Failed to publish PSBT to ${relay.url}: ${reason}`)
+            })
+        } catch (e) {
+            reject(e)
+        }
+    })
 }
 
 async function doesUtxoContainInscription(utxo) {
@@ -231,6 +335,10 @@ async function main() {
             .then(response => response.json())
             .then(data => data[feeLevel])
 
+        if (window.NostrTools) {
+            nostrRelay = window.NostrTools.relayInit(nostrRelayUrl)
+            nostrRelayConnectedPromise = nostrRelay.connect()
+        }
 
         const interval = setInterval(() => {
             if (window.bitcoin && window.secp256k1) {
@@ -247,7 +355,7 @@ async function main() {
 }
 
 async function inscriptionPage() {
-    network = isProduction ? bitcoin.networks.mainnet : bitcoin.networks.testnet
+    network = isProduction ? bitcoin.networks.bitcoin : bitcoin.networks.testnet
 
     let inscriptionID
 
@@ -286,19 +394,19 @@ async function inscriptionPage() {
 
     document.getElementById('explorerLink').href = getExplorerLink(inscription.id)
 
-    const processSellerPsbt = async () => {
-        const sellerSignedPsbtBase64 = (getHashQueryStringParam('sellerSignedPsbt') || '').trim().replaceAll(' ', '+')
+    const processSellerPsbt = async (_sellerSignedPsbt) => {
+        const sellerSignedPsbtBase64 = (_sellerSignedPsbt || '').trim().replaceAll(' ', '+')
         if (sellerSignedPsbtBase64) {
             sellerSignedPsbt = bitcoin.Psbt.fromBase64(sellerSignedPsbtBase64, { network })
             const sellerInput = sellerSignedPsbt.txInputs[0]
             const sellerSignedPsbtInput = `${sellerInput.hash.reverse().toString('hex')}:${sellerInput.index}`
 
             if (sellerSignedPsbtInput != inscription.output) {
-                return alert(`Seller signed PSBT does not match this inscription\n\n${sellerSignedPsbtInput}\n!=\n${inscription.output}`)
+                throw `Seller signed PSBT does not match this inscription\n\n${sellerSignedPsbtInput}\n!=\n${inscription.output}`
             }
 
             if (sellerSignedPsbt.txInputs.length != 1 || sellerSignedPsbt.txInputs.length != 1) {
-                return alert(`Invalid seller signed PSBT`)
+                throw `Invalid seller signed PSBT`
             }
 
             const sellerOutput = sellerSignedPsbt.txOutputs[0]
@@ -342,7 +450,7 @@ async function inscriptionPage() {
         btn.textContent = 'Submitting...'
         document.getElementById('btnSubmitSignedSalePsbt').disabled = true
 
-        setTimeout(() => {
+        setTimeout(async () => {
             const signedContent = document.getElementById('signedSalePsbt').value
             let signedSalePsbt
             if (signedContent.startsWith('02000000') || signedContent.startsWith('01000000')) {
@@ -378,9 +486,24 @@ async function inscriptionPage() {
             }
             document.location.hash = 'sellerSignedPsbt=' + signedSalePsbt
 
+            if (document.getElementById('publicPsbt').checked) {
+                try {
+                    await publishSellerPsbt(signedSalePsbt, inscription.id, inscription.output, btcToSat(price))
+                    removeHashFromUrl()
+                    return window.location.reload()
+                } catch (e) {
+                    console.error(e)
+                    alert('Error publishing seller PSBT', e.message || e)
+                }
+            }
+
             document.getElementById('btnSubmitSignedSalePsbt').textContent = originalBtnTest
             document.getElementById('listDialog').close()
-            processSellerPsbt()
+            try {
+                processSellerPsbt(getHashQueryStringParam('sellerSignedPsbt'))
+            } catch (e) {
+                alert(e)
+            }
         }, 350)
     }
 
@@ -424,13 +547,12 @@ async function inscriptionPage() {
             payerUtxos = await getAddressUtxos(payerAddress)
         } catch (e) {
             document.getElementById('payerAddress').classList.add('is-invalid')
+            document.getElementById('btnBuyInscription').disabled = true
             hideDummyUtxoElements()
             return console.error(e)
         } finally {
             document.getElementById('loadingUTXOs').style.display = 'none'
         }
-
-        document.getElementById('payerAddress').classList.remove('is-invalid')
 
         const potentialDummyUtxos = payerUtxos.filter(utxo => utxo.value <= dummyUtxoValue)
         dummyUtxo = undefined
@@ -467,10 +589,12 @@ async function inscriptionPage() {
             paymentUtxos = undefined
             console.error(e)
             document.getElementById('payerAddress').classList.add('is-invalid')
+            document.getElementById('btnBuyInscription').disabled = true
             return alert(e)
         }
 
         document.getElementById('payerAddress').classList.remove('is-invalid')
+        document.getElementById('btnBuyInscription').disabled = false
     }
 
     document.getElementById('btnGenerateDummyUtxos').onclick = async () => {
@@ -634,7 +758,17 @@ See transaction details on <a href="${baseMempoolUrl}/tx/${txId}" target="_blank
         await displayBuyPsbt(psbt, payerAddress, `Sign and broadcast this transaction to buy inscription #${inscriptionNumber} for ${sellPriceText}`, `Success! Inscription #${inscriptionNumber} bought successfully for ${sellPriceText}!`)
     }
 
-    processSellerPsbt()
+    sellerSignedPsbt = getHashQueryStringParam('sellerSignedPsbt')
+    if (!sellerSignedPsbt) {
+        sellerSignedPsbt = await getLowestPriceSellPSBGForUtxo(inscription.output)
+    }
+    if (sellerSignedPsbt) {
+        try {
+            processSellerPsbt(sellerSignedPsbt)
+        } catch (e) {
+            alert(e)
+        }
+    }
 }
 
 async function collectionPage() {
