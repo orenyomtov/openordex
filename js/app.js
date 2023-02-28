@@ -349,7 +349,7 @@ async function generatePSBTListingInscriptionForSale(ordinalOutput, price, payme
     const [ordinalUtxoTxId, ordinalUtxoVout] = ordinalOutput.split(':')
     const tx = bitcoin.Transaction.fromHex(await getTxHexById(ordinalUtxoTxId))
     for (const output in tx.outs) {
-        try { tx.setWitness(output, []) } catch { }
+        try { tx.setWitness(parseInt(output), []) } catch { }
     }
 
     psbt.addInput({
@@ -667,7 +667,7 @@ async function inscriptionPage() {
         for (const utxo of payerUtxos) {
             const tx = bitcoin.Transaction.fromHex(await getTxHexById(utxo.txid))
             for (const output in tx.outs) {
-                try { tx.setWitness(output, []) } catch { }
+                try { tx.setWitness(parseInt(output), []) } catch { }
             }
             psbt.addInput({
                 hash: utxo.txid,
@@ -705,7 +705,7 @@ async function inscriptionPage() {
         // Add dummy utxo input
         const tx = bitcoin.Transaction.fromHex(await getTxHexById(dummyUtxo.txid))
         for (const output in tx.outs) {
-            try { tx.setWitness(output, []) } catch { }
+            try { tx.setWitness(parseInt(output), []) } catch { }
         }
         psbt.addInput({
             hash: dummyUtxo.txid,
@@ -734,7 +734,7 @@ async function inscriptionPage() {
         for (const utxo of paymentUtxos) {
             const tx = bitcoin.Transaction.fromHex(await getTxHexById(utxo.txid))
             for (const output in tx.outs) {
-                try { tx.setWitness(output, []) } catch { }
+                try { tx.setWitness(parseInt(output), []) } catch { }
             }
 
             psbt.addInput({
