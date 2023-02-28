@@ -85,7 +85,8 @@ async function getLowestPriceSellPSBGForUtxo(utxo) {
     const orders = (await nostrRelay.list([{
         kinds: [nostrOrderEventKind],
         "#u": [utxo]
-    }])).sort((a, b) => Number(a.tags.find(x => x?.[0] == 's')[1]) - Number(b.tags.find(x => x?.[0] == 's')[1]))
+    }])).filter(a => a.tags.find(x => x?.[0] == 's')?.[1])
+        .sort((a, b) => Number(a.tags.find(x => x?.[0] == 's')[1]) - Number(b.tags.find(x => x?.[0] == 's')[1]))
 
     for (const order of orders) {
         const price = validateSellerPSBTAndExtractPrice(order.content, utxo)
