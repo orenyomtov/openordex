@@ -261,6 +261,9 @@ async function getLatestOrders(limit) {
 
     for (const order of orders) {
         try {
+            if (!order.tags.find(x => x?.[0] == 's')?.[1]) {
+                continue
+            }
             const inscriptionId = order.tags.find(x => x?.[0] == 'i')[1]
             if (latestOrders.find(x => x.inscriptionId == inscriptionId)) {
                 continue
