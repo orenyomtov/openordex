@@ -1,4 +1,4 @@
-# NIP-??
+# NIP-?
 
 ## Inscription Order
 `draft` `optional` `ordinals` `psbt` `orderbook` `author:orenyomtov`
