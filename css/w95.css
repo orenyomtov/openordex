@@ -8044,7 +8044,9 @@ dialog {
     flex-wrap: wrap;
 }
 
-#inscriptionsContainer iframe, #collectionsContainer iframe {
+#inscriptionsContainer iframe, 
+#collectionsContainer iframe,
+#ordersContainer iframe {
     pointer-events: none;
     max-width: 185px;
 }

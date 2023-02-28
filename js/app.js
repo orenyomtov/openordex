@@ -9,6 +9,7 @@ const collectionsRepo = "ordinals-wallet/ordinals-collections"
 const exchangeName = 'openordex'
 const feeLevel = "hourFee" // "fastestFee" || "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
 const dummyUtxoValue = 1_000
+const nostrOrderEventKind = 802
 const txHexByIdCache = {}
 const urlParams = new URLSearchParams(window.location.search)
 const numberOfDummyUtxosToCreate = 1
@@ -26,6 +27,7 @@ let paymentUtxos
 let inscription
 let nostrRelayConnectedPromise
 let nostrRelay
+let bitcoinInitializedPromise
 
 let listInscriptionForSale
 let generateSalePsbt
@@ -81,13 +83,13 @@ function removeHashFromUrl() {
 async function getLowestPriceSellPSBGForUtxo(utxo) {
     await nostrRelayConnectedPromise
     const orders = (await nostrRelay.list([{
-        kinds: [802],
+        kinds: [nostrOrderEventKind],
         "#u": [utxo]
-    }])).sort((a, b) => Number(a.tags.find(x => x?.[0] == 'p')[1]) - Number(b.tags.find(x => x?.[0] == 'p')[1]))
+    }])).sort((a, b) => Number(a.tags.find(x => x?.[0] == 's')[1]) - Number(b.tags.find(x => x?.[0] == 's')[1]))
 
     for (const order of orders) {
         const price = validateSellerPSBTAndExtractPrice(order.content, utxo)
-        if (price == Number(order.tags.find(x => x?.[0] == 'p')[1])) {
+        if (price == Number(order.tags.find(x => x?.[0] == 's')[1])) {
             return order.content
         }
     }
@@ -135,16 +137,16 @@ function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionUtxo, price
             let pk = window.NostrTools.getPublicKey(sk)
 
             let event = {
-                kind: 802,
+                kind: nostrOrderEventKind,
                 pubkey: pk,
                 created_at: Math.floor(Date.now() / 1000),
                 tags: [
-                    ['n', networkName],
-                    ['t', 'sell'],
-                    ['i', inscriptionId],
-                    ['u', inscriptionUtxo],
-                    ['p', priceInSats.toString()],
-                    ['e', exchangeName],
+                    ['n', networkName], // Network name (e.g. "mainnet", "signet")
+                    ['t', 'sell'], // Type of order (e.g. "sell", "buy")
+                    ['i', inscriptionId], // Inscription ID
+                    ['u', inscriptionUtxo], // Inscription UTXO
+                    ['s', priceInSats.toString()], // Price in sats
+                    ['x', exchangeName], // Exchange name (e.g. "openordex")
                 ],
                 content: signedSalePsbt,
             }
@@ -241,6 +243,51 @@ async function getCollections() {
         .then(collections => collections.sort((a, b) => 0.5 - Math.random()))
 }
 
+function satsToFormattedDollarString(sats, _bitcoinPrice) {
+    return (satToBtc(sats) * _bitcoinPrice).toLocaleString(undefined, {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+    })
+}
+
+async function getLatestOrders(limit) {
+    await nostrRelayConnectedPromise
+    const latestOrders = []
+
+    const orders = await nostrRelay.list([{
+        kinds: [nostrOrderEventKind],
+        limit: 20,
+    }])
+
+    for (const order of orders) {
+        try {
+            const inscriptionId = order.tags.find(x => x?.[0] == 'i')[1]
+            if (latestOrders.find(x => x.inscriptionId == inscriptionId)) {
+                continue
+            }
+
+            const inscriptionData = await getInscriptionDataById(inscriptionId)
+            const validatedPrice = validateSellerPSBTAndExtractPrice(order.content, inscriptionData.output)
+            if (!validatedPrice) {
+                continue
+            }
+
+            latestOrders.push({
+                title: `Listed for ${satToBtc(validatedPrice)} BTC ($${satsToFormattedDollarString(validatedPrice, await bitcoinPrice)})`,
+                inscriptionId,
+            })
+
+            if (latestOrders.length >= limit) {
+                break
+            }
+        } catch (e) {
+            console.error(e)
+        }
+    }
+
+    return latestOrders
+}
+
 function copyInput(btn, inputId) {
     const input = document.getElementById(inputId)
     input.select()
@@ -326,27 +373,30 @@ function satToBtc(sat) {
 }
 
 async function main() {
-    if (window.location.pathname.startsWith('/inscription')) {
-        bitcoinPrice = fetch(bitcoinPriceApiUrl)
-            .then(response => response.json())
-            .then(data => data.USD.last)
+    bitcoinPrice = fetch(bitcoinPriceApiUrl)
+        .then(response => response.json())
+        .then(data => data.USD.last)
 
-        recommendedFeeRate = fetch(`${baseMempoolApiUrl}/v1/fees/recommended`)
-            .then(response => response.json())
-            .then(data => data[feeLevel])
+    if (window.NostrTools) {
+        nostrRelay = window.NostrTools.relayInit(nostrRelayUrl)
+        nostrRelayConnectedPromise = nostrRelay.connect()
+    }
 
-        if (window.NostrTools) {
-            nostrRelay = window.NostrTools.relayInit(nostrRelayUrl)
-            nostrRelayConnectedPromise = nostrRelay.connect()
-        }
-
+    bitcoinInitializedPromise = new Promise(resolve => {
         const interval = setInterval(() => {
             if (window.bitcoin && window.secp256k1) {
                 bitcoin.initEccLib(secp256k1)
                 clearInterval(interval)
-                inscriptionPage()
+                resolve()
             }
         }, 50)
+    })
+
+    if (window.location.pathname.startsWith('/inscription')) {
+        recommendedFeeRate = fetch(`${baseMempoolApiUrl}/v1/fees/recommended`)
+            .then(response => response.json())
+            .then(data => data[feeLevel])
+        inscriptionPage()
     } else if (window.location.pathname.startsWith('/collection')) {
         collectionPage()
     } else {
@@ -355,6 +405,7 @@ async function main() {
 }
 
 async function inscriptionPage() {
+    await bitcoinInitializedPromise
     network = isProduction ? bitcoin.networks.bitcoin : bitcoin.networks.testnet
 
     let inscriptionID
@@ -805,7 +856,7 @@ async function collectionPage() {
                         <span id="inscriptionName">${sanitizeHTML(inscription.meta.name)}</span>
                     </div>
                     <div class="card-body" style="padding: 6px 7px 7px 7px">
-                        <iframe id="collectionIcon" style="pointer-events: none" sandbox=allow-scripts
+                        <iframe style="pointer-events: none" sandbox=allow-scripts
                             scrolling=no loading=lazy
                             src="${ordinalsExplorerUrl}/preview/${inscription.id.replaceAll('"', '')}"></iframe>
                     </div>
@@ -818,11 +869,12 @@ async function collectionPage() {
     }
 }
 
-async function homePage() {
+async function loadCollections() {
     try {
         const collections = await getCollections()
 
         const collectionsContainer = document.getElementById('collectionsContainer')
+        collectionsContainer.innerHTML = ''
 
         for (const collection of collections) {
             const collectionElement = document.createElement('a')
@@ -831,10 +883,10 @@ async function homePage() {
             collectionElement.innerHTML = `
                 <div class="card card-tertiary w-100 fmxw-300">
                     <div class="card-header text-center">
-                        <span id="inscriptionName">${sanitizeHTML(collection.name)}</span>
+                        <span>${sanitizeHTML(collection.name)}</span>
                     </div>
                     <div class="card-body" style="padding: 6px 7px 7px 7px">
-                        <iframe id="collectionIcon" style="pointer-events: none" sandbox=allow-scripts
+                        <iframe style="pointer-events: none" sandbox=allow-scripts
                             scrolling=no loading=lazy
                             src="${ordinalsExplorerUrl}/preview/${collection.inscription_icon.replaceAll('"', '')}"></iframe>
                     </div>
@@ -845,6 +897,43 @@ async function homePage() {
         console.error(e)
         console.error(`Error fetching collections:\n` + e.message)
     }
+}
+
+async function loadLatestOrders() {
+    try {
+        const orders = await getLatestOrders(4)
+
+        const ordersContainer = document.getElementById('ordersContainer')
+        ordersContainer.innerHTML = ''
+
+        for (const order of orders) {
+            const orderElement = document.createElement('a')
+            orderElement.href = `/inscription.html?number=${order.inscriptionId}`
+            orderElement.target = `_blank`
+            orderElement.innerHTML = `
+                <div class="card card-tertiary w-100 fmxw-300">
+                    <div class="card-header text-center">
+                        <span>${sanitizeHTML(order.title)}</span>
+                    </div>
+                    <div class="card-body" style="padding: 6px 7px 7px 7px">
+                        <iframe style="pointer-events: none" sandbox=allow-scripts
+                            scrolling=no loading=lazy
+                            src="${ordinalsExplorerUrl}/preview/${order.inscriptionId}"></iframe>
+                    </div>
+                </div>`
+            ordersContainer.appendChild(orderElement)
+        }
+    } catch (e) {
+        console.error(e)
+        console.error(`Error fetching orders:\n` + e.message)
+    }
+}
+
+async function homePage() {
+    loadCollections()
+
+    await bitcoinInitializedPromise
+    loadLatestOrders()
 }
 
 main()

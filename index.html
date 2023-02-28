@@ -86,8 +86,8 @@
                                     <!-- Form -->
                                     <div class="form-group">
                                         <label for="number" class="mb-2">Inscription number or id</label>
-                                        <input id="number" name="number" class="form-control"
-                                            placeholder="652" required />
+                                        <input id="number" name="number" class="form-control" placeholder="652"
+                                            required />
                                     </div>
                                     <!-- End of Form -->
                                     <button type="submit" class="btn btn-block btn-primary">Open Inscription</button>
@@ -95,14 +95,30 @@
                             </div>
                         </div>
                     </div>
-                    <div id="collectionsContainer" class="mt-4 flex-grid col-12 d-flex align-items-center justify-content-center">
-                        
+
+                    <div class="mb-2" style="margin-top:2rem">
+                        <h4 class="text-white">Latest Listings</h4>
+                    </div>
+                    <div id="ordersContainer"
+                        class="mt-4 flex-grid col-12 d-flex align-items-center justify-content-center">
+                        <h6 class="text-gray my-5">Loading...</h6>
+                    </div>
+
+                    <div class="mb-2" style="margin-top:2rem">
+                        <h4 class="text-white">Collections</h4>
+                    </div>
+                    <div id="collectionsContainer"
+                        class="mt-4 flex-grid col-12 d-flex align-items-center justify-content-center">
+                        <h6 class="text-gray my-5">Loading...</h6>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="js/secp256k1.js"></script>
+    <script type="module" src="js/bitcoinjs-lib.js"></script>
+    <script src="js/nostr.js"></script>
     <script src="js/app.js"></script>
 </body>
 
