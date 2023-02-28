@@ -1,8 +1,6 @@
 # NIP-??
 
 ## Inscription Order
----------
-
 `draft` `optional` `ordinals` `psbt` `orderbook` `author:orenyomtov`
 
 An inscription order is a `kind 802` event that is used to publish a signed order to buy or sell a specific ordinal inscription.
