@@ -257,7 +257,7 @@ async function* getLatestOrders(limit, nostrLimit = 20) {
 
     const orders = await nostrRelay.list([{
         kinds: [nostrOrderEventKind],
-        limit: 20,
+        limit: nostrLimit,
     }])
 
     for (const order of orders) {
@@ -407,6 +407,8 @@ async function main() {
         collectionsPage()
     } else if (window.location.pathname.startsWith('/collection')) {
         collectionPage()
+    } else if (window.location.pathname.startsWith('/listings')) {
+        listingsPage()
     } else {
         homePage()
     }
@@ -916,9 +918,9 @@ async function loadCollections(limit) {
     }
 }
 
-async function loadLatestOrders() {
+async function loadLatestOrders(limit = 8, nostrLimit = 25) {
     try {
-        const orders = getLatestOrders(8)
+        const orders = getLatestOrders(limit, nostrLimit)
 
         const ordersContainer = document.getElementById('ordersContainer')
         ordersContainer.innerHTML = ''
@@ -955,6 +957,11 @@ async function homePage() {
 
 async function collectionsPage() {
     loadCollections()
+}
+
+async function listingsPage() {
+    await bitcoinInitializedPromise
+    loadLatestOrders(100, 200)
 }
 
 main()
