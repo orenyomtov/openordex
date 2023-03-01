@@ -907,7 +907,7 @@ async function loadCollections() {
 
 async function loadLatestOrders() {
     try {
-        const orders = getLatestOrders(4)
+        const orders = getLatestOrders(8)
 
         const ordersContainer = document.getElementById('ordersContainer')
         ordersContainer.innerHTML = ''
