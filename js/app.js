@@ -251,7 +251,7 @@ function satsToFormattedDollarString(sats, _bitcoinPrice) {
     })
 }
 
-async function getLatestOrders(limit) {
+async function* getLatestOrders(limit, nostrLimit = 20) {
     await nostrRelayConnectedPromise
     const latestOrders = []
 
@@ -276,10 +276,12 @@ async function getLatestOrders(limit) {
                 continue
             }
 
-            latestOrders.push({
+            const ord = {
                 title: `Listed for ${satToBtc(validatedPrice)} BTC ($${satsToFormattedDollarString(validatedPrice, await bitcoinPrice)})`,
                 inscriptionId,
-            })
+            }
+            latestOrders.push(ord)
+            yield ord
 
             if (latestOrders.length >= limit) {
                 break
@@ -905,12 +907,12 @@ async function loadCollections() {
 
 async function loadLatestOrders() {
     try {
-        const orders = await getLatestOrders(4)
+        const orders = getLatestOrders(4)
 
         const ordersContainer = document.getElementById('ordersContainer')
         ordersContainer.innerHTML = ''
 
-        for (const order of orders) {
+        for await (const order of orders) {
             const orderElement = document.createElement('a')
             orderElement.href = `/inscription.html?number=${order.inscriptionId}`
             orderElement.target = `_blank`
