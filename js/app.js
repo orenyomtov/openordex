@@ -403,6 +403,8 @@ async function main() {
             .then(response => response.json())
             .then(data => data[feeLevel])
         inscriptionPage()
+    } else if (window.location.pathname.startsWith('/collections')) {
+        collectionsPage()
     } else if (window.location.pathname.startsWith('/collection')) {
         collectionPage()
     } else {
@@ -830,7 +832,12 @@ See transaction details on <a href="${baseMempoolUrl}/tx/${txId}" target="_blank
 
 async function collectionPage() {
     try {
-        const collection = await getCollection(collectionSlug)
+        let collection
+        try {
+            collection = await getCollection(collectionSlug)
+        } catch {
+            throw new Error(`Collection ${collectionSlug} not found`)
+        }
 
         document.getElementById('collectionName').textContent = collection.name
         document.getElementById('supply').textContent = `${collection.inscriptions.length}/${collection.supply}`
@@ -875,9 +882,13 @@ async function collectionPage() {
     }
 }
 
-async function loadCollections() {
+async function loadCollections(limit) {
     try {
-        const collections = await getCollections()
+        let collections = await getCollections()
+
+        if (limit) {
+            collections = collections.slice(0, limit)
+        }
 
         const collectionsContainer = document.getElementById('collectionsContainer')
         collectionsContainer.innerHTML = ''
@@ -936,10 +947,14 @@ async function loadLatestOrders() {
 }
 
 async function homePage() {
-    loadCollections()
+    loadCollections(8)
 
     await bitcoinInitializedPromise
     loadLatestOrders()
+}
+
+async function collectionsPage() {
+    loadCollections()
 }
 
 main()
