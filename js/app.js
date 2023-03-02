@@ -25,7 +25,6 @@ let payerUtxos
 let dummyUtxo
 let paymentUtxos
 let inscription
-let nostrRelayConnectedPromise
 let nostrRelay
 let bitcoinInitializedPromise
 
@@ -81,7 +80,7 @@ function removeHashFromUrl() {
 }
 
 async function getLowestPriceSellPSBGForUtxo(utxo) {
-    await nostrRelayConnectedPromise
+    await nostrRelay.connect()
     const orders = (await nostrRelay.list([{
         kinds: [nostrOrderEventKind],
         "#u": [utxo]
@@ -132,7 +131,7 @@ function validateSellerPSBTAndExtractPrice(sellerSignedPsbtBase64, utxo) {
 function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionUtxo, priceInSats) {
     return new Promise(async (resolve, reject) => {
         try {
-            await nostrRelayConnectedPromise
+            await nostrRelay.connect()
 
             let sk = window.NostrTools.generatePrivateKey()
             let pk = window.NostrTools.getPublicKey(sk)
@@ -252,7 +251,7 @@ function satsToFormattedDollarString(sats, _bitcoinPrice) {
 }
 
 async function* getLatestOrders(limit, nostrLimit = 20) {
-    await nostrRelayConnectedPromise
+    await nostrRelay.connect()
     const latestOrders = []
 
     const orders = await nostrRelay.list([{
@@ -386,7 +385,7 @@ async function main() {
 
     if (window.NostrTools) {
         nostrRelay = window.NostrTools.relayInit(nostrRelayUrl)
-        nostrRelayConnectedPromise = nostrRelay.connect()
+        nostrRelay.connect()
     }
 
     bitcoinInitializedPromise = new Promise(resolve => {
