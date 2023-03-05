@@ -11,7 +11,7 @@
   },
   {
     "name": "122 Bitcoin LLaMaZ",
-    "inscription_icon": "04088fc79b01f5fd93bcfd0e921fb7856d3a6c9d53bc752eb504a520990c6481i0",
+    "inscription_icon": "3ce9ced8c7cede502f3598ed2bdb584832f6147fa91f1aab79de86a8e6c9e0ddi0",
     "supply": "122",
     "slug": "122-bitcoin-llamaz",
     "description": "",
@@ -28,6 +28,26 @@
     "twitter_link": "https://twitter.com/1337skulls",
     "discord_link": "https://discord.gg/1337skulls",
     "website_link": "https://1337skulls.xyz/ordinals"
+  },
+  {
+    "name": "1 BTC FP",
+    "inscription_icon": "35d36280c93421f454da9797e99c772b1dc00b4b2b0ffcee7c455fed64b829d4i0",
+    "supply": "500",
+    "slug": "1btcfp",
+    "description": "pls list for 1btc",
+    "twitter_link": "https://twitter.com/1BTCFP",
+    "discord_link": "https://discord.gg/1BTCFP",
+    "website_link": "https://1ethfp.com/bitcoin"
+  },
+  {
+    "name": "3D Cyber Punk",
+    "inscription_icon": "2818deb22d6124edbce4784d3dc00fc0177849e34c4c95fc8e6b47f855084cb4i0",
+    "supply": "300",
+    "slug": "3d-cyber-punk",
+    "description": "3D Cyber Punk is a collection of modern and vibrant 3D Punks, Inspired by CryptoPunks.",
+    "twitter_link": "https://twitter.com/3dcyberpunk",
+    "discord_link": "https://discord.gg/HW3hMwgwGC",
+    "website_link": ""
   },
   {
     "name": "3D Punks",
@@ -70,6 +90,36 @@
     "website_link": "https://antimatter.nullish.org"
   },
   {
+    "description": "Assis is a collection of 555 unique Ordinal inscriptions on bitcoin. Let's show our Assis to the world!",
+    "discord_link": "https://discord.gg/XRAs9UzVT4",
+    "inscription_icon": "3f9af9372c8bc3144332082b0ae48be287e6820b6d0c9010d5bdd9e2b5f14002i0",
+    "name": "Assis",
+    "slug": "assis",
+    "supply": "555",
+    "website_link": "https://www.assisnft.com/",
+    "twitter_link": "https://twitter.com/assisnft"
+  },
+  {
+    "name": "Astral Babes",
+    "inscription_icon": "29b65f763b01fc7304e9f2325c6c02b47e128009e58102ee97ce50ac6d8ff81ci0",
+    "supply": "2969",
+    "slug": "astral-babes",
+    "description": "Astral Babes are divine feminine goddesses from the astral planet Hiranyaloka on a mission to raise the spiritual vibration of everyone they encounter.",
+    "twitter_link": "https://twitter.com/Astral_Babes",
+    "discord_link": "https://discord.gg/4uDzUyrY5U",
+    "website_link": "https://astralbabes.ai/"
+  },
+  {
+    "name": "aunysillyme",
+    "inscription_icon": "4a7aa0505cb04fa65a8c7f55a99132899809f39f4c246e849b98994b90d8eb9ci0",
+    "supply": "3",
+    "slug": "auny",
+    "description": "Spzjulien introduce you aunysillyme, Hi. I’m Auny. I’ve been involved in art since I was a kid. The special thing about the art I create is, i create art from emotions, based on emotions.",
+    "twitter_link": "https://twitter.com/SpZjulienNFT",
+    "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
+  },
+  {
     "name": "Backpage Bitcoin",
     "inscription_icon": "7cfda85f84dc69802b6012cd16eaf4589852d0de863286bcff451bc2435a35c6i0",
     "supply": "8",
@@ -87,7 +137,7 @@
     "description": "The banksy-Superstar set 1 ordinal Btc collection is a series of digital artworks created in the style of the renowned street artist banksy. Each artwork is unique and features elements of banksy's iconic style, including bold stenciling, political commentary, and a distinct sense of humor. If you're a fan of banksy's work or interested in collecting digital art, now is the time to get your hands on one of these unique ordinal Btc.",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
     "discord_link": "https://discord.gg/xdSqy4tfCZ",
-    "website_link": "https://spznft.com"
+    "website_link": ""
   },
   {
     "name": "Based Apes",
@@ -112,12 +162,22 @@
   {
     "name": "Bit-Tribe",
     "inscription_icon": "4042b6c46148b0f477362ba2750771a470657e2e837cac4a7a4aa0a5e8894b8fi0",
-    "supply": "6",
+    "supply": "18",
     "slug": "bit-tribe",
-    "description": "6 total supply",
+    "description": "100 total supply",
     "twitter_link": "https://twitter.com/BitTribe69",
-    "discord_link": "http://discord.gg/hcrXkPXm",
+    "discord_link": "https://discord.gg/axnDNNU2",
     "website_link": ""
+  },
+  {
+    "name": "bitbags",
+    "inscription_icon": "dff0e58ab62ff8db3bc87d20c230c957a830615bf8e76ef5efd090f9dd920146i0",
+    "supply": "1000",
+    "slug": "bitbags",
+    "description": "bitbags are bags filled with cleverly named Bitcoin-inspired AI generated items. Each Bitbag includes a weapon, armor or clothing, headwear, footwear, ring, neckwear, and a specialty item.",
+    "twitter_link": "https://twitter.com/bitbagsordinal",
+    "discord_link": "",
+    "website_link": "https://bitbags.io"
   },
   {
     "name": "BitBerdz",
@@ -128,6 +188,16 @@
     "twitter_link": "https://twitter.com/BitBerdz",
     "discord_link": "https://discord.gg/BuqY7D4x",
     "website_link": ""
+  },
+  {
+    "name": "BitBonnies",
+    "inscription_icon": "53cc440ec3dd7c1dabc117cf7ecbce5d4c3ec8524814a1939b15daa62c11c5d3i0",
+    "supply": "999",
+    "slug": "bitbonnies",
+    "description": "999 BitBonnies living on Bitcoin's blockchain in eternity",
+    "twitter_link": "https://twitter.com/bitbonnies",
+    "discord_link": "https://discord.gg/cbBnXyeq95",
+    "website_link": "https://bitbonnies.com"
   },
   {
     "name": "Bitcoin Apes",
@@ -150,6 +220,16 @@
     "website_link": "https://bitcoin-bandits.com/"
   },
   {
+    "name": "BitCoin BAYC",
+    "inscription_icon": "6eefd56819fb37334df35c116796cea8d8eaf7d9e3dba29f3831b95f79494578i0",
+    "supply": "92",
+    "slug": "bitcoin-bayc",
+    "description": "The First Bored Apes on Bitcoin",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": "https://bitcoinbayc.xyz/"
+  },
+  {
     "name": "Bitcoin Bears",
     "inscription_icon": "6a0dc6112781a2826918f0f377fcedcf65249f01112b8059a206467de6a3a53fi0",
     "supply": "100",
@@ -167,6 +247,26 @@
     "description": "",
     "twitter_link": "",
     "discord_link": "https://discord.gg/X3HaYDDN",
+    "website_link": ""
+  },
+  {
+    "name": "Bitcoin Bulls",
+    "inscription_icon": "ebe538e1404b2162de460afee1f7d5b865c7130179f87621bfd929c37c9cc558i0",
+    "supply": "400",
+    "slug": "bitcoin-bulls",
+    "description": "400 of the biggest Bitcoin Bulls on the blockchain. With a missions of further decentralizing the network. The first free airdrop on ordinals.",
+    "twitter_link": "https://twitter.com/BitcoinBullsNFT",
+    "discord_link": "https://discord.gg/TJ5Ycf9B",
+    "website_link": "https://bitcoinbulls.xyz/"
+  },
+  {
+    "name": "Bitcoin Checks",
+    "inscription_icon": "9baec9ddc23c7ca62d06891a72f08f74f97dada8e384413a2de1a694f6e10b1bi0",
+    "supply": "21",
+    "slug": "bitcoin-checks",
+    "description": "Art. Memes. Community. 🤝 21 Bitcoin Checks. Fully inscribed (near 40K) for eternity. 💚",
+    "twitter_link": "https://twitter.com/btc_checks",
+    "discord_link": "https://discord.gg/zANb8cV7Nq",
     "website_link": ""
   },
   {
@@ -188,6 +288,26 @@
     "twitter_link": "https://twitter.com/0xMartian_",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Bitcoin Freedom Series",
+    "inscription_icon": "b74360e2fc13b7ea39e778bf8d93ee5ed343c92f660d4132615f909bb218134ei0",
+    "supply": "22",
+    "slug": "bitcoin-freedom",
+    "description": "",
+    "twitter_link": "https://twitter.com/pacificparadox",
+    "discord_link": "https://discord.gg/fineart2hodl",
+    "website_link": "https://fineart2hodl.com"
+  },
+  {
+    "name": "GHS Healing Crystals",
+    "inscription_icon": "7f9644fd43dc3fed95833dc51c16b6b690c8c4df8a1766888fc69682921a24aci0",
+    "supply": "36",
+    "slug": "bitcoin-ghcrystals",
+    "description": "The Global Healing Society brings to you a rare luxury collectible NFT project like no other. This collection of 36 healing crystals in both male and female format were inspired by the energies of 18 different chakras. We're one of the first 100 thousand to be minted on the bitcoin blockchain. By owning a healing crystal, you will gain access to the healing community where you will be able to connect with others that are passionate about healing themselves, healing others and healing the world. This extraordinary offering takes us far and beyond the typical NFT space into a sacred mission of self-empowerment. Join in this remarkable journey of unity and inspiration, and together we can lift the world.",
+    "twitter_link": "https://twitter.com/ChakraHealers",
+    "discord_link": "https://discord.com/invite/M8m38Gd4Vv",
+    "website_link": "https://globalhealingsociety.com"
   },
   {
     "name": "Bitcoin Goblins",
@@ -240,6 +360,16 @@
     "website_link": ""
   },
   {
+    "name": "Bitcoin Planets",
+    "inscription_icon": "05fc93422baa40b05e9b673dbf98e04c115735f3224f91a0590307f31e9dfeeai0",
+    "supply": "1000",
+    "slug": "bitcoin-planets",
+    "description": "Embark on a cosmic journey through 1000 unique planets inscribed on satoshis, where generative art meets discovery and exploration.",
+    "twitter_link": "https://twitter.com/bitcoin_planets",
+    "discord_link": "https://discord.com/invite/NSdqKzJpaw",
+    "website_link": "https://www.bitcoinplanets.xyz/"
+  },
+  {
     "name": "Bitcoin Rocks",
     "inscription_icon": "e8ce0fcb238b377b3a6b9921333e26fbec5c5724c5bf6e783c3dcc1129794508i0",
     "supply": "100",
@@ -248,6 +378,16 @@
     "twitter_link": "https://twitter.com/ordrocks",
     "discord_link": "https://discord.gg/6Y8MNW4u6c",
     "website_link": ""
+  },
+  {
+    "name": "Bitcoin Shrooms",
+    "inscription_icon": "55def50c58b686c23ccf0fd4b15c062f2d13ac55d70d0372deed58e2dac89a88i0",
+    "supply": "210",
+    "slug": "bitcoin-shrooms",
+    "description": "Bitcoin's first ever ordinal collection",
+    "twitter_link": "https://twitter.com/BitcoinShrooms",
+    "discord_link": "",
+    "website_link": "https://bitcoinshrooms.com/"
   },
   {
     "name": "Bitcoin Sneakers",
@@ -291,13 +431,53 @@
   },
   {
     "name": "Bitcoin Punks",
-    "inscription_icon": "5e08244ed556065e4654f46f054a92836cb5ee9c438ca9ab90ae5d6dfb93c4aei0",
+    "inscription_icon": "2d19554bb51891504424409677871f529a1decfa05748f1d6f64a76a36ebcb93i0",
     "supply": "10000",
     "slug": "bitcoinpunks",
     "description": "",
     "twitter_link": "https://twitter.com/Bitcoin_Punks_",
     "discord_link": "https://discord.gg/bitcoinpunks",
     "website_link": ""
+  },
+  {
+    "name": "BitcoinSneakerDogg",
+    "inscription_icon": "3d72f3d4169ebbab39153b0b2aa88e124ed8729595bbd7e4bfe15bbb04cdb7fei0",
+    "supply": "23",
+    "slug": "bitcoinsneakerdogg",
+    "description": "HIPHOP DEGITAL ARTIFACT OG.",
+    "twitter_link": "https://twitter.com/plutoplutosawai",
+    "discord_link": "https://discord.gg/QZnTzQ84kM",
+    "website_link": "https://starbeachgoro.my.canva.site/inscription-144894"
+  },
+  {
+    "name": "BitcoinSneakerDogg11",
+    "inscription_icon": "14bf398cad22b1e03025ec29ff9b062ed0b5cf12062a6b692ed5ad63d4c92a4ei0",
+    "supply": "23",
+    "slug": "bitcoinsneakerdogg11",
+    "description": "HIPHOP DEGITAL ARTIFACT OG.",
+    "twitter_link": "https://twitter.com/neotokyomelt",
+    "discord_link": "https://discord.gg/QZnTzQ84kM",
+    "website_link": "https://starbeachgoro.my.canva.site/inscription-144894"
+  },
+  {
+    "name": "Bitcorns",
+    "slug": "bitcorns",
+    "supply": "100",
+    "description": "No Punks. No Apes. Just Corn.",
+    "twitter_link": "https://twitter.com/ordinalbitcorns",
+    "discord_link": "https://discord.gg/GU9sqdv4r6",
+    "website_link": "https://bitcorns.xyz",
+    "inscription_icon": "1b135ce887080e5fb4641f61239bda9d957d9c50f337a797f3d98f592fb8d184i0"
+  },
+  {
+    "name": "Bitera",
+    "inscription_icon": "853079d34ef23bafdd1df4c3e055932c11c1de86da7835b26107c7dc3f883a66i0",
+    "supply": "10000",
+    "slug": "biterapunks",
+    "description": "Bitera Punks are the second byte-perfect uploads of the original Ethereum CryptoPunks onto the Bitcoin Blockchain using Ordinals.To make this site, we are checking the hash of every image uploaded to Ordinals and comparing it against the original 10k punk images. The links to Bitera Punks are the Second-seen inscriptions ( Second lowest ID) that contain these hashes on Ordinals.",
+    "twitter_link": "https://twitter.com/bitera_ord?s=09",
+    "discord_link": "https://discord.gg/NkFH2se9dx",
+    "website_link": "http://www.biteraord.com"
   },
   {
     "name": "Bitkongs",
@@ -350,6 +530,16 @@
     "website_link": ""
   },
   {
+    "name": "BTC Artsy Monke",
+    "inscription_icon": "8078fd7cfc04f17d3da8098ce2689b40c8c4be4d8e92a161532acbcb1e3c0473i0",
+    "supply": "10000",
+    "slug": "btc-artsy-monke",
+    "description": "BTC Artsy Monke is the official Bitcoin counterpart of the beloved AI generated art collection Artsy Monke, featuring 20 different art themes. 10,000 completely unique Art pieces.",
+    "twitter_link": "https://twitter.com/artsymonke",
+    "discord_link": "https://discord.gg/tDvZQAUW",
+    "website_link": "https://artsymonke.com/"
+  },
+  {
     "name": "BTC Machines",
     "inscription_icon": "83b7b96e113fcbd88a6dd237debf1e327b3c2f5059b1c157f19edf4e55b8e4c5i0",
     "supply": "777",
@@ -360,6 +550,16 @@
     "website_link": "https://btcmachine.org"
   },
   {
+    "name": "BTC Skullz",
+    "inscription_icon": "5609bab800070e0308ccc57b515a3f111ec11c070aaa61dc5a24cf0391f29959i0",
+    "supply": "50",
+    "slug": "btc-skullz",
+    "description": "BTC Skullz are a below 10k collection of unique artwork featuring 50 generative skulls living on the bitcoin network.",
+    "twitter_link": "https://twitter.com/btc_skullz",
+    "discord_link": "https://discord.gg/4dabWeXeZT",
+    "website_link": ""
+  },
+  {
     "name": ":fire:cats",
     "inscription_icon": "1075b942926a8fa2e8b1e0c8670ae8055324a106399ce817c050c2328c7dcb7ci0",
     "supply": "100",
@@ -368,6 +568,16 @@
     "twitter_link": "https://twitter.com/btcfirecats",
     "discord_link": "https://discord.gg/DEcMxq3g",
     "website_link": "https://www.btcfirecats.com/"
+  },
+  {
+    "name": "btcman",
+    "inscription_icon": "a645551cc10340bcd4010c78e5885e5cd139258098e4abac5b33e19f09c59a69i0",
+    "supply": "1",
+    "slug": "btcman",
+    "description": "btc miner",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Bureaucrats",
@@ -400,6 +610,16 @@
     "website_link": ""
   },
   {
+    "name": "Challenge Punks",
+    "slug": "challenge-punks",
+    "supply": "100",
+    "description": "The Challenge Punks collection consists of 100 unique pixel art images, each of which represents an inscription related to the idea of asserting independence and challenging the traditional financial system through Bitcoin ownership. These pixel art images are one-of-a-kind digital assets that are stored on the Bitcoin blockchain, making them both valuable and secure.",
+    "twitter_link": "https://twitter.com/challenge_punk",
+    "discord_link": "https://discord.gg/mD6gfZZn72",
+    "website_link": "https://challengepunks.io/",
+    "inscription_icon": "00d15dbedca2d6911660b8302f9601314b8490a15dd548d1d6f87819c018d4d9i0"
+  },
+  {
     "name": "Chartistic",
     "inscription_icon": "51a793536c58defb6f71c88c42d012efa3361acb912cce5a1e525837683b99aai0",
     "supply": "36",
@@ -416,6 +636,36 @@
     "slug": "color-study",
     "description": "Painting one pixel at a time as a kind of digital sand mandala, to study color, cohesion, and depth. This collection was the first dutch auction on bitcoin and among the first inscriptions sold entirely as partially-signed bitcoin transactions.",
     "twitter_link": "https://twitter.com/pourteaux",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Counterfeit Shrooms",
+    "inscription_icon": "df91906b3750ccbca8e9d34354ba9ec409f558fd17501c9bc26b68f10b7bc480i0",
+    "supply": "9",
+    "slug": "counterfeit-shrooms",
+    "description": "Bitcoin's first ever illicit mushroom collection",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Cryo Caskets",
+    "inscription_icon": "e96c2e21f4ffa368a69a775c1c26bfee852123184806e819fab82789f4277178i0",
+    "supply": "50",
+    "slug": "cryo-caskets",
+    "description": "Frozen on the bitcoin blockchain until we are born again...",
+    "twitter_link": "https://twitter.com/Cryo_Caskets",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "CryptoSoups",
+    "inscription_icon": "af493b8f02ef12a84145d78bd537fbf25f3f5dfb4467e12787d08445f83c25eei0",
+    "supply": "1",
+    "slug": "cryptosoups",
+    "description": "1 unique CryptoSoup harvested from the Bitcoin blockchain.",
+    "twitter_link": "",
     "discord_link": "",
     "website_link": ""
   },
@@ -470,6 +720,16 @@
     "website_link": ""
   },
   {
+    "name": "Dark & Glow Playmates",
+    "inscription_icon": "03dfbc5e8b318e17cdf15ccec665b8d694fb3e027b50c918c13dc28a399bce4ci0",
+    "supply": "25",
+    "slug": "dark-glow-playmates",
+    "description": "Fuzzy & HI Studio presents Collection I. Each 1/25 Dark & Glow Playmate ordinal is unique and ultra rare",
+    "twitter_link": "https://twitter.com/fuzzy_studios",
+    "discord_link": "",
+    "website_link": "https://www.fuzzy-hi-studio.com/"
+  },
+  {
     "name": "das Burgers",
     "inscription_icon": "a149c3028b8c5dd06b8926194d11903363756aefb81840ca3539a33e3b874466i0",
     "supply": "70",
@@ -478,6 +738,16 @@
     "twitter_link": "https://twitter.com/Das_Burgers",
     "discord_link": "",
     "website_link": "https://ghostoshi.com"
+  },
+  {
+    "name": "Derage by Darkfarms1",
+    "inscription_icon": "5cecbad09f7df8b5a4f5b298dfe91e32094275960d2e8fffb6c3ad1e99def737i0",
+    "supply": "132",
+    "slug": "derage-darkfarms1",
+    "description": "A 4201 Derivate Degen Rage collection by Darkfarms1. CC0",
+    "twitter_link": "https://twitter.com/Darkfarms1",
+    "discord_link": "https://discord.gg/XzvGhuqxzv",
+    "website_link": "https://derage.eth"
   },
   {
     "name": "Diamond Fingers",
@@ -530,6 +800,36 @@
     "website_link": ""
   },
   {
+    "name": "Elders of Crypto",
+    "inscription_icon": "58c5edbdd57e5ba210fb2b6d39ee456262e2f91a66fa760bb3f09e9ddeab596bi0",
+    "supply": "41",
+    "slug": "eldersofcrypto",
+    "description": "First collectible of the legendary individuals who kept and keep this world moving",
+    "twitter_link": "https://twitter.com/CryptoElders",
+    "discord_link": "https://discord.gg/TtsrWDbu",
+    "website_link": "https://www.eldersofcrypto.com"
+  },
+  {
+    "name": "ElfBlocks",
+    "inscription_icon": "4beb1090213d326501b15371edafd645861b5aea11eec22c5b004c205c507379i0",
+    "supply": "50",
+    "slug": "elfblocks",
+    "description": "Welcome to the magical world of ElfBlocks! This collection of 50 NFTs of pixelated elves is an invitation to explore an enchanting universe where nature meets technology. Each of these elves is unique, with their own personality, style, and magic",
+    "twitter_link": "https://twitter.com/ordinalelf",
+    "discord_link": "https://discord.gg/",
+    "website_link": ""
+  },
+  {
+    "name": "Entanglement",
+    "slug": "entanglement",
+    "supply": "6",
+    "description": "6 inscriptions forming the schematics. Objects and mechanisms flow through feedback and feedforward cycles over layers of Metaconstructs. Emergence of intelligence forms as the vector entangles with every interaction. Recorded and decayed events create information organica that build cybernetic species.",
+    "twitter_link": "https://twitter.com/metaconstructs",
+    "discord_link": "https://discord.gg/murxQgMe9A",
+    "website_link": "https://www.metaconstruct.com",
+    "inscription_icon": "db693a144747766ebbd4fdfd8bb38f6739f68493e5011f22d7b7b727c036abf4i0"
+  },
+  {
     "name": "Extraordinals",
     "inscription_icon": "03c31680e8e1a20b77a3782f6d5c96636a7ab6771c6d152a333cf5eee59ffcd7i0",
     "supply": "100",
@@ -538,6 +838,16 @@
     "twitter_link": "https://twitter.com/ExtraordinalBTC",
     "discord_link": "https://discord.gg/extraordinals",
     "website_link": "https://extraordinal.io/"
+  },
+  {
+    "name": "Knights of Fire",
+    "inscription_icon": "3ba143f5a74e7f17b8f422761f56f5216ef6ae44a52de34f4cc36f6ae5884b0ci0",
+    "supply": "13",
+    "slug": "fire-knights",
+    "description": "",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "First Flags",
@@ -600,6 +910,16 @@
     "website_link": ""
   },
   {
+    "name": "Glyphs",
+    "inscription_icon": "6a867cc63708ceb2d196eb378c834731627a3c7f94142d238e4a3f7dc8148408i0",
+    "supply": "512",
+    "slug": "glyphs",
+    "description": "The first 512 unique Glyphs inscribed on bitcoin. Valid glyphs are unique and follow the same algorithm pioneered by the original autoglyphs of ethereum.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": "https://glyphs.gg"
+  },
+  {
     "name": "H17N TEXT",
     "inscription_icon": "c103bda60d9dcc52020938b1a3b2d7dd08b73258516a5081a8d3f33d62f82d51i0",
     "supply": "17",
@@ -618,6 +938,16 @@
     "twitter_link": "https://twitter.com/ordhashminers",
     "discord_link": "https://discord.gg/NssgGFbAaW",
     "website_link": ""
+  },
+  {
+    "name": "HelpMeDebugThis",
+    "inscription_icon": "f0c8750ca7027eb9d7163120762b01cf83e6c122e843837fb965480cad73f414i0",
+    "supply": "870",
+    "slug": "helpmedebugthis",
+    "description": "Something is fundamentally wrong. H3lp M3 D3bu8 Th15!",
+    "twitter_link": "https://twitter.com/HelpMeDebugThis",
+    "discord_link": "https://discord.gg/helpmedebugthis",
+    "website_link": "https://helpmedebugthis.com"
   },
   {
     "name": "History of Bitcoin",
@@ -670,6 +1000,16 @@
     "website_link": ""
   },
   {
+    "name": "INAZUMA",
+    "slug": "inazuma",
+    "supply": "10",
+    "description": "Genesis　series　#1-10",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "b2cf4bd5fdc2bb3519e29d2042791369bd9539bf52141ac57b5ef24962f56dd9i0"
+  },
+  {
     "name": "Inscribed Pepes",
     "inscription_icon": "ba698535dc15c8761bf276b8938fc60e118587d25cb92c4104c45ab4ac9a1bcbi0",
     "supply": "69",
@@ -682,7 +1022,7 @@
   {
     "name": "Inscription Poetry",
     "inscription_icon": "2fc55380f14f3eed99a8de445af25b8d9679de27160eeba6fb43e9937d6e502ai0",
-    "supply": "124",
+    "supply": "160",
     "slug": "inscription-poetry",
     "description": "The renowned ancient Chinese poetry and lyrics are the most scarce cultural resources, invaluable and unique. Engraving them into the Bitcoin ordinals network has the eternal collection value and dissemination significance.",
     "twitter_link": "https://twitter.com/SurnamesNFT",
@@ -750,6 +1090,26 @@
     "website_link": "https://www.kineticordinals.com/"
   },
   {
+    "name": "lilsats",
+    "inscription_icon": "7534a0250bb425ebdc79a8f00ae5f667aedc666314f03cc2556da523c15fc101i0",
+    "supply": "7",
+    "slug": "lilsats",
+    "description": "Cute and rare",
+    "twitter_link": "https://twitter.com/lilsatordinals",
+    "discord_link": "https://t.co/4wSCQDaeoM",
+    "website_link": ""
+  },
+  {
+    "name": "Love Ordinals",
+    "inscription_icon": "61138b24572390b008bdf232035df57910cbcd6b8c9b226a313b82e666247e89i0",
+    "supply": "12",
+    "slug": "love-ordinals",
+    "description": "The first 12 love ordinals, maybe the most beautiful ordinals on the chain (sub 123K inscription range)",
+    "twitter_link": "https://twitter.com/LoveOrdinals",
+    "discord_link": "https://discord.gg/ordinals",
+    "website_link": "https://loveords.com/"
+  },
+  {
     "name": "Lyndoco",
     "inscription_icon": "70a29978d1182b4aea8315b204491227fe7289ac5a4d499f18a5fde31f16f0a7i0",
     "supply": "15",
@@ -770,6 +1130,16 @@
     "website_link": "https://madmandrills.com/"
   },
   {
+    "name": "Mad Monkies",
+    "inscription_icon": "6ef8056cad379c9d651bf000d054d302c4ca7280d9cd9caa8cd559d16f4f1598i0",
+    "supply": "175",
+    "slug": "mad-monkies",
+    "description": "175 primates have been infected and turned into zombies, wrecking havoc on the BTC blockchain",
+    "twitter_link": "https://twitter.com/BtcMonkies",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Anti NFT BTC Maxis",
     "inscription_icon": "fd27c503aeb1bb0cbeb168b6af82156a744655b062d0fea0f6430a78ba188f33i0",
     "supply": "100",
@@ -788,6 +1158,16 @@
     "twitter_link": "https://twitter.com/memesonbitcoin",
     "discord_link": "",
     "website_link": "https://memesonbitcoin.com/"
+  },
+  {
+    "name": "Metaconstructs",
+    "slug": "metaconstructs",
+    "supply": "32",
+    "description": "32 inscriptions to start your journey. A cybernetic environment is forming around our interaction with nature and technology. Knowledge and experience are moving towards a designed future of wisdom. An interface is being constructed.",
+    "twitter_link": "https://twitter.com/metaconstructs",
+    "discord_link": "https://discord.gg/murxQgMe9A",
+    "website_link": "https://www.metaconstruct.com",
+    "inscription_icon": "ee1f05d324c34f5372c5dee91d09bb36f12012546f0814df9b0def47aca2a779i0"
   },
   {
     "name": "milady ordinals",
@@ -828,6 +1208,26 @@
     "twitter_link": "https://twitter.com/MoonHeadsIO",
     "discord_link": "https://discord.gg/2dhbRP6zDX",
     "website_link": "https://moonheads.io"
+  },
+  {
+    "name": "Moonpets Ordinals",
+    "inscription_icon": "24169537418e5c6ee63585c035f4c2a1b4b603ad9836d0f2a6f4abbf0c4a0d4fi0",
+    "supply": "57",
+    "slug": "moonpets-ordinals",
+    "description": "The MoonPets NFT collection was minted in 2022 on the Moonbeam blockchain and quickly became popular among collectors, selling out in just 9 minutes. Due to the high demand for the collection, 57 commemorative NFTs have been minted on the Bitcoin blockchain for collectors. These commemorative NFTs are designed to be a special addition to the MoonPets collection, allowing collectors to own a unique piece of the popular virtual creature series. As they are minted on the Bitcoin blockchain, they will be available to collectors forever, with the ownership and authenticity of each NFT verified through the blockchain. Overall, the MoonPets NFT collection has proven to be a highly sought-after virtual asset, with the commemorative NFTs providing a rare opportunity for collectors to own a piece of the collection's history. Utility: By purchasing MoonPets ordinals NFT, you become eligible to receive a share of the revenue generated by our merchandise Web3 store, which will be distributed to you automatically in Bitcoin on a quarterly basis. Additionally, owning an NFT grants you the opportunity to join our DAO, or Decentralized Autonomous Organization, which is a community-driven platform that allows you to have a say in how our organization is run and how decisions are made.",
+    "twitter_link": "https://twitter.com/TFAlphaDao",
+    "discord_link": "https://discord.com/invite/TanEPFmbHQ",
+    "website_link": "https://www.tfalpha.xyz"
+  },
+  {
+    "name": "Music Ordinals",
+    "inscription_icon": "2eaed8cada19a26c59ee5166d6be0391ba0af62f1d82a9b81d88b2a8d2b98c22i0",
+    "supply": "5",
+    "slug": "music-ordinals",
+    "description": "The first 5 music related ordinals, maybe the most beautiful ordinals on the blockchain (inscription range starting from 73K)",
+    "twitter_link": "https://twitter.com/LoveOrdinals",
+    "discord_link": "https://discord.gg/ordinals",
+    "website_link": "https://loveords.com/music-ordinals"
   },
   {
     "name": "Mutant Unicorns",
@@ -880,6 +1280,16 @@
     "website_link": ""
   },
   {
+    "name": "Neon",
+    "inscription_icon": "7bfd520e8176fcd4238a4203ed4f2b8d88f350e8193314934f886c175fefd362i0",
+    "supply": "2",
+    "slug": "neon",
+    "description": "The Other Side of Town Beyond the heavily guarded walls of the town lies a world of hedonistic pleasure and danger. Zone 6 is a place where the rules are different, and the nights never end. A neon-lit playground for those who seek to escape the monotony of their controlled lives, it's a place where anything can happen. But beneath the surface lies a dark underbelly of crime and corruption, and those who enter Zone 6 must navigate a world of deception and treachery. Will you succumb to the temptations of the night, or will you uncover the truth behind the glittering façade?\n\nhttps://hyaipe.io/planned",
+    "twitter_link": "https://twitter.com/HYAIPE",
+    "discord_link": "https://discord.gg/x9jMKMfBRZ",
+    "website_link": "https://hyaipe.io/"
+  },
+  {
     "name": "New World Money",
     "inscription_icon": "5920932bbe405072b1af52aa32fae3f6187caed37c5b83f82e40fddb609be812i0",
     "supply": "20",
@@ -910,6 +1320,16 @@
     "website_link": "https://oblivion.nullish.org"
   },
   {
+    "name": "Orbinals",
+    "inscription_icon": "8f7ee938836fcdf063476a5fbb43b9fe31313859cfa44cb6450fac3eea9fdcddi0",
+    "supply": "500",
+    "slug": "orbinals",
+    "description": "",
+    "twitter_link": "https://twitter.com/ExtraordinalBTC",
+    "discord_link": "https://discord.gg/extraordinals",
+    "website_link": "https://extraordinal.io/"
+  },
+  {
     "name": "Ord Bulls",
     "inscription_icon": "0ce2c125c4141f25aa70e698a6409ea5fd9caaf93fe7a90e635e20a4111d9865i0",
     "supply": "100",
@@ -918,6 +1338,16 @@
     "twitter_link": "https://twitter.com/OrdBulls",
     "discord_link": "https://discord.gg/ordinalswallet",
     "website_link": ""
+  },
+  {
+    "name": "OrdiKongs",
+    "inscription_icon": "1f56ef05d7833cb4d28f8e679c5839e735ebf1921cb3549ba2ae146d1c4186e1i0",
+    "supply": "100",
+    "slug": "ordi-kongs",
+    "description": "Monsters belong in B movies. OrdiKongs are inscribed on Bitcoin.",
+    "twitter_link": "https://twitter.com/OrdiKongs",
+    "discord_link": "https://discord.gg/krDkQ6EH",
+    "website_link": "https://ordikongs.com"
   },
   {
     "name": "OrdiClays",
@@ -946,8 +1376,8 @@
     "slug": "ordinal-apes",
     "description": "",
     "twitter_link": "https://twitter.com/OrdinalApes",
-    "discord_link": "",
-    "website_link": ""
+    "discord_link": "https://discord.gg/ordinal-apes",
+    "website_link": "https://ordinalapes.com"
   },
   {
     "name": "Ordinal Bears",
@@ -980,6 +1410,16 @@
     "website_link": "https://ordinalcamels.com"
   },
   {
+    "name": "Ordinal Carnival",
+    "inscription_icon": "1e2e36d264345edaf8dec14213465a249efd312b03dcd5a166cc63ed90ae71abi0",
+    "supply": "420",
+    "slug": "ordinal-carnival",
+    "description": "Get ready to reveal your true vibe and join the Ordinal Carnival ! A collection of 420 unique carnival masks that let you participate in magical exclusive events.",
+    "twitter_link": "https://twitter.com/ordinalcarnival",
+    "discord_link": "https://discord.gg/YDwBVjMj67",
+    "website_link": "https://www.instagram.com/ordinalcarnival"
+  },
+  {
     "name": "Ordinal Cars",
     "inscription_icon": "0842d1d911f4e85441bf186e3907ae739fc0f32177faeef3a9263395e22e29dei0",
     "supply": "100",
@@ -988,6 +1428,16 @@
     "twitter_link": "https://twitter.com/OrdinalCars",
     "discord_link": "https://discord.gg/8jZW9rZG3B",
     "website_link": "https://www.ordinalcars.xyz"
+  },
+  {
+    "name": "Ordinal Cool Cats",
+    "inscription_icon": "a4fdb07cb8be462639136438511a6c7787b05b14825bde3d9333c7de189de6cbi0",
+    "supply": "100",
+    "slug": "ordinal-cool-cats",
+    "description": "😺 100 Dope Ordinal Cats on the Bitcoin Blockchain! Sub 65k Inscriptions 💎",
+    "twitter_link": "https://twitter.com/OrdinalCoolCats",
+    "discord_link": "https://discord.gg/vTDagjch2N",
+    "website_link": ""
   },
   {
     "name": "Ordinal Creatures",
@@ -1110,6 +1560,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Games",
+    "inscription_icon": "61b9a00f564a01ffaa1365ee20a04f35680e182e05219b76878b16e784e71b16i0",
+    "supply": "40",
+    "slug": "ordinal-games",
+    "description": "Ordinal Games is the first collection of playable games on Bitcoin. 40 award-winning games playable directly in your browser from the blockchain.",
+    "twitter_link": "https://twitter.com/ordgamesbtc",
+    "discord_link": "https://discord.gg/tcneqPWpZN",
+    "website_link": "http://playordinalgames.xyz"
+  },
+  {
     "name": "Ordinal Gecks",
     "inscription_icon": "f40ac210969bc0806a25ffa0f4e16ce0d185e6570813964cab467bde7a8a46c2i0",
     "supply": "30",
@@ -1118,6 +1578,26 @@
     "twitter_link": "https://twitter.com/ordinal_gecks",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Ordinal Gems",
+    "inscription_icon": "b3f5055984a501f0b94b09cb4748163737e4ef3e7f81d81a739a45dd1f5f85d0i0",
+    "supply": "16",
+    "slug": "ordinal-gems",
+    "description": "A collection of pixel gemstones to celebrate 250k inscriptions",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "OrdinalGoros",
+    "inscription_icon": "902fa346737ba61a3f089f186a684342df47c73f58e25b913b575a2d3a63c401i0",
+    "supply": "101",
+    "slug": "ordinal-goros",
+    "description": "World famous artist, Goro Ishihata's insane collection.",
+    "twitter_link": "https://twitter.com/goroishihata",
+    "discord_link": "https://discord.com/invite/BkK2cUMQ6K",
+    "website_link": "https://goroishihata.com/"
   },
   {
     "name": "Ordinal Gremlin",
@@ -1178,6 +1658,16 @@
     "twitter_link": "https://twitter.com/ordmfers",
     "discord_link": "https://discord.gg/Y8rVmT2kx7",
     "website_link": ""
+  },
+  {
+    "name": "Ordinal MIMI",
+    "inscription_icon": "b34345a307006fea8bfeb9e3eb869ec0549d131527c633102bd462d64bf1253di0",
+    "supply": "554",
+    "slug": "ordinal-mimi",
+    "description": "Ordinal MIMI is a project that features M the smallest unit of MIMI permanently inscribed on the Bitcoin blockchain.",
+    "twitter_link": "https://twitter.com/otograf_jp",
+    "discord_link": "https://discord.gg/qM4ds52kPZ",
+    "website_link": "https://lit.link/otograf"
   },
   {
     "name": "Ordinal Mini Doges",
@@ -1255,8 +1745,8 @@
     "supply": "340",
     "slug": "ordinal-pizza-og",
     "description": "",
-    "twitter_link": "https://twitter.com/OrdinalPunks",
-    "discord_link": "https://discord.com/invite/U4UyTWArjV",
+    "twitter_link": "https://twitter.com/OrdinalPizzaOG",
+    "discord_link": "https://discord.com/invite/f3f8grbS7u",
     "website_link": ""
   },
   {
@@ -1265,7 +1755,7 @@
     "supply": "251",
     "slug": "ordinal-pokemon",
     "description": "Own a piece of Pokémon history with Ordinal Pokémon. This exclusive collection features rare and powerful Pokémon from the first generation, with only 251 Founders Edition inscriptions available",
-    "twitter_link": "",
+    "twitter_link": "https://twitter.com/ordinalpokemon",
     "discord_link": "https://discord.gg/FDCrKyvRfq",
     "website_link": ""
   },
@@ -1312,7 +1802,7 @@
   {
     "name": "Ordinal RareHODL",
     "inscription_icon": "f4cf3845098453d1e4078b5cde2c99022115461602a7d384f8f59982290dca9bi0",
-    "supply": "20",
+    "supply": "41",
     "slug": "ordinal-rarehodl",
     "description": "NFT of the HODLer by the HODLer for the HODLer.",
     "twitter_link": "https://twitter.com/ordinalrarehodl",
@@ -1350,6 +1840,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Shits",
+    "inscription_icon": "d389f9e47470e063d6a8f7447d5bcef8cc492e3d350c3f990ad3ecef63420563i0",
+    "supply": "104",
+    "slug": "ordinal-shits",
+    "description": "",
+    "twitter_link": "https://twitter.com/RareGandalf",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Ordinal Smokes",
     "inscription_icon": "be7bc51bfba43f0ef903e3a838879f9a2773461238745052edae50d1c3cc355ci0",
     "supply": "69",
@@ -1380,6 +1880,16 @@
     "website_link": "https://socialkongs.xyz"
   },
   {
+    "name": "Ordinal Sooky",
+    "inscription_icon": "72089d3a68bcd8e3562b4506a142411c47bb915ae2d1aeb934c0586bebef2a24i0",
+    "supply": "111",
+    "slug": "ordinal-spooky",
+    "description": "111 Pixel Spooks haunting the Bitcoin blockchain. Ordinal Spooky is a curated community of builders and creators. 50% Shared Revenue | Rewards and raffles.",
+    "twitter_link": "https://twitter.com/OrdinalSpooky",
+    "discord_link": "https://discord.gg/mfpmJU44XH",
+    "website_link": "https://ordinalspooky.com"
+  },
+  {
     "name": "Ordinal Strikers",
     "inscription_icon": "a53708ea83941402a6e3ff984c8cebe72ff6459e0d6ea14e9b3aa5761d447b14i0",
     "supply": "100",
@@ -1387,6 +1897,16 @@
     "description": "100 total supply",
     "twitter_link": "https://twitter.com/OrdinalStrikers",
     "discord_link": "https://discord.gg/msKdcbkRPN",
+    "website_link": ""
+  },
+  {
+    "name": "OrdinalThings",
+    "inscription_icon": "60ef935b86ac3ea2d5fd7cce2dae762d8b0fe77b4915ecfd04da3c205e53e6b3i0",
+    "supply": "50",
+    "slug": "ordinal-things",
+    "description": "",
+    "twitter_link": "https://twitter.com/OrdinalThings",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -1407,6 +1927,16 @@
     "description": "",
     "twitter_link": "https://twitter.com/OrdinalTulips",
     "discord_link": "https://discord.gg/jK3J9bVs",
+    "website_link": ""
+  },
+  {
+    "name": "Ordinal Umeko Punks",
+    "inscription_icon": "b6c976cae396966b0b8c9ff045e36b1ae76a61854bd7c3c6a81d8f41cfe6f296i0",
+    "supply": "100",
+    "slug": "ordinal-umeko-punks",
+    "description": "",
+    "twitter_link": "https://twitter.com/NFTsistersJAPAN",
+    "discord_link": "https://discord.com/invite/qKtyEwM3Jp",
     "website_link": ""
   },
   {
@@ -1437,6 +1967,46 @@
     "slug": "ordinal-wizards",
     "supply": "100",
     "twitter_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Ordinal Women",
+    "inscription_icon": "34f9bd745476e11a2bfd2ae9115e6d1c9b1464abf45e2e81e325b74f9115cce5i0",
+    "supply": "200",
+    "slug": "ordinal-women",
+    "description": "Ordinal Women is a women centric original NFT collection with the vision of building a thriving community celebrating the inclusivity & equal opportunity",
+    "twitter_link": "https://twitter.com/OrdinalWomen",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Ordinal Words",
+    "inscription_icon": "7854df442be573748ef5e936f91517241e02bfe31dd678d3d6b1c4a5a2fea550i0",
+    "supply": "128",
+    "slug": "ordinal_words",
+    "description": "What do you know about Bitcoin 12 word seed phrase? The Ordinal words collection is 2048 unique words which are created by a computer algorithm. All this words come to each seed phrase from BIP39 specification. It's amazing that you can buy any nft word from your seed phrase in this collection. Check it out! P.S.: Better not buy all 12 nft, which will reflect (indicate) the actual phrase of your Bitcoin wallet.This word can be a hint as well as help you find or remember your 12 or 24 words List of 2048 BIP-39 Seed (Mnemonic) Phrase Words",
+    "twitter_link": "https://twitter.com/OrdinalWords",
+    "discord_link": "https://discord.com/invite/cWmvnxN6Bq",
+    "website_link": "https://ordinalwords.space/"
+  },
+  {
+    "name": "Ordinal Ducks",
+    "inscription_icon": "095d0f5ffd13b7fe72ee2aad97a7aa10ac39e65e766fd9aef996af7b00b27b3ci0",
+    "supply": "150",
+    "slug": "ordinalducks",
+    "description": "Not your ordinary ducks.",
+    "twitter_link": "https://twitter.com/ordinal_ducks",
+    "discord_link": "https://discord.gg/AHPc4FkBKN",
+    "website_link": "https://ordinalducks.com"
+  },
+  {
+    "name": "Ordinale Gedichte",
+    "inscription_icon": "700f2c3a8ebe1f6bf1ddaccf091723c06abf31d04ca112cc10772b36e53e9236i0",
+    "supply": "9",
+    "slug": "ordinale-gedichte",
+    "description": "The first ever German poem collection inscribed on the Bitcoin Blockchain.",
+    "twitter_link": "",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -1512,11 +2082,21 @@
   {
     "name": "ordirobots",
     "inscription_icon": "e419060cef79f4e912aad387e37ac658bfd6c991f7e3e06b17929140b3ad30b8i0",
-    "supply": "7",
+    "supply": "16",
     "slug": "ordirobots",
     "description": "ordirobots landed on ordinal btc planet",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
     "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
+  },
+  {
+    "name": "orpepes",
+    "inscription_icon": "1eb9bd0aa7bb6eb5e8ad677c9ed56b6fe082898f8235a0d94095b3f4c40d0b33i0",
+    "supply": "19",
+    "slug": "orpepes",
+    "description": "Orpepe Adventures",
+    "twitter_link": "https://twitter.com/Orpepes",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -1570,6 +2150,26 @@
     "website_link": ""
   },
   {
+    "name": "Plein Err",
+    "inscription_icon": "c8b331a24873016fe9d2801f6a406ae1ec10e2f543469672958e62417a6311a9i0",
+    "supply": "42",
+    "slug": "plein-err",
+    "description": "Plein Err is a collection of 42 pixel landscapes. The collection is inspired by the work of the Plein Air Painters of the 19th century, and the pixel art of the 20th. Each pixel landscape is 128x64, scaled 3x, and consists of the same palette of 64 colors. The collection is limited to 42 inscriptions",
+    "twitter_link": "https://twitter.com/pleinerrr",
+    "discord_link": "https://discord.gg/pleinerr",
+    "website_link": "https://twitter.com/pleinerrr"
+  },
+  {
+    "name": "Pokemon Gen 1",
+    "inscription_icon": "0f9847b10a15ff830ae4e7b80b39520f719289f75f29173cbcf18dabdaf844e6i0",
+    "supply": "151",
+    "slug": "pokemon-gen-1",
+    "description": "151 .sats names of Pokemon Gen 1",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "PopOrdinalCats",
     "inscription_icon": "2e5c350dd9ee1a0025c22b6fa54ea1cba80be4357ec316d3bd0580a6fb7a190ei0",
     "supply": "80",
@@ -1578,6 +2178,26 @@
     "twitter_link": "https://twitter.com/PopOrdinalCats",
     "discord_link": "https://discord.com/invite/8dFteSM77u",
     "website_link": "https://ordward.io/"
+  },
+  {
+    "name": "Primordinal Punks",
+    "inscription_icon": "19babab326d7d9d650a32ae31f15f561f0e0d89d6eea492f923cc12a85620c8bi0",
+    "supply": "50",
+    "slug": "primordinal-punks",
+    "description": "50 rare bitcoin ordinals with a clean forward-facing look & striking color palette for instantly recognisable PFPs, all inscribed within the first 85k (65045-84737).",
+    "twitter_link": "https://twitter.com/primordinalpunk",
+    "discord_link": "https://discord.gg/pXnbg7bnyC",
+    "website_link": ""
+  },
+  {
+    "name": "Protoshrooms",
+    "inscription_icon": "9163af650dcdeeeb9a7e1f47f693b51921dce3bdf2475e69360ec83d9956f5d7i0",
+    "supply": "14",
+    "slug": "protoshrooms",
+    "description": "the SHROOMS r coming",
+    "twitter_link": "https://twitter.com/BitcoinShrooms",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Punks on Bitcoin",
@@ -1620,6 +2240,46 @@
     "website_link": ""
   },
   {
+    "name": "ROCKLOOPS",
+    "inscription_icon": "5bc42c3e910c0798d6ce2b1ad337e2c314abe51f3751dc5ffe6fcd3fbbeb4000i0",
+    "supply": "42",
+    "slug": "rockloops",
+    "description": "The first motion based collection meets the first ever ordinals collection with 42 artifacts of various rarity. Let the rocks loop.",
+    "twitter_link": "https://twitter.com/ordinal_loops",
+    "discord_link": "https://discord.com/invite/ordinal-loops",
+    "website_link": "https://www.ordinalloops.xyz/rockloops"
+  },
+  {
+    "name": "Ordinal Rubber Duckies",
+    "inscription_icon": "8da078183c62c42ddff97a053c230b0527598259920c2ac6fd62b4727fa44f3ai0",
+    "supply": "256",
+    "slug": "rubber-duckies",
+    "description": "A collection of colourful pixel rubber duckies",
+    "twitter_link": "https://twitter.com/OrdCreatures",
+    "discord_link": "https://discord.gg/ebjShmDZbv",
+    "website_link": ""
+  },
+  {
+    "name": "Salvator Satoshi",
+    "slug": "salvator-satoshi",
+    "supply": "100",
+    "description": "One of Bitcoin's 1st collections to use an artist's vision in collaboration with AI. Inspired by some of the world's most famous art pieces, the Salvator Satoshi collection illustrates the legend of Satoshi Nakamoto through the eyes of Malikaii Mask.",
+    "twitter_link": "https://twitter.com/MalikaiiM",
+    "discord_link": "",
+    "website_link": "https://linktr.ee/MalikaiiM",
+    "inscription_icon": "307cc34a6f13d18838c058781738cc1f131ba2514894287ad492f791eafef1a5i0"
+  },
+  {
+    "name": "Sat Black",
+    "inscription_icon": "28c75a415e683626aef01e4961ef9bb97c78c81b894f8025af63378f6fc671fdi0",
+    "supply": "51",
+    "slug": "sat-black",
+    "description": "Sat Black is a groundbreaking digital verifiable collectible. It includes a unique pen and ink illustration referencing the first physical verifiable collectible, the Penny Black stamp, released in 1840 and considered a collectibles cultural icon. The Penny Black was the first adhesive postage stamp used in a public postal system. Each individual stamp featured 2 letters identifying its location on the printing plate. The Sat Black uses ordinal theory to inscribe a verifiable credential onto a specific satoshi with a variety of metadata, including a digital signature proving authenticity. This digital collectible uses decentralized identifiers and verifiable credentials to create new opportunities for true utility with ordinals. Art by Harold Richter.",
+    "twitter_link": "https://twitter.com/ordinalsreserve",
+    "discord_link": "https://discord.com/invite/YU5m2SqF48",
+    "website_link": "https://ordinalsreserve.com"
+  },
+  {
     "name": "Sat Hunters",
     "inscription_icon": "1e242f2902cc71ea4d863d3a38a315baef83eef5cf70294851ef248ddfa1c191i0",
     "supply": "50",
@@ -1660,6 +2320,26 @@
     "website_link": "https://satoshishellz.com"
   },
   {
+    "name": "Satoshi 21",
+    "inscription_icon": "fba2d9050f97f35ae88cdd37efd6b01d71f597402a2601fc225e3814b5ea8559i0",
+    "supply": "21",
+    "slug": "satoshi21",
+    "description": "Satoshi Nakamoto in 16-bit glory minted on the Bitcoin Blockchain",
+    "twitter_link": "https://twitter.com/gameofbitcoin",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Satoshi Go",
+    "inscription_icon": "9c7363b3aaf03bbda36f025290ba041a731f0d8d9f789474a3a72df651101fe9i0",
+    "supply": "151",
+    "slug": "satoshi_go",
+    "description": "Welcome to the wonderful world of the Satoshimon, cute but powerful creatures that have crept into the Ordinal cosmos and are looking for a trainer 🐲",
+    "twitter_link": "https://twitter.com/SatoshiGo_",
+    "discord_link": "https://discord.gg/EepAGueece",
+    "website_link": ""
+  },
+  {
     "name": "Sea Creatures",
     "inscription_icon": "6176b66ed2db746b9d68a241107d244b3e2161cd578480566d1edc6047696adfi0",
     "supply": "15",
@@ -1681,13 +2361,13 @@
   },
   {
     "description": "100 total supply",
-    "discord_link": "",
+    "discord_link": "https://discord.gg/wsbZgtnaRe",
     "inscription_icon": "d6e83197fc8537f4395385d6922360724a527a6418a9aad4f3b8a7fbcde50821i0",
     "name": "Sharkies",
     "slug": "sharkies",
     "supply": "100",
     "website_link": "",
-    "twitter_link": ""
+    "twitter_link": "https://twitter.com/OrdinalSharkies"
   },
   {
     "name": "Skullx: Cyber Raiders",
@@ -1740,6 +2420,36 @@
     "website_link": ""
   },
   {
+    "name": "Sons of Birka",
+    "inscription_icon": "e278f965ff0c95bfe0959830f481b0195328b49747176cc9f3d469ab6df91ae1i0",
+    "supply": "19",
+    "slug": "sons-of-birka",
+    "description": "The Viking City of Birka is regarded as Swedens first city. Sons of Birka is a collection of 19 Cyber Vikings, each with a Swedish Viking Name.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": "https://github.com/BridgeBird/sons-of-birka"
+  },
+  {
+    "name": "Space Belters",
+    "inscription_icon": "de7a6d1737deea666de91b244f76ae64a1f1d5e0825a9db8f7b7603c532e3640i0",
+    "supply": "864",
+    "slug": "space-belters",
+    "description": "Space Belters is the first NFT release of the Tiamat Digital universe. The Space Belters first mission is to construct the Space Elevator. Build with us!",
+    "twitter_link": "https://twitter.com/SpaceBelters",
+    "discord_link": "https://discord.gg/NECvdeq4Xc",
+    "website_link": "http://tiamat.digital/"
+  },
+  {
+    "name": "Space Skelly Ordinals",
+    "inscription_icon": "41fe9469afeb4d7c0eb783247f7e48858c9ac34926099851be7616d76290dfb9i0",
+    "supply": "31",
+    "slug": "space-skellies",
+    "description": "Space skellies traveled across the galaxy, discovering new planets and galaxies along the way. With each new adventure, the brave space skellies uncovered new mysteries of the universe.",
+    "twitter_link": "https://twitter.com/SpaceSkellies",
+    "discord_link": "https://discord.gg/spaceskellies",
+    "website_link": "https://www.spaceskellies.io/"
+  },
+  {
     "name": "Squiggs",
     "inscription_icon": "4d699b383baabc3527f3fa6b69efa96ec7e421729ff9eef5377d5a22023e88dfi0",
     "supply": "53",
@@ -1750,6 +2460,16 @@
     "website_link": ""
   },
   {
+    "name": "Starty Ordinals",
+    "inscription_icon": "c41406af9496f3f088c3738e6d6a5d94e8c69c83bae8031f7ed35b452fd7462ei0",
+    "supply": "50",
+    "slug": "starty-ordinals",
+    "description": "Startys are the cutest pixel creatures from Cosmos! This is a special collection, capped at 50 animated startys. Join our discord and be part of the starty fam! Want OG Startys? Visit: https://stargaze.zone",
+    "twitter_link": "https://twitter.com/startynft",
+    "discord_link": "https://discord.gg/f79DAyfEdA",
+    "website_link": "https://starty.stars.page"
+  },
+  {
     "name": "Suited Ordinal Apes",
     "inscription_icon": "34c6f40ce47ce19bff04af8aa6e90dc7dc82a7067b471e6cdf0f70c39cd9ff71i0",
     "supply": "98",
@@ -1758,6 +2478,16 @@
     "twitter_link": "https://twitter.com/suitedapesnft",
     "discord_link": "https://discord.gg/suitedordinalapes",
     "website_link": "https://suitedapes.com"
+  },
+  {
+    "name": "Super Early Ordies",
+    "inscription_icon": "5547725a50ad00dfe41bbb50562e3707362d81546de5b5a185e997085d9954c4i0",
+    "supply": "420",
+    "slug": "super-early-ordies",
+    "description": "420 Super Early Normies converted into Ordies",
+    "twitter_link": "https://twitter.com/earlyordies",
+    "discord_link": "https://discord.gg/earlyordies",
+    "website_link": "https://earlyordies.com/"
   },
   {
     "name": "The Basics",
@@ -1790,6 +2520,16 @@
     "website_link": "https://mallardorder.io"
   },
   {
+    "name": "thebiggooey",
+    "inscription_icon": "1fb564504d1e67303c6c9a9b8633495bc3297af40cf646eb4ef98d39d85497c7i0",
+    "supply": "2",
+    "slug": "thebiggooey",
+    "description": "Spzjulien introduce you thebiggooey",
+    "twitter_link": "https://twitter.com/SpZjulienNFT",
+    "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
+  },
+  {
     "name": "TiltedVision",
     "inscription_icon": "12c42badcc202da68e579bc9894257b048a0046149f29152d3a85a39e7359228i0",
     "supply": "12",
@@ -1810,6 +2550,46 @@
     "website_link": "https://www.ordinalhub.com/collection/timechain-collection"
   },
   {
+    "name": "tiny dinos",
+    "inscription_icon": "86a63c06c6c413a9deeebeef3cd7c8597880a7c15131198807ed5dd1b9e8560bi0",
+    "supply": "50",
+    "slug": "tiny-dinos",
+    "description": "from omnichain to ordinals tiny dinos transcend blockchains to bring the best vibes to everyone",
+    "twitter_link": "https://twitter.com/tinydinosnft",
+    "discord_link": "https://discord.gg/JjWnUZfXcc",
+    "website_link": "https://tinydinos.fun/ordinals"
+  },
+  {
+    "name": "Totes My Goats",
+    "inscription_icon": "8205e5dcdc774ead67c013e1ab9214eeef02686a08999d22fa17131577f04fd3i0",
+    "supply": "50",
+    "slug": "totes-my-goats",
+    "description": "Nobody panic, we goat this! Totes My Goats is a collection of 50 goats. Each goat has its own personality, and style. You'll find their best trait is jumping on the backs of their superiors to obtain maximum control and domination. Deny them the opportunity to infiltrate your life and you'll enjoy a nice horn to the shin. Each image is inscribed on chain. Additionally, a high-res 1440 version is available on IPFS.",
+    "twitter_link": "https://twitter.com/totesmygoatsnft",
+    "discord_link": "https://discord.gg/totesmygoats",
+    "website_link": "https://twitter.com/totesmygoatsnft"
+  },
+  {
+    "name": "Trad Japanese blue",
+    "inscription_icon": "10206dff30a8a924c101bbcc7349dc06e3625d2993faa092fc482a6c5475b9d3i0",
+    "supply": "16",
+    "slug": "trad-japanese-blue",
+    "description": "This collection consists 16 squares colored with traditional Japanese blue.",
+    "twitter_link": "https://twitter.com/0xKyosuke",
+    "discord_link": "",
+    "website_link": "https://link3.to/0xkyosuke"
+  },
+  {
+    "name": "Trad Japanese red 01",
+    "inscription_icon": "cb91dd8ca77f7762d1a1abd9d75b7f3888c13787fa27d903e0c424be0edff57di0",
+    "supply": "10",
+    "slug": "trad-japanese-red-01",
+    "description": "This collection consists 10 squares colored with traditional Japanese red.",
+    "twitter_link": "https://twitter.com/0xKyosuke",
+    "discord_link": "",
+    "website_link": "https://link3.to/0xkyosuke"
+  },
+  {
     "name": "Tradfilines",
     "inscription_icon": "f2c8d00fec1347c7ba6fab0dde140f2a5c84d3fa7131145d478b6e8b163d0904i0",
     "supply": "500",
@@ -1817,6 +2597,26 @@
     "description": "",
     "twitter_link": "https://twitter.com/UlversY",
     "discord_link": "https://discord.gg/gyUZRjxs",
+    "website_link": ""
+  },
+  {
+    "name": "Trippy Punks",
+    "inscription_icon": "d54412ed8192bd0e11d056143a9f1f6837919ae2644f65c06fd6788ebc3f7b5ei0",
+    "supply": "114",
+    "slug": "trippy-punks",
+    "description": "The BTC Ordinal Trippy Punk Collection features stunning and one-of-a-kind punk artwork that will transport you to a whole new world. With a membership, you'll have access to the ultimate BTC ordinal NFT utility, allowing you to fully immerse yourself in this incredible new token art form.",
+    "twitter_link": "https://twitter.com/OrdTrippyPunks",
+    "discord_link": "https://discord.gg/trippypunks",
+    "website_link": ""
+  },
+  {
+    "name": "Umbrella",
+    "inscription_icon": "d468856226f0eba6fa68b25849ebe40dd833d1c388bde24165adbdcf1babb3a2i0",
+    "supply": "10",
+    "slug": "umbrella",
+    "description": "The first nft ordinal series of a single character representing an umbrella",
+    "twitter_link": "https://twitter.com/ordinalumbrella",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -1838,6 +2638,16 @@
     "twitter_link": "",
     "discord_link": "https://discord.gg/dJVSrskF",
     "website_link": "https://liquidordinals.com/"
+  },
+  {
+    "name": "vinyl sarina",
+    "inscription_icon": "f9efbd2b230f3352ce7f28d4995e53c691dbea486c377f2be22a4165234564dai0",
+    "supply": "4",
+    "slug": "vinyl-sarina",
+    "description": "the first collection of vinyl album artwork on the bitcoin blockchain. presented here as photographed by its producer",
+    "twitter_link": "https://twitter.com/smokinsarina",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "warhol sarina ~ gold",
@@ -1880,6 +2690,16 @@
     "website_link": "https://en.wikipedia.org/wiki/Three_wise_monkeys#Unicode_characters"
   },
   {
+    "description": "XCOPY Grifters on BTC Ordinal",
+    "discord_link": "",
+    "inscription_icon": "05c0bcd1d2bc05d52a8dbc573fdc1ef3656c32cb7eff2235e9fe9b30979ecfa8i0",
+    "name": "Ordinal XCOPY Grifters",
+    "slug": "xcopy-grifters",
+    "supply": "10",
+    "twitter_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Xcpinata",
     "inscription_icon": "2bec9ad8cc8e083018ef328439e3360bef79f085529827aaa0de9c0b0e81d267i0",
     "supply": "111",
@@ -1888,6 +2708,26 @@
     "twitter_link": "https://twitter.com/XCPinata",
     "discord_link": "https://discord.gg/NdXNG9Gd",
     "website_link": ""
+  },
+  {
+    "name": "Xdopy",
+    "inscription_icon": "40a329e2427906701d8526974eeea50b3dd7b2c84d2ad6af8f00e015bcbd038ci0",
+    "supply": "11",
+    "slug": "xdopy",
+    "description": "Sir, Do We Get To Win This Time",
+    "twitter_link": "https://twitter.com/rarity_garden",
+    "discord_link": "https://discord.gg/Ur8XGaurSd",
+    "website_link": "https://rarity.garden"
+  },
+  {
+    "name": "Xexadons",
+    "inscription_icon": "7929a39d2187a46d4c4b703b43058c44f0ed745ab23ad96cf2eef49ff17cb397i0",
+    "supply": "50",
+    "slug": "xexadons",
+    "description": "50 Mythic Xexadons that have traversed to the Bitcoin Blockchain. Through experimental technology, these Xexadons have been able to find their way to this unexplored blockchain, but have no way of getting out… At least not yet…",
+    "twitter_link": "https://twitter.com/xexadons",
+    "discord_link": "https://discord.com/invite/xex-crypto-1037877420658802789",
+    "website_link": "https://xexadons.com"
   },
   {
     "name": "Yeti bit Club",
