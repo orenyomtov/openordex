@@ -128,7 +128,7 @@ function validateSellerPSBTAndExtractPrice(sellerSignedPsbtBase64, utxo) {
     }
 }
 
-function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionUtxo, priceInSats) {
+function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionNumber, inscriptionUtxo, priceInSats) {
     return new Promise(async (resolve, reject) => {
         try {
             await nostrRelay.connect()
@@ -144,6 +144,7 @@ function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionUtxo, price
                     ['n', networkName], // Network name (e.g. "mainnet", "signet")
                     ['t', 'sell'], // Type of order (e.g. "sell", "buy")
                     ['i', inscriptionId], // Inscription ID
+                    ['m', inscriptionNumber], // Inscription number
                     ['u', inscriptionUtxo], // Inscription UTXO
                     ['s', priceInSats.toString()], // Price in sats
                     ['x', exchangeName], // Exchange name (e.g. "openordex")
@@ -224,6 +225,10 @@ async function getInscriptionIdByNumber(inscriptionNumber) {
 }
 
 async function getCollection(collectionSlug) {
+    if (collectionSlug == 'under-1k') {
+        return await fetch(`/static/under-1k.json`).then(response => response.json())
+    }
+
     const [meta, inscriptions] = await Promise.all([
         fetch(`https://raw.githubusercontent.com/${collectionsRepo}/main/collections/${collectionSlug}/meta.json`)
             .then(response => response.json()),
@@ -250,13 +255,14 @@ function satsToFormattedDollarString(sats, _bitcoinPrice) {
     })
 }
 
-async function* getLatestOrders(limit, nostrLimit = 20) {
+async function* getLatestOrders(limit, nostrLimit = 20, filters = {}) {
     await nostrRelay.connect()
     const latestOrders = []
 
     const orders = await nostrRelay.list([{
         kinds: [nostrOrderEventKind],
         limit: nostrLimit,
+        ...filters,
     }])
 
     for (const order of orders) {
@@ -549,7 +555,7 @@ async function inscriptionPage() {
 
             if (document.getElementById('publicPsbt').checked) {
                 try {
-                    await publishSellerPsbt(signedSalePsbt, inscription.id, inscription.output, btcToSat(price))
+                    await publishSellerPsbt(signedSalePsbt, inscription.id, inscription.number, inscription.output, btcToSat(price))
                     removeHashFromUrl()
                     return window.location.reload()
                 } catch (e) {
@@ -865,12 +871,13 @@ async function collectionPage() {
             const inscriptionElement = document.createElement('a')
             inscriptionElement.href = `/inscription.html?number=${inscription.id}`
             inscriptionElement.target = `_blank`
+            inscriptionElement.className = `collectionLink`
             inscriptionElement.innerHTML = `
                 <div class="card card-tertiary w-100 fmxw-300">
                     <div class="card-header text-center">
                         <span id="inscriptionName">${sanitizeHTML(inscription.meta.name)}</span>
                     </div>
-                    <div class="card-body" style="padding: 6px 7px 7px 7px">
+                    <div class="card-body" style="padding: 6px 7px 7px 7px" id="inscription_${inscription.id}">
                         <iframe style="pointer-events: none" sandbox=allow-scripts
                             scrolling=no loading=lazy
                             src="${ordinalsExplorerUrl}/preview/${inscription.id.replaceAll('"', '')}"></iframe>
@@ -878,40 +885,63 @@ async function collectionPage() {
                 </div>`
             inscriptionsContainer.appendChild(inscriptionElement)
         }
+
+        const orders = getLatestOrders(collection.inscriptions.length, collection.inscriptions.length * 2, { "#i": collection.inscriptions.map(x => x.id) })
+
+        for await (const order of orders) {
+            const button = document.createElement('button')
+            button.className = "btn btn-block btn-primary mt-2"
+            button.setAttribute('style', 'max-width:185px; max-height: revert')
+            button.textContent = order.title
+
+            document.getElementById(`inscription_${order.inscriptionId}`).appendChild(button)
+            document.getElementById(`inscription_${order.inscriptionId}`).parentElement.parentElement.classList.add('forSale')
+        }
     } catch (e) {
         console.error(e)
         alert(`Error fetching collection ${collectionSlug}:\n` + e.message)
+    } finally {
+        document.getElementById('listingsLoading').style.display = 'none'
     }
 }
 
-async function loadCollections(limit) {
+function displayCollections(displayedCollections) {
+    const collectionsContainer = document.getElementById('collectionsContainer')
+    collectionsContainer.innerHTML = ''
+
+    for (const collection of displayedCollections) {
+        const collectionElement = document.createElement('a')
+        collectionElement.href = `/collection.html?slug=${collection.slug}`
+        collectionElement.target = `_blank`
+        collectionElement.innerHTML = `
+            <div class="card card-tertiary w-100 fmxw-300">
+                <div class="card-header text-center">
+                    <span>${sanitizeHTML(collection.name)}</span>
+                </div>
+                <div class="card-body" style="padding: 6px 7px 7px 7px">
+                    <iframe style="pointer-events: none" sandbox=allow-scripts
+                        scrolling=no loading=lazy
+                        src="${ordinalsExplorerUrl}/preview/${collection.inscription_icon?.replaceAll('"', '')}"></iframe>
+                </div>
+            </div>`
+        collectionsContainer.appendChild(collectionElement)
+    }
+}
+
+function searchCollections(searchTerm) {
+    displayCollections(window.allCollections.filter(x => x.name.toLowerCase().includes(searchTerm.toLowerCase())).slice(0, 12))
+}
+
+async function loadCollections(limit, featuredCollections = []) {
     try {
-        let collections = await getCollections()
+        window.allCollections = await getCollections()
 
-        if (limit) {
-            collections = collections.slice(0, limit)
-        }
+        let displayedCollections = allCollections.slice(0, limit || 999999)
+        displayedCollections = featuredCollections.concat(displayedCollections.slice(featuredCollections.length))
+            .sort((a, b) => 0.5 - Math.random())
 
-        const collectionsContainer = document.getElementById('collectionsContainer')
-        collectionsContainer.innerHTML = ''
 
-        for (const collection of collections) {
-            const collectionElement = document.createElement('a')
-            collectionElement.href = `/collection.html?slug=${collection.slug}`
-            collectionElement.target = `_blank`
-            collectionElement.innerHTML = `
-                <div class="card card-tertiary w-100 fmxw-300">
-                    <div class="card-header text-center">
-                        <span>${sanitizeHTML(collection.name)}</span>
-                    </div>
-                    <div class="card-body" style="padding: 6px 7px 7px 7px">
-                        <iframe style="pointer-events: none" sandbox=allow-scripts
-                            scrolling=no loading=lazy
-                            src="${ordinalsExplorerUrl}/preview/${collection.inscription_icon.replaceAll('"', '')}"></iframe>
-                    </div>
-                </div>`
-            collectionsContainer.appendChild(collectionElement)
-        }
+        displayCollections(displayedCollections)
     } catch (e) {
         console.error(e)
         console.error(`Error fetching collections:\n` + e.message)
@@ -950,13 +980,18 @@ async function loadLatestOrders(limit = 8, nostrLimit = 25) {
 }
 
 async function homePage() {
-    loadCollections(8)
+    loadCollections(12, [{
+        "name": "<1k",
+        "inscription_icon": "26482871f33f1051f450f2da9af275794c0b5f1c61ebf35e4467fb42c2813403i0",
+        "slug": "under-1k",
+    }])
 
     await bitcoinInitializedPromise
     loadLatestOrders()
 }
 
 async function collectionsPage() {
+    await bitcoinInitializedPromise
     loadCollections()
 }
 

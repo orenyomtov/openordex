@@ -120,12 +120,22 @@
                                         <span id="supply"></span>
                                     </p>
                                 </div>
+
+                                <div class="justify-content-center align-items-center mt-4 text-center form-group form-check">
+                                    <label class="form-check-label" style="padding-left: 1.5rem">
+                                        <input class="form-check-input" type="checkbox" id="filterForSale" onchange="document.getElementById('inscriptionsContainer').classList.toggle('hideUnlisted')">
+                                        <span class="form-check-x"></span>
+                                        <span class="form-check-sign"></span>
+                                        Only show inscriptions listed for sale <span id="listingsLoading">(still loading...)</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div id="inscriptionsContainer" class="mt-4 flex-grid col-12 d-flex align-items-center justify-content-center">
-                        
+                    <div id="inscriptionsContainer"
+                        class="mt-4 flex-grid col-12 d-flex align-items-start justify-content-center">
+
                     </div>
                 </div>
             </div>
@@ -134,6 +144,7 @@
     <script src="js/secp256k1.js"></script>
     <script type="module">import "./js/bitcoinjs-lib.js";</script>
     <script src="js/qrcode.js"></script>
+    <script src="js/nostr.js"></script>
     <script src="js/app.js"></script>
 </body>
 

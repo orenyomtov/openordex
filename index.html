@@ -100,15 +100,21 @@
                         <h4 class="text-white text-underline"><a href="/listings.html">Latest Listings</a></h4>
                     </div>
                     <div id="ordersContainer"
-                        class="mt-4 flex-grid col-12 d-flex align-items-center justify-content-center">
+                        class="mt-4 flex-grid col-12 d-flex align-items-start justify-content-center">
                         <h6 class="text-gray my-5">Loading...</h6>
                     </div>
 
                     <div class="mb-2" style="margin-top:2rem">
-                        <h4 class="text-white text-underline"><a href="/collections.html">Collections</a></h4>
+                        <h4 class="text-white text-underline text-center"><a href="/collections.html">Collections</a>
+                        </h4>
+                        <div class="form-group">
+                            <input id="number" name="number" class="form-control mt-3 search" 
+                                placeholder="Search collections by name" required oninput="searchCollections(this.value)" />
+                        </div>
                     </div>
+
                     <div id="collectionsContainer"
-                        class="mt-4 flex-grid col-12 d-flex align-items-center justify-content-center">
+                        class="mt-4 flex-grid col-12 d-flex align-items-start justify-content-center">
                         <h6 class="text-gray my-5">Loading...</h6>
                     </div>
                 </div>

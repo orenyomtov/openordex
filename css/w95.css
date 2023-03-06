@@ -8052,11 +8052,28 @@ dialog {
 }
 
 @media (max-width: 767.98px) {
-    #inscriptionsContainer .fmxw-300, #collectionsContainer .fmxw-300 {
+    #inscriptionsContainer .fmxw-300, 
+    #collectionsContainer .fmxw-300,
+    #ordersContainer .fmxw-300 {
         max-width: 155px !important;
+    }
+    .search {
+        width: 300px !important;
     }
 }
 
 section.min-vh-100.bg-secondary {
     padding-bottom: 3.5rem;
+}
+
+.hideUnlisted .collectionLink { 
+    display: none;
+}
+
+.hideUnlisted .collectionLink.forSale {
+    display: revert;
+}
+
+.search {
+    width: 376px;
 }
