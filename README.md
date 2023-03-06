@@ -13,3 +13,15 @@ In addition, the homepage features collections in a random order.
 The collection data is taken from the [ordinal-collections](https://github.com/ordinals-wallet/ordinals-collections) repo.  
 
 In order to have your collection listed, create a pull request on the [ordinal-collections](https://github.com/ordinals-wallet/ordinals-collections) repo.
+
+## How to run Openordex in your localhost
+
+Build docker image
+```
+$ docker build -t openordex .
+```
+
+Run Openordex with docker
+```
+$ docker run -it -d -p 8080:80 openordex
+```
