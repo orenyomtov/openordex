@@ -848,6 +848,7 @@ async function collectionPage() {
         }
 
         document.getElementById('collectionName').textContent = collection.name
+        document.title = collection.name
         document.getElementById('supply').textContent = `${collection.inscriptions.length}/${collection.supply}`
         document.getElementById('collectionIcon').src = `${ordinalsExplorerUrl}/preview/${collection.inscription_icon}`
         document.getElementById('collectionDescription').textContent = collection.description.replaceAll("\n", "<br>")
