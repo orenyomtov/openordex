@@ -119,13 +119,10 @@
                                     </p>
                                 </div>
 
-                                <div class="justify-content-center align-items-center mt-4 text-center form-group form-check">
-                                    <label class="form-check-label" style="padding-left: 1.5rem">
-                                        <input class="form-check-input" type="checkbox" id="filterForSale" onchange="document.getElementById('inscriptionsContainer').classList.toggle('hideUnlisted')">
-                                        <span class="form-check-x"></span>
-                                        <span class="form-check-sign"></span>
-                                        Only show inscriptions listed for sale <span id="listingsLoading">(still loading...)</span>
-                                    </label>
+                                <div class="justify-content-center align-items-center mt-4 text-center" id="listingsLoading">
+                                    <p class="font-weight-normal text-muted" id="collectionDescription">
+                                        Loading listed inscriptions...
+                                    </p>
                                 </div>
                             </div>
                         </div>

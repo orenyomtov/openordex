@@ -258,6 +258,7 @@ function satsToFormattedDollarString(sats, _bitcoinPrice) {
 async function* getLatestOrders(limit, nostrLimit = 20, filters = {}) {
     await nostrRelay.connect()
     const latestOrders = []
+    const inscriptionDataCache = {}
 
     const orders = await nostrRelay.list([{
         kinds: [nostrOrderEventKind],
@@ -275,7 +276,8 @@ async function* getLatestOrders(limit, nostrLimit = 20, filters = {}) {
                 continue
             }
 
-            const inscriptionData = await getInscriptionDataById(inscriptionId)
+            const inscriptionData = inscriptionDataCache[inscriptionId] || await getInscriptionDataById(inscriptionId)
+            inscriptionDataCache[inscriptionId] = inscriptionData
             const validatedPrice = validateSellerPSBTAndExtractPrice(order.content, inscriptionData.output)
             if (!validatedPrice) {
                 continue
@@ -896,7 +898,8 @@ async function collectionPage() {
             button.textContent = order.title
 
             document.getElementById(`inscription_${order.inscriptionId}`).appendChild(button)
-            document.getElementById(`inscription_${order.inscriptionId}`).parentElement.parentElement.classList.add('forSale')
+            inscriptionElement = document.getElementById(`inscription_${order.inscriptionId}`).parentElement.parentElement
+            inscriptionElement.parentElement.insertBefore(inscriptionElement, inscriptionElement.parentElement.firstChild);
         }
     } catch (e) {
         console.error(e)
