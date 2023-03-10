@@ -1,0 +1,41 @@
+name: Create PR to update collections
+
+on:
+  schedule:
+    # run once a day, 6am
+    - cron:  '0 6 * * *'
+
+jobs:
+  update-collection:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Node.js LTS
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
+      - name: 🧰 Install dependencies
+        working-directory: scripts
+        run: npm install
+
+      - name: 🦫 Run update collections
+        working-directory: scripts
+        run: node updateCollections.js
+
+      - name: 🆕 Add changes to collections
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! [ -z "$(git status --porcelain)" ]; then
+            #gib access
+            git config user.name "GitHub Actions Bot"
+            git config user.email "<>"
+            git checkout -b $(date +'%Y-%m-%d')-update-collections
+            git add static/collections.json
+            git commit -m "static: update collections.json"
+            git push -u origin $(date +'%Y-%m-%d')-update-collections
+            gh pr create --title "Update collections $(date +'%m-%d')" --base main --body 'Created by Github Actions'
+          fi
