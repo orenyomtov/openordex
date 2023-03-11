@@ -1,3 +1,3 @@
 FROM nginx
 COPY . /usr/share/nginx/html
-EXPOSE 8022
+EXPOSE 8020
