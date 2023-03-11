@@ -52,14 +52,16 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      - name: Build Docker image
-        run: |
-          docker buildx create --name mybuilder
-          docker buildx use mybuilder
-          docker buildx build --platform ${{ matrix.platform }} -t ${{ env.IMAGE_NAME }}:latest .
-      - name: Publish Docker image
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: ${{ env.IMAGE_NAME }}:latest-${{ matrix.platform }}
+          platforms: ${{ matrix.platform }}
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/openordex:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/openordex:${{ matrix.platform }}
