@@ -63,5 +63,5 @@ jobs:
           push: true
           platforms: ${{ matrix.platform }}
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/openordex:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/openordex:${{ matrix.platform }}/latest
+            ${{ github.repository }}:latest
+            ${{ github.repository }}:${{ matrix.platform }}-latest
