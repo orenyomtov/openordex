@@ -23,6 +23,6 @@ $ docker build -t openordex .
 
 Run Openordex with docker
 ```
-$ docker run -it -d -p 8080:80 openordex
+$ docker run -it -d -p 8022:8022 openordex
 ```
 <img width="1057" alt="Screen Shot 2023-03-06 at 9 40 15 AM" src="https://user-images.githubusercontent.com/115091323/223142708-3eb0e8d7-08d7-4854-9d3f-32ddda7f975d.png">
