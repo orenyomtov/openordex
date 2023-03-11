@@ -64,4 +64,4 @@ jobs:
           platforms: ${{ matrix.platform }}
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/openordex:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/openordex:${{ matrix.platform }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/openordex:${{ matrix.platform }}/latest
