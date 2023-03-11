@@ -435,10 +435,9 @@ function satToBtc(sat) {
 }
 
 async function main() {
-    // bitcoinPrice = fetch(bitcoinPriceApiUrl)
-    //     .then(response => response.json())
-    //     .then(data => data.USD.last)
-    bitcoinPrice = 20000
+    bitcoinPrice = fetch(bitcoinPriceApiUrl)
+        .then(response => response.json())
+        .then(data => data.USD.last)
 
     if (window.NostrTools) {
         nostrRelay = window.NostrTools.relayInit(nostrRelayUrl)
