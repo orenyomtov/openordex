@@ -160,6 +160,16 @@
     "website_link": ""
   },
   {
+    "name": "Baby yORDas",
+    "slug": "baby-yordas",
+    "supply": "100",
+    "description": "100 Hand drawn pixel Baby yORDas with an inscription range of #303238-328095",
+    "twitter_link": "https://twitter.com/Babyyordas",
+    "discord_link": "https://discord.com/invite/6F3ckGmvJG",
+    "website_link": "",
+    "inscription_icon": "6fb4ac95ca992581b01c8f90621bf6b04dae3add62aec552f41c425b9b873739i0"
+  },
+  {
     "name": "Backpage Bitcoin",
     "inscription_icon": "7cfda85f84dc69802b6012cd16eaf4589852d0de863286bcff451bc2435a35c6i0",
     "supply": "8",
@@ -1641,7 +1651,7 @@
   },
   {
     "name": "Ordinal Beanz",
-    "inscription_icon": "e22f8e94a34d56dabe81c364437645853091578ab9ae5027ef6a4417b2927e79i0",
+    "inscription_icon": "a86a55859e4b873efde7fc06ec3141326e2f5c138bd49899a336fa610e71d9a2i0",
     "supply": "100",
     "slug": "ordinal-beanz",
     "description": "100 Ordinal Beanz are discovering the Bitcoin universe and looking for their BitGarden. Will they make it? It’s up to you to decide their faith!",
@@ -1916,7 +1926,7 @@
     "name": "Ordinal Kitties",
     "slug": "ordinal-kitties",
     "supply": "100",
-    "twitter_link": "",
+    "twitter_link": "https://twitter.com/ordinalkitties_",
     "website_link": ""
   },
   {
@@ -2511,13 +2521,13 @@
   },
   {
     "description": "The first ever airdrop on the Bitcoin network. 1563 rare Pixel Pepes airdropped to users who had made a transaction on ordinalswallet.com before block 777888.",
-    "discord_link": "",
+    "discord_link": "https://discord.gg/cbqwEXn3",
     "inscription_icon": "47c1d21c508f6d49dfde64d958f14acd041244e1bb616f9b78114b8d9dc7b945i0",
     "name": "Pixel Pepes",
     "slug": "pixel-pepes",
     "supply": "1563",
     "website_link": "",
-    "twitter_link": ""
+    "twitter_link": "https://twitter.com/PepesPixel"
   },
   {
     "name": "PixelQuote NFT",

@@ -67,6 +67,18 @@ Needed:          ${satToBtc(amount)} BTC`)
     return selectedUtxos
 }
 
+function base64ToHex(str) {
+    return atob(str).split("")
+        .map(c => c.charCodeAt(0).toString(16).padStart(2, "0"))
+        .join("");
+}
+
+async function getWalletAddress() {
+    if (typeof window.unisat !== 'undefined') {
+        return (await unisat.requestAccounts())[0]
+    }
+}
+
 function removeHashFromUrl() {
     const uri = window.location.toString();
 
@@ -323,6 +335,42 @@ function downloadInput(inputId, filename) {
     hiddenElement.click();
 }
 
+async function signPSBTUsingWallet(inputId, signedInputId) {
+    const input = document.getElementById(inputId)
+    const signedInput = document.getElementById(signedInputId)
+
+    try {
+        await unisat.requestAccounts()
+        signedInput.value = await unisat.signPsbt(base64ToHex(input.value))
+    } catch (e) {
+        console.error(e)
+        alert(e.message)
+    }
+}
+
+async function signPSBTUsingWalletAndBroadcast(inputId) {
+    const input = document.getElementById(inputId)
+
+    try {
+        await unisat.requestAccounts()
+        const signedPsbt = await unisat.signPsbt(base64ToHex(input.value))
+        const txHex = bitcoin.Psbt.fromHex(signedPsbt).extractTransaction().toHex()
+        
+        const res = await fetch(`${baseMempoolApiUrl}/tx`, { method: 'post', body: txHex })
+        if (res.status != 200) {
+            return alert(`Mempool API returned ${res.status} ${res.statusText}\n\n${await res.text()}`)
+        }
+
+        const txId = res.text()
+        alert('Transaction signed and broadcasted to mempool successfully')
+        window.open(`${baseMempoolUrl}/tx/${txId}`, "_blank")
+    } catch (e) {
+        console.error(e)
+        alert(e)
+    }
+}
+
+
 async function getInscriptionDataById(inscriptionId, verifyIsInscriptionNumber) {
     const html = await fetch(ordinalsExplorerUrl + "/inscription/" + inscriptionId)
         .then(response => response.text())
@@ -387,9 +435,10 @@ function satToBtc(sat) {
 }
 
 async function main() {
-    bitcoinPrice = fetch(bitcoinPriceApiUrl)
-        .then(response => response.json())
-        .then(data => data.USD.last)
+    // bitcoinPrice = fetch(bitcoinPriceApiUrl)
+    //     .then(response => response.json())
+    //     .then(data => data.USD.last)
+    bitcoinPrice = 20000
 
     if (window.NostrTools) {
         nostrRelay = window.NostrTools.relayInit(nostrRelayUrl)
@@ -511,6 +560,10 @@ async function inscriptionPage() {
         }
 
         document.getElementById('generatedSalePsbt').value = psbt
+
+        if (typeof window.unisat !== 'undefined') {
+            document.getElementById('btnSignWithWallet').style.display = 'revert'
+        }
     }
 
     submitSignedSalePsbt = async () => {
@@ -539,6 +592,8 @@ async function inscriptionPage() {
                 }
 
                 signedSalePsbt = signedSalePsbt.toBase64()
+            } else if (signedContent.match(/^[0-9a-fA-F]+$/)) {
+                signedSalePsbt = bitcoin.Psbt.fromHex(signedContent, { network }).toBase64()
             } else {
                 signedSalePsbt = document.getElementById('signedSalePsbt').value
             }
@@ -546,6 +601,7 @@ async function inscriptionPage() {
             try {
                 bitcoin.Psbt.fromBase64(signedSalePsbt, { network }).extractTransaction(true)
             } catch (e) {
+                console.error(e)
                 if (e.message == 'Not finalized') {
                     return alert('Please sign and finalize the PSBT before submitting it')
                 } else if (e.message != 'Outputs are spending more than Inputs') {
@@ -577,11 +633,11 @@ async function inscriptionPage() {
     }
 
     buyInscriptionNow = async () => {
-        document.getElementById('payerAddress').value = localStorage.getItem('payerAddress') || ''
+        document.getElementById('payerAddress').value = localStorage.getItem('payerAddress') || await getWalletAddress() || ''
         if (document.getElementById('payerAddress').value) {
             updatePayerAddress()
         }
-        document.getElementById('receiverAddress').value = localStorage.getItem('receiverAddress') || ''
+        document.getElementById('receiverAddress').value = localStorage.getItem('receiverAddress') || await getWalletAddress() || ''
 
         document.getElementById('buyDialog').showModal()
     }
@@ -798,6 +854,9 @@ Missing:     ${satToBtc(-changeValue)} BTC`
         document.getElementById('generatedBuyPsbt').value = psbt;
         (new QRCode('buyPsbtQrCode', { width: 300, height: 300, correctLevel: QRCode.CorrectLevel.L })).makeCode(psbt)
 
+        if (typeof window.unisat !== 'undefined') {
+            document.getElementById('btnBuySignWithWalletAndBroadcast').style.display = 'revert'
+        }
 
         const payerCurrentMempoolTxIds = await getAddressMempoolTxIds(payerAddress)
         const interval = setInterval(async () => {
