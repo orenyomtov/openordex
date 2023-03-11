@@ -64,4 +64,4 @@ jobs:
           platforms: ${{ matrix.platform }}
           tags: |
             ${{ github.repository }}:latest
-            ${{ github.repository }}:${{ matrix.platform }}-latest
+            ${{ github.repository }}:${{ matrix.platform }}-latest-${{ github.sha }}
