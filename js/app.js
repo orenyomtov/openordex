@@ -64,7 +64,7 @@ async function selectUtxos(utxos, amount, vins, vouts, recommendedFeeRate, inscr
 
         estimatedFee = calculateFee(vins + takerUtxos.length + paddingUtxos.length, vouts + additionalVouts, recommendedFeeRate)
 
-        if (inscriptionOutputValue - estimatedFee + paddingUtxosAmount < 2000  && (utxo.value < amount || takerUtxosAmount > amount)) {
+        if (inscriptionOutputValue - estimatedFee + paddingUtxosAmount < 2000) {
             paddingUtxos.push(utxo)
             paddingUtxosAmount += utxo.value
             if (!takerPaddingRequired) {
@@ -664,7 +664,6 @@ async function inscriptionPage() {
                 index: utxo.vout,
                 nonWitnessUtxo: bitcoin.Transaction.fromHex(await getTxHexById(utxo.txid)).toBuffer()
             })
-            inputsTotalValue += utxo.value
         }
 
         let inscriptionUtxoValue = Number(inscription['output value'])
@@ -688,22 +687,19 @@ async function inscriptionPage() {
         // add change outputs
         let sumOfTakerUtxos = 0
         takerUtxos.forEach(u => sumOfTakerUtxos += u.value)
-
-
+        let remainingTakerUtxoChange = sumOfTakerUtxos - price
 
         for (let i = 0; i < takerUtxos.length; i++) {
-            let remainingTakerUtxoValue = sumOfTakerUtxos
             if (i < takerUtxos.length - 1) {
                 psbt.addOutput({
                     address: payerAddress,
-                    value: Number(Math.ceil((sumOfTakerUtxos - price) / takerUtxos.length))
+                    value: Math.ceil((sumOfTakerUtxos - price) / takerUtxos.length)
                 })
-                outputsTotalValue += Number(Math.ceil((sumOfTakerUtxos - price) / takerUtxos.length))
-                remainingTakerUtxoValue = remainingTakerUtxoValue - Math.ceil((sumOfTakerUtxos - price) / takerUtxos.length)
+                remainingTakerUtxoChange -= Math.ceil((sumOfTakerUtxos - price) / takerUtxos.length)
             } else {
                 psbt.addOutput({
                     address: payerAddress,
-                    value: remainingTakerUtxoValue - price
+                    value: remainingTakerUtxoChange
                 })
             }
         }
