@@ -8,12 +8,12 @@ const nostrRelayUrl = 'wss://nostr.openordex.org'
 const collectionsRepo = "ordinals-wallet/ordinals-collections"
 const exchangeName = 'openordex'
 const feeLevel = "hourFee" // "fastestFee" || "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
-const dummyUtxoValue = 1_000
 const nostrOrderEventKind = 802
 const txHexByIdCache = {}
 const urlParams = new URLSearchParams(window.location.search)
-const numberOfDummyUtxosToCreate = 1
 
+let takerUtxos = []
+let paddingUtxos = []
 let inscriptionIdentifier = urlParams.get('number')
 let collectionSlug = urlParams.get('slug')
 let inscriptionNumber
@@ -22,7 +22,6 @@ let recommendedFeeRate
 let sellerSignedPsbt
 let network
 let payerUtxos
-let dummyUtxo
 let paymentUtxos
 let inscription
 let nostrRelay
@@ -33,38 +32,66 @@ let generateSalePsbt
 let submitSignedSalePsbt
 let buyInscriptionNow
 let updatePayerAddress
-let generateDummyUtxos
-let generatePSBTGeneratingDummyUtxos
 let btnBuyInscriptionNow
 
 
-async function selectUtxos(utxos, amount, vins, vouts, recommendedFeeRate) {
-    const selectedUtxos = []
-    let selectedAmount = 0
+async function selectUtxos(utxos, amount, vins, vouts, recommendedFeeRate, inscription) {
+    takerUtxos = []
+    paddingUtxos = []
+    takerUtxos.length = 0
+    paddingUtxos.length = 0
+    let takerUtxosAmount = 0
+    let paddingUtxosAmount = 0
+    let additionalVouts = 0
+    let takerPaddingRequired = false
+    let estimatedFee = 0
+    let inscriptionOutputValue = Number(inscription["output value"])
 
-    // Sort descending by value, and filter out dummy utxos
-    utxos = utxos.filter(x => x.value > dummyUtxoValue).sort((a, b) => b.value - a.value)
+    // Sort descending by value greater than amount
+    utxos = utxos.filter(x => x.value).sort((a, b) => b.value - a.value)
 
     for (const utxo of utxos) {
+
         // Never spend a utxo that contains an inscription for cardinal purposes
+        console.log(utxos)
         if (await doesUtxoContainInscription(utxo)) {
             continue
         }
-        selectedUtxos.push(utxo)
-        selectedAmount += utxo.value
 
-        if (selectedAmount >= amount + dummyUtxoValue + calculateFee(vins + selectedUtxos.length, vouts, recommendedFeeRate)) {
+        estimatedFee = calculateFee(vins + takerUtxos.length + paddingUtxos.length, vouts + additionalVouts, recommendedFeeRate)
+
+        if (inscriptionOutputValue - estimatedFee + paddingUtxosAmount < 2000) {
+            paddingUtxos.push(utxo)
+            paddingUtxosAmount += utxo.value
+            if (!takerPaddingRequired) {
+                takerPaddingRequired = true
+                additionalVouts++
+            }
+        } else if (takerUtxosAmount < amount) {
+            takerUtxos.push(utxo)
+            takerUtxosAmount += utxo.value
+            additionalVouts++
+        }
+
+        if (amount < takerUtxosAmount && inscriptionOutputValue + paddingUtxosAmount - estimatedFee > 2546) {
             break
         }
+
     }
 
-    if (selectedAmount < amount) {
+    if (inscriptionOutputValue + paddingUtxosAmount - estimatedFee < 2546) {
+        throw new Error(`Not enough cardinal spendable funds to support the necessary padding.
+Address has:  ${satToBtc(paddingUtxosAmount)} BTC to pad the inscription
+Needed:          ${satToBtc(5546 - inscriptionOutputValue + calculateFee(vins + takerUtxos.length + paddingUtxos.length + 1, vouts + additionalVouts, recommendedFeeRate))} BTC`)
+    }
+
+    if (takerUtxosAmount < amount + 546) {
         throw new Error(`Not enough cardinal spendable funds.
-Address has:  ${satToBtc(selectedAmount)} BTC
-Needed:          ${satToBtc(amount)} BTC`)
+Address has:  ${satToBtc(takerUtxosAmount)} BTC
+Needed:          ${satToBtc(amount + estimatedFee)} BTC`)
     }
 
-    return selectedUtxos
+    return [takerUtxos, paddingUtxos]
 }
 
 function base64ToHex(str) {
@@ -355,7 +382,7 @@ async function signPSBTUsingWalletAndBroadcast(inputId) {
         await unisat.requestAccounts()
         const signedPsbt = await unisat.signPsbt(base64ToHex(input.value))
         const txHex = bitcoin.Psbt.fromHex(signedPsbt).extractTransaction().toHex()
-        
+
         const res = await fetch(`${baseMempoolApiUrl}/tx`, { method: 'post', body: txHex })
         if (res.status != 200) {
             return alert(`Mempool API returned ${res.status} ${res.statusText}\n\n${await res.text()}`)
@@ -492,10 +519,6 @@ async function inscriptionPage() {
 
     for (const span of document.getElementsByClassName('inscriptionNumber')) {
         span.textContent = inscriptionNumber;
-    }
-
-    for (const span of document.getElementsByClassName('dummyUtxoValue')) {
-        span.textContent = dummyUtxoValue;
     }
 
     document.getElementById('preview').src = `${ordinalsExplorerUrl}/preview/${inscriptionID}`;
@@ -641,26 +664,6 @@ async function inscriptionPage() {
         document.getElementById('buyDialog').showModal()
     }
 
-    function hideDummyUtxoElements() {
-        for (const el of document.getElementsByClassName('notDummy')) {
-            el.style.display = 'revert'
-        }
-
-        for (const el of document.getElementsByClassName('dummy')) {
-            el.style.display = 'none'
-        }
-    }
-
-    function showDummyUtxoElements() {
-        for (const el of document.getElementsByClassName('notDummy')) {
-            el.style.display = 'none'
-        }
-
-        for (const el of document.getElementsByClassName('dummy')) {
-            el.style.display = 'revert'
-        }
-    }
-
     updatePayerAddress = async () => {
         const payerAddress = document.getElementById('payerAddress').value
         document.getElementById('receiverAddress').placeholder = payerAddress;
@@ -672,43 +675,17 @@ async function inscriptionPage() {
         } catch (e) {
             document.getElementById('payerAddress').classList.add('is-invalid')
             document.getElementById('btnBuyInscription').disabled = true
-            hideDummyUtxoElements()
             return console.error(e)
         } finally {
             document.getElementById('loadingUTXOs').style.display = 'none'
         }
 
-        const potentialDummyUtxos = payerUtxos.filter(utxo => utxo.value <= dummyUtxoValue)
-        dummyUtxo = undefined
-
-        for (const potentialDummyUtxo of potentialDummyUtxos) {
-            if (!(await doesUtxoContainInscription(potentialDummyUtxo))) {
-                hideDummyUtxoElements()
-                dummyUtxo = potentialDummyUtxo
-                break
-            }
-        }
-
-        let minimumValueRequired
-        let vins
-        let vouts
-
-        if (!dummyUtxo) {
-            showDummyUtxoElements()
-
-            minimumValueRequired = (numberOfDummyUtxosToCreate * dummyUtxoValue)
-            vins = 0
-            vouts = numberOfDummyUtxosToCreate
-        } else {
-            hideDummyUtxoElements()
-
-            minimumValueRequired = price + (numberOfDummyUtxosToCreate * dummyUtxoValue)
-            vins = 1
-            vouts = 2 + numberOfDummyUtxosToCreate
-        }
+        let minimumValueRequired = price
+        let vins = 2
+        let vouts = 3
 
         try {
-            paymentUtxos = await selectUtxos(payerUtxos, minimumValueRequired, vins, vouts, await recommendedFeeRate)
+            const [takerUtxos, paddingUtxos] = await selectUtxos(payerUtxos, minimumValueRequired, vins, vouts, await recommendedFeeRate, inscription)
         } catch (e) {
             paymentUtxos = undefined
             console.error(e)
@@ -721,126 +698,97 @@ async function inscriptionPage() {
         document.getElementById('btnBuyInscription').disabled = false
     }
 
-    document.getElementById('btnGenerateDummyUtxos').onclick = async () => {
-        const payerAddress = document.getElementById('payerAddress').value
 
-        psbt = await generatePSBTGeneratingDummyUtxos(payerAddress, numberOfDummyUtxosToCreate, paymentUtxos)
 
-        await displayBuyPsbt(psbt, payerAddress, `Sign and broadcast this transaction to create a dummy UTXO`, `Dummy UTXO created successfully! Refresh the page to buy the inscription.`)
-    }
-
-    generatePSBTGeneratingDummyUtxos = async (payerAddress, numberOfDummyUtxosToCreate, payerUtxos) => {
+    generatePSBTBuyingInscription = async (payerAddress, receiverAddress, price, takerUtxos, paddingUtxos) => {
         const psbt = new bitcoin.Psbt({ network });
-        let totalValue = 0
 
-        for (const utxo of payerUtxos) {
-            const tx = bitcoin.Transaction.fromHex(await getTxHexById(utxo.txid))
-            for (const output in tx.outs) {
-                try { tx.setWitness(parseInt(output), []) } catch { }
-            }
+        // add payment inputs
+        for (utxo of takerUtxos) {
             psbt.addInput({
                 hash: utxo.txid,
                 index: utxo.vout,
-                nonWitnessUtxo: tx.toBuffer(),
-                // witnessUtxo: tx.outs[utxo.vout],
-            });
-
-            totalValue += utxo.value
+                nonWitnessUtxo: bitcoin.Transaction.fromHex(await getTxHexById(utxo.txid)).toBuffer()
+            })
         }
 
-        for (let i = 0; i < numberOfDummyUtxosToCreate; i++) {
-            psbt.addOutput({
-                address: payerAddress,
-                value: dummyUtxoValue,
-            });
-        }
+        let inscriptionUtxoValue = Number(inscription['output value'])
 
-        const fee = calculateFee(psbt.txInputs.length, psbt.txOutputs.length, await recommendedFeeRate)
-
-        // Change utxo
-        psbt.addOutput({
-            address: payerAddress,
-            value: totalValue - (numberOfDummyUtxosToCreate * dummyUtxoValue) - fee,
-        });
-
-        return psbt.toBase64();
-    }
-
-    generatePSBTBuyingInscription = async (payerAddress, receiverAddress, price, paymentUtxos, dummyUtxo) => {
-        const psbt = new bitcoin.Psbt({ network });
-        let totalValue = 0
-        let totalPaymentValue = 0
-
-        // Add dummy utxo input
-        const tx = bitcoin.Transaction.fromHex(await getTxHexById(dummyUtxo.txid))
-        for (const output in tx.outs) {
-            try { tx.setWitness(parseInt(output), []) } catch { }
-        }
-        psbt.addInput({
-            hash: dummyUtxo.txid,
-            index: dummyUtxo.vout,
-            nonWitnessUtxo: tx.toBuffer(),
-            // witnessUtxo: tx.outs[dummyUtxo.vout],
-        });
-
-        // Add inscription output
-        psbt.addOutput({
-            address: receiverAddress,
-            value: dummyUtxo.value + Number(inscription['output value']),
-        });
-
-        // Add payer signed input
+        // add inscription input
         psbt.addInput({
             ...sellerSignedPsbt.data.globalMap.unsignedTx.tx.ins[0],
             ...sellerSignedPsbt.data.inputs[0]
         })
-        // Add payer output
-        psbt.addOutput({
-            ...sellerSignedPsbt.data.globalMap.unsignedTx.tx.outs[0],
-        })
 
-        // Add payment utxo inputs
-        for (const utxo of paymentUtxos) {
-            const tx = bitcoin.Transaction.fromHex(await getTxHexById(utxo.txid))
-            for (const output in tx.outs) {
-                try { tx.setWitness(parseInt(output), []) } catch { }
-            }
 
+        // add padding inputs
+        for (utxo of paddingUtxos) {
             psbt.addInput({
                 hash: utxo.txid,
                 index: utxo.vout,
-                nonWitnessUtxo: tx.toBuffer(),
-                // witnessUtxo: tx.outs[utxo.vout],
-            });
-
-            totalValue += utxo.value
-            totalPaymentValue += utxo.value
+                nonWitnessUtxo: bitcoin.Transaction.fromHex(await getTxHexById(utxo.txid)).toBuffer()
+            })
         }
 
-        // Create a new dummy utxo output for the next purchase
+        // add change outputs
+        let sumOfTakerUtxos = 0
+        takerUtxos.forEach(u => sumOfTakerUtxos += u.value)
+        let remainingTakerUtxoChange = sumOfTakerUtxos - price
+
+        for (let i = 0; i < takerUtxos.length; i++) {
+            if (i < takerUtxos.length - 1) {
+                psbt.addOutput({
+                    address: payerAddress,
+                    value: Math.ceil((sumOfTakerUtxos - price) / takerUtxos.length)
+                })
+                remainingTakerUtxoChange -= Math.ceil((sumOfTakerUtxos - price) / takerUtxos.length)
+            } else {
+                psbt.addOutput({
+                    address: payerAddress,
+                    value: remainingTakerUtxoChange
+                })
+            }
+        }
+
+        // add payment output
         psbt.addOutput({
-            address: payerAddress,
-            value: dummyUtxoValue,
+            ...sellerSignedPsbt.data.globalMap.unsignedTx.tx.outs[0]
         })
 
+
+
         const fee = calculateFee(psbt.txInputs.length, psbt.txOutputs.length, await recommendedFeeRate)
+        let remainingPaddingValue = 0
+        paddingUtxos.forEach(u => remainingPaddingValue += u.value)
 
-        const changeValue = totalValue - dummyUtxo.value - price - fee
+        // If no added padding available, and safe to send with current fee, then send
+        if (!paddingUtxos.length && inscriptionUtxoValue - fee > 2000) {
+            psbt.addOutput({
+                address: receiverAddress,
+                value: inscriptionUtxoValue - fee
+            })
+        // If safe to proceed with available padding, then send
+        } else if (inscriptionUtxoValue + remainingPaddingValue - fee < 10000 && inscriptionUtxoValue + remainingPaddingValue - fee > 2000) {
+            psbt.addOutput({
+                address: receiverAddress,
+                value: inscriptionUtxoValue + remainingPaddingValue - fee
+            })
+        // If padding available to reset the 10k threshold, reset and spend change to receiver
+        } else if (inscriptionUtxoValue + remainingPaddingValue - fee > 10000) {
+            psbt.addOutput({
+                address: receiverAddress,
+                value: inscriptionUtxoValue > 10000 ? inscriptionUtxoValue : 10000
+            })
 
-        if (changeValue < 0) {
-            throw `Your wallet address doesn't have enough funds to buy this inscription.
-Price:          ${satToBtc(price)} BTC
-Fees:       ${satToBtc(fee + dummyUtxoValue)} BTC
-You have:   ${satToBtc(totalPaymentValue)} BTC
-Required:   ${satToBtc(totalValue - changeValue)} BTC
-Missing:     ${satToBtc(-changeValue)} BTC`
+            remainingPaddingValue -= (10000 - inscriptionUtxoValue) + fee
+
+            psbt.addOutput({
+                address: receiverAddress,
+                value: remainingPaddingValue - fee
+            })
+        } else {
+            throw new Error(`Fee markets are currently very volatile.  Please add additional funds or wait.`)
         }
-
-        // Change utxo
-        psbt.addOutput({
-            address: payerAddress,
-            value: changeValue,
-        });
 
         return psbt.toBase64();
     }
@@ -875,7 +823,7 @@ See transaction details on <a href="${baseMempoolUrl}/tx/${txId}" target="_blank
         const payerAddress = document.getElementById('payerAddress').value
 
         try {
-            psbt = await generatePSBTBuyingInscription(payerAddress, receiverAddress, price, paymentUtxos, dummyUtxo)
+            psbt = await generatePSBTBuyingInscription(payerAddress, receiverAddress, price, takerUtxos, paddingUtxos)
         } catch (e) {
             return alert(e)
         }
