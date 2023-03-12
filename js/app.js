@@ -8,12 +8,9 @@ const nostrRelayUrl = 'wss://nostr.openordex.org'
 const collectionsRepo = "ordinals-wallet/ordinals-collections"
 const exchangeName = 'openordex'
 const feeLevel = "hourFee" // "fastestFee" || "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
-const dummyUtxoValue = 1_000
 const nostrOrderEventKind = 802
 const txHexByIdCache = {}
 const urlParams = new URLSearchParams(window.location.search)
-const numberOfDummyUtxosToCreate = 1
-
 
 let takerUtxos = []
 let paddingUtxos = []
@@ -25,7 +22,6 @@ let recommendedFeeRate
 let sellerSignedPsbt
 let network
 let payerUtxos
-let dummyUtxo
 let paymentUtxos
 let inscription
 let nostrRelay
@@ -36,8 +32,6 @@ let generateSalePsbt
 let submitSignedSalePsbt
 let buyInscriptionNow
 let updatePayerAddress
-let generateDummyUtxos
-let generatePSBTGeneratingDummyUtxos
 let btnBuyInscriptionNow
 
 
@@ -57,7 +51,9 @@ async function selectUtxos(utxos, amount, vins, vouts, recommendedFeeRate, inscr
     utxos = utxos.filter(x => x.value).sort((a, b) => b.value - a.value)
 
     for (const utxo of utxos) {
+
         // Never spend a utxo that contains an inscription for cardinal purposes
+        console.log(utxos)
         if (await doesUtxoContainInscription(utxo)) {
             continue
         }
@@ -96,6 +92,18 @@ Needed:          ${satToBtc(amount + estimatedFee)} BTC`)
     }
 
     return [takerUtxos, paddingUtxos]
+}
+
+function base64ToHex(str) {
+    return atob(str).split("")
+        .map(c => c.charCodeAt(0).toString(16).padStart(2, "0"))
+        .join("");
+}
+
+async function getWalletAddress() {
+    if (typeof window.unisat !== 'undefined') {
+        return (await unisat.requestAccounts())[0]
+    }
 }
 
 function removeHashFromUrl() {
@@ -159,7 +167,7 @@ function validateSellerPSBTAndExtractPrice(sellerSignedPsbtBase64, utxo) {
     }
 }
 
-function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionUtxo, priceInSats) {
+function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionNumber, inscriptionUtxo, priceInSats) {
     return new Promise(async (resolve, reject) => {
         try {
             await nostrRelay.connect()
@@ -175,6 +183,7 @@ function publishSellerPsbt(signedSalePsbt, inscriptionId, inscriptionUtxo, price
                     ['n', networkName], // Network name (e.g. "mainnet", "signet")
                     ['t', 'sell'], // Type of order (e.g. "sell", "buy")
                     ['i', inscriptionId], // Inscription ID
+                    ['m', inscriptionNumber], // Inscription number
                     ['u', inscriptionUtxo], // Inscription UTXO
                     ['s', priceInSats.toString()], // Price in sats
                     ['x', exchangeName], // Exchange name (e.g. "openordex")
@@ -255,6 +264,10 @@ async function getInscriptionIdByNumber(inscriptionNumber) {
 }
 
 async function getCollection(collectionSlug) {
+    if (collectionSlug == 'under-1k') {
+        return await fetch(`/static/under-1k.json`).then(response => response.json())
+    }
+
     const [meta, inscriptions] = await Promise.all([
         fetch(`https://raw.githubusercontent.com/${collectionsRepo}/main/collections/${collectionSlug}/meta.json`)
             .then(response => response.json()),
@@ -281,13 +294,15 @@ function satsToFormattedDollarString(sats, _bitcoinPrice) {
     })
 }
 
-async function* getLatestOrders(limit, nostrLimit = 20) {
+async function* getLatestOrders(limit, nostrLimit = 20, filters = {}) {
     await nostrRelay.connect()
     const latestOrders = []
+    const inscriptionDataCache = {}
 
     const orders = await nostrRelay.list([{
         kinds: [nostrOrderEventKind],
         limit: nostrLimit,
+        ...filters,
     }])
 
     for (const order of orders) {
@@ -300,7 +315,8 @@ async function* getLatestOrders(limit, nostrLimit = 20) {
                 continue
             }
 
-            const inscriptionData = await getInscriptionDataById(inscriptionId)
+            const inscriptionData = inscriptionDataCache[inscriptionId] || await getInscriptionDataById(inscriptionId)
+            inscriptionDataCache[inscriptionId] = inscriptionData
             const validatedPrice = validateSellerPSBTAndExtractPrice(order.content, inscriptionData.output)
             if (!validatedPrice) {
                 continue
@@ -345,6 +361,42 @@ function downloadInput(inputId, filename) {
     hiddenElement.download = filename;
     hiddenElement.click();
 }
+
+async function signPSBTUsingWallet(inputId, signedInputId) {
+    const input = document.getElementById(inputId)
+    const signedInput = document.getElementById(signedInputId)
+
+    try {
+        await unisat.requestAccounts()
+        signedInput.value = await unisat.signPsbt(base64ToHex(input.value))
+    } catch (e) {
+        console.error(e)
+        alert(e.message)
+    }
+}
+
+async function signPSBTUsingWalletAndBroadcast(inputId) {
+    const input = document.getElementById(inputId)
+
+    try {
+        await unisat.requestAccounts()
+        const signedPsbt = await unisat.signPsbt(base64ToHex(input.value))
+        const txHex = bitcoin.Psbt.fromHex(signedPsbt).extractTransaction().toHex()
+        
+        const res = await fetch(`${baseMempoolApiUrl}/tx`, { method: 'post', body: txHex })
+        if (res.status != 200) {
+            return alert(`Mempool API returned ${res.status} ${res.statusText}\n\n${await res.text()}`)
+        }
+
+        const txId = res.text()
+        alert('Transaction signed and broadcasted to mempool successfully')
+        window.open(`${baseMempoolUrl}/tx/${txId}`, "_blank")
+    } catch (e) {
+        console.error(e)
+        alert(e)
+    }
+}
+
 
 async function getInscriptionDataById(inscriptionId, verifyIsInscriptionNumber) {
     const html = await fetch(ordinalsExplorerUrl + "/inscription/" + inscriptionId)
@@ -469,10 +521,6 @@ async function inscriptionPage() {
         span.textContent = inscriptionNumber;
     }
 
-    for (const span of document.getElementsByClassName('dummyUtxoValue')) {
-        span.textContent = dummyUtxoValue;
-    }
-
     document.getElementById('preview').src = `${ordinalsExplorerUrl}/preview/${inscriptionID}`;
 
     document.getElementById('inscriptionId').value = inscription.id;
@@ -534,6 +582,10 @@ async function inscriptionPage() {
         }
 
         document.getElementById('generatedSalePsbt').value = psbt
+
+        if (typeof window.unisat !== 'undefined') {
+            document.getElementById('btnSignWithWallet').style.display = 'revert'
+        }
     }
 
     submitSignedSalePsbt = async () => {
@@ -562,6 +614,8 @@ async function inscriptionPage() {
                 }
 
                 signedSalePsbt = signedSalePsbt.toBase64()
+            } else if (signedContent.match(/^[0-9a-fA-F]+$/)) {
+                signedSalePsbt = bitcoin.Psbt.fromHex(signedContent, { network }).toBase64()
             } else {
                 signedSalePsbt = document.getElementById('signedSalePsbt').value
             }
@@ -569,6 +623,7 @@ async function inscriptionPage() {
             try {
                 bitcoin.Psbt.fromBase64(signedSalePsbt, { network }).extractTransaction(true)
             } catch (e) {
+                console.error(e)
                 if (e.message == 'Not finalized') {
                     return alert('Please sign and finalize the PSBT before submitting it')
                 } else if (e.message != 'Outputs are spending more than Inputs') {
@@ -580,7 +635,7 @@ async function inscriptionPage() {
 
             if (document.getElementById('publicPsbt').checked) {
                 try {
-                    await publishSellerPsbt(signedSalePsbt, inscription.id, inscription.output, btcToSat(price))
+                    await publishSellerPsbt(signedSalePsbt, inscription.id, inscription.number, inscription.output, btcToSat(price))
                     removeHashFromUrl()
                     return window.location.reload()
                 } catch (e) {
@@ -600,11 +655,11 @@ async function inscriptionPage() {
     }
 
     buyInscriptionNow = async () => {
-        document.getElementById('payerAddress').value = localStorage.getItem('payerAddress') || ''
+        document.getElementById('payerAddress').value = localStorage.getItem('payerAddress') || await getWalletAddress() || ''
         if (document.getElementById('payerAddress').value) {
             updatePayerAddress()
         }
-        document.getElementById('receiverAddress').value = localStorage.getItem('receiverAddress') || ''
+        document.getElementById('receiverAddress').value = localStorage.getItem('receiverAddress') || await getWalletAddress() || ''
 
         document.getElementById('buyDialog').showModal()
     }
@@ -625,9 +680,6 @@ async function inscriptionPage() {
             document.getElementById('loadingUTXOs').style.display = 'none'
         }
 
-        const potentialDummyUtxos = payerUtxos.filter(utxo => utxo.value <= dummyUtxoValue)
-        dummyUtxo = undefined
-
         let minimumValueRequired = price
         let vins = 2
         let vouts = 3
@@ -646,13 +698,7 @@ async function inscriptionPage() {
         document.getElementById('btnBuyInscription').disabled = false
     }
 
-    document.getElementById('btnGenerateDummyUtxos').onclick = async () => {
-        const payerAddress = document.getElementById('payerAddress').value
-
-        psbt = await generatePSBTGeneratingDummyUtxos(payerAddress, numberOfDummyUtxosToCreate, paymentUtxos)
-
-        await displayBuyPsbt(psbt, payerAddress, `Sign and broadcast this transaction to create a dummy UTXO`, `Dummy UTXO created successfully! Refresh the page to buy the inscription.`)
-    }
+    
 
     generatePSBTBuyingInscription = async (payerAddress, receiverAddress, price, takerUtxos, paddingUtxos) => {
         const psbt = new bitcoin.Psbt({ network });
@@ -756,6 +802,9 @@ async function inscriptionPage() {
         document.getElementById('generatedBuyPsbt').value = psbt;
         (new QRCode('buyPsbtQrCode', { width: 300, height: 300, correctLevel: QRCode.CorrectLevel.L })).makeCode(psbt)
 
+        if (typeof window.unisat !== 'undefined') {
+            document.getElementById('btnBuySignWithWalletAndBroadcast').style.display = 'revert'
+        }
 
         const payerCurrentMempoolTxIds = await getAddressMempoolTxIds(payerAddress)
         const interval = setInterval(async () => {
@@ -773,6 +822,7 @@ See transaction details on <a href="${baseMempoolUrl}/tx/${txId}" target="_blank
     document.getElementById('btnBuyInscription').onclick = async () => {
         const receiverAddress = document.getElementById('receiverAddress').value || document.getElementById('receiverAddress').placeholder
         const payerAddress = document.getElementById('payerAddress').value
+
         try {
             psbt = await generatePSBTBuyingInscription(payerAddress, receiverAddress, price, takerUtxos, paddingUtxos)
         } catch (e) {
@@ -807,6 +857,7 @@ async function collectionPage() {
         }
 
         document.getElementById('collectionName').textContent = collection.name
+        document.title = collection.name
         document.getElementById('supply').textContent = `${collection.inscriptions.length}/${collection.supply}`
         document.getElementById('collectionIcon').src = `${ordinalsExplorerUrl}/preview/${collection.inscription_icon}`
         document.getElementById('collectionDescription').textContent = collection.description.replaceAll("\n", "<br>")
@@ -830,12 +881,13 @@ async function collectionPage() {
             const inscriptionElement = document.createElement('a')
             inscriptionElement.href = `/inscription.html?number=${inscription.id}`
             inscriptionElement.target = `_blank`
+            inscriptionElement.className = `collectionLink`
             inscriptionElement.innerHTML = `
                 <div class="card card-tertiary w-100 fmxw-300">
                     <div class="card-header text-center">
                         <span id="inscriptionName">${sanitizeHTML(inscription.meta.name)}</span>
                     </div>
-                    <div class="card-body" style="padding: 6px 7px 7px 7px">
+                    <div class="card-body" style="padding: 6px 7px 7px 7px" id="inscription_${inscription.id}">
                         <iframe style="pointer-events: none" sandbox=allow-scripts
                             scrolling=no loading=lazy
                             src="${ordinalsExplorerUrl}/preview/${inscription.id.replaceAll('"', '')}"></iframe>
@@ -843,40 +895,64 @@ async function collectionPage() {
                 </div>`
             inscriptionsContainer.appendChild(inscriptionElement)
         }
+
+        const orders = getLatestOrders(collection.inscriptions.length, collection.inscriptions.length * 2, { "#i": collection.inscriptions.map(x => x.id) })
+
+        for await (const order of orders) {
+            const button = document.createElement('button')
+            button.className = "btn btn-block btn-primary mt-2"
+            button.setAttribute('style', 'max-width:185px; max-height: revert')
+            button.textContent = order.title
+
+            document.getElementById(`inscription_${order.inscriptionId}`).appendChild(button)
+            inscriptionElement = document.getElementById(`inscription_${order.inscriptionId}`).parentElement.parentElement
+            inscriptionElement.parentElement.insertBefore(inscriptionElement, inscriptionElement.parentElement.firstChild);
+        }
     } catch (e) {
         console.error(e)
         alert(`Error fetching collection ${collectionSlug}:\n` + e.message)
+    } finally {
+        document.getElementById('listingsLoading').style.display = 'none'
     }
 }
 
-async function loadCollections(limit) {
+function displayCollections(displayedCollections) {
+    const collectionsContainer = document.getElementById('collectionsContainer')
+    collectionsContainer.innerHTML = ''
+
+    for (const collection of displayedCollections) {
+        const collectionElement = document.createElement('a')
+        collectionElement.href = `/collection.html?slug=${collection.slug}`
+        collectionElement.target = `_blank`
+        collectionElement.innerHTML = `
+            <div class="card card-tertiary w-100 fmxw-300">
+                <div class="card-header text-center">
+                    <span>${sanitizeHTML(collection.name)}</span>
+                </div>
+                <div class="card-body" style="padding: 6px 7px 7px 7px">
+                    <iframe style="pointer-events: none" sandbox=allow-scripts
+                        scrolling=no loading=lazy
+                        src="${ordinalsExplorerUrl}/preview/${collection.inscription_icon?.replaceAll('"', '')}"></iframe>
+                </div>
+            </div>`
+        collectionsContainer.appendChild(collectionElement)
+    }
+}
+
+function searchCollections(searchTerm) {
+    displayCollections(window.allCollections.filter(x => x.name.toLowerCase().includes(searchTerm.toLowerCase())).slice(0, 12))
+}
+
+async function loadCollections(limit, featuredCollections = []) {
     try {
-        let collections = await getCollections()
+        window.allCollections = await getCollections()
 
-        if (limit) {
-            collections = collections.slice(0, limit)
-        }
+        let displayedCollections = allCollections.slice(0, limit || 999999)
+        displayedCollections = featuredCollections.concat(displayedCollections.slice(featuredCollections.length))
+            .sort((a, b) => 0.5 - Math.random())
 
-        const collectionsContainer = document.getElementById('collectionsContainer')
-        collectionsContainer.innerHTML = ''
 
-        for (const collection of collections) {
-            const collectionElement = document.createElement('a')
-            collectionElement.href = `/collection.html?slug=${collection.slug}`
-            collectionElement.target = `_blank`
-            collectionElement.innerHTML = `
-                <div class="card card-tertiary w-100 fmxw-300">
-                    <div class="card-header text-center">
-                        <span>${sanitizeHTML(collection.name)}</span>
-                    </div>
-                    <div class="card-body" style="padding: 6px 7px 7px 7px">
-                        <iframe style="pointer-events: none" sandbox=allow-scripts
-                            scrolling=no loading=lazy
-                            src="${ordinalsExplorerUrl}/preview/${collection.inscription_icon.replaceAll('"', '')}"></iframe>
-                    </div>
-                </div>`
-            collectionsContainer.appendChild(collectionElement)
-        }
+        displayCollections(displayedCollections)
     } catch (e) {
         console.error(e)
         console.error(`Error fetching collections:\n` + e.message)
@@ -915,13 +991,18 @@ async function loadLatestOrders(limit = 8, nostrLimit = 25) {
 }
 
 async function homePage() {
-    loadCollections(8)
+    loadCollections(12, [{
+        "name": "<1k",
+        "inscription_icon": "26482871f33f1051f450f2da9af275794c0b5f1c61ebf35e4467fb42c2813403i0",
+        "slug": "under-1k",
+    }])
 
     await bitcoinInitializedPromise
     loadLatestOrders()
 }
 
 async function collectionsPage() {
+    await bitcoinInitializedPromise
     loadCollections()
 }
 
