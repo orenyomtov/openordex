@@ -421,6 +421,10 @@ async function signPSBTUsingWallet(psbtBase64) {
     } else if (installedWalletName == 'Hiro') {
         return new Promise((resolve, reject) => {
             connect.openPsbtRequestPopup({
+                appDetails: {
+                    name: 'OpenOrdex',
+                    icon: window.location.origin + '/img/favicon/apple-touch-icon.png',
+                },
                 hex: base64ToHex(psbtBase64),
                 network: Object.getPrototypeOf(connect.getDefaultPsbtRequestOptions({}).network.__proto__.constructor).fromName('mainnet'),
                 allowedSighash: [0x01, 0x02, 0x03, 0x81, 0x82, 0x83],
