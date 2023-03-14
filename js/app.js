@@ -13,6 +13,21 @@ const nostrOrderEventKind = 802
 const txHexByIdCache = {}
 const urlParams = new URLSearchParams(window.location.search)
 const numberOfDummyUtxosToCreate = 1
+const wallets = [
+    {
+        name: 'Unisat',
+        url: 'https://unisat.io/download',
+    },
+    {
+        name: 'Hiro',
+        url: 'https://wallet.hiro.so/wallet/install-web',
+    },
+    {
+        name: 'Sparrow',
+        url: 'https://sparrowwallet.com/download/',
+    },
+].sort((a, b) => 0.5 - Math.random())
+const walletsListHtml = wallets.map(x => `<a href="${x.url}" target="_blank">${x.name}</a>`).join(' or ')
 
 let inscriptionIdentifier = urlParams.get('number')
 let collectionSlug = urlParams.get('slug')
@@ -556,7 +571,11 @@ async function main() {
                 installedWalletName = getInstalledWalletName()
                 isWalletInstalled = Boolean(getInstalledWalletName())
                 if (isWalletInstalled) {
-                    [...document.getElementsByClassName('walletName')].map(el => el.textContent = installedWalletName)
+                    [...document.getElementsByClassName('btnsSignWithWallet')].map(el => el.style.display = 'revert');
+                    [...document.getElementsByClassName('walletName')].map(el => el.textContent = installedWalletName);
+                } else {
+                    [...document.getElementsByClassName('walletSuggestions')].map(el => el.style.display = 'revert');
+                    [...document.getElementsByClassName('walletsList')].map(el => el.innerHTML = walletsListHtml);
                 }
                 if (installedWalletName == 'Hiro') {
                     connectAppConfig = new connect.AppConfig(['store_write', 'publish_data']);
@@ -676,10 +695,6 @@ async function inscriptionPage() {
         }
 
         document.getElementById('generatedSalePsbt').value = psbt
-
-        if (isWalletInstalled) {
-            document.getElementById('btnSignWithWallet').style.display = 'revert'
-        }
     }
 
     submitSignedSalePsbt = async () => {
@@ -983,10 +998,6 @@ Missing:     ${satToBtc(-changeValue)} BTC`
         document.getElementById('generatedBuyPsbtTitle').textContent = title
         document.getElementById('generatedBuyPsbt').value = psbt;
         (new QRCode('buyPsbtQrCode', { width: 300, height: 300, correctLevel: QRCode.CorrectLevel.L })).makeCode(psbt)
-
-        if (isWalletInstalled) {
-            document.getElementById('btnBuySignWithWalletAndBroadcast').style.display = 'revert'
-        }
 
         const payerCurrentMempoolTxIds = await getAddressMempoolTxIds(payerAddress)
         const interval = setInterval(async () => {

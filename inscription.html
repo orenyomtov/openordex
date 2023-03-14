@@ -166,9 +166,14 @@
                                         <button class="btn btn-secondary mb-2" style="float: right"
                                             onclick="downloadInput('generatedSalePsbt', `listInscription${inscriptionNumber}.psbt`)">Download
                                             PSBT</button>
-                                            <button class="btn btn-block btn-secondary mb-2" style="clear: both; display: none"
-                                            onclick="signPSBTUsingWalletIntoInput('generatedSalePsbt', 'signedSalePsbt')" id="btnSignWithWallet">Sign
+                                        <button class="btn btn-block btn-secondary mb-2 btnsSignWithWallet" style="clear: both; display: none"
+                                            onclick="signPSBTUsingWalletIntoInput('generatedSalePsbt', 'signedSalePsbt')">Sign
                                             PSBT using <span class="walletName"></span> Wallet</button>
+                                        <div class="justify-content-center align-items-center text-center mt-4 walletSuggestions" style="clear: both; display: none">
+                                            <p class="font-weight-normal">
+                                                Need a wallet to sign? Use <span class="walletsList"></span>
+                                            </p>
+                                        </div>
 
                                         <hr class="my-2">
 
@@ -272,9 +277,14 @@
                                         <button class="btn btn-secondary mb-2" style="float: right"
                                             onclick="downloadInput('generatedBuyPsbt', `buyInscription${inscriptionNumber}.psbt`)">Download
                                             PSBT</button>
-                                        <button class="btn btn-block btn-secondary mb-2" style="clear: both; display: none"
-                                            onclick="signPSBTUsingWalletAndBroadcast('generatedBuyPsbt')" id="btnBuySignWithWalletAndBroadcast">Sign
+                                        <button class="btn btn-block btn-secondary mb-2 btnsSignWithWallet" style="clear: both; display: none"
+                                            onclick="signPSBTUsingWalletAndBroadcast('generatedBuyPsbt')">Sign
                                             PSBT using <span class="walletName"></span> Wallet and broadcast</button>
+                                        <div class="justify-content-center align-items-center text-center mt-4 walletSuggestions" style="clear: both; display: none">
+                                            <p class="font-weight-normal">
+                                                Need a wallet to sign? Use <span class="walletsList"></span>
+                                            </p>
+                                        </div>
 
                                         <div id="buyPsbtQrCode" class="text-center"></div>
 
