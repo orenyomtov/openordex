@@ -167,8 +167,8 @@
                                             onclick="downloadInput('generatedSalePsbt', `listInscription${inscriptionNumber}.psbt`)">Download
                                             PSBT</button>
                                             <button class="btn btn-block btn-secondary mb-2" style="clear: both; display: none"
-                                            onclick="signPSBTUsingWallet('generatedSalePsbt', 'signedSalePsbt')" id="btnSignWithWallet">Sign
-                                            PSBT using UniSat Wallet</button>
+                                            onclick="signPSBTUsingWalletIntoInput('generatedSalePsbt', 'signedSalePsbt')" id="btnSignWithWallet">Sign
+                                            PSBT using <span class="walletName"></span> Wallet</button>
 
                                         <hr class="my-2">
 
@@ -274,7 +274,7 @@
                                             PSBT</button>
                                         <button class="btn btn-block btn-secondary mb-2" style="clear: both; display: none"
                                             onclick="signPSBTUsingWalletAndBroadcast('generatedBuyPsbt')" id="btnBuySignWithWalletAndBroadcast">Sign
-                                            PSBT using UniSat Wallet and broadcast</button>
+                                            PSBT using <span class="walletName"></span> Wallet and broadcast</button>
 
                                         <div id="buyPsbtQrCode" class="text-center"></div>
 
@@ -294,6 +294,7 @@
     </main>
     <script src="js/secp256k1.js"></script>
     <script type="module" src="js/bitcoinjs-lib.js"></script>
+    <script type="module" src="js/connectjs-lib.js"></script>
     <script src="js/nostr.js"></script>
     <script src="js/qrcode.js"></script>
     <script src="js/app.js"></script>
