@@ -456,9 +456,6 @@ async function signPSBTUsingWalletAndBroadcast(inputId) {
         const signedPsbt = bitcoin.Psbt.fromHex(signedPsbtHex)
         if (installedWalletName == 'Hiro') {
             for (let i = 0; i < signedPsbt.data.inputs.length; i++) {
-                if (signedPsbt.data.inputs[i].tapKeySig?.length && !signedPsbt.data.inputs[i]?.finalScriptWitness?.length) {
-                    signedPsbt.data.inputs[i].finalScriptWitness = signedPsbt.data.inputs[i].tapKeySig.__proto__.constructor([1, 65, ...signedPsbt.data.inputs[i].tapKeySig])
-                }
                 try {
                     signedPsbt.finalizeInput(i)
                 } catch (e) {
@@ -734,9 +731,12 @@ async function inscriptionPage() {
                 if (installedWalletName == 'Hiro') {
                     for (let i = 0; i < testPsbt.data.inputs.length; i++) {
                         if (testPsbt.data.inputs[i].tapKeySig?.length && !testPsbt.data.inputs[i]?.finalScriptWitness?.length) {
-                            testPsbt.data.inputs[i].finalScriptWitness = testPsbt.data.inputs[i].tapKeySig.__proto__.constructor([1, 65, ...testPsbt.data.inputs[i].tapKeySig])
+                            testPsbt.updateInput(i, {
+                                finalScriptWitness: testPsbt.data.inputs[i].tapKeySig.__proto__.constructor([1, 65, ...testPsbt.data.inputs[i].tapKeySig])
+                            })
                         }
                     }
+                    signedSalePsbt = testPsbt.toBase64()
                 }
                 testPsbt.extractTransaction(true)
             } catch (e) {
