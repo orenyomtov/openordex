@@ -470,7 +470,7 @@ async function signPSBTUsingWalletAndBroadcast(inputId) {
             return alert(`Mempool API returned ${res.status} ${res.statusText}\n\n${await res.text()}`)
         }
 
-        const txId = res.text()
+        const txId = await res.text()
         alert('Transaction signed and broadcasted to mempool successfully')
         window.open(`${baseMempoolUrl}/tx/${txId}`, "_blank")
     } catch (e) {
