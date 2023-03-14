@@ -13,6 +13,21 @@ const nostrOrderEventKind = 802
 const txHexByIdCache = {}
 const urlParams = new URLSearchParams(window.location.search)
 const numberOfDummyUtxosToCreate = 1
+const wallets = [
+    {
+        name: 'Unisat',
+        url: 'https://unisat.io/download',
+    },
+    {
+        name: 'Hiro',
+        url: 'https://wallet.hiro.so/wallet/install-web',
+    },
+    {
+        name: 'Sparrow',
+        url: 'https://sparrowwallet.com/download/',
+    },
+].sort((a, b) => 0.5 - Math.random())
+const walletsListHtml = wallets.map(x => `<a href="${x.url}" target="_blank">${x.name}</a>`).join(' or ')
 
 let inscriptionIdentifier = urlParams.get('number')
 let collectionSlug = urlParams.get('slug')
@@ -26,7 +41,11 @@ let dummyUtxo
 let paymentUtxos
 let inscription
 let nostrRelay
-let bitcoinInitializedPromise
+let modulesInitializedPromise
+let installedWalletName
+let isWalletInstalled
+let connectAppConfig
+let connectUserSession
 
 let listInscriptionForSale
 let generateSalePsbt
@@ -61,7 +80,10 @@ async function selectUtxos(utxos, amount, vins, vouts, recommendedFeeRate) {
     if (selectedAmount < amount) {
         throw new Error(`Not enough cardinal spendable funds.
 Address has:  ${satToBtc(selectedAmount)} BTC
-Needed:          ${satToBtc(amount)} BTC`)
+Needed:          ${satToBtc(amount)} BTC
+
+UTXOs:
+${utxos.map(x => `${x.txid}:${x.vout}`).join("\n")}`)
     }
 
     return selectedUtxos
@@ -73,9 +95,61 @@ function base64ToHex(str) {
         .join("");
 }
 
-async function getWalletAddress() {
+function getInstalledWalletName() {
     if (typeof window.unisat !== 'undefined') {
-        return (await unisat.requestAccounts())[0]
+        return 'Unisat'
+    }
+
+    if (window?.StacksProvider?.psbtRequest) {
+        return 'Hiro'
+    }
+
+    if (window?.BitcoinProvider?.signTransaction?.toString()?.includes('Psbt')) {
+        return 'Xverse'
+    }
+}
+
+async function getHiroWalletAddresses() {
+    return new Promise((resolve, reject) => {
+        if (!connectUserSession.isUserSignedIn()) {
+            connect.showConnect({
+                connectUserSession,
+                network: Object.getPrototypeOf(connect.getDefaultPsbtRequestOptions({}).network.__proto__.constructor).fromName('mainnet'),
+                appDetails: {
+                    name: 'OpenOrdex',
+                    icon: window.location.origin + '/img/favicon/apple-touch-icon.png',
+                },
+                onFinish: () => {
+                    resolve({
+                        cardinal: connectUserSession.loadUserData().profile.btcAddress.p2wpkh.mainnet,
+                        ordinal: connectUserSession.loadUserData().profile.btcAddress.p2tr.mainnet,
+                    })
+                },
+                onCancel: () => {
+                    resolve()
+                },
+            });
+        } else {
+            resolve({
+                cardinal: connectUserSession.loadUserData().profile.btcAddress.p2wpkh.mainnet,
+                ordinal: connectUserSession.loadUserData().profile.btcAddress.p2tr.mainnet,
+            })
+        }
+    })
+}
+
+/**
+ * getWalletAddress(type = 'cardinal')
+ * @param {undefined | 'cardinal' | 'ordinal'} type 
+ * @returns {string | undefined}
+ */
+async function getWalletAddress(type = 'cardinal') {
+    if (typeof window.unisat !== 'undefined') {
+        return (await unisat.requestAccounts())?.[0]
+    }
+
+    if (typeof window.StacksProvider !== 'undefined') {
+        return (await getHiroWalletAddresses())?.[type]
     }
 }
 
@@ -335,13 +409,43 @@ function downloadInput(inputId, filename) {
     hiddenElement.click();
 }
 
-async function signPSBTUsingWallet(inputId, signedInputId) {
+const toXOnly = pubKey => (pubKey.length === 32 ? pubKey : pubKey.slice(1, 33));
+const range = n => Array.from(Array(n).keys())
+
+
+async function signPSBTUsingWallet(psbtBase64) {
+    await getWalletAddress()
+
+    if (installedWalletName == 'Unisat') {
+        return await unisat.signPsbt(base64ToHex(psbtBase64))
+    } else if (installedWalletName == 'Hiro') {
+        return new Promise((resolve, reject) => {
+            connect.openPsbtRequestPopup({
+                appDetails: {
+                    name: 'OpenOrdex',
+                    icon: window.location.origin + '/img/favicon/apple-touch-icon.png',
+                },
+                hex: base64ToHex(psbtBase64),
+                network: Object.getPrototypeOf(connect.getDefaultPsbtRequestOptions({}).network.__proto__.constructor).fromName('mainnet'),
+                allowedSighash: [0x01, 0x02, 0x03, 0x81, 0x82, 0x83],
+                signAtIndex: range(bitcoin.Psbt.fromBase64(psbtBase64).inputCount),
+                onFinish: (data) => {
+                    resolve(data.hex)
+                },
+                onCancel: () => {
+                    reject(new Error('Hiro wallet canceled signing request'))
+                }
+            })
+        })
+    }
+}
+
+async function signPSBTUsingWalletIntoInput(inputId, signedInputId) {
     const input = document.getElementById(inputId)
     const signedInput = document.getElementById(signedInputId)
 
     try {
-        await unisat.requestAccounts()
-        signedInput.value = await unisat.signPsbt(base64ToHex(input.value))
+        signedInput.value = await signPSBTUsingWallet(input.value)
     } catch (e) {
         console.error(e)
         alert(e.message)
@@ -352,16 +456,25 @@ async function signPSBTUsingWalletAndBroadcast(inputId) {
     const input = document.getElementById(inputId)
 
     try {
-        await unisat.requestAccounts()
-        const signedPsbt = await unisat.signPsbt(base64ToHex(input.value))
-        const txHex = bitcoin.Psbt.fromHex(signedPsbt).extractTransaction().toHex()
-        
+        const signedPsbtHex = await signPSBTUsingWallet(input.value)
+        const signedPsbt = bitcoin.Psbt.fromHex(signedPsbtHex)
+        if (installedWalletName == 'Hiro') {
+            for (let i = 0; i < signedPsbt.data.inputs.length; i++) {
+                try {
+                    signedPsbt.finalizeInput(i)
+                } catch (e) {
+                    console.error(e)
+                }
+            }
+        }
+
+        const txHex = signedPsbt.extractTransaction().toHex()
         const res = await fetch(`${baseMempoolApiUrl}/tx`, { method: 'post', body: txHex })
         if (res.status != 200) {
             return alert(`Mempool API returned ${res.status} ${res.statusText}\n\n${await res.text()}`)
         }
 
-        const txId = res.text()
+        const txId = await res.text()
         alert('Transaction signed and broadcasted to mempool successfully')
         window.open(`${baseMempoolUrl}/tx/${txId}`, "_blank")
     } catch (e) {
@@ -406,17 +519,25 @@ async function generatePSBTListingInscriptionForSale(ordinalOutput, price, payme
 
     const [ordinalUtxoTxId, ordinalUtxoVout] = ordinalOutput.split(':')
     const tx = bitcoin.Transaction.fromHex(await getTxHexById(ordinalUtxoTxId))
-    for (const output in tx.outs) {
-        try { tx.setWitness(parseInt(output), []) } catch { }
+    if (installedWalletName != 'Hiro') {
+        for (const output in tx.outs) {
+            try { tx.setWitness(parseInt(output), []) } catch { }
+        }
     }
 
-    psbt.addInput({
+    const input = {
         hash: ordinalUtxoTxId,
         index: parseInt(ordinalUtxoVout),
         nonWitnessUtxo: tx.toBuffer(),
-        // witnessUtxo: tx.outs[ordinalUtxoVout],
+        witnessUtxo: tx.outs[ordinalUtxoVout],
         sighashType: bitcoin.Transaction.SIGHASH_SINGLE | bitcoin.Transaction.SIGHASH_ANYONECANPAY,
-    });
+    }
+    if (installedWalletName == 'Hiro') {
+        await getWalletAddress()
+        input.tapInternalKey = toXOnly(tx.toBuffer().__proto__.constructor(connectUserSession.loadUserData().profile.btcPublicKey.p2tr, "hex"))
+    }
+
+    psbt.addInput(input);
 
     psbt.addOutput({
         address: paymentAddress,
@@ -444,20 +565,36 @@ async function main() {
         nostrRelay.connect()
     }
 
-    bitcoinInitializedPromise = new Promise(resolve => {
+    modulesInitializedPromise = new Promise(resolve => {
         const interval = setInterval(() => {
-            if (window.bitcoin && window.secp256k1) {
+            if (window.bitcoin && window.secp256k1 && window.connect) {
                 bitcoin.initEccLib(secp256k1)
+                installedWalletName = getInstalledWalletName()
+                isWalletInstalled = Boolean(getInstalledWalletName())
+                if (isWalletInstalled) {
+                    [...document.getElementsByClassName('btnsSignWithWallet')].map(el => el.style.display = 'revert');
+                    [...document.getElementsByClassName('walletName')].map(el => el.textContent = installedWalletName);
+                } else {
+                    [...document.getElementsByClassName('walletSuggestions')].map(el => el.style.display = 'revert');
+                    [...document.getElementsByClassName('walletsList')].map(el => el.innerHTML = walletsListHtml);
+                }
+                if (installedWalletName == 'Hiro') {
+                    connectAppConfig = new connect.AppConfig(['store_write', 'publish_data']);
+                    connectUserSession = new connect.UserSession({ connectAppConfig });
+                }
                 clearInterval(interval)
                 resolve()
             }
         }, 50)
     })
 
+
+
     if (window.location.pathname.startsWith('/inscription')) {
         recommendedFeeRate = fetch(`${baseMempoolApiUrl}/v1/fees/recommended`)
             .then(response => response.json())
             .then(data => data[feeLevel])
+
         inscriptionPage()
     } else if (window.location.pathname.startsWith('/collections')) {
         collectionsPage()
@@ -471,7 +608,7 @@ async function main() {
 }
 
 async function inscriptionPage() {
-    await bitcoinInitializedPromise
+    await modulesInitializedPromise
     network = isProduction ? bitcoin.networks.bitcoin : bitcoin.networks.testnet
 
     let inscriptionID
@@ -559,10 +696,6 @@ async function inscriptionPage() {
         }
 
         document.getElementById('generatedSalePsbt').value = psbt
-
-        if (typeof window.unisat !== 'undefined') {
-            document.getElementById('btnSignWithWallet').style.display = 'revert'
-        }
     }
 
     submitSignedSalePsbt = async () => {
@@ -598,17 +731,32 @@ async function inscriptionPage() {
             }
 
             try {
-                bitcoin.Psbt.fromBase64(signedSalePsbt, { network }).extractTransaction(true)
+                let testPsbt = bitcoin.Psbt.fromBase64(signedSalePsbt, { network })
+                if (installedWalletName == 'Hiro') {
+                    for (let i = 0; i < testPsbt.data.inputs.length; i++) {
+                        if (testPsbt.data.inputs[i].tapKeySig?.length && !testPsbt.data.inputs[i]?.finalScriptWitness?.length) {
+                            testPsbt.updateInput(i, {
+                                finalScriptWitness: testPsbt.data.inputs[i].tapKeySig.__proto__.constructor([1, 65, ...testPsbt.data.inputs[i].tapKeySig])
+                            })
+                        }
+                    }
+                    signedSalePsbt = testPsbt.toBase64()
+                }
+                testPsbt.extractTransaction(true)
             } catch (e) {
                 console.error(e)
                 if (e.message == 'Not finalized') {
+                    document.getElementById('btnSubmitSignedSalePsbt').textContent = originalBtnTest
+                    document.getElementById('btnSubmitSignedSalePsbt').disabled = false
+
                     return alert('Please sign and finalize the PSBT before submitting it')
                 } else if (e.message != 'Outputs are spending more than Inputs') {
-                    console.error(e)
-                    return alert('Invalid PSBT', e.message || e)
+                    document.getElementById('btnSubmitSignedSalePsbt').textContent = originalBtnTest
+                    document.getElementById('btnSubmitSignedSalePsbt').disabled = false
+
+                    return alert('Invalid PSBT: ' + e.message || e)
                 }
             }
-            document.location.hash = 'sellerSignedPsbt=' + signedSalePsbt
 
             if (document.getElementById('publicPsbt').checked) {
                 try {
@@ -617,8 +765,10 @@ async function inscriptionPage() {
                     return window.location.reload()
                 } catch (e) {
                     console.error(e)
-                    alert('Error publishing seller PSBT', e.message || e)
+                    alert('Error publishing seller PSBT: ' + e.message || e)
                 }
+            } else {
+                document.location.hash = 'sellerSignedPsbt=' + signedSalePsbt
             }
 
             document.getElementById('btnSubmitSignedSalePsbt').textContent = originalBtnTest
@@ -632,11 +782,11 @@ async function inscriptionPage() {
     }
 
     buyInscriptionNow = async () => {
-        document.getElementById('payerAddress').value = localStorage.getItem('payerAddress') || await getWalletAddress() || ''
+        document.getElementById('payerAddress').value = (await getWalletAddress('cardinal')) || localStorage.getItem('payerAddress') || ''
         if (document.getElementById('payerAddress').value) {
             updatePayerAddress()
         }
-        document.getElementById('receiverAddress').value = localStorage.getItem('receiverAddress') || await getWalletAddress() || ''
+        document.getElementById('receiverAddress').value = (await getWalletAddress('ordinal')) || localStorage.getItem('receiverAddress') || ''
 
         document.getElementById('buyDialog').showModal()
     }
@@ -853,10 +1003,6 @@ Missing:     ${satToBtc(-changeValue)} BTC`
         document.getElementById('generatedBuyPsbt').value = psbt;
         (new QRCode('buyPsbtQrCode', { width: 300, height: 300, correctLevel: QRCode.CorrectLevel.L })).makeCode(psbt)
 
-        if (typeof window.unisat !== 'undefined') {
-            document.getElementById('btnBuySignWithWalletAndBroadcast').style.display = 'revert'
-        }
-
         const payerCurrentMempoolTxIds = await getAddressMempoolTxIds(payerAddress)
         const interval = setInterval(async () => {
             const txId = (await getAddressMempoolTxIds(payerAddress)).find(txId => !payerCurrentMempoolTxIds.includes(txId))
@@ -1048,21 +1194,21 @@ async function homePage() {
         "slug": "under-1k",
     }])
 
-    await bitcoinInitializedPromise
+    await modulesInitializedPromise
     loadLatestOrders()
 }
 
 async function collectionsPage() {
-    await bitcoinInitializedPromise
+    await modulesInitializedPromise
     loadCollections()
 }
 
 async function listingsPage() {
-    await bitcoinInitializedPromise
+    await modulesInitializedPromise
     loadLatestOrders(100, 200)
 }
 
-main()
+window.onload = main()
 
 const currDate = new Date()
 const hoursMin = currDate.getHours().toString().padStart(2, '0') + ':' + currDate.getMinutes().toString().padStart(2, '0')
