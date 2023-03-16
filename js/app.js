@@ -1,10 +1,10 @@
 const isProduction = !location.href.includes('signet')
-const ordinalsExplorerUrl = isProduction ? "http://umbrel.local:4000" : "https://explorer-signet.openordex.org"
-const baseMempoolUrl = isProduction ? "http://umbrel.local:3006" : "https://mempool.space/signet"
+const ordinalsExplorerUrl = isProduction ? "https://ordinals.com" : "https://explorer-signet.openordex.org"
+const baseMempoolUrl = isProduction ? "https://mempool.space" : "https://mempool.space/signet"
 const networkName = isProduction ? "mainnet" : "signet"
 const baseMempoolApiUrl = `${baseMempoolUrl}/api`
 const bitcoinPriceApiUrl = "https://blockchain.info/ticker?cors=true"
-const nostrRelayUrl = 'ws://umbrel.local:4848'
+const nostrRelayUrl = 'wss://nostr.openordex.org'
 const collectionsRepo = "ordinals-wallet/ordinals-collections"
 const exchangeName = 'openordex'
 const feeLevel = "hourFee" // "fastestFee" || "halfHourFee" || "hourFee" || "economyFee" || "minimumFee"
