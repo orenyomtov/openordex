@@ -820,6 +820,16 @@
     "website_link": "https://bonerdinals.art"
   },
   {
+    "description": "1000 Brrnana",
+    "discord_link": "",
+    "inscription_icon": "0131c08958c22fd986385443e9e1c18be2563341c7a4c7d9fe59f8f555397568i0",
+    "name": "Brrnana",
+    "slug": "brrnana",
+    "supply": "1000",
+    "twitter_link": "https://twitter.com/BasedApes",
+    "website_link": "https://discord.com/invite/ordinalswallet"
+  },
+  {
     "name": "BTC Annons | OG",
     "inscription_icon": "0414986a048b0de5f084490e1e07409976fc2713fa432c4dccf2f64485522c3ci0",
     "supply": "21",
@@ -871,12 +881,12 @@
   },
   {
     "description": "10k BTC Virus",
-    "discord_link": "https://discord.gg/btcmachine",
     "inscription_icon": "da5516431da9a331d165f151f44d62fd4ad3264634ff1c746a4059fad261cbd6i0",
     "name": "BTC Virus",
     "slug": "btc-virus",
-    "supply": "2000",
+    "supply": "10000",
     "twitter_link": "https://twitter.com/btcordinal",
+    "discord_link": "https://discord.gg/btcmachine",
     "website_link": "https://btcmachine.org"
   },
   {
