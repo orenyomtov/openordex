@@ -140,6 +140,16 @@
     "website_link": ""
   },
   {
+    "name": "Anarchist",
+    "slug": "anarchist",
+    "supply": "100",
+    "description": "Anarchy is the mother of order",
+    "twitter_link": "https://twitter.com/Z_u_l_u_i_n_k",
+    "discord_link": "https://discord.gg/wQW5hX5jZC",
+    "website_link": "https://zuluink.eth.co/",
+    "inscription_icon": "af5ecc90a550bfc16377ffe368a1ad9fa2d9ec9892dd83648bba320fd54c589ei0"
+  },
+  {
     "description": "The 2nd ever airdrop on BTC. 69 Animated Pordinals airdropped to people who own Planetary Ordinals. ",
     "discord_link": "",
     "inscription_icon": "c2b08da1c0305f9fb859efa13d2a96e4c713e8d47e81dbc9fdf3a36ccd6f07b8i0",
@@ -484,7 +494,7 @@
     "inscription_icon": "7f9644fd43dc3fed95833dc51c16b6b690c8c4df8a1766888fc69682921a24aci0",
     "supply": "36",
     "slug": "bitcoin-ghcrystals",
-    "description": "The Global Healing Society brings to you a rare luxury collectible NFT project like no other. This collection of 36 healing crystals in both male and female format were inspired by the energies of 18 different chakras. We're one of the first 100 thousand to be minted on the bitcoin blockchain. By owning a healing crystal, you will gain access to the healing community where you will be able to connect with others that are passionate about healing themselves, healing others and healing the world. This extraordinary offering takes us far and beyond the typical NFT space into a sacred mission of self-empowerment. Join in this remarkable journey of unity and inspiration, and together we can lift the world.",
+    "description": "The Global Healing Society brings to you a rare luxury collectible NFT project like no other. This collection of 36 healing crystals in both male and female format were inspired by the energies of 18 different chakras. Our inscriptions are between 123,000 - 131,000 on the bitcoin blockchain.By owning a healing crystal, you will gain access to the healing community where you will be able to connect with others that are passionate about healing themselves, healing others and healing the world. This extraordinary offering takes us far and beyond the typical NFT space into a sacred mission of self-empowerment. Join in this remarkable journey of unity and inspiration, and together we can lift the world.",
     "twitter_link": "https://twitter.com/ChakraHealers",
     "discord_link": "https://discord.com/invite/M8m38Gd4Vv",
     "website_link": "https://globalhealingsociety.com"
@@ -568,6 +578,16 @@
     "twitter_link": "https://twitter.com/BlenderKida08",
     "discord_link": "",
     "website_link": "https://twitter.com/BlenderKida08"
+  },
+  {
+    "name": "Bitcoin Orbs",
+    "inscription_icon": "feeead3d9f7cd4b17a7294af1bb98acb169f565cb0a710060ea507dd57bdf3dfi0",
+    "supply": "999",
+    "slug": "bitcoin-orbs",
+    "description": "The Bitcoin Orb Ordinals are the first Manifold unlocked NFT Edition on the Bitcoin Ordinals protocol. Accessible only to those who hold and burn the Bitcoin Orb edition token on Ethereum, this series will offer a unique experience like no other.",
+    "twitter_link": "https://twitter.com/Joanwestenberg",
+    "discord_link": "https://discord.gg/PK4ZdXcjHK",
+    "website_link": "https://www.bitcoinorbs.com/"
   },
   {
     "name": "Bitcoin Papers",
@@ -1110,6 +1130,16 @@
     "website_link": ""
   },
   {
+    "name": "CryptoTrumps",
+    "slug": "cryptotrumps",
+    "supply": "1",
+    "description": "One piece collection, because there's only one punk left!",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "34b140ac8f7bae83a3df89492ca64b244ee4cbffac254392f054336339d6635ai0"
+  },
+  {
     "name": "Cubes Crew",
     "inscription_icon": "3e40dae6efdd7a269fd6bfb7f5423e0e2b67c0da4a312ff1034030787d878521i0",
     "supply": "50",
@@ -1208,6 +1238,16 @@
     "twitter_link": "https://twitter.com/fuzzy_studios",
     "discord_link": "",
     "website_link": "https://www.fuzzy-hi-studio.com/"
+  },
+  {
+    "name": "Dark Planet (The)",
+    "inscription_icon": "6e6888608b113cde45172155b777d9bb920572263eb4402f4c1cd40f4729b450i0",
+    "supply": "50",
+    "slug": "dark-planet",
+    "description": "Our future world as seen through the lens of AI.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "das Burgers",
@@ -1590,7 +1630,7 @@
     "website_link": "https://glyphs.gg"
   },
   {
-    "name": "GN Punks",
+    "name": "GN Punks Ordinals",
     "inscription_icon": "613631a836122ab3e1036d12c7548fe94de44fffa3dfec4ccc9167af034d4ddbi0",
     "supply": "1000",
     "slug": "gn-punks",
@@ -1608,6 +1648,26 @@
     "twitter_link": "https://twitter.com/BitcoinGoblins",
     "discord_link": "https://discord.gg/bitcoingoblins",
     "website_link": "https://www.bitcoingoblins.com/"
+  },
+  {
+    "name": "Goblin Scientists",
+    "inscription_icon": "0b36797399afa7766f1b8d9f595c9c15e1aade819100ec8ef9dd8e87a89d5637i0",
+    "supply": "500",
+    "slug": "goblin-scientists",
+    "description": "The second collection of the Bitcoin Goblins",
+    "twitter_link": "https://twitter.com/BitcoinGoblins",
+    "discord_link": "https://discord.gg/bitcoingoblins",
+    "website_link": "https://www.bitcoingoblins.com/"
+  },
+  {
+    "name": "God of Wealth",
+    "inscription_icon": "75aa961ebe2041513719c0e7467b9223906822a81022d88a60529e7d28c9e31fi0",
+    "supply": "99",
+    "slug": "god-of-wealth",
+    "description": "Worshiping the God of Wealth has a deep cultural connotation to Chinese people, which originated from ancient legends. The God of Wealth is a representative of good fortune and wealth, and also a symbol of family happiness and wealth.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "GOLDRUSH",
@@ -1668,6 +1728,16 @@
     "twitter_link": "https://twitter.com/HelpMeDebugThis",
     "discord_link": "https://discord.gg/helpmedebugthis",
     "website_link": "https://helpmedebugthis.com"
+  },
+  {
+    "description": "16 Hex Cubes",
+    "discord_link": "",
+    "inscription_icon": "fc254288055d74ede934c5a0e2ea3113ea5435aab24fc50e4753631a579d7178i0",
+    "name": "Hex Cubes",
+    "slug": "hex-cubes",
+    "twitter_link": "https://twitter.com/hbeckeri",
+    "supply": "16",
+    "website_link": ""
   },
   {
     "description": "Hidden Society",
@@ -1766,7 +1836,7 @@
     "slug": "inscription-poetry",
     "description": "The renowned ancient Chinese poetry and lyrics are the most scarce cultural resources, invaluable and unique. Engraving them into the Bitcoin ordinals network has the eternal collection value and dissemination significance.",
     "twitter_link": "https://twitter.com/SurnamesNFT",
-    "discord_link": "",
+    "discord_link": "https://discord.gg/fNBGAsA9qU",
     "website_link": ""
   },
   {
@@ -2530,6 +2600,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Doge Genesis",
+    "inscription_icon": "6385f0f7049f2be2f0989c7e991f2e7df373a4405d054400fbcc0ed0f6c82dffi0",
+    "supply": "100",
+    "slug": "ordinal-doge-genesis",
+    "description": "The First Doge PFP project inscribed onto the bitcoin blockchain with a genesis collection of 100 Doges under 50k inscriptions!",
+    "twitter_link": "https://twitter.com/ordinal_doge",
+    "discord_link": "https://discord.gg/nsZBqzkjce",
+    "website_link": ""
+  },
+  {
     "name": "Ordinal Doggos",
     "inscription_icon": "d9ddbfdce9ef07f75e76ace5c9153eb99587e471bca4360e51d7978a13158992i0",
     "slug": "ordinal-doggos",
@@ -2613,7 +2693,7 @@
     "name": "Ordinal Fighters",
     "slug": "ordinal-fighters",
     "supply": "30",
-    "description": "Limited edition collection of 30 unique NFTs commemorating legendary and most iconic MMA fighters minted on Bitcoin blockchain. Greatest walkouts, amazing press conference appearances and post fight interviews.",
+    "description": "Limited Edition Collection of 30 unique NFTs commemorating legendary and most iconic MMA fighters minted on Bitcoin blockchain. Greatest walkouts, amazing press conference appearances and post fight interviews. Round 1 - First 10 pieces - are available now! No more than 30 will ever exist. Currently inscribed 10/30.",
     "twitter_link": "https://twitter.com/ordinalfighters",
     "discord_link": "https://discord.gg/NnwV7Rav",
     "website_link": "",
@@ -2830,6 +2910,16 @@
     "inscription_icon": "aa59366d0242885a26ea5c8f22b5d4f078ef450f249d76467fbb9ef14d2131bei0"
   },
   {
+    "name": "Ordinal Monkey Business",
+    "slug": "ordinal-mb",
+    "supply": "107",
+    "description": "One of the first ordinals project on Bitcoin, 107 Pixelated Monkeys, Bitcoin Ordinal OG Builders, 50% Holders Profit Sharing, OMB Certified Partners",
+    "twitter_link": "https://twitter.com/OrdinalMB",
+    "discord_link": "https://discord.gg/ynqBbq7EbF",
+    "website_link": "https://ordinalmonkeybusiness.xyz",
+    "inscription_icon": "b80782e13ed27109a6c3058b09bb4d509caee8d8b2d16fad4f53942953717d39i0"
+  },
+  {
     "name": "ordinal mfers",
     "inscription_icon": "05df5c57e48cf515de5ddf3a37cb304b5e946724f21f516396bf3383afd25c6fi0",
     "supply": "50",
@@ -2844,7 +2934,7 @@
     "inscription_icon": "b34345a307006fea8bfeb9e3eb869ec0549d131527c633102bd462d64bf1253di0",
     "supply": "333",
     "slug": "ordinal-mimi",
-    "description": "Ordinal MIMI is a project that features M the smallest unit of MIMI permanently inscribed on the Bitcoin blockchain.",
+    "description": "Ordinal MIMI is a project that features M the smallest unit of MIMI permanently inscribed on the Bitcoin blockchain. No more than 333 will ever exist. Currently inscribed 65/333",
     "twitter_link": "https://twitter.com/otograf_jp",
     "discord_link": "https://discord.gg/qM4ds52kPZ",
     "website_link": "https://lit.link/otograf"
@@ -2890,6 +2980,16 @@
     "inscription_icon": "944c3ff95f6232f2ab979285e731a2d9cb908255c484cc70a63630ebb1ddd9b5i0"
   },
   {
+    "name": "Ordinal Nekohige",
+    "inscription_icon": "853e1569d47a35c75b761fbc9767fbcbb7e4893fd801158f8ab3292b8b658c10i0",
+    "supply": "26",
+    "slug": "ordinal-nekohige",
+    "description": "Ordinal",
+    "twitter_link": "https://mobile.twitter.com/Ryuzo6333",
+    "discord_link": "",
+    "website_link": "https://linktr.ee/Nekohige_japan"
+  },
+  {
     "name": "Ordinal Nouns",
     "inscription_icon": "3ab98ce137268fe1a3bd9902bbb2b8f07a653a8d7a65a36908274be09cb01568i0",
     "supply": "26",
@@ -2928,6 +3028,16 @@
     "twitter_link": "https://twitter.com/OrdinalPenguins",
     "discord_link": "https://discord.gg/m2u3B8ekEs",
     "website_link": ""
+  },
+  {
+    "name": "Ordinal PEPEN",
+    "inscription_icon": "4aff19a992fa501adda349cd5a26f61b86246b391259d519ef38d3af8293c7e8i0",
+    "supply": "10",
+    "slug": "ordinal-penpen",
+    "description": "Inscription #294276-462122",
+    "twitter_link": "https://twitter.com/kouteipenpen_f",
+    "discord_link": "",
+    "website_link": "https://opensea.io/collection/tinypenpen"
   },
   {
     "name": "Ordinal Phunks",
@@ -3740,6 +3850,16 @@
     "website_link": ""
   },
   {
+    "name": "PunksLite",
+    "inscription_icon": "8728e4a88c6bde4b69d418f90158f3fa537a95ed8644ae9d84d943acbd1d2ef5i0",
+    "supply": "100",
+    "slug": "punkslite",
+    "description": "PunksLite is a 100 piece Litecoin Ordinals collection based on the original CryptoPunks.",
+    "twitter_link": "https://twitter.com/PunksLite",
+    "discord_link": "https://discord.com/invite/8V9CgFxMFw",
+    "website_link": ""
+  },
+  {
     "name": "Rare Scrilla Sounds",
     "inscription_icon": "9e050828c7e3db394ab7c16a7b3343b8852c0e6683fa364afd4d69d026b19c1bi0",
     "supply": "12",
@@ -4468,6 +4588,16 @@
     "twitter_link": "https://twitter.com/reallyill",
     "discord_link": "https://discord.gg/Jy2tmnMx9y",
     "website_link": "https://tiv.wtf"
+  },
+  {
+    "name": "wagmi ordinals",
+    "inscription_icon": "e6a33ab395e295306e06c34f84aa683e37e08ea826e2c2b6797ab17e82a92d3di0",
+    "supply": "28",
+    "slug": "wagmiordinals",
+    "description": "28 ordinals rescue from 1k collection,they rug us, we try to save it !! and we will @SpZjulienNFT",
+    "twitter_link": "https://twitter.com/SpZjulienNFT",
+    "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
   },
   {
     "name": "warhol sarina ~ gold",
