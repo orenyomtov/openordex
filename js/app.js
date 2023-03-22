@@ -107,6 +107,10 @@ function getInstalledWalletName() {
     if (window?.BitcoinProvider?.signTransaction?.toString()?.includes('Psbt')) {
         return 'Xverse'
     }
+
+    if (typeof window.ordinalSafe !== 'undefined') {
+        return 'OrdinalSafe'
+    }
 }
 
 async function getHiroWalletAddresses() {
@@ -150,6 +154,10 @@ async function getWalletAddress(type = 'cardinal') {
 
     if (typeof window.StacksProvider !== 'undefined') {
         return (await getHiroWalletAddresses())?.[type]
+    }
+
+    if (typeof window.ordinalSafe !== 'undefined') {
+        return (await ordinalSafe.requestAccounts())?.[0]
     }
 }
 
@@ -437,6 +445,8 @@ async function signPSBTUsingWallet(psbtBase64) {
                 }
             })
         })
+    } else if (installedWalletName == 'OrdinalSafe') {
+        return await ordinalSafe.signPsbt(base64ToHex(psbtBase64))
     }
 }
 
@@ -892,7 +902,7 @@ async function inscriptionPage() {
                 hash: utxo.txid,
                 index: utxo.vout,
                 nonWitnessUtxo: tx.toBuffer(),
-                // witnessUtxo: tx.outs[utxo.vout],
+                witnessUtxo: tx.outs[utxo.vout],
             });
 
             totalValue += utxo.value
@@ -930,7 +940,7 @@ async function inscriptionPage() {
             hash: dummyUtxo.txid,
             index: dummyUtxo.vout,
             nonWitnessUtxo: tx.toBuffer(),
-            // witnessUtxo: tx.outs[dummyUtxo.vout],
+            witnessUtxo: tx.outs[dummyUtxo.vout],
         });
 
         // Add inscription output
@@ -960,7 +970,7 @@ async function inscriptionPage() {
                 hash: utxo.txid,
                 index: utxo.vout,
                 nonWitnessUtxo: tx.toBuffer(),
-                // witnessUtxo: tx.outs[utxo.vout],
+                witnessUtxo: tx.outs[utxo.vout],
             });
 
             totalValue += utxo.value
