@@ -26,6 +26,10 @@ const wallets = [
         name: 'Sparrow',
         url: 'https://sparrowwallet.com/download/',
     },
+    {
+        name: 'OrdinalSafe',
+        url: 'https://ordinalsafe.xyz'
+    }
 ].sort((a, b) => 0.5 - Math.random())
 const walletsListHtml = wallets.map(x => `<a href="${x.url}" target="_blank">${x.name}</a>`).join(' or ')
 
