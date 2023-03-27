@@ -479,7 +479,7 @@ async function signPSBTUsingWalletAndBroadcast(inputId) {
         window.open(`${baseMempoolUrl}/tx/${txId}`, "_blank")
     } catch (e) {
         console.error(e)
-        alert(e)
+        alert(e?.message || e)
     }
 }
 
