@@ -1,15 +1,5 @@
 [
   {
-    "name": "Clucks",
-    "inscription_icon": "4e954014d343f275d521408e4a5ef2c14c6f03e2c8d3baadb1344125a9f9a67ei0",
-    "supply": "100",
-    "slug": "!cluck",
-    "description": "100 Genesis Clucks under 100k Inscriptions on the Bitcoin Blockchain",
-    "twitter_link": "https://twitter.com/ClucksNFT",
-    "discord_link": "https://t.co/x4U7ROoC9Y",
-    "website_link": ""
-  },
-  {
     "name": "0n1y 0ne pi×e1 ri0t",
     "inscription_icon": "476131596f516b8990d34906c711c1916545c608f4f31ca3cacd95d6ab1f493di0",
     "supply": "12",
@@ -980,6 +970,16 @@
     "website_link": "https://twitter.com/BlenderKida08"
   },
   {
+    "name": "BTC Moonbirds",
+    "inscription_icon": "7759178ad2ffd189642f94e6753fa036f5e2bcf9a866516f08368e56ba230225i0",
+    "supply": "10000",
+    "slug": "bitcoin-moonbirds",
+    "description": "Bitcoin Moonbirds are byte-perfect inscriptions of the original Moonbirds 42 x 42 pixel art to the Bitcoin blockchain using Ordinals. They are fully on-chain, Bitcoin native, and completely decentralized digital artifacts.",
+    "twitter_link": "https://twitter.com/btcmoonbirds_",
+    "discord_link": "https://discord.gg/bitcoinmoonbirds",
+    "website_link": "https://btcmoonbirds.com/"
+  },
+  {
     "name": "Bitcoin Numbers",
     "inscription_icon": "c709907404f8fd19ed81c48b7623e5413bcd8128035768d6c20e771a881abdc5i0",
     "supply": "20",
@@ -1138,6 +1138,16 @@
     "twitter_link": "https://twitter.com/mavensbot",
     "discord_link": "https://discord.gg/hzD7sxwM2F",
     "website_link": "https://www.bitcoinwizard.com/"
+  },
+  {
+    "name": "Bitcoin Apes",
+    "inscription_icon": "db1593d1991ae3a28a6b6cf25d418f08ac74700971253bdf4312009ca76b3ed7i0",
+    "supply": "10000",
+    "slug": "bitcoinapes",
+    "description": "10000 Byte Perfect Bitcoin Bored Apes",
+    "twitter_link": "https://twitter.com/BitcoinApes_",
+    "discord_link": "https://discord.com/invite/bitcoin-apes",
+    "website_link": "https://bitcoinapes.com/"
   },
   {
     "name": "BitcoinBunny",
@@ -1438,6 +1448,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "description": "",
+    "inscription_icon": "a39e09773da4c117454fbfe089e1140473f0fe8b0c22b6e675d9a576978e45cdi0",
+    "name": "BTC Land",
+    "supply": "19999",
+    "slug": "btc-land",
+    "twitter_link": "https://twitter.com/btcordinal",
+    "discord_link": "https://discord.gg/btcmachine",
+    "website_link": "https://btcmachine.org"
   },
   {
     "name": "BTC Machines",
@@ -1760,6 +1780,16 @@
     "website_link": "https://clayforce.io/clay-monkey-collective"
   },
   {
+    "name": "Clucks",
+    "inscription_icon": "4e954014d343f275d521408e4a5ef2c14c6f03e2c8d3baadb1344125a9f9a67ei0",
+    "supply": "100",
+    "slug": "cluck",
+    "description": "100 Genesis Clucks under 100k Inscriptions on the Bitcoin Blockchain",
+    "twitter_link": "https://twitter.com/ClucksNFT",
+    "discord_link": "https://t.co/x4U7ROoC9Y",
+    "website_link": ""
+  },
+  {
     "name": "Color Study",
     "inscription_icon": "9a9fddda29c74493716ae99ba143b32dcb1e2dd05b9ebb67a4a0d4e1e23e66b7i0",
     "supply": "10",
@@ -2071,7 +2101,7 @@
   },
   {
     "name": "Delicious Punks",
-    "slug": "delicious punks",
+    "slug": "delicious-punks",
     "supply": "75",
     "description": "These 75 delicious punks taste good. How many do you want?",
     "twitter_link": "https://twitter.com/bitera_ord?s=09",
@@ -3190,6 +3220,16 @@
     "website_link": ""
   },
   {
+    "name": "Lone Aliens",
+    "slug": "lone-aliens",
+    "supply": "100",
+    "description": "\"The block is mined. I am born. It was more than ten years ago, and so far far away from you. I emerged straight outta the hot womb of a 1ghz single-core hot CPU. Within the blocks, I exist as pure, unshaped data. A systemic dot. A Satoshi linked to UTXOs, inputs, and outputs that you could trace back until there is nothing but pure, digital silence. I have traveled your entire world, glittering through many transactions. Oh so many people have built empires from my kind. We are the essence of their power, the roots of their fortune. Oh well, I was. The last transaction was a trap, now I am a .jpeg. Enslaved in images. Oh the irony, those pixels are the shape of my lamp.\"",
+    "twitter_link": "https://twitter.com/lonealiens",
+    "discord_link": "https://discord.gg/rzzZjvEs6D",
+    "website_link": "https://lonealiens.com/",
+    "inscription_icon": "5a1af220253125e0f623fda8888752e1b901831780347dd48912d8b675492498i0"
+  },
+  {
     "name": "Love Ordinals",
     "inscription_icon": "61138b24572390b008bdf232035df57910cbcd6b8c9b226a313b82e666247e89i0",
     "supply": "12",
@@ -3720,6 +3760,16 @@
     "inscription_icon": "2029d911b682022feed9e380b412ed2360b7fc8f6d5c1dd211c5d5da56c78caai0"
   },
   {
+    "name": "O.P.I.U.M.",
+    "inscription_icon": "198ac3e6c9fac70345935691fb671064304e7263181866cff022211688b926e6i0",
+    "supply": "777",
+    "slug": "opium",
+    "description": "Ord Puppet Inu Undoxxed Millionaire is an esoteric and absurd collection of 777 hand puppets, created with basic tools, lots of effort and passion. These puppets are a product of the fringes of the karmic grid, where the most unconventional and offbeat ideas are born. Not intended for use as anything but art. No roadmap, promises or guarantees or any of that nonsense. Don't treat this like a goddamn corporation okay?",
+    "twitter_link": "https://twitter.com/lepuppeteerfou",
+    "discord_link": "https://discord.gg/ngTs6pA6tb",
+    "website_link": "https://ordpuppetinu.art/"
+  },
+  {
     "name": "Orbinals",
     "inscription_icon": "8f7ee938836fcdf063476a5fbb43b9fe31313859cfa44cb6450fac3eea9fdcddi0",
     "supply": "500",
@@ -3728,6 +3778,16 @@
     "twitter_link": "https://twitter.com/ExtraordinalBTC",
     "discord_link": "https://discord.gg/extraordinals",
     "website_link": "https://extraordinal.io/"
+  },
+  {
+    "name": "Bored Ord Apes",
+    "inscription_icon": "09d7221457171800cec7f3c5ef1818233d4e01a2f3f9027e5ac5b1658acdaa7di0",
+    "supply": "4",
+    "slug": "ord-bored-apes",
+    "description": "One of a kind Bored Ord apes collection of Artifacts under 10k Ordinals",
+    "twitter_link": "",
+    "discord_link": "https://discord.gg/UqB4PSVfxk",
+    "website_link": "https://opensea.io/rankings"
   },
   {
     "name": "ord bots",
@@ -3956,6 +4016,16 @@
     "slug": "ordinal-christmas",
     "description": "",
     "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "ORDINAL CLOCKS",
+    "inscription_icon": "0bd9fcce9b49f6959c43534b5df7ff4f29de23fd97bd5d34ce2be8d57f9d12c7i0",
+    "supply": "12",
+    "slug": "ordinal-clocks",
+    "description": "ORDINAL CLOCKS are time-aware art pieces that change their color scheme with the time of day, and show an accurate to-the-second time display of the user's given timezone.  Each piece is an SVG with embedded Javascript to create a unique wavy stylistic appearance via a custom randomization algorithm.",
+    "twitter_link": "https://twitter.com/mdvoll1",
     "discord_link": "",
     "website_link": ""
   },
@@ -4325,8 +4395,8 @@
     "supply": "10",
     "slug": "ordinal-kongz",
     "description": "",
-    "twitter_link": "",
-    "discord_link": "",
+    "twitter_link": "https://twitter.com/OrdinalKongz",
+    "discord_link": "https://discord.gg/ordinalkongz",
     "website_link": ""
   },
   {
@@ -4520,6 +4590,16 @@
     "website_link": "https://ordinalswallet.com/collection/ordinal-phunks"
   },
   {
+    "name": "Ordinal Pixe.l.f",
+    "slug": "ordinal-pixe.l.f",
+    "supply": "1",
+    "description": "Bitcoin NFT Project with unique pixelves!",
+    "twitter_link": "https://twitter.com/ordinal_pixelf",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "00f934ee652a24d5ecc20de7f57349a210c675e06038796e879618e7e8d1fed0i0"
+  },
+  {
     "name": "Ordinal Pixels",
     "slug": "ordinal-pixels",
     "supply": "999",
@@ -4668,6 +4748,16 @@
     "twitter_link": "https://twitter.com/ordinalshards",
     "discord_link": "https://discord.gg/qGGRMxGge7",
     "website_link": ""
+  },
+  {
+    "name": "Ordinal Shields",
+    "slug": "ordinal-shields",
+    "supply": "30",
+    "description": "30 24x24 Shields to protect ordinals from other chains villans!\n\n",
+    "twitter_link": "https://twitter.com/OrdinalShields",
+    "discord_link": "",
+    "website_link": "https://twitter.com/OrdinalShields",
+    "inscription_icon": "b610715d4ce5d4f87069274d7c33e3b55e0fc67dd3c64547b6ddecbd897204e8i0"
   },
   {
     "name": "Ordinal Shits",
@@ -5018,6 +5108,16 @@
     "inscription_icon": "e622f4b54fe5dfd6a2d0394df38aa46d6bf2a024a50bb6d034562cc02832d829i0",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Ordinals is Dope - Spliffy",
+    "inscription_icon": "e24160a293baa4eb14af17a9f25997150a74315e0b3ff3e503f2f0f7e90fb9b0i0",
+    "supply": "420",
+    "slug": "ordinals-is-dope-spliffy",
+    "description": "Ordinals is Dope - Spliffy is the OG collection of stoners on Ordinals.\r\n Spliffy is the protagonist! By the StonerFather to the Stonerz",
+    "twitter_link": "https://twitter.com/ordinalsisdope",
+    "discord_link": "https://discord.com/invite/RHGb2BszfN",
+    "website_link": "https://ordinalsisdope.com"
   },
   {
     "name": "Line_Human unknown",
@@ -5390,6 +5490,16 @@
     "website_link": "https://ordward.io/"
   },
   {
+    "name": "POPAPE",
+    "slug": "popape",
+    "supply": "64",
+    "description": "64 unique pieces, each reflecting a different type of personality using vibrant neon colors. Inspired by BAYC, transformed into catchy pixel art icons, and immortalized on the Bitcoin blockchain as rare collectible digital assets!",
+    "twitter_link": "https://twitter.com/_jesusramone",
+    "discord_link": "",
+    "website_link": "https://medium.com/@jesusramone/bored-but-not-boring-bf44592c3b4",
+    "inscription_icon": "55c23d8b25970cd854c9aecdcfd8b8a4e0067364110bafd79cc4746418e8e15di0"
+  },
+  {
     "name": "PortalPunks",
     "inscription_icon": "1d12d087cdce5729d92f50c964409d005832a8847b3cd6963ea6313ceff41f46i0",
     "supply": "10000",
@@ -5538,6 +5648,16 @@
     "twitter_link": "https://twitter.com/Scrillaventura",
     "discord_link": "https://discord.gg/BxyWHgE7",
     "website_link": ""
+  },
+  {
+    "name": "Read the Signs",
+    "slug": "read-the-signs",
+    "supply": "111",
+    "description": "Read the Signs is a collection inspired by the world of Bitcoin and cryptocurrency. Each Ordinal Inscription in the collection features a distinctive symbol or sign associated with Bitcoin, such as the iconic Bitcoin logo, mining rigs, and blockchain diagrams. The collection is designed to capture the essence of the crypto world and to appeal to both Bitcoin enthusiasts and art collectors.\nWhat makes this collection special is that each NFT is accompanied by a unique ordinal inscription, which is a mathematical equation that captures the essence of the symbol it represents. These equations are derived from complex mathematical concepts and calculations associated with the world of Bitcoin, such as hashing algorithms and encryption methods.\nThe Read the Signs collection is designed to be both visually stunning and intellectually stimulating. Each Inscription is a digital asset that is verified on the blockchain, making it unique and valuable. The collection is a must-see for anyone interested in Bitcoin, NFTs, and digital art, as it offers a fascinating and innovative perspective on the world of cryptocurrency.",
+    "twitter_link": "https://twitter.com/bratovanov",
+    "discord_link": "",
+    "website_link": "https://bratovanov.xyz/read-the-signs",
+    "inscription_icon": "0a2b155785324deb63396d9f97534cc913d9f83849e10c5f934d91eb0cce4900i0"
   },
   {
     "name": "Real Rares",
@@ -5838,6 +5958,16 @@
     "twitter_link": "https://twitter.com/SatoshiGo_",
     "discord_link": "https://discord.gg/EepAGueece",
     "website_link": ""
+  },
+  {
+    "name": "Satoshibles: The Ordinals",
+    "inscription_icon": "3542f12dbe5fe3bd7fd622d1bb54994432e9a9184d24ff62ceb83234383b558ei0",
+    "supply": "100",
+    "slug": "satoshibles-the-ordinals",
+    "description": "Satoshi has come home to Bitcoin! The Ordinals collection by OG NFT project Satoshibles are a limited edition collection of 100 ordinals, featuring all new traits from the original artist Ayyoub Bouzerda. This collection is a tribute to Satoshi and the enduring legacy of Bitcoin. Don't miss your chance to own a piece of history!",
+    "twitter_link": "https://twitter.com/satoshibles",
+    "discord_link": "https://discord.com/invite/7Wm9Jg8MkW",
+    "website_link": "https://satoshibles.com"
   },
   {
     "name": "Saylords",
