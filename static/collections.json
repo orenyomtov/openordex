@@ -981,7 +981,7 @@
   },
   {
     "name": "BTC Moonbirds",
-    "inscription_icon": "7759178ad2ffd189642f94e6753fa036f5e2bcf9a866516f08368e56ba230225i0",
+    "inscription_icon": "https://cdn.discordapp.com/attachments/913460810402136104/1089963701022503054/IMG_6947.png",
     "supply": "10000",
     "slug": "bitcoin-moonbirds",
     "description": "Bitcoin Moonbirds are byte-perfect inscriptions of the original Moonbirds 42 x 42 pixel art to the Bitcoin blockchain using Ordinals. They are fully on-chain, Bitcoin native, and completely decentralized digital artifacts.",
@@ -3781,7 +3781,7 @@
   },
   {
     "name": "O.P.I.U.M.",
-    "inscription_icon": "198ac3e6c9fac70345935691fb671064304e7263181866cff022211688b926e6i0",
+    "inscription_icon": "2e899672fc1dc2cf7f57de4b234597eec200e0f1c338eda939ae2f7f4a67790ci0",
     "supply": "777",
     "slug": "opium",
     "description": "Ord Puppet Inu Undoxxed Millionaire is an esoteric and absurd collection of 777 hand puppets, created with basic tools, lots of effort and passion. These puppets are a product of the fringes of the karmic grid, where the most unconventional and offbeat ideas are born. Not intended for use as anything but art. No roadmap, promises or guarantees or any of that nonsense. Don't treat this like a goddamn corporation okay?",
@@ -4582,9 +4582,9 @@
   {
     "name": "Ordinal PENPEN",
     "inscription_icon": "4aff19a992fa501adda349cd5a26f61b86246b391259d519ef38d3af8293c7e8i0",
-    "supply": "14",
+    "supply": "16",
     "slug": "ordinal-penpen",
-    "description": "Inscription #294276-565366",
+    "description": "Inscription #294276-599997",
     "twitter_link": "https://twitter.com/kouteipenpen_f",
     "discord_link": "",
     "website_link": "https://opensea.io/collection/tinypenpen"
@@ -5327,7 +5327,7 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": "",
-    "inscription_icon": "bd81e7ad7699852a59b20054bb0ddf56d97fa0174595cc2c4c68b0400acff188i0"
+    "inscription_icon": "ddca5b9319e9c7aaee770b112b2027def5d0ba294fd2a32f1fb828c474ce58e5i0"
   },
   {
     "name": "Pependrians",
@@ -6515,6 +6515,16 @@
     "supply": "25",
     "slug": "trad-japanese-green",
     "description": "This collection consists 25 squares colored with traditional Japanese green.",
+    "twitter_link": "https://twitter.com/0xKyosuke",
+    "discord_link": "",
+    "website_link": "https://link3.to/0xkyosuke"
+  },
+  {
+    "name": "Trad Japanese purple",
+    "inscription_icon": "698d816e9a2291ee692abc12f972eb5543add310fdcf3edd51a793e17a0bb9f0i0",
+    "supply": "50",
+    "slug": "trad-japanese-purple",
+    "description": "This art piece is a collection of 49+1 squares, focusing on Japan's traditional purple hues. Embracing a minimalist style, the artist aims to showcase Japan's unique and delicate color sense and the noble nature of purple. With nearly 100 distinct shades in the purple family, each square highlights the depth and beauty of Japanese color aesthetics while inviting viewers to connect with the rich cultural significance of these captivating colors.",
     "twitter_link": "https://twitter.com/0xKyosuke",
     "discord_link": "",
     "website_link": "https://link3.to/0xkyosuke"
