@@ -1,6 +1,6 @@
 {
     "name": "<1k",
-    "inscription_icon": "26482871f33f1051f450f2da9af275794c0b5f1c61ebf35e4467fb42c2813403i0",
+    "inscription_icon": "6fb976ab49dcec017f1e201e84395983204ae1a7c2abf7ced0a85d692e442799i0",
     "supply": "1000",
     "slug": "under-1k",
     "description": "The first 1000 inscriptions",
@@ -8,6 +8,12 @@
     "discord_link": "",
     "website_link": "",
     "inscriptions": [
+        {
+            "id": "6fb976ab49dcec017f1e201e84395983204ae1a7c2abf7ced0a85d692e442799i0",
+            "meta": {
+                "name": "Inscription #0"
+            }
+        },
         {
             "id": "26482871f33f1051f450f2da9af275794c0b5f1c61ebf35e4467fb42c2813403i0",
             "meta": {
@@ -6000,12 +6006,6 @@
             "id": "48b74ff588de917d4fe4ae2310a7c5c5ec566aece16425d9bc401ed5fd00800ai0",
             "meta": {
                 "name": "Inscription #999"
-            }
-        },
-        {
-            "id": "cbd62b57bc1b3ae8f6e0cfc402fbdbeb5ae4172f9200671f5f689f1af6d3332bi0",
-            "meta": {
-                "name": "Inscription #1000"
             }
         }
     ]
