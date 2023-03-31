@@ -1490,6 +1490,16 @@
     "website_link": ""
   },
   {
+    "name": "Btc Monkey Business",
+    "inscription_icon": "d77723c887d844dac5aa823b53dc7baaa2372507f69fc3f595a81354914568e2i0",
+    "supply": "47",
+    "slug": "btc-monkey-business",
+    "description": "47 Bitcoin Monkey Business vibing on the BTC blockchain.",
+    "twitter_link": "https://twitter.com/bitcoinmonkebiz",
+    "discord_link": "https://discord.gg/Wb3eh6gakQ",
+    "website_link": ""
+  },
+  {
     "name": "BTC Mutant Machine",
     "inscription_icon": "2905ad83e37b3e539464c99401df7747c1c92b7961fc9473872faafddffa59d9i0",
     "supply": "98",
@@ -1602,7 +1612,7 @@
   {
     "name": "BTC Ordinal Kids",
     "inscription_icon": "5876dce8758a360ecdf92a376e2c1b035e1e4f21289dd6e711843477f8a15e93i0",
-    "supply": "5",
+    "supply": "18",
     "slug": "btcordinalkids",
     "description": "These little trouble makers have left their home in the Cosmos and have landed in the BTC land! They're cute, but.. Watch out! These kids don't play around!",
     "twitter_link": "https://twitter.com/womenfromcosmos",
@@ -3700,6 +3710,16 @@
     "website_link": ""
   },
   {
+    "name": "Normies",
+    "inscription_icon": "3056a6dd8380975da5eff73e6feac537e5d16533527c00f78d3b109a74e3f90ci0",
+    "supply": "555",
+    "slug": "normies",
+    "description": "Normies is a unique collection of 555 pixel characters created by Zoolaxy Labs and hosted on the Bitcoin Network using the Ordinals protocol.\nIt is one of the first Ordinals projects with utility and includes a curated Ordinal NFT launchpad. The Normies Launchpad offers a wide range of services for fellow project builders as well as freelance artists to bring their work to life on Bitcoin.",
+    "twitter_link": "https://twitter.com/normiesordinals",
+    "discord_link": "https://discord.com/invite/ED5XYuJnPf",
+    "website_link": "https://normies.club"
+  },
+  {
     "name": "Not An Ape",
     "inscription_icon": "03f71d69613e07de3a1308fb81173906fc2e6d8d390f8fffbe88233c578e17e7i0",
     "supply": "200",
@@ -3748,6 +3768,16 @@
     "twitter_link": "https://twitter.com/ordzgames",
     "discord_link": "https://discord.gg/6EuP4SQqF7",
     "website_link": "https://www.ordz.games/"
+  },
+  {
+    "name": "OnChainPunks",
+    "slug": "onchainpunks",
+    "supply": "3332",
+    "description": "3332 Crosschain OnChainPunks",
+    "twitter_link": "https://twitter.com/OnchainPunks",
+    "discord_link": "https://discord.gg/R6YBZFqwuB",
+    "website_link": "https://onchainpunks.io",
+    "inscription_icon": "53f3bfd737651f4a64f46e064a433a1d4830476ea98e1b2b8f75737183c98993i0"
   },
   {
     "name": "oneoffone ordinals",
