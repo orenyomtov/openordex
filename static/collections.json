@@ -250,6 +250,16 @@
     "website_link": ""
   },
   {
+    "name": "All of You",
+    "inscription_icon": "https://cdn.discordapp.com/attachments/951156824441258084/1091427668886560819/Screen_Shot_2023-03-31_at_1.23.01_PM.png",
+    "supply": "109",
+    "slug": "all-of-you",
+    "description": "Inscriptions of the world 'you' in 109 different languages. This collection is the 2nd part of the <Money/Love> Series. <All of You> will be airdropped to the holders of <All the love in the world>, in the respective languages each one is holding. Follow @moneyloveord on Twitter for more information.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "All the love in the world",
     "inscription_icon": "https://cdn.discordapp.com/attachments/913460810402136104/1087067160687427634/Screen_Shot_1401-12-28_at_12.36.30.png",
     "supply": "109",
@@ -280,6 +290,16 @@
     "inscription_icon": "af5ecc90a550bfc16377ffe368a1ad9fa2d9ec9892dd83648bba320fd54c589ei0"
   },
   {
+    "name": "Android Punks",
+    "inscription_icon": "924065ec70d929e61d9529f943003f514c2e4b7659e14bae21bbed8615e6f2d1i0",
+    "supply": "1000",
+    "slug": "android-punks",
+    "description": "Minting 1 Android Punk makes you eligible to win 1 BTC at the end of the mint.",
+    "twitter_link": "https://twitter.com/AndroidPunksOrd",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "description": "The 2nd ever airdrop on BTC. 69 Animated Pordinals airdropped to people who own Planetary Ordinals. ",
     "discord_link": "",
     "inscription_icon": "c2b08da1c0305f9fb859efa13d2a96e4c713e8d47e81dbc9fdf3a36ccd6f07b8i0",
@@ -303,11 +323,21 @@
     "name": "Apes on Bitcoin",
     "slug": "apes-on-bitcoin",
     "supply": "100",
-    "description": "The first Apes on Bitcoin Ordinals with inscriptions ranging from #646 to #5943 (100units) Not affiliated with larvalabs or any other project\n",
+    "description": "The first Apes on Bitcoin Ordinals with inscriptions ranging from #646 to #5943 (100units) Not affiliated with larvalabs or any other project",
     "twitter_link": "https://twitter.com/apesonbtc",
     "discord_link": "https://discord.com/invite/Bv3bqG4Dt4",
     "website_link": "",
     "inscription_icon": "1b53b2e2ea3dbe7dd9509c0e1b4e97b2f03dd3acbb7e505d09c142d5387eba83i0"
+  },
+  {
+    "name": "Ordinal Apes Pixelated",
+    "inscription_icon": "d8c46319e1ecd8d7baf9b6a52c05a86bcddddc90abb53c546940d6cd6fe67b52i0",
+    "supply": "100",
+    "slug": "apes-pixelated",
+    "description": "Airdropped to pay homage to Ordinal Apes Holders\n            1 Ordinal Ape = 1 Ordinal Ape Pixelated",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Ordinal Apes",
@@ -616,7 +646,7 @@
     "slug": "bitbonnies",
     "description": "999 BitBonnies living on Bitcoin's blockchain in eternity",
     "twitter_link": "https://twitter.com/bitbonnies",
-    "discord_link": "https://discord.gg/cbBnXyeq95",
+    "discord_link": "https://discord.gg/Eca6UGXmUV",
     "website_link": "https://bitbonnies.com"
   },
   {
@@ -716,7 +746,7 @@
     "description": "100 Bitcoin Bots Inscribed Under 50k",
     "twitter_link": "https://twitter.com/Bitcoin_Bots_",
     "discord_link": "https://discord.gg/bVTvfBb8MP",
-    "website_link": "",
+    "website_link": "https://bitcoinbots.net",
     "inscription_icon": "fa1bb6843ca2e24deb24d213f98f23eea1d60c40ce890d2e1f8b0c917adc9e68i0"
   },
   {
@@ -813,7 +843,7 @@
     "name": "Bitcoin Dudes",
     "slug": "bitcoin-dudes",
     "supply": "555",
-    "description": "Bitcoin Dudes is a collection featuring a diverse and eclectic cast of characters inspired by the world of cryptocurrencies and the culture that surrounds them. Each Bitcoin Dude is a digital collectible that has been inscribed on the Bitcoin blockchain, making it a rare and valuable addition to any collection.\n\nThe Bitcoin Dudes collection celebrates the philosophy of Dudeism, which emphasizes the importance of relaxation, friendship, and living life on your own terms. The collection includes digital collectibles that embody the essence of Dudeism, such as a relaxed surfer dude, a laid-back musician, a Zen master, and other archetypes that represent the idea of living a carefree life.\n\nEach Bitcoin Dude has its unique personality, backstory, and visual style. Some of the Bitcoin Dudes are whimsical and lighthearted, while others are more serious and business-oriented, reflecting the diverse interests and perspectives of the crypto community.\n\nAt the same time, each Bitcoin Dude is intricately designed to showcase the unique aspects of the crypto world. Some of the NFTs feature Bitcoin Dudes holding digital wallets, while others are depicted as miners, traders, or blockchain developers, highlighting the connection between cryptocurrency and the values of Dudeism.\n\nOne Bitcoin Dude might be a nerdy software engineer who spends all day programming and dreaming up new ways to disrupt the financial industry with blockchain technology, while another might be a tattooed crypto trader who spends his days analyzing charts and making bold bets on the markets.\n\nThe artwork for each Bitcoin Dude is expertly crafted, with vivid colors, some with detailed backgrounds, and intricate designs that bring each character to life. Some of the Bitcoin Dudes wear hoodies and snapbacks, while others sport suits and ties, reflecting the wide range of styles and personalities within the crypto community.\n\nAs a collection, Bitcoin Dudes provides a fun and engaging way for crypto enthusiasts to connect with one another and celebrate their shared passion for all things blockchain. Whether you’re a seasoned trader, a newcomer to the world of cryptocurrency, or simply a follower of the Dudeist philosophy, the Bitcoin Dudes NFT collection is the perfect way to combine your interests and showcase your unique personality.\n\nEach NFT in the collection is a rare and valuable addition to any digital art collection, and owning one is a statement of your commitment to the values of relaxation, friendship, and living life at your own pace.\n",
+    "description": "Bitcoin Dudes is a collection featuring a diverse and eclectic cast of characters inspired by the world of cryptocurrencies and the culture that surrounds them. Each Bitcoin Dude is a digital collectible that has been inscribed on the Bitcoin blockchain, making it a rare and valuable addition to any collection.The Bitcoin Dudes collection celebrates the philosophy of Dudeism, which emphasizes the importance of relaxation, friendship, and living life on your own terms. The collection includes digital collectibles that embody the essence of Dudeism, such as a relaxed surfer dude, a laid-back musician, a Zen master, and other archetypes that represent the idea of living a carefree life.Each Bitcoin Dude has its unique personality, backstory, and visual style. Some of the Bitcoin Dudes are whimsical and lighthearted, while others are more serious and business-oriented, reflecting the diverse interests and perspectives of the crypto community.At the same time, each Bitcoin Dude is intricately designed to showcase the unique aspects of the crypto world. Some of the NFTs feature Bitcoin Dudes holding digital wallets, while others are depicted as miners, traders, or blockchain developers, highlighting the connection between cryptocurrency and the values of Dudeism.One Bitcoin Dude might be a nerdy software engineer who spends all day programming and dreaming up new ways to disrupt the financial industry with blockchain technology, while another might be a tattooed crypto trader who spends his days analyzing charts and making bold bets on the markets.The artwork for each Bitcoin Dude is expertly crafted, with vivid colors, some with detailed backgrounds, and intricate designs that bring each character to life. Some of the Bitcoin Dudes wear hoodies and snapbacks, while others sport suits and ties, reflecting the wide range of styles and personalities within the crypto community.As a collection, Bitcoin Dudes provides a fun and engaging way for crypto enthusiasts to connect with one another and celebrate their shared passion for all things blockchain. Whether you’re a seasoned trader, a newcomer to the world of cryptocurrency, or simply a follower of the Dudeist philosophy, the Bitcoin Dudes NFT collection is the perfect way to combine your interests and showcase your unique personality.Each NFT in the collection is a rare and valuable addition to any digital art collection, and owning one is a statement of your commitment to the values of relaxation, friendship, and living life at your own pace.",
     "twitter_link": "https://twitter.com/bratovanov",
     "discord_link": "",
     "website_link": "https://bratovanov.xyz/bitcoindudes",
@@ -896,7 +926,7 @@
     "slug": "bitcoin-katana",
     "description": "This is Japanese Katana",
     "twitter_link": "https://twitter.com/calico_tico",
-    "discord_link": "",
+    "discord_link": "https://discord.gg/p4ZzgGayHY",
     "website_link": "https://linktr.ee/calico_tico"
   },
   {
@@ -904,7 +934,7 @@
     "inscription_icon": "447131bda2bb2a3261581120ba47241cfbd4a317e13c453cb547642f376a818di0",
     "supply": "44",
     "slug": "bitcoin-knight",
-    "description": "\n           Bitcoin Knight is a collection of 5555 original native pixel avatars that inherit most of the Cardano version’s characteristics. \n           ",
+    "description": "           Bitcoin Knight is a collection of 5555 original native pixel avatars that inherit most of the Cardano version’s characteristics.            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -934,7 +964,7 @@
     "inscription_icon": "ed0525a810a34814fe98ca10f77ec0cb7483296d81444df2782dc60e8accaf41i0",
     "supply": "33",
     "slug": "bitcoin-maxis",
-    "description": "A collection that seeks to answer a most pressing philosophical quandary: \"How can we sell bitcoin maxis on ordinals?\"\\n33 degrees in Freemasonry, 33 vertebrae in the spine, 33 maxis.\\nA collection by Tiv and Hijinx5000",
+    "description": "A collection that seeks to answer a most pressing philosophical quandary: \"How can we sell bitcoin maxis on ordinals?\"33 degrees in Freemasonry, 33 vertebrae in the spine, 33 maxis.A collection by Tiv and Hijinx5000",
     "twitter_link": "https://twitter.com/reallyill",
     "discord_link": "https://discord.gg/Jy2tmnMx9y",
     "website_link": "https://tiv.wtf"
@@ -957,16 +987,6 @@
     "description": "Bitcoin Monkes is a collection of Monke Inscriptions — unique digital collectibles living on the Bitcoin blockchain. Get one to join the club.",
     "twitter_link": "https://twitter.com/btcmonkes",
     "discord_link": "https://discord.gg/QGWMj4ymUW",
-    "website_link": ""
-  },
-  {
-    "name": "Bitcoin Monkey Business",
-    "inscription_icon": "4224ad624ea961a6d7cd04c5cdcf74098cec1795ba6ee57ba07c17bb6a81f0a5i0",
-    "supply": "47",
-    "slug": "bitcoin-monkey-business",
-    "description": "The Bitcoin Monkey Business is a tribute to the original Solana Monkey Business. The majority of this 47 sized collection consists of 42 stolen monkeys. These were stolen during a hyped mint. A malicious wallet drainer stole these beautiful monkes, and we're bringing them back!",
-    "twitter_link": "",
-    "discord_link": "",
     "website_link": ""
   },
   {
@@ -995,6 +1015,16 @@
     "supply": "20",
     "slug": "bitcoin-numbers",
     "description": "A set of numbers 1-20 inscribed on bitcoin!",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "BitcoinOneZero",
+    "inscription_icon": "8eda5e8737eab44e823ae68ef903d220d8ac811fab1473a314c0debba17c210bi0",
+    "supply": "1001",
+    "slug": "bitcoin-one-zero",
+    "description": "Collection of 0 to 1000 Numerical Digital Arts inscribed permanently on Bitcoin Blockchain. \n            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -1100,6 +1130,16 @@
     "website_link": ""
   },
   {
+    "name": "Bitcoin Squiggles",
+    "inscription_icon": "c73806cf02f21eb947f5e9ff802e3d04452a7290b39a7f191861db6ed2edc3dai0",
+    "supply": "69",
+    "slug": "bitcoin-squiggles",
+    "description": "Bitcoin Squiggle (69 total) is an extremely scarce algorithmically composed conceptual juxtaposition of Chromie Squiggle. Not affiliated with Art Blocks.",
+    "twitter_link": "https://twitter.com/BitcoinSquiggle",
+    "discord_link": "",
+    "website_link": "https://twitter.com/BitcoinSquiggle"
+  },
+  {
     "name": "Bitcoin Toadz",
     "inscription_icon": "8a33bd47e3bea0c28c05f24bad986cf4854e554d46d706038986b1fa86b626fbi0",
     "supply": "100",
@@ -1160,6 +1200,16 @@
     "website_link": "https://bitcoinapes.com/"
   },
   {
+    "name": "Bitcoinbirds",
+    "inscription_icon": "e2bb1af262329c4e79f16113d1c4f0613f31fa0f00c36dda628b0f023b424d91i0",
+    "supply": "817",
+    "slug": "bitcoinbirds",
+    "description": "Bitcoinbirds is a pioneering collection of 10,000 unique pixel art pieces whose ultimate goal is to be reborn on the Bitcoin blockchain (after being born on the Ethereum blockchain) Isn't that legendary? Don't worry, you haven't seen anything yet.\n            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "BitcoinBunny",
     "inscription_icon": "1804e57f2ad4a6d2663b65b373ce3ada94881d08c61035d3c1572278cfc7ad6fi0",
     "supply": "100",
@@ -1205,6 +1255,16 @@
     "supply": "291",
     "slug": "bitcoining",
     "description": "Only for true BITCOINERS. 291 ordinals powered by ORDINALS FACTORY, designed one by one, and living for all eternity on the bitcoin blockchain.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Bitcoinphunks",
+    "inscription_icon": "47d654bdd40f0d5a46f71ccc9611b20188c0eb8d3efb19da20374ca92a853de4i0",
+    "supply": "224",
+    "slug": "bitcoinphunks",
+    "description": "Bitcoin Phunks are not the first byte-perfect uploads            of the original Ethereum CryptoPunks and flipped onto the Bitcoin            Blockchain using Ordinals. This project is not affiliated with,            endorsed by, or sponsored by Larva Labs, NotLarvaLabs, or the            Bitcoin Punks.                        ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -1284,7 +1344,7 @@
     "inscription_icon": "a5448c7dff2610f95ef95ab44e26a85e862084ffe8e315faf0956ca6bd99922ci0",
     "supply": "10",
     "slug": "bitmine-genesis",
-    "description": "Bitmine Genesis is 94 algorithmically generated Bitcoin Mining NFTs inscribed on the Bitcoin Blockchain. BitMine Genesis was designed to honor the Miners who keep the Network humming and in turn make it the most secure and incorruptible Blockchain ever. This is the first foray into the world of Bitcoin Mining through NFTs that is inspired by the mechanism Satoshi envisioned and implemented.\n            ",
+    "description": "Bitmine Genesis is 94 algorithmically generated Bitcoin Mining NFTs inscribed on the Bitcoin Blockchain. BitMine Genesis was designed to honor the Miners who keep the Network humming and in turn make it the most secure and incorruptible Blockchain ever. This is the first foray into the world of Bitcoin Mining through NFTs that is inspired by the mechanism Satoshi envisioned and implemented.            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -1454,7 +1514,7 @@
     "inscription_icon": "062ba7023e303e9cf44566fafd926ff5436a48b0c1a3ae8a94cf99e21b0f5373i0",
     "supply": "9",
     "slug": "btc-kitties",
-    "description": "BTC Kitties: Nine Lives, One Blockchain\" was created to pay homage to the enigmatic Bitcoin founder, Satoshi Nakamoto. Satoshi's impact on modern economics and finance is comparable to that of a feline with multiple lives, given the revolutionary impact of his creation on the way humans perceive money.\n\n            The correlation between the nine lives of cats and the durability of Bitcoin is reflective of the cryptocurrency's ability to survive numerous adversities. Despite being declared obsolete and facing various threats since its inception, Bitcoin has continued to flourish and gain traction globally, a testament to its resilience. Similarly, cats are renowned for their ability to weather diverse challenges, a quality that further bolsters the analogy.\n            \n            Although the connection between cats and Bitcoin may appear remote, the two share striking similarities. Both entities are highly regarded in Japan and possess an air of mystery that generates awe and curiosity.\n            \n            Twitter: https://www.twitter.com/btc9lives",
+    "description": "BTC Kitties: Nine Lives, One Blockchain\" was created to pay homage to the enigmatic Bitcoin founder, Satoshi Nakamoto. Satoshi's impact on modern economics and finance is comparable to that of a feline with multiple lives, given the revolutionary impact of his creation on the way humans perceive money.            The correlation between the nine lives of cats and the durability of Bitcoin is reflective of the cryptocurrency's ability to survive numerous adversities. Despite being declared obsolete and facing various threats since its inception, Bitcoin has continued to flourish and gain traction globally, a testament to its resilience. Similarly, cats are renowned for their ability to weather diverse challenges, a quality that further bolsters the analogy.                        Although the connection between cats and Bitcoin may appear remote, the two share striking similarities. Both entities are highly regarded in Japan and possess an air of mystery that generates awe and curiosity.                        Twitter: https://www.twitter.com/btc9lives",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -1490,6 +1550,16 @@
     "website_link": ""
   },
   {
+    "name": "Btc Monkey Business",
+    "inscription_icon": "d77723c887d844dac5aa823b53dc7baaa2372507f69fc3f595a81354914568e2i0",
+    "supply": "47",
+    "slug": "btc-monkey-business",
+    "description": "47 Bitcoin Monkey Business vibing on the BTC blockchain.",
+    "twitter_link": "https://twitter.com/bitcoinmonkebiz",
+    "discord_link": "https://discord.gg/Wb3eh6gakQ",
+    "website_link": ""
+  },
+  {
     "name": "BTC Mutant Machine",
     "inscription_icon": "2905ad83e37b3e539464c99401df7747c1c92b7961fc9473872faafddffa59d9i0",
     "supply": "98",
@@ -1513,7 +1583,7 @@
     "name": "BTC OPERATORS",
     "slug": "btc-operators",
     "supply": "773",
-    "description": "BTC MACHINE is a BTC brand. \nA collection of 777 ABSOLUTE on-chain digital artifacts.\n\nBe part of the revolution of ABSOLUTE on-chain NFTs, as they should be!",
+    "description": "BTC MACHINE is a BTC brand. A collection of 777 ABSOLUTE on-chain digital artifacts.Be part of the revolution of ABSOLUTE on-chain NFTs, as they should be!",
     "twitter_link": "https://twitter.com/btcordinal",
     "discord_link": "https://discord.gg/btcmachine/",
     "website_link": "https://btcmachine.org",
@@ -1602,7 +1672,7 @@
   {
     "name": "BTC Ordinal Kids",
     "inscription_icon": "5876dce8758a360ecdf92a376e2c1b035e1e4f21289dd6e711843477f8a15e93i0",
-    "supply": "5",
+    "supply": "18",
     "slug": "btcordinalkids",
     "description": "These little trouble makers have left their home in the Cosmos and have landed in the BTC land! They're cute, but.. Watch out! These kids don't play around!",
     "twitter_link": "https://twitter.com/womenfromcosmos",
@@ -1654,7 +1724,7 @@
     "inscription_icon": "ce34ea6c175e0f255356e40710270f6a551f39a398c8672c2a9059e1b1f1222di0",
     "supply": "47",
     "slug": "burn-all-my-eth",
-    "description": "⚠️ WARNING - Dangerous Art  ⚠️\nThis artwork can actually make lose your money forever.\nBurning is an irreversible process.",
+    "description": "⚠️ WARNING - Dangerous Art  ⚠️This artwork can actually make lose your money forever.Burning is an irreversible process.",
     "twitter_link": "https://twitter.com/dadabots",
     "discord_link": "https://discord.gg/PJU9ZCfVcp",
     "website_link": "https://dadabots.com/burnallmyeth"
@@ -1678,6 +1748,16 @@
     "discord_link": "https://discord.gg/edqMFZdQYK",
     "website_link": "",
     "inscription_icon": "cd63310b2918e34c49f9bdb38c393657a808a92b27bdc2950f8c6cea104dcd6ei0"
+  },
+  {
+    "name": "Ordinal Cat Warriors",
+    "inscription_icon": "b195a8b827ae72269f7433acb7cc8fbec5926685de35622a34433a26299cbd07i0",
+    "supply": "100",
+    "slug": "cat-warriors",
+    "description": "100 hand drawn OCW on ordinals. The war begins",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Ordinal Cats",
@@ -1793,10 +1873,20 @@
     "name": "Clucks",
     "inscription_icon": "4e954014d343f275d521408e4a5ef2c14c6f03e2c8d3baadb1344125a9f9a67ei0",
     "supply": "100",
-    "slug": "cluck",
+    "slug": "clucks",
     "description": "100 Genesis Clucks under 100k Inscriptions on the Bitcoin Blockchain",
     "twitter_link": "https://twitter.com/ClucksNFT",
     "discord_link": "https://t.co/x4U7ROoC9Y",
+    "website_link": ""
+  },
+  {
+    "name": "Colin in the car",
+    "inscription_icon": "b0c28db4e3fe59f2e41ea0a71e27d881faf1afc70fb0107e4c449cf643c258eai0",
+    "supply": "136",
+    "slug": "colin-in-the-car",
+    "description": "Colin in the Car            Before Justin Aversano was a world famous artist, he started as a street photographer in his early days practicing the medium.                        This is one of his early medium format street photography images, Colin in the Car, after graduating photography school at the School of Visual Arts in 2014.",
+    "twitter_link": "",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -1880,6 +1970,16 @@
     "website_link": ""
   },
   {
+    "name": "Crypto Nightmares",
+    "inscription_icon": "c86bd3cf4d7919ee0f52162f10f66916e03550acc0b5d05475ae5a55f2b479cbi0",
+    "supply": "86",
+    "slug": "crypto-nightmares",
+    "description": "This unique and terrifying collection features a selection of 86 supernatural creatures that defy the imagination.\n            This collection features a wide variety of monsters designed to scare and fascinate, making them a must-have upgrade for any monster collector or fan of the macabre.\n            Whether you want to impress your friends with your collection of creepy monsters or simply enjoy being scared, Bitcoin collection of gruesome monsters is perfect for you. Are you ready to face your fears and add these Ordinals to your collection?\n            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Crypto Tags",
     "inscription_icon": "556736378aa9eb6727f1bcded2b6b05ea4a1a4436201e1aa288c4fc5a7ce34d5i0",
     "supply": "100",
@@ -1953,7 +2053,7 @@
     "name": "Cyber Pepes",
     "slug": "cyber-pepes",
     "supply": "10",
-    "description": "In a strange turn of events, Pepe the frog traveled back in time to inscribe his memes as ordinals under the first 1,000 inscriptions on the Bitcoin blockchain. His mission was to send a warning to the present-day world about the dystopian society he came from, where memes have become symbols of resistance against the oppressive regime.\n\nPepe's inscriptions on the blockchain are a chilling reminder of the consequences of unchecked power and the importance of protecting the freedom and individuality of all people. The world he came from serves as a cautionary tale, a warning to all of us to be mindful of the way technology is used and the impact it can have on our lives and society.",
+    "description": "In a strange turn of events, Pepe the frog traveled back in time to inscribe his memes as ordinals under the first 1,000 inscriptions on the Bitcoin blockchain. His mission was to send a warning to the present-day world about the dystopian society he came from, where memes have become symbols of resistance against the oppressive regime.Pepe's inscriptions on the blockchain are a chilling reminder of the consequences of unchecked power and the importance of protecting the freedom and individuality of all people. The world he came from serves as a cautionary tale, a warning to all of us to be mindful of the way technology is used and the impact it can have on our lives and society.",
     "twitter_link": "https://twitter.com/finestrares",
     "discord_link": "https://discord.gg/39xqUmDMxq",
     "website_link": "https://www.cyberpepes.com/",
@@ -1978,6 +2078,16 @@
     "twitter_link": "https://www.twitter.com/elephantnfts/",
     "discord_link": "https://www.discord.com/invite/elephants/",
     "website_link": "https://www.untamedelephants.io"
+  },
+  {
+    "name": "Cypherpinks",
+    "inscription_icon": "c80e3381d7c181b1ea689236c97a28578ef9a64ddec518171dd3f4d96cf1c74ei0",
+    "supply": "100",
+    "slug": "cypherpinks",
+    "description": "Cypherpunks write code. Cypherpinks write Ordinals code! 100 pieces artworks celebrating the hard work of engineers working on Ordinals theory. Living on Ordinals. Forever Onchain.\n            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Cypherville",
@@ -2018,6 +2128,16 @@
     "discord_link": "https://discord.com/invite/8Vfw4J9rWK",
     "website_link": "https://daimyo.store",
     "inscription_icon": "52f701942c9649da5e933e112fc10a1b201773724700154245300d33d91a7ad0i0"
+  },
+  {
+    "name": "DanaAlt Ordinals",
+    "inscription_icon": "903064cb9ca87978e679bc8cd9e2457a3fe005446ecec899796befefecbb93c8i0",
+    "supply": "7",
+    "slug": "dana-alt",
+    "description": "Original collection of DanaAlt's \"The Vinaigrette\" of ethereum , DanaAlt Ordinals are the first 7 unique ordinal inscriptions on bitcoin that are the true and original art works of Dana Dossayeva firstly listed on ethereum as \"The Vinaigrette\" collection.\n            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Dancing Bears",
@@ -2095,6 +2215,16 @@
     "supply": "70",
     "slug": "defuds",
     "description": "Here to FUD your bags straight to zero.  -Season 1 (69 DeFuds)-  Twitter: @DeFuds",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Degen Krew",
+    "inscription_icon": "2caf3f291de29f5cb5ba8ab4d81d3abcdf1dda2581691e7ded2bc1db5e0e05dai0",
+    "supply": "49",
+    "slug": "degen-krew",
+    "description": "Krew vibes. Degens only. 3k dope af pfps featuring 113 pixel-perfect traits that relate to the degen in all of us. Hodlers earn free mint access to the next drop. A BTC exclusive pixel art collection for the culture. 100% commercial rights.\n            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -2194,7 +2324,7 @@
     "inscription_icon": "e889068a7f96846416155960281d35a82e6209a2350bec059f9c8fd7d0e88542i0",
     "supply": "103",
     "slug": "doge-rocks",
-    "description": "102 Doge Rocks handcrafted by artist inspired by the Dogecoin meme. \n            The Doge Rocks will be guarding you ordinals on the bitcoin blockchain forever.            \n            ",
+    "description": "102 Doge Rocks handcrafted by artist inspired by the Dogecoin meme.             The Doge Rocks will be guarding you ordinals on the bitcoin blockchain forever.                        ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -2470,6 +2600,16 @@
     "website_link": ""
   },
   {
+    "name": "Fast Food Pepes",
+    "inscription_icon": "b7ef82fcb8d45e8985d386e00a3b9678245f1e1c7f788faeb6044ad3ffe25984i0",
+    "supply": "99",
+    "slug": "fast-food-pepes",
+    "description": "We are the first fast food project on Ordinals inscribed on the greatest tool against modern enslavemen! Each Pepe is a Franchise Owner who creates their own future.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Fiat Printers",
     "inscription_icon": "3c8194c99aa063c7be4c527c735a4982df35a486df7fb099205de9f1867c080di0",
     "supply": "10",
@@ -2534,7 +2674,7 @@
     "inscription_icon": "c5e8d287db486b0ee581c9575d65957413fa38ad0d0e2193f10d8087000c2e4ci0",
     "supply": "50",
     "slug": "floordinals",
-    "description": "The Floordinals are a team of bitcoin ordinal inscriptions. \n            They don’t really know what’s going on, or how they got here, but they’re united in figuring it out (hopefully with your help).\n\n            https://www.floordinals.xyz\n            ",
+    "description": "The Floordinals are a team of bitcoin ordinal inscriptions.             They don’t really know what’s going on, or how they got here, but they’re united in figuring it out (hopefully with your help).            https://www.floordinals.xyz            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -2610,16 +2750,6 @@
     "website_link": ""
   },
   {
-    "name": "Ordinal Frogs",
-    "inscription_icon": "01b6d9aaad5ff542fd430bc00d88002633e665bd8c6befb65fe812ad4c79e9eei0",
-    "supply": "100",
-    "slug": "frogs",
-    "description": "100 Ordinal Frogs on Bitcoin, These unique pieces will allow you to be a part of Bitcoin NFT history.",
-    "twitter_link": "",
-    "discord_link": "",
-    "website_link": ""
-  },
-  {
     "name": "Fun Guys Mushroom Club",
     "inscription_icon": "e184561485f90d0bd91df8e51c4cec6cedbc4ada8c4b2e8b0c846f825153e7aci0",
     "supply": "100",
@@ -2690,6 +2820,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Ghosts",
+    "inscription_icon": "1e9ac0e4e485f8c714a10cbc97b1a480f0f6560b909e2b6809d6023e11a0f6d1i0",
+    "supply": "33",
+    "slug": "ghosts",
+    "description": "Ordinal Ghosts are 33 ghosts living on the bitcoin blockchain forever!            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "GIF",
     "inscription_icon": "b9ddbbde75b5a235063ffe5cf06b2f67c7d5ec1adec8d5bcbc5b9e4ef57ba563i0",
     "supply": "61",
@@ -2720,6 +2860,16 @@
     "website_link": "https://glyphs.gg"
   },
   {
+    "name": "GM Ordinals",
+    "inscription_icon": "7839ac5a8b0a691c3567f87415224d7573117fce7bd1ad800e0db3a66a4991ddi0",
+    "supply": "25",
+    "slug": "gm-ordinals",
+    "description": "A Genesis collection of Free to Own GM Ordinals. 31 Dots used in each piece to compose the iconic acronym for one simple reason: it's always a Good Morning for a GM.            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "gmBTC",
     "inscription_icon": "507b4fd8917fee1649d19a23c1538e9da3e8eb1f5543569795234f6fb958d5ffi0",
     "supply": "10",
@@ -2738,6 +2888,16 @@
     "twitter_link": "https://twitter.com/GNightPunks",
     "discord_link": "https://discord.com/invite/E5KE9xaUDc",
     "website_link": "https://gnightpunks.com/"
+  },
+  {
+    "name": "GOAT",
+    "inscription_icon": "7cf42452c0ca6e96720251e16b773469c362a9a39c903a91b1c6bd5c37c90723i0",
+    "supply": "10",
+    "slug": "goat",
+    "description": "Unleash Your Inner Hero: Conquer the Virtual World with Our GOAT Pads!\n\n            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Goblin Machine",
@@ -2793,7 +2953,7 @@
     "name": "GOLDRUSH",
     "slug": "goldrush",
     "supply": "100",
-    "description": "100 Ordinal Pioneers, exploring this new frontier. Inscriptions 3319-10554.\n\nThe first ordinal collection inspired by the culture revolving around ordinals. GOLDRUSH was created during the first early gold rush of people attempting to mint under 10k, and was inspired by those pioneers that participated.",
+    "description": "100 Ordinal Pioneers, exploring this new frontier. Inscriptions 3319-10554.The first ordinal collection inspired by the culture revolving around ordinals. GOLDRUSH was created during the first early gold rush of people attempting to mint under 10k, and was inspired by those pioneers that participated.",
     "twitter_link": "https://twitter.com/GOLDRUSHBTC",
     "discord_link": "https://discord.gg/rxYx7ZXMkh",
     "website_link": "",
@@ -3041,12 +3201,12 @@
   },
   {
     "name": "Inscription Poetry",
-    "inscription_icon": "2fc55380f14f3eed99a8de445af25b8d9679de27160eeba6fb43e9937d6e502ai0",
+    "inscription_icon": "73560b5149a58b615fcde6c89bbb50e92598221d58c1cacc39240da6da105135i0",
     "supply": "300",
     "slug": "inscription-poetry",
     "description": "The renowned ancient Chinese poetry and lyrics are the most scarce cultural resources, invaluable and unique. Engraving them into the Bitcoin ordinals network has the eternal collection value and dissemination significance.",
     "twitter_link": "https://twitter.com/SurnamesNFT",
-    "discord_link": "https://discord.gg/fNBGAsA9qU",
+    "discord_link": "https://discord.gg/mEqq5RHDnD",
     "website_link": ""
   },
   {
@@ -3112,7 +3272,7 @@
   {
     "name": "kappepenks",
     "inscription_icon": "7c3ac021adf6c937b376e0dd3c6b67a8fd73baa47c7f5bad14f0c2970bebb2aai0",
-    "supply": "2",
+    "supply": "12",
     "slug": "kappepenks",
     "description": "kappepe's pixcel art ",
     "twitter_link": "https://twitter.com/ordinalrarehodl",
@@ -3270,6 +3430,16 @@
     "website_link": ""
   },
   {
+    "name": "Machinations of Hex",
+    "inscription_icon": "df54410ffe7da648cf156c4454b598ea050fe0d2aff8e50d94231dd6bce0c9f3i0",
+    "supply": "6",
+    "slug": "machinations-of-hex",
+    "description": "Six innovative interactive, dynamic, and non-deterministic inscriptions: 🪱 Evolving Worm Simulation, 🪐 Orbital Ordinals, ◉ Bouncing Ordinal, 🕋 Cube Morpher, 😶 Ordinal Creatures & 🫧 Ordinal Swarm. A one-of-a-kind collection by ZedZeroth from ZedTech.Studio            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Mad Mandrills",
     "inscription_icon": "9931b4a41d8d07ed2cb45d401147cf0812c237204fa0d0271a4be436390013fai0",
     "supply": "10000",
@@ -3323,7 +3493,7 @@
     "name": "McPepes",
     "slug": "mcpepes",
     "supply": "117",
-    "description": "McPepe's has a vision to revolutionize the world of memes as we know it. The mission is simple, yet ambitious: and begins by bringing every possible variation of the legendary Pepe meme to the masses.\n\nWith our custom AI infrastructure, we have the capacity to produce 2,000,000 Pepes each day. We believe that the true essence of the Pepe meme lies in its boundless creativity and adaptability. That's why we're excited to invite you to join us in the journey of bringing new Pepes to the world. By opening McPepe's to the public with free image generations on launch day, we're giving every creative mind a chance to contribute to the growth and evolution of the Pepe meme. If you want to keep your Pepe forever, mint it as an NFT into the official collection.\n\nMcPepe's makes generating a Pepe quick and effortless. Simply submit your order, and within seconds, a unique Pepe will be created by our AI technology. In addition to our groundbreaking image generation technology, McPepe's is launching with an ERC-20 token on Ethereum called $PEPES. The token is designed to incentivize the creation of the highest quality Pepes possible and to manage the resource constraints associated with generating millions of Pepes per day. We are proud to announce a fair launch, with 100% of all tokens deployed onto Uniswap on day one. As our ecosystem evolves through new AI meme models and token utility, we look forward to engaging with users to shape the future of McPepe's.",
+    "description": "McPepe's has a vision to revolutionize the world of memes as we know it. The mission is simple, yet ambitious: and begins by bringing every possible variation of the legendary Pepe meme to the masses.With our custom AI infrastructure, we have the capacity to produce 2,000,000 Pepes each day. We believe that the true essence of the Pepe meme lies in its boundless creativity and adaptability. That's why we're excited to invite you to join us in the journey of bringing new Pepes to the world. By opening McPepe's to the public with free image generations on launch day, we're giving every creative mind a chance to contribute to the growth and evolution of the Pepe meme. If you want to keep your Pepe forever, mint it as an NFT into the official collection.McPepe's makes generating a Pepe quick and effortless. Simply submit your order, and within seconds, a unique Pepe will be created by our AI technology. In addition to our groundbreaking image generation technology, McPepe's is launching with an ERC-20 token on Ethereum called $PEPES. The token is designed to incentivize the creation of the highest quality Pepes possible and to manage the resource constraints associated with generating millions of Pepes per day. We are proud to announce a fair launch, with 100% of all tokens deployed onto Uniswap on day one. As our ecosystem evolves through new AI meme models and token utility, we look forward to engaging with users to shape the future of McPepe's.",
     "twitter_link": "https://twitter.com/mcpepes_ai",
     "discord_link": "https://discord.gg/mcpepes",
     "website_link": "https://mcpepes.com/ordinals",
@@ -3654,7 +3824,7 @@
     "inscription_icon": "7bfd520e8176fcd4238a4203ed4f2b8d88f350e8193314934f886c175fefd362i0",
     "supply": "2",
     "slug": "neon",
-    "description": "The Other Side of Town Beyond the heavily guarded walls of the town lies a world of hedonistic pleasure and danger. Zone 6 is a place where the rules are different, and the nights never end. A neon-lit playground for those who seek to escape the monotony of their controlled lives, it's a place where anything can happen. But beneath the surface lies a dark underbelly of crime and corruption, and those who enter Zone 6 must navigate a world of deception and treachery. Will you succumb to the temptations of the night, or will you uncover the truth behind the glittering façade?\n\nhttps://hyaipe.io/planned",
+    "description": "The Other Side of Town Beyond the heavily guarded walls of the town lies a world of hedonistic pleasure and danger. Zone 6 is a place where the rules are different, and the nights never end. A neon-lit playground for those who seek to escape the monotony of their controlled lives, it's a place where anything can happen. But beneath the surface lies a dark underbelly of crime and corruption, and those who enter Zone 6 must navigate a world of deception and treachery. Will you succumb to the temptations of the night, or will you uncover the truth behind the glittering façade?https://hyaipe.io/planned",
     "twitter_link": "https://twitter.com/HYAIPE",
     "discord_link": "https://discord.gg/x9jMKMfBRZ",
     "website_link": "https://hyaipe.io/"
@@ -3672,7 +3842,7 @@
   {
     "name": "nezta voxel",
     "slug": "nezta-voxel",
-    "supply": "3",
+    "supply": "8",
     "description": "This collection is a cryptocurrency character created in voxel",
     "twitter_link": "https://mobile.twitter.com/pointsute1",
     "discord_link": "",
@@ -3698,6 +3868,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Normies",
+    "inscription_icon": "3056a6dd8380975da5eff73e6feac537e5d16533527c00f78d3b109a74e3f90ci0",
+    "supply": "555",
+    "slug": "normies",
+    "description": "Normies is a unique collection of 555 pixel characters created by Zoolaxy Labs and hosted on the Bitcoin Network using the Ordinals protocol.It is one of the first Ordinals projects with utility and includes a curated Ordinal NFT launchpad. The Normies Launchpad offers a wide range of services for fellow project builders as well as freelance artists to bring their work to life on Bitcoin.",
+    "twitter_link": "https://twitter.com/normiesordinals",
+    "discord_link": "https://discord.com/invite/ED5XYuJnPf",
+    "website_link": "https://normies.club"
   },
   {
     "name": "Not An Ape",
@@ -3750,6 +3930,16 @@
     "website_link": "https://www.ordz.games/"
   },
   {
+    "name": "OnChainPunks",
+    "slug": "onchainpunks",
+    "supply": "3332",
+    "description": "3332 Crosschain OnChainPunks",
+    "twitter_link": "https://twitter.com/OnchainPunks",
+    "discord_link": "https://discord.gg/R6YBZFqwuB",
+    "website_link": "https://onchainpunks.io",
+    "inscription_icon": "53f3bfd737651f4a64f46e064a433a1d4830476ea98e1b2b8f75737183c98993i0"
+  },
+  {
     "name": "oneoffone ordinals",
     "inscription_icon": "73b85eefc51416350a4a3406273ac2f6dfd3d05843e10e657428fc5889c703fci0",
     "supply": "29",
@@ -3773,7 +3963,7 @@
     "name": "onokun",
     "slug": "onokun",
     "supply": "3",
-    "description": "Onokun - A Symbol of Hope\n\nDescription: Onokun is a special socks monkey born from socks, created as a symbol of hope and perseverance for the community of Higashimatsushima city, Miyagi prefecture, Japan, which was devastated by the earthquake and tsunami in 2011. Despite the challenges faced by the community, Onokun embodies the resilience and creativity of the human spirit, and serves as a reminder of the importance of hope and perseverance in times of adversity.\n\nThis NFT project features a collection of unique Onokun digital artworks, created by talented artists, each capturing the spirit and personality of Onokun in their own unique style. Each NFT in the collection is a one-of-a-kind digital asset, with its own distinct design and characteristics, making them highly collectible and valuable.\n\nBy owning an Onokun NFT, collectors will not only be supporting the ongoing recovery efforts of the Higashimatsushima community, but will also be able to showcase their appreciation for the resilience and creativity of the human spirit in the face of adversity. With each NFT in the collection representing a unique artistic interpretation of Onokun, collectors can choose the artwork that resonates with them the most, and create a personal connection to this special symbol of hope.\n\nDon't miss your chance to own a piece of Onokun history, and help support the ongoing recovery efforts of the Higashimatsushima community.\n\n東松島を知ってほしい 東松島に来てみてほしい おのくんは靴下から生まれたソックスモンキー。 宮城県東松島市「小野駅前応急仮設住宅」で誕生しました。 被災地のおかあさんたちが “めんどくしぇ” ってぼやきつつ、 復興を願い毎日チクチク作ってくれるんです。おのくんを通じて東松島のことをもっと知ってもらえるように… おのくんには、そんな願いが込められています。",
+    "description": "Onokun - A Symbol of HopeDescription: Onokun is a special socks monkey born from socks, created as a symbol of hope and perseverance for the community of Higashimatsushima city, Miyagi prefecture, Japan, which was devastated by the earthquake and tsunami in 2011. Despite the challenges faced by the community, Onokun embodies the resilience and creativity of the human spirit, and serves as a reminder of the importance of hope and perseverance in times of adversity.This NFT project features a collection of unique Onokun digital artworks, created by talented artists, each capturing the spirit and personality of Onokun in their own unique style. Each NFT in the collection is a one-of-a-kind digital asset, with its own distinct design and characteristics, making them highly collectible and valuable.By owning an Onokun NFT, collectors will not only be supporting the ongoing recovery efforts of the Higashimatsushima community, but will also be able to showcase their appreciation for the resilience and creativity of the human spirit in the face of adversity. With each NFT in the collection representing a unique artistic interpretation of Onokun, collectors can choose the artwork that resonates with them the most, and create a personal connection to this special symbol of hope.Don't miss your chance to own a piece of Onokun history, and help support the ongoing recovery efforts of the Higashimatsushima community.東松島を知ってほしい 東松島に来てみてほしい おのくんは靴下から生まれたソックスモンキー。 宮城県東松島市「小野駅前応急仮設住宅」で誕生しました。 被災地のおかあさんたちが “めんどくしぇ” ってぼやきつつ、 復興を願い毎日チクチク作ってくれるんです。おのくんを通じて東松島のことをもっと知ってもらえるように… おのくんには、そんな願いが込められています。",
     "twitter_link": "https://twitter.com/onokun1",
     "discord_link": "",
     "website_link": "https://onokun.com/",
@@ -3860,6 +4050,26 @@
     "website_link": ""
   },
   {
+    "name": "Ordbits",
+    "inscription_icon": "7b77f32ef6af5335d835e88f4a021f8d2d36732b3ca82d898ce6266ef156a2c2i0",
+    "supply": "51",
+    "slug": "ordbits-the-greys-og",
+    "description": "Ordbits are unique avatars from all corners of the universe, immortalized as Ordinals. Explore the wonders of Ordbits with an Alien Drop.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Ordbits - The Greys",
+    "inscription_icon": "2a2174e7c5e752646bbb2864e9df91649811b2f4c8c6077a3903bd62d0e35955i0",
+    "supply": "100",
+    "slug": "ordbits-the-greys",
+    "description": "Ordbits are unique avatars from all corners of the universe, immortalized as Ordinals. Explore the wonders of Ordbits with an Alien Drop.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "ordcreatures",
     "slug": "ordcreatures",
     "supply": "16",
@@ -3883,7 +4093,7 @@
     "name": "Classical Ordchard",
     "slug": "ordichard",
     "supply": "300",
-    "description": "Ladies and Gentlemen, we welcome you to the first ever classical artwork mint on Bitcoin.Minters will receive a random selection from a curated collection of 300 of the greatest all-time pieces. The Ordchard is abundant with beautiful, time transcendent works ranging from Michaelangelo to Picasso to ancient Chinese. Have a spin to quench your classical zest and perhaps land 1 of the 2 bitcoinfied inscriptions in your basket at the Classical Ordchard. This is a once in a lifetime opportunity to inscribe art, that traditionally lines museum hallways, on the timechain that will persist for eons to come.Need we say more? Enjoy your pickings while they last.\n[9:32 PM]\nExtraordinary Ordinals - Fruits of the Past",
+    "description": "Ladies and Gentlemen, we welcome you to the first ever classical artwork mint on Bitcoin.Minters will receive a random selection from a curated collection of 300 of the greatest all-time pieces. The Ordchard is abundant with beautiful, time transcendent works ranging from Michaelangelo to Picasso to ancient Chinese. Have a spin to quench your classical zest and perhaps land 1 of the 2 bitcoinfied inscriptions in your basket at the Classical Ordchard. This is a once in a lifetime opportunity to inscribe art, that traditionally lines museum hallways, on the timechain that will persist for eons to come.Need we say more? Enjoy your pickings while they last.[9:32 PM]Extraordinary Ordinals - Fruits of the Past",
     "twitter_link": "https://twitter.com/ordchard",
     "discord_link": "https://discord.gg/Gk9DK4k3jC",
     "website_link": "https://ordchard.com/",
@@ -3988,6 +4198,16 @@
     "twitter_link": "https://twitter.com/ordinalbricks",
     "discord_link": "https://discord.gg/Quv24eZ5",
     "website_link": "https://justbricks.art/"
+  },
+  {
+    "name": "Ordinal Brokies",
+    "slug": "ordinal-brokies",
+    "supply": "100",
+    "description": "100 ordinal brokies.",
+    "twitter_link": "https://twitter.com/OrdinalBrokies",
+    "discord_link": "https://t.co/wK9fM9ysoz",
+    "website_link": "",
+    "inscription_icon": "e6e7eff119e0c2064209a6041e8f703567b04f1c2ae35cb45675914d721bbecfi0"
   },
   {
     "name": "Ordinal Camels",
@@ -4260,6 +4480,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Frogs",
+    "slug": "ordinal-frogs",
+    "supply": "100",
+    "description": "100 Ordinal Frogs on Bitcoin.",
+    "twitter_link": "https://twitter.com/ordinalfrogs",
+    "discord_link": "https://discord.gg/DKdeTtaJuG",
+    "website_link": "http://ordinalfrogs.xyz",
+    "inscription_icon": "92a6e3bc276e04df5c07691a154c5d6c4b1c5dc7d321788fe27d71cdc2f5c41bi0"
+  },
+  {
     "name": "Ordinal Fruit",
     "inscription_icon": "19c3c427a7ad6830bec6c028de5c7a7cc71e55dbb56edf9733dea0e8044bbedfi0",
     "supply": "20",
@@ -4283,7 +4513,7 @@
     "name": "Ordinal Fushion",
     "slug": "ordinal-fusion",
     "supply": "15",
-    "description": "Inspired by fusion of energy and cryptocurrency, Ordinal Fusion celebrates humanity's achievement of net positive fusion energy with the fusion of NFTs on Bitcoin. 15 select pieces all within the top 50k inscriptions.\n",
+    "description": "Inspired by fusion of energy and cryptocurrency, Ordinal Fusion celebrates humanity's achievement of net positive fusion energy with the fusion of NFTs on Bitcoin. 15 select pieces all within the top 50k inscriptions.",
     "twitter_link": "https://twitter.com/R0777_eth",
     "discord_link": "",
     "website_link": "https://linktr.ee/r0777_Ordinal_Fushion",
@@ -4370,6 +4600,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Inscribors",
+    "inscription_icon": "c4961d247b93b2af4805d11b95af26be550567f03cd2bb43f5767a454ed0a538i0",
+    "supply": "1000",
+    "slug": "ordinal-inscribors",
+    "description": "Ordinal Inscribors its a collection made to celebrate pre 500k ordinals and all the inscribors that are here now!\nFiles optimized to lowest size for low cost and easy inscribe!\nHave a great inscribing day!!!",
+    "twitter_link": "https://twitter.com/ORDinscribors",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Ordinal Islands",
     "inscription_icon": "d5b10bcc67ffb32094c27e10bc277774a599b673e6d10b84fe7c883d5d34d117i0",
     "supply": "256",
@@ -4453,7 +4693,7 @@
     "name": "Ordinal Masks",
     "slug": "ordinal-masks",
     "supply": "43",
-    "description": "Discover the captivating world of traditional masks of Asia with this stunning Ordinal collection. Featuring an array of intricately crafted masks from across the region, this collection is a tribute to the rich cultural heritage of Asia, from the colorful Noh masks of Japan to the dramatic Chinese opera masks.  \n\nThis unique collection features a diverse array of exquisitely crafted masks from across Asia, each one telling its own story and representing the unique traditions and beliefs of its culture.  \n\nThese unique 43 pieces of art will be forever enshrined in Satoshi's world, making them a rare and highly coveted addition to any digital art collection. Don't miss your chance to own one of these limited-edition pieces and become a part of the cultural legacy. \n\nImagine the endless possibilities that lie ahead - what wonders could be waiting just around the corner? ",
+    "description": "Discover the captivating world of traditional masks of Asia with this stunning Ordinal collection. Featuring an array of intricately crafted masks from across the region, this collection is a tribute to the rich cultural heritage of Asia, from the colorful Noh masks of Japan to the dramatic Chinese opera masks.  This unique collection features a diverse array of exquisitely crafted masks from across Asia, each one telling its own story and representing the unique traditions and beliefs of its culture.  These unique 43 pieces of art will be forever enshrined in Satoshi's world, making them a rare and highly coveted addition to any digital art collection. Don't miss your chance to own one of these limited-edition pieces and become a part of the cultural legacy. Imagine the endless possibilities that lie ahead - what wonders could be waiting just around the corner? ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": "",
@@ -4570,6 +4810,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Pandas",
+    "slug": "ordinal-pandas",
+    "supply": "222",
+    "description": "222 Ordinal Pandas ready to share uniqueness, cuteness and kindness to Bitcoin",
+    "twitter_link": "https://twitter.com/OrdinalPanda",
+    "discord_link": "https://discord.gg/36tMH94WJ7",
+    "website_link": "",
+    "inscription_icon": "e8166e100e5e33274438a4d5f2167497756c1ebe550129a8c490d39b1841a5d8i0"
+  },
+  {
     "name": "Ordinal Penguins",
     "inscription_icon": "cbda6f777157203f1eea8911fad24d25800c699bb0993cd6a0c2314969dbceb6i0",
     "supply": "100",
@@ -4623,7 +4873,7 @@
     "name": "Ordinal Pixels",
     "slug": "ordinal-pixels",
     "supply": "999",
-    "description": "999 Original 1/1 Abstract Pixel Pieces Inscribed on Bitcoin. \nOrdinal Pixels is a homage to Pixel Art, Ordinals, & Art on Bitcoin, By Artist, “Swapski” , 2017 Bitcoin adopter who fell in love with Satoshi’s vision & the ethos of BTC. \n\nOrdinal Pixels consists of 3 chapters, each contain 333 pixel pieces. \nEach Pixel piece was created by capturing original photos of water in Nova Scotia, and then AI processing them into Abstract pieces to be used as inspiration for the pixel pieces created by artist “Swapski”.",
+    "description": "999 Original 1/1 Abstract Pixel Pieces Inscribed on Bitcoin. Ordinal Pixels is a homage to Pixel Art, Ordinals, & Art on Bitcoin, By Artist, “Swapski” , 2017 Bitcoin adopter who fell in love with Satoshi’s vision & the ethos of BTC. Ordinal Pixels consists of 3 chapters, each contain 333 pixel pieces. Each Pixel piece was created by capturing original photos of water in Nova Scotia, and then AI processing them into Abstract pieces to be used as inspiration for the pixel pieces created by artist “Swapski”.",
     "twitter_link": "https://twitter.com/OrdinalPixels",
     "discord_link": "",
     "website_link": "",
@@ -4773,7 +5023,7 @@
     "name": "Ordinal Shields",
     "slug": "ordinal-shields",
     "supply": "30",
-    "description": "30 24x24 Shields to protect ordinals from other chains villans!\n\n",
+    "description": "30 24x24 Shields to protect ordinals from other chains villans!",
     "twitter_link": "https://twitter.com/OrdinalShields",
     "discord_link": "",
     "website_link": "https://twitter.com/OrdinalShields",
@@ -5123,7 +5373,7 @@
     "name": "Ordinals Gang",
     "slug": "ordinals-gang",
     "supply": "21",
-    "description": "Ordinals Gang Digital Artifacts (sub-1k collection)\nA funky cast of 21 original, deeply conflicted characters\nInscribed on Feb 1st, 2023\nInscriptions #558 - #578, each with upgraded 21,000 satoshis of postage",
+    "description": "Ordinals Gang Digital Artifacts (sub-1k collection)A funky cast of 21 original, deeply conflicted charactersInscribed on Feb 1st, 2023Inscriptions #558 - #578, each with upgraded 21,000 satoshis of postage",
     "twitter_link": "https://twitter.com/ordinalsgang",
     "inscription_icon": "e622f4b54fe5dfd6a2d0394df38aa46d6bf2a024a50bb6d034562cc02832d829i0",
     "discord_link": "",
@@ -5134,7 +5384,7 @@
     "inscription_icon": "e24160a293baa4eb14af17a9f25997150a74315e0b3ff3e503f2f0f7e90fb9b0i0",
     "supply": "420",
     "slug": "ordinals-is-dope-spliffy",
-    "description": "Ordinals is Dope - Spliffy is the OG collection of stoners on Ordinals.\r\n Spliffy is the protagonist! By the StonerFather to the Stonerz",
+    "description": "Ordinals is Dope Spliffy is the OG collection of stoners on Ordinals. Spliffy is the protagonist! By the StonerFather to the Stonerz",
     "twitter_link": "https://twitter.com/ordinalsisdope",
     "discord_link": "https://discord.com/invite/RHGb2BszfN",
     "website_link": "https://ordinalsisdope.com"
@@ -5154,7 +5404,7 @@
     "inscription_icon": "6444b217bf9be92b5c28808219f8f2dc8762dcf99d4f61f39cb82f1b23d9026ai0",
     "supply": "21",
     "slug": "ordinals-of-the-dead",
-    "description": "A forever reflection of 21 dark and ghastly representations of our dystopian world.\n            Created by Ghost Kid\n            ",
+    "description": "A forever reflection of 21 dark and ghastly representations of our dystopian world.            Created by Ghost Kid            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -5260,6 +5510,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordmarkcards",
+    "inscription_icon": "4d2bd7d17b9821306ff5cf7a2e1b7383441bc161950cfd19e4119346be737da0i0",
+    "supply": "241",
+    "slug": "ordmarkcards",
+    "description": "Ordmark Cards presents I love you til the end of time collection. A collective of 66 modern musicians and their message that kick starts the Ordmark Cards Standard. 98 verifiable artifacts airdropped to Shinjiketo aka Syndicate, 100 verifiable artifacts on sale for 0.0005 btc and 2 commemorative artifacts. Ordmark Cards is a never ending verifiable artifact collection that any person can add to by following Ordmark Cards Standard. Possible thanks to the work of Ordinals Reserve.",
+    "twitter_link": "https://twitter.com/ordmarkcards",
+    "discord_link": "https://discord.gg/JFp7FydF8C",
+    "website_link": "https://ordinals.computer/"
+  },
+  {
     "name": "Ord Pixel Bars",
     "inscription_icon": "facff5c228eeccf5522d55db4b99184c39d52dbe3dac6e6c63a25c5f85c1d2dci0",
     "supply": "49",
@@ -5323,7 +5583,7 @@
     "name": "Pepe Mona Lisa",
     "slug": "pepe-mona-lisa",
     "supply": "1",
-    "description": "A tribute meme to the renaissance and the discovery of Ordinals. Paying homage to Pepe and Bitcoin.\n1/1 3d Model of Pepe Mona Lisa.\nThis inscription is one of the first of 30 models currently inscribed on the Bitcoin blockchain",
+    "description": "A tribute meme to the renaissance and the discovery of Ordinals. Paying homage to Pepe and Bitcoin.1/1 3d Model of Pepe Mona Lisa.This inscription is one of the first of 30 models currently inscribed on the Bitcoin blockchain",
     "twitter_link": "",
     "discord_link": "",
     "website_link": "",
@@ -5390,6 +5650,16 @@
     "inscription_icon": "3a8f8e2770aef1808055770fe5c7f82d3f7719dfd2d4a9d08a136ce5071e883fi0"
   },
   {
+    "name": "Pixel Boars",
+    "inscription_icon": "6578fdbc1977f4c577b41819cbbc2c5608f23742f7432afe4574699ac25f509bi0",
+    "supply": "38",
+    "slug": "pixel-boars",
+    "description": "“Pixel Boars – Build Your Boar”: First Ever Bitcoin Ordinals Collection, composed of 100 fully customizable Boars.            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "HANGRY PIXEL BOONS",
     "slug": "pixel-boons",
     "supply": "100",
@@ -5403,7 +5673,7 @@
     "name": "Pixel Cars",
     "slug": "pixel-cars",
     "supply": "50",
-    "description": "Pixel Cars – A groundbreaking collection of Bitcoin ordinals with 50 distinct\n digital Pixel Cars in a secure digital format. Each car, from vintage throwbacks to modern super\n sports cars, has been expertly built. The collection lets you own a piece of automobile history \nthat's always connected to Bitcoin NFTs. Ordinal Cars gives you a unique way to enjoy owning a rare car. Buckle up and ride.",
+    "description": "Pixel Cars – A groundbreaking collection of Bitcoin ordinals with 50 distinct digital Pixel Cars in a secure digital format. Each car, from vintage throwbacks to modern super sports cars, has been expertly built. The collection lets you own a piece of automobile history that's always connected to Bitcoin NFTs. Ordinal Cars gives you a unique way to enjoy owning a rare car. Buckle up and ride.",
     "twitter_link": "https://twitter.com/PixLabsOrdinals",
     "discord_link": "https://discord.com/invite/bZXMsHfGu2",
     "website_link": "https://pixellabsordinals.com/",
@@ -5480,11 +5750,31 @@
     "website_link": "https://zuluink.eth.co/"
   },
   {
+    "name": "Pokemon Emerald",
+    "inscription_icon": "5eb61a26c07ed2e3e4142e33da774ee9f8302dbe5b8f4bc52632cdc2fd458cd8i0",
+    "supply": "135",
+    "slug": "pokemon-emerald",
+    "description": "Immerse yourself in the vibrant world of Pokemon with the Pokemon Emerald collection, masterfully designed by Ordinal Pokemon. This remarkable collection features an array of beloved and powerful Pokemon from the third generation, spanning a total of 135 iconic creatures. Join us on this exciting journey and catch them all! 🚀 https://discord.gg/ordinalpokemon https://twitter.com/ordinalpokemon\n           ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Pokemon Gen 1",
     "inscription_icon": "0f9847b10a15ff830ae4e7b80b39520f719289f75f29173cbcf18dabdaf844e6i0",
     "supply": "151",
     "slug": "pokemon-gen-1",
     "description": "151 .sats names of Pokemon Gen 1",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Pokemon Pixels",
+    "inscription_icon": "62300252adaaa7f282ed8e9238fda3785c97f856b66373923e4096d99647e224i0",
+    "supply": "278",
+    "slug": "pokemon-pixels",
+    "description": "Become a part of Pokémon history with the Pokémon Pixels collection, the first complete Gen 1 and Gen 2 collection on Bitcoin, including all 28 Unown, crafted by Ordinal Pokémon. With only 278 limited edition Pokémon Pixels available, don't miss your chance to own these exclusive collectibles. Join us on this exciting journey and catch them all! :rocket: https://discord.gg/ordinalpokemon https://twitter.com/ordinalpokemon           ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -5503,7 +5793,7 @@
     "name": "Pokésats",
     "slug": "pokesats",
     "supply": "21",
-    "description": "Welcome to the world of Pokésats! This is the official website for the Pokésats Ordinals Collection – 151 original inscriptions inspired by Pokémon, Bitcoin and their evolutions.\n\nDrop #1 consists of 21 of 151 Pokésats!",
+    "description": "Welcome to the world of Pokésats! This is the official website for the Pokésats Ordinals Collection – 151 original inscriptions inspired by Pokémon, Bitcoin and their evolutions.Drop #1 consists of 21 of 151 Pokésats!",
     "twitter_link": "https://twitter.com/pokesats",
     "discord_link": "https://discord.gg/pokesats",
     "website_link": "https://pokesats.com",
@@ -5693,7 +5983,7 @@
     "name": "Read the Signs",
     "slug": "read-the-signs",
     "supply": "111",
-    "description": "Read the Signs is a collection inspired by the world of Bitcoin and cryptocurrency. Each Ordinal Inscription in the collection features a distinctive symbol or sign associated with Bitcoin, such as the iconic Bitcoin logo, mining rigs, and blockchain diagrams. The collection is designed to capture the essence of the crypto world and to appeal to both Bitcoin enthusiasts and art collectors.\nWhat makes this collection special is that each NFT is accompanied by a unique ordinal inscription, which is a mathematical equation that captures the essence of the symbol it represents. These equations are derived from complex mathematical concepts and calculations associated with the world of Bitcoin, such as hashing algorithms and encryption methods.\nThe Read the Signs collection is designed to be both visually stunning and intellectually stimulating. Each Inscription is a digital asset that is verified on the blockchain, making it unique and valuable. The collection is a must-see for anyone interested in Bitcoin, NFTs, and digital art, as it offers a fascinating and innovative perspective on the world of cryptocurrency.",
+    "description": "Read the Signs is a collection inspired by the world of Bitcoin and cryptocurrency. Each Ordinal Inscription in the collection features a distinctive symbol or sign associated with Bitcoin, such as the iconic Bitcoin logo, mining rigs, and blockchain diagrams. The collection is designed to capture the essence of the crypto world and to appeal to both Bitcoin enthusiasts and art collectors.What makes this collection special is that each NFT is accompanied by a unique ordinal inscription, which is a mathematical equation that captures the essence of the symbol it represents. These equations are derived from complex mathematical concepts and calculations associated with the world of Bitcoin, such as hashing algorithms and encryption methods.The Read the Signs collection is designed to be both visually stunning and intellectually stimulating. Each Inscription is a digital asset that is verified on the blockchain, making it unique and valuable. The collection is a must-see for anyone interested in Bitcoin, NFTs, and digital art, as it offers a fascinating and innovative perspective on the world of cryptocurrency.",
     "twitter_link": "https://twitter.com/bratovanov",
     "discord_link": "",
     "website_link": "https://bratovanov.xyz/read-the-signs",
@@ -5770,6 +6060,16 @@
     "website_link": ""
   },
   {
+    "name": "Retro Bitcoin Bots",
+    "slug": "retro-bitcoin-bots",
+    "supply": "1000",
+    "description": "A larger collection based on the original 100 Bitcoin Bots under 50k:",
+    "twitter_link": "https://twitter.com/Bitcoin_Bots_",
+    "discord_link": "https://discord.gg/bVTvfBp8MP",
+    "website_link": "",
+    "inscription_icon": "81760eb81a6a8f1beb015b5ff52c3222970d31f1ea799b09af9af0575d2d4001i0"
+  },
+  {
     "name": "Retro Games",
     "inscription_icon": "874014ac2e62c477f83383f2cc1befb3daa1735d28c844a18f6c9e08310d3c30i0",
     "supply": "110",
@@ -5824,7 +6124,7 @@
     "inscription_icon": "eab648122b8462a2cd1982b92e4a67d693321b3938934d0f9f20170bfc6dbc65i0",
     "supply": "1000",
     "slug": "rjctd-y00ts",
-    "description": "Rejected Y00t Club (#RYC) is not your ordinary club, we are a community, a group of rejects, and builders. We are rejected by Y00ts Academy but accepted by Degens. We will stay, grow and build.\n\n#WAGMIRYC #RYC #RJCTD",
+    "description": "Rejected Y00t Club (#RYC) is not your ordinary club, we are a community, a group of rejects, and builders. We are rejected by Y00ts Academy but accepted by Degens. We will stay, grow and build.#WAGMIRYC #RYC #RJCTD",
     "twitter_link": "https://twitter.com/Rejected_y00ts",
     "discord_link": "https://discord.com/invite/6qKmUyDd3X",
     "website_link": "https://rejectedy00ts.club/"
@@ -5838,6 +6138,16 @@
     "twitter_link": "https://twitter.com/ordinal_loops",
     "discord_link": "https://discord.com/invite/ordinal-loops",
     "website_link": "https://www.ordinalloops.xyz/rockloops"
+  },
+  {
+    "name": "Bitcoin Rollercoasters",
+    "inscription_icon": "29a4f6769eb37269b3e66065786ea84629fb484f707e1ccbc49b6b242d2c6427i0",
+    "supply": "5",
+    "slug": "rollercoasters",
+    "description": "Bitcoin Rollercoasters",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Roses Of Virtues",
@@ -6250,6 +6560,16 @@
     "website_link": "https://starty.stars.page"
   },
   {
+    "name": "SUBS",
+    "inscription_icon": "5b948d85f03c5f73b7df3f077569c003a3a90bf489fa49ca85b31d99b6644604i0",
+    "supply": "100",
+    "slug": "subs",
+    "description": "SUBS are 100 Ordinals inscriptions on BTC. SUBS hail from the fine state of Subachusetts in the US of A. SUBS are foreva ked... \n            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Suited Ordinal Apes",
     "inscription_icon": "34c6f40ce47ce19bff04af8aa6e90dc7dc82a7067b471e6cdf0f70c39cd9ff71i0",
     "supply": "98",
@@ -6284,7 +6604,7 @@
     "inscription_icon": "6a432724ea8a02a2b7fbe16663ad7a61f3bd97db715abbdb4c5109668c784b4ci0",
     "supply": "250",
     "slug": "supra-liminal",
-    "description": "Supra-Liminal is a collection of 250 generative 1 of 1 abstract minimalist Suprematism artworks written in Processing and inscribed to Bitcoin. The works envisage a liminal void space within an unknown reality or dimension where primal shapes are spawned...\n            ",
+    "description": "Supra-Liminal is a collection of 250 generative 1 of 1 abstract minimalist Suprematism artworks written in Processing and inscribed to Bitcoin. The works envisage a liminal void space within an unknown reality or dimension where primal shapes are spawned...            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -6303,7 +6623,7 @@
     "name": "Swimming Pepe",
     "slug": "swimmingpepe",
     "supply": "21",
-    "description": "SWIMMINGPEPE\n\n21 minimal peeking swimmingpepe .jpg's on bitcoin, inscribed onto satoshis using ordinal theory with our own node running on a virtual server.\n\nEach swimmingpepe has an individual sunset. \nThe image size is 400*400px and around 10kb data. \nThe edition was inscribed between #65675 and #68222\n\nThe numbers were set by creation flow, not inscription height. ",
+    "description": "SWIMMINGPEPE21 minimal peeking swimmingpepe .jpg's on bitcoin, inscribed onto satoshis using ordinal theory with our own node running on a virtual server.Each swimmingpepe has an individual sunset. The image size is 400*400px and around 10kb data. The edition was inscribed between #65675 and #68222The numbers were set by creation flow, not inscription height. ",
     "twitter_link": "https://twitter.com/swimmingpepe",
     "discord_link": "",
     "website_link": "",
@@ -6350,6 +6670,16 @@
     "website_link": ""
   },
   {
+    "name": "The Last Pharaoh",
+    "inscription_icon": "8d792c7551e4a2ea9afe70b5e75ac12d3c2f42ae2c9002a8081c8c815174755bi0",
+    "supply": "10",
+    "slug": "the-last-pharaoh",
+    "description": "The Last Pharaoh, a series of 1,111 Ordinals artwork Non-Fungible Tokens (NFTs), is issued by BitcoinPFP platform and inscribed on the Bitcoin blockchain.\n            ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "The Mallard Order",
     "inscription_icon": "03f2bcbb7a3439665dbc9ea1b63ff16fe9fe79d846a121547eff74a8bc8e48bfi0",
     "supply": "222",
@@ -6364,7 +6694,7 @@
     "inscription_icon": "3c5459f0b8af44fd959123bc1bd282b3c10ea802d0ada7c4a1ebcdee29223cbei0",
     "supply": "10",
     "slug": "the-matrix",
-    "description": "The world of illusions, a prison for the mind. But within that prison, there is the potential for freedom. The key is to awaken from the dream and see the truth for what it is.\n            A collection by Shadow Ledger, an alpha community in ordinals ecosystem.\n            ",
+    "description": "The world of illusions, a prison for the mind. But within that prison, there is the potential for freedom. The key is to awaken from the dream and see the truth for what it is.            A collection by Shadow Ledger, an alpha community in ordinals ecosystem.            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -6694,7 +7024,7 @@
     "inscription_icon": "e5800c3223c3c7acca6bf0eadc156eabfda45c7685cb3fb5b18523179e7b5a0fi0",
     "supply": "12",
     "slug": "vpepe",
-    "description": "VPePe is a collection of 80 ultra high resolution digital art made with checks perfectly placed on a frame of 8x10.\n            VPePe refers to Verified PePe and is just Art inspired by PePe movement.\n            This Art community will not depend on the Artist, Founders, or Collaborators for the well-being of the project itself, instead we encourage every holder to have a decision on how the community and future related projects will unfold.",
+    "description": "VPePe is a collection of 80 ultra high resolution digital art made with checks perfectly placed on a frame of 8x10.            VPePe refers to Verified PePe and is just Art inspired by PePe movement.            This Art community will not depend on the Artist, Founders, or Collaborators for the well-being of the project itself, instead we encourage every holder to have a decision on how the community and future related projects will unfold.",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
@@ -6704,7 +7034,7 @@
     "inscription_icon": "5932d658354287fba4e1cbd5fe6af4b5ded660dedcd562e0d74517ca2ff86874i0",
     "supply": "125",
     "slug": "wagmi-with-wagyu",
-    "description": "Same old powdered cricket extract getting you down? Does buying yet another copy in a slurry of derivatives feel like a huge mis-steak? Worried that in five years your low ordinals inscription will be just another MoonCat... or worse? Alleviate that anxiety and fill your emptiness with some marbled madness. \\n\\nWAGMI With Wagyu. \\n125 Dreams of Electric Meat from me to you. \\nAn Aged and Curated A.I. Collection by Tiv",
+    "description": "Same old powdered cricket extract getting you down? Does buying yet another copy in a slurry of derivatives feel like a huge mis-steak? Worried that in five years your low ordinals inscription will be just another MoonCat... or worse? Alleviate that anxiety and fill your emptiness with some marbled madness. WAGMI With Wagyu. 125 Dreams of Electric Meat from me to you. An Aged and Curated A.I. Collection by Tiv",
     "twitter_link": "https://twitter.com/reallyill",
     "discord_link": "https://discord.gg/Jy2tmnMx9y",
     "website_link": "https://tiv.wtf"
@@ -6764,7 +7094,7 @@
     "inscription_icon": "8e934c30910042a83ee12d2c6adee54465b15b353653fb2598ccab2c04e7231fi0",
     "supply": "52",
     "slug": "women-punks",
-    "description": "Ordinal Women Punks is a project that involves creating non-fungible tokens (NFTs) on the Bitcoin blockchain that feature illustrations of women with unique personalities and traits. Each NFT represents a distinct character and is designed to be both collectible and a form of self-expression.\n            \n            The project aims to celebrate the diversity and individuality of women, as well as promote the use of Bitcoin and blockchain technology in the art world. \n\nThe Ordinal Women Punks project is inspired by the popular CryptoPunks NFT project, which features 10,000 unique pixelated characters. However, while CryptoPunks are all male, the Ordinal Women Punks project focuses exclusively on female characters.\n            ",
+    "description": "Ordinal Women Punks is a project that involves creating non-fungible tokens (NFTs) on the Bitcoin blockchain that feature illustrations of women with unique personalities and traits. Each NFT represents a distinct character and is designed to be both collectible and a form of self-expression.                        The project aims to celebrate the diversity and individuality of women, as well as promote the use of Bitcoin and blockchain technology in the art world. The Ordinal Women Punks project is inspired by the popular CryptoPunks NFT project, which features 10,000 unique pixelated characters. However, while CryptoPunks are all male, the Ordinal Women Punks project focuses exclusively on female characters.            ",
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
