@@ -620,6 +620,16 @@
     "website_link": ""
   },
   {
+    "name": "BIT APES",
+    "inscription_icon": "ffccadbec552e7ba65ba33358a621fa3d9c4781d6ddfe521441f7731b3959214i0",
+    "supply": "2657",
+    "slug": "bitapes",
+    "description": "",
+    "twitter_link": "https://twitter.com/BitApes_btc",
+    "discord_link": "https://discord.gg/RWezprjdH4",
+    "website_link": ""
+  },
+  {
     "name": "bitbags",
     "inscription_icon": "dff0e58ab62ff8db3bc87d20c230c957a830615bf8e76ef5efd090f9dd920146i0",
     "supply": "1000",
@@ -3608,6 +3618,16 @@
     "discord_link": "https://discord.gg/rzzZjvEs6D",
     "website_link": "https://lonealiens.com/",
     "inscription_icon": "5a1af220253125e0f623fda8888752e1b901831780347dd48912d8b675492498i0"
+  },
+  {
+    "name": "Lost Shapes",
+    "inscription_icon": "de8207dbaaa3ef6a81e38161f5f5942bf39b20f0c6f7eb2d18f0b959a68882e7i0",
+    "supply": "33",
+    "slug": "lost-shapes",
+    "description": "33 Iconic Forms come to life on Bitcoin",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Love Ordinals",
