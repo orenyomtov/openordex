@@ -260,6 +260,16 @@
     "website_link": "https://aispacequest.xyz/"
   },
   {
+    "name": "Aiko Desho",
+    "inscription_icon": "f8bdc1aa600862bc65608255c5d31daa4e2c1018ab087b8b2cb2f9fddaed1d1fi0",
+    "supply": "50",
+    "slug": "aikodesho",
+    "description": "",
+    "twitter_link": "https://twitter.com/AikoDeshoBTC",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "All of Me",
     "inscription_icon": "https://cdn.discordapp.com/attachments/913460810402136104/1087067951900917790/Screen_Shot_1401-12-28_at_12.39.50.png",
     "supply": "109",
@@ -926,7 +936,7 @@
     "name": "Bitcoin Frog Monsters",
     "slug": "bitcoin-frog-monsters",
     "supply": "50",
-    "twitter_link": "",
+    "twitter_link": "https://twitter.com/bitcoinmonster0",
     "website_link": ""
   },
   {
@@ -1770,6 +1780,16 @@
     "website_link": "https://btcmachine.org"
   },
   {
+    "name": "Bitcoin Bears Club",
+    "inscription_icon": "ffdf3711eaf34e5f8b610858b92e987947810d0de2df98b42b674a1db5bcb9bai0",
+    "supply": "250",
+    "slug": "btcbearsclub",
+    "description": "",
+    "twitter_link": "https://twitter.com/btcbearsclub",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "BTC Domain",
     "inscription_icon": "f3e033071c2b0ef13361c9f08de069cf96f61a8b5b700e2e2d864fc48f28f9adi0",
     "supply": "194",
@@ -1864,7 +1884,7 @@
     "inscription_icon": "6b319db7513dff82ff09332966f42b7b613245b943b74467563a87dcd83d9c58i0",
     "supply": "30",
     "slug": "bureaucrats",
-    "description": "30 total supply",
+    "description": "Fifty bureaucrats from across the ages. Forever committed to Bitcoin.",
     "discord_link": "",
     "twitter_link": "",
     "website_link": "https://ancient.bureaucrats.xyz/"
@@ -1927,6 +1947,16 @@
     "description": "The early legitimate 1/1 fine art collection sub <10k by Cexaline",
     "twitter_link": "",
     "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "description": "Chad Pepes",
+    "discord_link": "",
+    "inscription_icon": "0d7360f79de08d5fc67eda2d379dc31ddb5226ac1b75c5828ea3b500bb816e72i0",
+    "name": "Chad Pepes",
+    "slug": "chad-pepes",
+    "supply": "555",
+    "twitter_link": "https://twitter.com/OrdinalSharkies",
     "website_link": ""
   },
   {
@@ -2038,6 +2068,16 @@
     "twitter_link": "https://twitter.com/ClayMonkey_",
     "discord_link": "https://discord.gg/claymonkeys",
     "website_link": "https://clayforce.io/clay-monkey-collective"
+  },
+  {
+    "name": "Clay Pepes",
+    "inscription_icon": "https://cdn.discordapp.com/attachments/1092502466395906058/1093704329581564026/63339133-DC6B-4797-8D13-CD47CD36AA17.png",
+    "supply": "3000",
+    "slug": "clay-pepes",
+    "description": "",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Clucks",
@@ -2206,6 +2246,16 @@
     "slug": "cubes-crew",
     "description": "",
     "twitter_link": "https://twitter.com/cubescrew",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Cute Fruits",
+    "inscription_icon": "3d5b9d23a2b405a9ad64aece4b2054cd0e7f29ee2e0a9507bfd763cffe4dcb28i0",
+    "supply": "99",
+    "slug": "cute-fruits",
+    "description": "99 fruits looking cute",
+    "twitter_link": "https://twitter.com/cutefruit_nft",
     "discord_link": "",
     "website_link": ""
   },
@@ -3621,7 +3671,7 @@
   },
   {
     "name": "Lost Shapes",
-    "inscription_icon": "de8207dbaaa3ef6a81e38161f5f5942bf39b20f0c6f7eb2d18f0b959a68882e7i0",
+    "inscription_icon": "https://cdn.discordapp.com/attachments/941724718271180810/1092659102645235723/image.png",
     "supply": "33",
     "slug": "lost-shapes",
     "description": "33 Iconic Forms come to life on Bitcoin",
@@ -6046,7 +6096,7 @@
     "name": "Pixel Mumus",
     "slug": "pixel-mumus",
     "supply": "1561",
-    "twitter_link": "",
+    "twitter_link": "https://twitter.com/PepesPixel",
     "website_link": ""
   },
   {
@@ -6108,6 +6158,16 @@
     "discord_link": "",
     "website_link": "",
     "inscription_icon": "caeeecfd4876f9bf0c03339bcbbf46fd6b8fcfc3d8ece329ca0b24abff08af75i0"
+  },
+  {
+    "name": "Planetary Misprints",
+    "inscription_icon": "d0972eceac9684707b65e1e519c70bb72b4b152e81b967833d399b2ddee2d0a7i0",
+    "supply": "",
+    "slug": "planetary-misprints",
+    "description": "",
+    "twitter_link": "https://twitter.com/ordinalswallet",
+    "discord_link": "https://discord.com/invite/ordinalswallet",
+    "website_link": ""
   },
   {
     "name": "Planetary Ordinals",
@@ -6950,6 +7010,16 @@
     "website_link": "http://tiamat.digital/"
   },
   {
+    "description": "Space Pepes",
+    "discord_link": "https://discord.gg/ordinalswallet",
+    "inscription_icon": "0827762ff4efbe95eb21af34413b51ead2d73e9b6b60ba62f4bc379c2c7fe4f5i0",
+    "name": "Space Pepes",
+    "slug": "space-pepes",
+    "supply": "21800",
+    "twitter_link": "https://twitter.com/PepesPixel",
+    "website_link": "https://ordinalswallet.com"
+  },
+  {
     "name": "Space Skelly Ordinals",
     "inscription_icon": "41fe9469afeb4d7c0eb783247f7e48858c9ac34926099851be7616d76290dfb9i0",
     "supply": "71",
@@ -7187,6 +7257,16 @@
     "description": "Spzjulien introduce you thebiggooey",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
     "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
+  },
+  {
+    "name": "THINKY THURSDAY",
+    "inscription_icon": "b974ba0cf1f9921fa97ed9765d8e45f5098a0829e99411f1fbc004e71c8fc84ei0",
+    "supply": "1",
+    "slug": "thinky-thursday",
+    "description": "",
+    "twitter_link": "",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -7588,6 +7668,16 @@
     "twitter_link": "https://twitter.com/wozosbtc",
     "discord_link": "https://discord.gg/tsyE8PGu5E",
     "website_link": "https://collectiv3.org"
+  },
+  {
+    "name": "Wall St Bulls Ordinals",
+    "inscription_icon": "d7fa218d9b42f13d9c6798d4ce573ab5b80e054b1a4f35bcfc2ac5a681678506i0",
+    "supply": "420",
+    "slug": "wsb",
+    "description": "",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "WeedSmokingRobots (WSR)",
