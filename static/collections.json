@@ -4850,6 +4850,16 @@
     "website_link": "https://rarity.garden/ordinals-bridge"
   },
   {
+    "name": "Mutant Eggs",
+    "slug": "mutanteggs",
+    "supply": "200",
+    "description": "Introducing Mutant Eggs, the egg-citing world of zombified eggs. With a passion for all things undead and a love for the versatile eggs, the team behind Ordinal Eggs has created a unique and hilarious world that will delight, entertain and scare you too. From the gruesome to the hilarious, we have created a cast of mutated egg characters that will have you cracking up and frightened too. Whether it’s the undead egg with a killer sense of humor or the zombie-cracked-up ones that just can’t stop eating brains, each character is sure to bring a unique twist to the world of the undead. ",
+    "twitter_link": "https://twitter.com/OrdinalEggs",
+    "discord_link": "https://discord.gg/ftT8F9mx6T",
+    "website_link": "http://mutant.ordinaleggs.com/",
+    "inscription_icon": "d38b2dd0b70772364afc126b019b86b5db0f2c9902a88c3fbe04db67647f85d9i0"
+  },
+  {
     "name": "MVP Player",
     "inscription_icon": "0558e037149c9f3e967d41388d189df635e31076f9cc4698961de4fb0bf4ef47i0",
     "supply": "14",
@@ -7046,6 +7056,16 @@
     "slug": "orpepes",
     "description": "Orpepe Adventures",
     "twitter_link": "https://twitter.com/Orpepes",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Hall of Famers",
+    "inscription_icon": "3856f166407315cfc08b765cb6dbb817a745be87698fa29d564862028e879907i0",
+    "supply": "11",
+    "slug": "oscar-winners",
+    "description": "11 1/1 original signatures of Oscar Winners & Hall of Famers!",
+    "twitter_link": "",
     "discord_link": "",
     "website_link": ""
   },
