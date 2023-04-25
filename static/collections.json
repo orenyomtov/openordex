@@ -3471,13 +3471,13 @@
   },
   {
     "name": "eat up Bitcoin",
-    "inscription_icon": "cfcd471cdfe26b98efa0b28bf3291f596278376e63e856f2927630b78ec85261i0",
-    "supply": "3",
+    "inscription_icon": "ac00f045e0464d78365c2f504be7abe110eb4111db05b9bbe198d07c8aee4d15i0",
+    "supply": "5",
     "slug": "eat_up_bitcoin",
-    "description": "",
+    "description": "To find our dreams and future, eat up Bitcoin!",
     "twitter_link": "https://twitter.com/Spectrum_NFTart",
     "discord_link": "",
-    "website_link": ""
+    "website_link": "https://lit.link./SpectrumCreations"
   },
   {
     "name": "Edge Of Universe",
@@ -9174,7 +9174,7 @@
     "inscription_icon": "cf9b5eaf68bd308fc161463bf77fab55c2faca643967684d47428efd1311a5b7i0",
     "supply": "218",
     "slug": "the-twetch-takeover",
-    "description": "The OG pioneers of web3",
+    "description": "We knew about web3 before you. A crowdsourced collection from OG Twetch users.",
     "twitter_link": "https://twitter.com/twetchapp",
     "discord_link": "",
     "website_link": "https://www.twetch.com"
