@@ -203,7 +203,7 @@ function validateSellerPSBTAndExtractPrice(sellerSignedPsbtBase64, utxo) {
             throw `Seller signed PSBT does not match this inscription\n\n${sellerSignedPsbtInput}\n!=\n${utxo}`
         }
 
-        if (sellerSignedPsbt.txInputs.length != 1 || sellerSignedPsbt.txInputs.length != 1) {
+        if (sellerSignedPsbt.txInputs.length != 1 || sellerSignedPsbt.txOutputs.length != 1) {
             throw `Invalid seller signed PSBT`
         }
 
@@ -673,7 +673,7 @@ async function inscriptionPage() {
                 throw `Seller signed PSBT does not match this inscription\n\n${sellerSignedPsbtInput}\n!=\n${inscription.output}`
             }
 
-            if (sellerSignedPsbt.txInputs.length != 1 || sellerSignedPsbt.txInputs.length != 1) {
+            if (sellerSignedPsbt.txInputs.length != 1 || sellerSignedPsbt.txOutputs.length != 1) {
                 throw `Invalid seller signed PSBT`
             }
 
