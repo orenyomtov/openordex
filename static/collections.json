@@ -260,6 +260,16 @@
     "website_link": ""
   },
   {
+    "name": "A Link to the Past",
+    "inscription_icon": "https://cdn.discordapp.com/attachments/1082466686780850238/1101329941578137600/TEASER_9mbIN4.gif",
+    "supply": "6",
+    "slug": "a-link-to-the-past",
+    "description": "The first series of emulators running on a satoshi &#x1F9E1",
+    "twitter_link": "https://twitter.com/OrdinalDBDAO",
+    "discord_link": "https://discord.gg/ordinaldbdao",
+    "website_link": ""
+  },
+  {
     "name": "@a-z.sats",
     "inscription_icon": "c4d9ef785cdb73c999880c1de23b3c7e7381eb39a5c975ac9eeadd3c5c3b5e61i0",
     "supply": "26",
@@ -481,6 +491,16 @@
   },
   {
     "name": "arcanedual archive",
+    "inscription_icon": "678b83375f54841f52e713bddfc2370f0753c4bc5b4fd2809dbd290d5b59b412i0",
+    "supply": "69",
+    "slug": "arcanedual-archive",
+    "description": "a grail collection of Digital Artifacts on the Bitcoin blockchain ~ by arcanedual",
+    "twitter_link": "https://twitter.com/arcanedual",
+    "discord_link": "https://discord.com/invite/bumU7cnfUb",
+    "website_link": "https://arcanedual.xyz/"
+  },
+  {
+    "name": "arcanedual archive",
     "inscription_icon": "9c6c170e902bd83e49dab013e345bc01433d04e5cfdce301dd235be9b8480976i0",
     "supply": "23",
     "slug": "arcanedual",
@@ -496,6 +516,16 @@
     "slug": "artifacts",
     "description": "Inscription Id's between 6367 - 9808.  Ordinal Artifacts collection is an ordinal set inscribed in the first 10k ever inscribed on the bitcoin Blockchain. A set of Digital Artifacts memorialized forever, on chain, on the first and oldest blockchain.",
     "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Artistic PEPE",
+    "inscription_icon": "9eae7db694caa4ecd641045178e41e4f9a30a55c7d8ae9c8484bb0da83b8c214i0",
+    "supply": "1",
+    "slug": "artistic-pepe",
+    "description": "Artistic PEPE was created based on the concept of what paintings around the world would be like if they were PEPE.",
+    "twitter_link": "https://twitter.com/musica0_00",
     "discord_link": "",
     "website_link": ""
   },
@@ -760,6 +790,26 @@
     "website_link": "https://bbgc58.wordpress.com/"
   },
   {
+    "name": "BCRC Ordinals",
+    "inscription_icon": "674a61986eea30ad0e90d0846df2ef27e412b7aa1514d5defd59d4dfd0a1ede3i0",
+    "supply": "333",
+    "slug": "bcrc-ordinals",
+    "description": "Boss Cat Rocket Club is breaking new ground by entering the BTC NFT space with 333 Bitcoin Ordinals. Don’t miss out on this rare opportunity to own a piece of our exclusive history and join us in revolutionizing the crypto world.",
+    "twitter_link": "https://twitter.com/BossCatRC",
+    "discord_link": "https://discord.gg/bosscatrocketclub",
+    "website_link": "https://bosscatrocketclub.com"
+  },
+  {
+    "name": "BeepBeepBuggies",
+    "inscription_icon": "cc4cfbc12148ed2384c05928ee1563164abaf0a03babafdd861ad71a721de8aci0",
+    "supply": "300",
+    "slug": "beepbeepbuggies",
+    "description": "BeepBeepBuggies appeal to both old-school car enthusiasts and modern-day crypto collectors. Each buggy is carefully crafted with vibrant colors, intricate patterns, and unique textures that make them a one-of-a-kind piece of digital art. As one of the earliest ordinals on the Bitcoin blockchain, owning a BeepBeepBuggies is a statement of your appreciation for both the historical significance of crypto art and the innovative spirit of the present. Don't miss your chance to own a piece of history and style with BeepBeepBuggies - get yours now!",
+    "twitter_link": "https://twitter.com/beepbeepbuggies",
+    "discord_link": "https://discord.gg/6df6UXJGtU",
+    "website_link": "https://beepbeepbuggies.com"
+  },
+  {
     "name": "Benjamins Cartel BTC",
     "slug": "benjamins-cartel-btc",
     "supply": "52",
@@ -928,6 +978,16 @@
     "twitter_link": "https://twitter.com/btcordinals",
     "discord_link": "https://discord.gg/mze5YUx344",
     "website_link": ""
+  },
+  {
+    "name": "Bitcoin & Friends | S1",
+    "inscription_icon": "550dda20b8cd7c9a7e92dff921e4ef4d24a82a316473bc3794c9153c975d993di0",
+    "supply": "21",
+    "slug": "bitcoin-and-friends-season-1",
+    "description": "Bitcoin & Friends | S1 is a collection of 21 unique Ordinals, each representing a different character from Bitcoin & Friends | Season 1. Each NFT is a unique piece of art, and each character has a unique personality and backstory. The collection is inspired by the Bitcoin & Friends hit animated series, which is a satirical and yet strangely heart warming take on the story of Bitcoin. 4 of the Ordinals from this series will be available to recover through a unique treasure hunt with seed words to wallets containing them hidden throughout Season 1 episodes. The remaining Ordinals will be available for purchase at https://btcandfriends.com.",
+    "twitter_link": "https://twitter.com/btcandfriends",
+    "website_link": "https://btcandfriends.com",
+    "discord_link": ""
   },
   {
     "name": "Bitcoin Apes",
@@ -1860,6 +1920,16 @@
     "inscription_icon": "4a999d0622edb334ea581eb7429080a9148ef655dd3a5e2b98b14af647ef5462i0"
   },
   {
+    "name": "BitCorn",
+    "inscription_icon": "0f240b0c816a394c8de9e997f46dfc908c125cb0300c0668096904e421c7341fi0",
+    "supply": "55",
+    "slug": "bitcorn",
+    "description": "Happy Ears of Corn Forever Planted on the Bitcoin Blockchain",
+    "twitter_link": "https://twitter.com/BitCornOrdinal",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Bitcorns",
     "slug": "bitcorns",
     "supply": "100",
@@ -2181,7 +2251,7 @@
   },
   {
     "name": "BTC Artsy Monke",
-    "inscription_icon": "8078fd7cfc04f17d3da8098ce2689b40c8c4be4d8e92a161532acbcb1e3c0473i0",
+    "inscription_icon": "b12ae9b443e2e1c36760764431708ed72aaf9866818be1a9d6926af129a44e80i0",
     "supply": "10000",
     "slug": "btc-artsy-monke",
     "description": "BTC Artsy Monke is the official Bitcoin counterpart of the beloved AI generated art collection Artsy Monke, featuring 20 different art themes. 10,000 completely unique Art pieces.",
@@ -2572,7 +2642,7 @@
   {
     "name": "BTC Ordinal Kids",
     "inscription_icon": "5876dce8758a360ecdf92a376e2c1b035e1e4f21289dd6e711843477f8a15e93i0",
-    "supply": "18",
+    "supply": "31",
     "slug": "btcordinalkids",
     "description": "These little trouble makers have left their home in the Cosmos and have landed in the BTC land! They're cute, but.. Watch out! These kids don't play around!",
     "twitter_link": "https://twitter.com/womenfromcosmos",
@@ -3414,10 +3484,10 @@
     "inscription_icon": "99e570d89684cee7b753e6c8081cb8b278881eb2ae7ad7e40c48d0dedf487115i0",
     "supply": "100",
     "slug": "digi-mini",
-    "description": "",
-    "twitter_link": "",
+    "description": "Introducing Digi-Mini-Gold, the first collection of Bitcoin-based NFTs that springs to life through a captivating love story.",
+    "twitter_link": "https://twitter.com/character_cafe_",
     "discord_link": "",
-    "website_link": ""
+    "website_link": "https://the-digital-character-cafe.vercel.app/"
   },
   {
     "name": "Digital Artifacts - BTC",
@@ -3524,10 +3594,10 @@
     "inscription_icon": "47b36997a46c978f6a7d5d6f6a58c35a1e91074286d153737bd53074b2c24e71i0",
     "supply": "16",
     "slug": "donuts",
-    "description": "Ordinals Observatory, March 11, 2023. Dear Pixel Pepes #1157, in response to your requirement I am making this pull request to create the “Donut” branch to receive submissions from NFT artists and fans to create a supply of 10,000 donuts to feed the growing Bitcoin population. Sub100k #94549",
+    "description": "March 11, 2023. Dear Pixel Pepes #1157, in response to your requirement I am making this pull request to create the “Donut” branch to receive submissions from NFT artists and fans to create a supply of 10,000 donuts to feed the growing Bitcoin population. Sub100k #94549",
     "twitter_link": "https://twitter.com/donuts_ord",
     "discord_link": "",
-    "website_link": "https://portal-ordinal.vercel.app/"
+    "website_link": "https://the-digital-character-cafe.vercel.app/"
   },
   {
     "name": "Dordinals",
@@ -3600,13 +3670,23 @@
     "website_link": ""
   },
   {
+    "name": "Early Goblins",
+    "slug": "early-goblins",
+    "supply": "35",
+    "description": "ᴱᵃʳˡʸ ᴳᵒᵇˡⁱⁿˢ, ³⁵ ʳᵃʳᵉ ᵍᵒᵇˡⁱⁿˢ ⁱⁿˢᶜʳⁱᵇᵉᵈ ᵈᵉᵉᵖ ᵈᵒʷⁿ ⁱⁿᵗᵒ ᵗʰᵉ ᵈᵉᵖᵗʰˢ ᵒᶠ ᵗʰᵉ ᴮⁱᵗᶜᵒⁱⁿ  ᵇˡᵒᶜᵏᶜʰᵃⁱⁿ",
+    "inscription_icon": "ed36fd374a61d0c9e0554af3c44b2b83ef6b3c7faa36ced18e59a89eb8503685i0",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Earth Dragon Balls",
-    "inscription_icon": "1105f889aaf0a7b7a8a0b2bf223a44b16799c781eb565d5f5c5a4af18eeed817i0",
+    "inscription_icon": "https://cdn.discordapp.com/attachments/1082466686780850238/1084212540743094313/GIF.gif",
     "supply": "7",
     "slug": "earth-dragon-balls",
-    "description": "7 total supply",
-    "twitter_link": "https://twitter.com/OrdDragonBall",
-    "discord_link": "https://discord.gg/ordinaldragonball",
+    "description": "Witness the power of the Dragon Balls in a whole new way",
+    "twitter_link": "https://twitter.com/OrdinalDBDAO",
+    "discord_link": "https://discord.gg/ordinaldbdao",
     "website_link": ""
   },
   {
@@ -3960,6 +4040,16 @@
     "website_link": ""
   },
   {
+    "name": "Flamingo Handshake",
+    "slug": "flamingo-handshake",
+    "supply": "8",
+    "description": "",
+    "twitter_link": "https://twitter.com/skyinclude1",
+    "discord_link": "https://discord.com/invite/YSpA6awByb",
+    "website_link": "https://ordinals.skyinclude.com ",
+    "inscription_icon": "c6afdc2a2c2db233cdb14cb8a48865f8811302633b8261b41380c9c6db0e4651i0"
+  },
+  {
     "name": "Floordinals",
     "inscription_icon": "c5e8d287db486b0ee581c9575d65957413fa38ad0d0e2193f10d8087000c2e4ci0",
     "supply": "50",
@@ -4150,6 +4240,16 @@
     "website_link": "https://twet.ch/inv/6141a5a1"
   },
   {
+    "name": "Genesis MetaPix",
+    "inscription_icon": "333cc7b442e75b7f94a03ad75ac4d070aa43cc61fc9b2b0730186a41ad8dd1d8i0",
+    "supply": "50",
+    "slug": "genesis-metapix",
+    "description": "Limited edition collection of 50 unique MetaPix pixel art artworks. Owners of an Ordinal Genesis MetaPix will enjoy automatic whitelist access to all future inscriptions of our project.",
+    "twitter_link": "https://twitter.com/MetaBrosGalaxy",
+    "discord_link": "http://discord.gg/9yqrhfcGdm",
+    "website_link": "https://metabrosnft.com/"
+  },
+  {
     "name": "Genesis Ordinals",
     "inscription_icon": "558c46c941a8f37af2a182eb52be865405c9ec11f56f149ad6922492b0ed785ai0",
     "supply": "43",
@@ -4168,6 +4268,16 @@
     "twitter_link": "https://twitter.com/OrdinalsLab",
     "discord_link": "https://discord.gg/FsjUAtrCrV",
     "website_link": ""
+  },
+  {
+    "name": "Ghetto Kidz",
+    "inscription_icon": "4a8f5e6e9a03a49c742afba0d06f73ad83ff56ce76ad984663d52c57214f9dfdi0",
+    "supply": "12",
+    "slug": "ghettokidz",
+    "description": "AI x Human graffiti art concept by Ordinals Computer.",
+    "twitter_link": "https://twitter.com/zdikottehg",
+    "discord_link": "https://discord.gg/JFp7FydF8C",
+    "website_link": "https://ordinals.computer"
   },
   {
     "name": "Ghostmode Snoozles",
@@ -4430,6 +4540,16 @@
     "website_link": "https://cyphersatoshi.com/"
   },
   {
+    "name": "Handshake Ordinals",
+    "slug": "handshake-ordinals",
+    "supply": "48",
+    "description": "",
+    "twitter_link": "https://twitter.com/skyinclude1",
+    "discord_link": "https://discord.com/invite/YSpA6awByb",
+    "website_link": "https://ordinals.skyinclude.com ",
+    "inscription_icon": "c9d10f193f182a32e8864747e6fe9fe06b80cfec6330faca159bb85042b8be39i0"
+  },
+  {
     "name": "Hangry Heads",
     "inscription_icon": "8d10c91153d9b5b0ce0311dd3ad4b6d30f99e2c8c12fba08c9f7359eb633e287i0",
     "supply": "2",
@@ -4485,7 +4605,7 @@
     "supply": "77",
     "description": "A collection of 77 AI generated Heavenly Gates.  Each gate has the power to grant its holder access to all future collections created by Heavenly Ordinals.",
     "twitter_link": "https://twitter.com/HeavenlyOrds",
-    "discord_link": "",
+    "discord_link": "https://discord.gg/7BZcGeqTPB",
     "website_link": "",
     "inscription_icon": "1ae8091279018006cd62c7ad880a6fab305daff5df2f112a0bf379c32eec5115i0"
   },
@@ -5231,7 +5351,7 @@
   },
   {
     "name": "Millennial Colors",
-    "inscription_icon": "8a987e67963620631fc4ecaa12b4fd320a79398c659d8905c8156a05ccec38e3i0",
+    "inscription_icon": "650c64e3f426330106af095660345e204f6a07c2b43e10c6baf965e60044808ci0",
     "supply": "60",
     "slug": "millennial-colors",
     "description": "60 Colors = 1000 Years. Millennial Colors = MLCS.",
@@ -6743,7 +6863,7 @@
     "name": "Ordinal Monkey Business",
     "slug": "ordinal-mb",
     "supply": "107",
-    "description": "One of the first ordinals project on Bitcoin, 107 Pixelated Monkeys, Bitcoin Ordinal OG Builders, 50% Holders Profit Sharing, OMB Certified Partners",
+    "description": "One of the first ordinals project on Bitcoin, 107 Pixelated Monkeys, Bitcoin Ordinal OG Builders.",
     "twitter_link": "https://twitter.com/OrdinalMB",
     "discord_link": "https://discord.gg/ynqBbq7EbF",
     "website_link": "https://ordinalmonkeybusiness.xyz",
@@ -7110,6 +7230,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal SKIES",
+    "inscription_icon": "92a60bfc259468a7597bb2943108369f39401127bfc1853c3cc3e1911bb46d15i0",
+    "supply": "5",
+    "slug": "ordinal-skies",
+    "description": "Ordinal SKIES by Danil Pan",
+    "twitter_link": "https://twitter.com/pan_danil",
+    "discord_link": "",
+    "website_link": "https://linktr.ee/danilpan"
+  },
+  {
     "name": "Ordinal Smokes",
     "inscription_icon": "be7bc51bfba43f0ef903e3a838879f9a2773461238745052edae50d1c3cc355ci0",
     "supply": "69",
@@ -7158,6 +7288,16 @@
     "twitter_link": "https://twitter.com/OrdinalSpooky",
     "discord_link": "https://discord.gg/mfpmJU44XH",
     "website_link": "https://ordinalspooky.com"
+  },
+  {
+    "name": "Ordinal Sprite",
+    "inscription_icon": "27dbb8cf03cc5663a0f62154d0efcadab35106af938c0c80e08e223d33a9d850i0",
+    "supply": "245",
+    "slug": "ordinal-sprite",
+    "description": "Relive the glory of your childhood with warriors from a fantasy world! 245 pixelart fantasy character with their own job and faction.",
+    "twitter_link": "https://twitter.com/jachdoart",
+    "discord_link": "",
+    "website_link": "https://generative.xyz/generative/1001458"
   },
   {
     "name": "ORDINAL SQUARES",
@@ -7477,7 +7617,7 @@
     "description": "88 Ordinaliens inscribed on the Bitcoin Blockchain.",
     "twitter_link": "https://twitter.com/ordinaliens",
     "discord_link": "https://discord.gg/mbatYSThyZ",
-    "website_link": ""
+    "website_link": "https://ordinaliens.xyz/"
   },
   {
     "name": "Ordinal Kois",
@@ -7841,12 +7981,12 @@
   },
   {
     "name": "OrDucks",
-    "inscription_icon": "9ce234d22277f007e96e3af9365dd6defdd7d70057a1f4931499e9a97c50b58ci0",
-    "supply": "110",
+    "inscription_icon": "fbb6277552f6d290cc440d23b39e3689f56813b0e3f0b155c813b66d233969a1i0",
+    "supply": "111",
     "slug": "orducks",
     "description": "111 OrDucks waddling around the Bitcoin ecosystem",
     "twitter_link": "https://twitter.com/OrDucksNFT",
-    "discord_link": "",
+    "discord_link": "https://discord.gg/DFhxU8eSYW",
     "website_link": ""
   },
   {
@@ -7928,6 +8068,16 @@
     "discord_link": "",
     "website_link": "",
     "inscription_icon": "ddca5b9319e9c7aaee770b112b2027def5d0ba294fd2a32f1fb828c474ce58e5i0"
+  },
+  {
+    "name": "Pepes of Ordinals",
+    "slug": "pepe",
+    "supply": "69",
+    "description": "69 pepes of ordinals",
+    "twitter_link": "https://twitter.com/PepesOfOrdinals",
+    "discord_link": "https://discord.gg/NacnQJ259S",
+    "website_link": "",
+    "inscription_icon": "30d2c38d31ee6065325f5d463e2cc1b5e19db08257f21781c7b82e0226110834i0"
   },
   {
     "name": "Pependrians",
@@ -8158,6 +8308,16 @@
     "discord_link": "",
     "website_link": "",
     "inscription_icon": "caeeecfd4876f9bf0c03339bcbbf46fd6b8fcfc3d8ece329ca0b24abff08af75i0"
+  },
+  {
+    "name": "Pixels",
+    "inscription_icon": "6b74777842c85d20cd5055a8e2391424af8e4fff40c147e81e6041111678068di0",
+    "supply": "30",
+    "slug": "pixels",
+    "description": "Digital sand mandalas, painted pixel-by-pixel on an expanded 32-by-32 bit canvas to further explore the interplay of color of color, depth, and cohesion.",
+    "twitter_link": "https://twitter.com/pourteaux",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "Pixogette",
@@ -8710,6 +8870,16 @@
     "website_link": ""
   },
   {
+    "name": "Royal Court",
+    "slug": "royal-court",
+    "supply": "18",
+    "description": "",
+    "twitter_link": "https://twitter.com/skyinclude1",
+    "discord_link": "https://discord.com/invite/YSpA6awByb",
+    "website_link": "https://ordinals.skyinclude.com ",
+    "inscription_icon": "c90473c1a73573daf6d8554cd544c0e4038c69c298fdd5d8068b139b6242efedi0"
+  },
+  {
     "name": "Royal Monkies",
     "slug": "royal-monkies",
     "supply": "3333",
@@ -8910,6 +9080,16 @@
     "website_link": "https://satoshibles.com"
   },
   {
+    "name": "Satoshis",
+    "inscription_icon": "846095725db9e0e4ee3ae6152b1e9305ca3f8861dde8690bcc250b3959421c38i0",
+    "supply": "24",
+    "slug": "satoshis",
+    "description": "Named on the sats they are in inscribed on Satoshis are an early Ordinals Project with 24 sub 20k inscriptions.",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Satoshi Wands",
     "inscription_icon": "fbbfa6742dc4188ae5b352bd73fc35d42d9a7249daa4091c5907ecec2767860fi0",
     "supply": "54",
@@ -9016,7 +9196,7 @@
     "description": "it is just some sheep",
     "twitter_link": "https://twitter.com/Sheeeeeeeeeples",
     "discord_link": "https://discord.gg/9yt3FpVZ9F",
-    "website_link": "https://i.kinja-img.com/gawker-media/image/upload/s--EcWXbibk--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/f0wpka0br6qevhqcjout.jpg",
+    "website_link": "https://sheeples.xyz",
     "inscription_icon": "c8cc6f4c2f41ac26a7989f921294d4ce03a43a33579b4c44cdea0b890596802fi0"
   },
   {
@@ -9146,6 +9326,16 @@
     "slug": "smokin-sarina",
     "description": "",
     "twitter_link": "https://twitter.com/smokinsarina",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Sniye's Ascension",
+    "inscription_icon": "c4ad39b1a6bc647bc04e5efe7fc30bde93abee61aebb31d819bea72a2b12d14ai0",
+    "supply": "250",
+    "slug": "sniyes-ascension",
+    "description": "Embark on a one-of-a-kind emotional journey with Sniye's Ascension, an ultra-rare Ordinal collection. Each character features gorgeous artwork and detailed designs paying homage to some of the most iconic NFT collections in history, making each piece a true masterpiece.",
+    "twitter_link": "https://twitter.com/SniyeAscension",
     "discord_link": "",
     "website_link": ""
   },
@@ -9330,6 +9520,16 @@
     "inscription_icon": "6cc35e16649fe44bbca3b359a9fb2e71009f3183739ccac693e2f2047d3d59c6i0"
   },
   {
+    "name": "Taproot Cows",
+    "inscription_icon": "79e2910b0e9f19d9d41b5400609f1dee08e7b817941260bb5718a4f8a84b9300i0",
+    "supply": "555",
+    "slug": "taproot-cows",
+    "description": "Unleash the power of Taproot Cows, an electrifying Ordinals collection featuring 555 one-of-a-kind, inscribed cows on a thrilling journey through the Bitcoin blockchain. With a fusion of groundbreaking technology and mind-bending creativity, this captivating collection offers extraordinary perks to holders while unlocking new frontiers in the digital world. Dive into the excitement, and become a part of the Taproot Cows revolution! This is just the beginning!",
+    "twitter_link": "https://twitter.com/taprootcowsfam",
+    "discord_link": "https://discord.gg/WPc2JS9B34",
+    "website_link": "https://taprootcows.xyz"
+  },
+  {
     "name": "Taproot Punks",
     "inscription_icon": "131fd3a0b771f7ac87377a2650e418d172a54d6ff61672da12dd890bdccdf442i0",
     "supply": "100",
@@ -9480,6 +9680,16 @@
     "website_link": ""
   },
   {
+    "name": "The Ordinables",
+    "inscription_icon": "23f1b38d411182ae7419716f83b730f914c8af8d21520dec5bb5efe4c1ac9805i0",
+    "supply": "100",
+    "slug": "the-ordinables",
+    "description": "When missile technology is used to enhance The Ordinables, The Ordinables soon begin to take their battle programming too seriously.",
+    "twitter_link": "https://twitter.com/TheOrdinables",
+    "discord_link": "https://discord.com/invite/gSkaEuTp7a",
+    "website_link": ""
+  },
+  {
     "name": "The Ordinal Boss",
     "inscription_icon": "5fbe3662a3b7d9b806b06337e85fc133f0855c2133cd91d5fa301cd3861a592fi0",
     "supply": "10",
@@ -9538,6 +9748,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "The Taruguitos",
+    "slug": "the-taruguitos",
+    "supply": "65",
+    "description": "The story goes that some logs were stacked up as dry firewood in anticipation of a freezing winter. In a night of lightning and sparks, the little taruguitos came to life and dreamed of becoming real children. One of them learned how to use the blockchain and they became part of the Bitcoin blockchain forever.",
+    "twitter_link": "https://twitter.com/the_taruguitos",
+    "discord_link": "https://discord.gg/79CWjfk4Rq",
+    "website_link": "https://generative.xyz/generative/1003273",
+    "inscription_icon": "ddf70c98fbefe877f89ab93fce53f0193fd9f17c396d4a7664929cb3809d5be6i0"
   },
   {
     "name": "The Sixty Niners",
@@ -9621,13 +9841,13 @@
   },
   {
     "name": "Tic Tac Toe",
-    "inscription_icon": "fa4aa09df0e47a63db81f0a66a9fc53fc8d8f663366df1dddd2658b98f15e3a0i0",
-    "supply": "50",
     "slug": "tic-tac-toe",
-    "description": "",
+    "supply": "50",
+    "description": "You can play Tic Tac Toe inscribed on a satoshi forever",
     "twitter_link": "https://twitter.com/MischievousBtc",
     "discord_link": "https://discord.gg/PNV3yHZbwN",
-    "website_link": ""
+    "website_link": "",
+    "inscription_icon": "bac05422e8ba4e397ba49adeb57ede975773218b3ab99b6a6a76f1bd672f57a2i0"
   },
   {
     "name": "Til Death",
@@ -10245,7 +10465,7 @@
     "supply": "300",
     "slug": "wtf-tokyo-ord",
     "description": "TOKYO STYLE PUNK GIRLS",
-    "twitter_link": "https://twitter.com/antennna9",
+    "twitter_link": "https://twitter.com/wtf_tokyo_jp",
     "discord_link": "https://discord.gg/KxS8GQHyE3",
     "website_link": "https://6sense.mystrikingly.com"
   },
@@ -10258,6 +10478,16 @@
     "twitter_link": "https://mobile.twitter.com/FarQWho",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "XBT.ART OG Collection",
+    "slug": "xbtart",
+    "supply": "14",
+    "description": "Fourteen unique and limited edition works which definitively capture the essence of generative art and real-world digital asset registration.\n",
+    "twitter_link": "https://iris.to/xbtart",
+    "discord_link": "",
+    "website_link": "https://xbt.art",
+    "inscription_icon": "935c14267b1fa3c018fcfd55c7a0de35ef91b639ca127ccd5a86b41cd1b4ee60i0"
   },
   {
     "description": "XCOPY Grifters on BTC Ordinal",
