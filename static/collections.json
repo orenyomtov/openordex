@@ -680,6 +680,16 @@
     "discord_link": ""
   },
   {
+    "name": "Bad Bitches",
+    "inscription_icon": "98da33abe2045ec1421fcf1bc376dea5beb17ded15aa70ca5da490f50d95a6d9i0",
+    "supply": "10",
+    "slug": "bad-bitches",
+    "description": "A collection of bitches with big energy entering their villain era",
+    "twitter_link": "https://twitter.com/ixchel_nft",
+    "discord_link": "https://discord.gg/9ScWQsJfZk",
+    "website_link": "https://ixchelnft.wixsite.com/home"
+  },
+  {
     "name": "Badger Capsule",
     "inscription_icon": "ff7a5f8ad4f268444be46d7fa9dd0a320e4c3dfaf2f7fdcf001b66d941948434i0",
     "supply": "29",
@@ -1268,6 +1278,16 @@
     "twitter_link": "https://twitter.com/FKYN_NFT",
     "discord_link": "",
     "website_link": "https://t.co/0K0NiWYtPt"
+  },
+  {
+    "name": "Bitcoin Fractals",
+    "slug": "bitcoin-fractals",
+    "supply": "5",
+    "description": "",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "9c2a5d1b26f8412ed33ce09c333dd8654be8c907eadc5daf5615a56c4382774bi0"
   },
   {
     "name": "Bitcoin Freedom Series",
@@ -3240,6 +3260,16 @@
     "website_link": ""
   },
   {
+    "name": "CursedCoins",
+    "slug": "cursedcoins",
+    "supply": "2",
+    "description": "33 Satoshi-based Bitcoin Cursed Coins Ordinals will be inscribed on the Bitcoin Blockchain one by one.",
+    "twitter_link": "https://twitter.com/CCursedcoi85108",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "e35523f11a24af4d0b23d8b148c463bec3339a2183f6772ebdb01bca3ada72a3i0"
+  },
+  {
     "name": "Cute Fruits",
     "inscription_icon": "3d5b9d23a2b405a9ad64aece4b2054cd0e7f29ee2e0a9507bfd763cffe4dcb28i0",
     "supply": "99",
@@ -5200,6 +5230,16 @@
     "website_link": ""
   },
   {
+    "name": "LLaMa Landz",
+    "inscription_icon": "21bdac49409b1c7a281cec542afeeeb152ab572bfd77a1575f23ae288b14a35ci0",
+    "supply": "222",
+    "slug": "llama-landz",
+    "description": "LLama Landz is a collection of 222 Bitcoin ordinal inscriptions that pair with 122 Bitcoin LLaMaZ. This collection is designed for collectors and crypto enthusiasts who want to add a playful touch to their digital assets. As a collector of LLaMaZ ordinal inscriptions, you may have access to some exciting opportunities that are yet to be revealed. Join our exclusive community and stay tuned for upcoming announcements about these special perks. Diversify your digital asset portfolio with Llama Landz and become part of an exceptional group.",
+    "twitter_link": "https://twitter.com/pacificparadox",
+    "discord_link": "https://discord.gg/fineart2hodl",
+    "website_link": "https://fineart2hodl.com"
+  },
+  {
     "name": "Lone Aliens",
     "inscription_icon": "5a1af220253125e0f623fda8888752e1b901831780347dd48912d8b675492498i0",
     "supply": "0",
@@ -5938,6 +5978,16 @@
     "twitter_link": "https://twitter.com/NobleNomad_NN",
     "discord_link": "http://discord.gg/k2WvKuYnzT",
     "website_link": ""
+  },
+  {
+    "name": "Nomadicals Eight",
+    "slug": "nomadicals-eight",
+    "supply": "8",
+    "description": "The original eight Nomadicals",
+    "twitter_link": "https://twitter.com/btc_nomadicals",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "18147fa87dbbe2ad6858496a7a0df9b32db2385be01020c5c9d490ec76079184i0"
   },
   {
     "name": "NoPFP",
@@ -7838,6 +7888,16 @@
     "twitter_link": "https://twitter.com/masayuki_tw",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Ordinals BGG",
+    "slug": "ordinals-bgg",
+    "supply": "16",
+    "description": "Original AI prompts based on a girl to generate different types of genes for each organism. The quality is enhanced by the latest generative AI, which is commercially available, and by human hands. We challenge new creative and original outputs from Japan.",
+    "twitter_link": "https://twitter.com/aratama_dao",
+    "discord_link": "https://discord.com/invite/QfcyFfJ5aM",
+    "website_link": "https://aratama.io/",
+    "inscription_icon": "a6c752b2472d53fb81aa04821bdae4b7a9af416f31388fedad0e4f26a3371abei0"
   },
   {
     "name": "Ordinals by Ape Nation",
@@ -10658,6 +10718,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "wordinals",
+    "slug": "wordinals",
+    "supply": "21",
+    "description": "Collection of 21 unique and dynamic digital artifacts on the ₿itcoin network",
+    "twitter_link": "https://twitter.com/w_ordinals",
+    "discord_link": "",
+    "website_link": "https://wordinals.art",
+    "inscription_icon": "https://ordinals.com/inscription/019145fff68d890b6ea6e6486e61221d412d90b9a7634ccd02628d365d0c1aeei0"
   },
   {
     "name": "Wossums",
