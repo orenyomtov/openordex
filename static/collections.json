@@ -292,7 +292,7 @@
   {
     "name": "A Beautiful Life ",
     "inscription_icon": "dcbd3b564d44072e788133e2383a34867f159783a33076e184c7f71cef6efffai0",
-    "supply": "4",
+    "supply": "8",
     "slug": "abl",
     "description": "",
     "twitter_link": "https://twitter.com/BitcoinBugsy",
@@ -336,6 +336,16 @@
     "slug": "aikodesho",
     "description": "",
     "twitter_link": "https://twitter.com/AikoDeshoBTC",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Al-San Explores Japan",
+    "inscription_icon": "da1c97e406be57c9e7d47883e348ba26e64eabc8ebd0c305e88ac8cce1773419i0",
+    "supply": "",
+    "slug": "al-san_explores_japan",
+    "description": "",
+    "twitter_link": "",
     "discord_link": "",
     "website_link": ""
   },
@@ -1046,7 +1056,7 @@
     "slug": "bitcoin-bandits",
     "description": "BITCOIN BANDITS ARE HERE ON BTC TO RAID THE BEST MINTS, FIND THE BEST ALPHA AND FIND THOSE SATS. JOIN US IN OUR WAY TO GLORY!",
     "twitter_link": "https://twitter.com/banditsbtc",
-    "discord_link": "https://discord.gg/VjduzBqP",
+    "discord_link": "https://discord.gg/bitcoinbandits",
     "website_link": "https://bitcoin-bandits.com/"
   },
   {
@@ -1980,6 +1990,26 @@
     "inscription_icon": "1b135ce887080e5fb4641f61239bda9d957d9c50f337a797f3d98f592fb8d184i0"
   },
   {
+    "name": "bitCroSkull",
+    "slug": "bitcroskull",
+    "supply": "333",
+    "description": "bitCroSkull is a commemorative collection of 333 skeletons forever inscribed on the Bitcoin blockchain. All the ordinals are inscribed under the threshold of 1 milion inscriptions and are handmade by the wide-known pixel artist Shadowbright in collaboration with the CroSkull's Team. bitCroSkull is a tribute to our community and ecosystem built on the Cronos Chain, that will also contribute to expand the CroSkull Brand.",
+    "twitter_link": "https://twitter.com/CroskullNFT",
+    "discord_link": "https://discord.com/invite/croskull",
+    "website_link": "https://croskull.com",
+    "inscription_icon": "6355006e6892c8cb8ae67451071bd832c51216f2f825fd941ca1b4aa1dd8fe66i0"
+  },
+  {
+    "name": "BitDemons",
+    "slug": "bitdemons",
+    "supply": "3",
+    "description": "Potraits of demons on bitcoin",
+    "twitter_link": "",
+    "discord_link": "https://discord.gg/VGEdPN2H",
+    "website_link": "",
+    "inscription_icon": "2d16bed6b9e55e81c55b3fb15aa3b3d6c56f9130cbdbea953ac1536cb609c8bei0"
+  },
+  {
     "name": "Bithorn",
     "inscription_icon": "f69a65b9a2852edfdd3147d210e8af50ec413a482f240a5db97bace2d702a097i0",
     "supply": "51",
@@ -2020,13 +2050,13 @@
     "website_link": "https://bitmasks.io/"
   },
   {
-    "name": "Bitmine Genesis",
-    "inscription_icon": "a5448c7dff2610f95ef95ab44e26a85e862084ffe8e315faf0956ca6bd99922ci0",
-    "supply": "10",
+    "name": "BitMine Genesis",
+    "inscription_icon": "bd77fda0167f5bb3d45e2bc4bcd0ca2131cc9e7022129c2994c16663fa8740a2i0",
+    "supply": "94",
     "slug": "bitmine-genesis",
-    "description": "Bitmine Genesis is 94 algorithmically generated Bitcoin Mining NFTs inscribed on the Bitcoin Blockchain. BitMine Genesis was designed to honor the Miners who keep the Network humming and in turn make it the most secure and incorruptible Blockchain ever. This is the first foray into the world of Bitcoin Mining through NFTs that is inspired by the mechanism Satoshi envisioned and implemented.            ",
-    "twitter_link": "",
-    "discord_link": "",
+    "description": "BitMine Genesis are 94 algorithmically generated Bitcoin Mining NFTs inscribed on the Bitcoin Blockchain. BitMine Genesis will feature Ordinals based on BTC Halvings and some easter eggs related to Genesis Block. This will be a documented history of BTC mining and block rewards on BTC CORE.",
+    "twitter_link": "https://twitter.com/BitmineGenesis",
+    "discord_link": "https://discord.gg/mQJt6Qr9mF",
     "website_link": ""
   },
   {
@@ -2600,6 +2630,16 @@
     "website_link": "https://btcmachine.org"
   },
   {
+    "name": "Btc 5x5",
+    "slug": "btc5-5",
+    "supply": "55",
+    "description": "Randomly generated 5x5 pixel art and it will remain a reserved of 55 units.",
+    "twitter_link": "https://twitter.com/btc5x5",
+    "discord_link": "",
+    "website_link": "https://btc5x5.com/",
+    "inscription_icon": "72051acd71eb01efa1e01e22cbbd8a96ed36da15daffc84496eba425a84b8362i0"
+  },
+  {
     "name": "Bitcoin Ordinals Art",
     "inscription_icon": "f600d7eb12c6bd773a0270889deff1786d458c6e562901ee606d0a940d725f52i0",
     "supply": "20",
@@ -3081,13 +3121,13 @@
   },
   {
     "name": "Cords",
-    "inscription_icon": "e80b2e41cb5bd1a1691f60adca2268f2c915cb34444638fa2b8f582df8998ccai0",
-    "supply": "10",
+    "inscription_icon": "e50a6af1538d1a3fd7138e2ac20faa381eefae58125913658be0dcf667f93061i0",
+    "supply": "111",
     "slug": "cords",
-    "description": "",
+    "description": "BTC-Cords",
     "twitter_link": "https://twitter.com/tsitraton",
-    "discord_link": "",
-    "website_link": ""
+    "discord_link": "https://discord.gg/2SGmaQUS",
+    "website_link": "https://linktr.ee/TSITRATON"
   },
   {
     "name": "Cosmic Glyphs",
@@ -3660,6 +3700,16 @@
     "discord_link": "https://discord.gg/dogepunks"
   },
   {
+    "name": "DogeWorld",
+    "slug": "dogeworld",
+    "supply": "1001",
+    "description": "Join DogeWorld - the only collectible collection with a supply of 1001 inscriptions starting under 300k. Featuring 121 unique characters, drawn pixel by pixel and expanded into four rarity tiers. 33 specials complete the puzzle, including a themed collection dedicated to BITCOIN JPGs - of which we are the exclusive partners. But the story doesn't end here. Our mission is to create a vibrant and playful community united by strength and awareness in the crypto space. Let the adventure begin! ",
+    "twitter_link": "https://twitter.com/weareDogeWorld",
+    "discord_link": "https://discord.com/invite/6UZSRm5E4S",
+    "website_link": "https://www.dogeworld.net",
+    "inscription_icon": "ad68a6e44b82aa0d4e899b6e528637a62c8fca87f142fd51f6475fd1b7133612i0"
+  },
+  {
     "name": "Doggie Ordinals",
     "slug": "doggie-ordinals",
     "supply": "15",
@@ -3931,13 +3981,13 @@
   },
   {
     "name": "Engraved Dragons",
-    "inscription_icon": "db7d1802437607936b9416cf4453aaa8f1d80793e79d918320d2690e592ef126i0",
+    "inscription_icon": "88ef5c5cc9b1ca8777897c352dab265a29afba7c9c5230ab33a6eb106ece740fi0",
     "supply": "100",
     "slug": "engraved-dragons",
     "description": "Dragons, with their immense power and ability to work together in harmony, remind us that true strength is not merely found in individual prowess, but also in the ability to cooperate and support one another towards a common goal.",
-    "twitter_link": "",
-    "discord_link": "",
-    "website_link": ""
+    "twitter_link": "https://twitter.com/engraveddragons",
+    "discord_link": "https://discord.gg/gdcszaPb9B",
+    "website_link": "https://www.engraveddragons.com"
   },
   {
     "name": "engraved-unknowns",
@@ -4560,6 +4610,16 @@
     "website_link": ""
   },
   {
+    "name": "Golden Punk",
+    "inscription_icon": "3e3248ea01a9e39557add064e39ca28fc2c045136c0d459966d7078a35411ff3i0",
+    "supply": "1",
+    "slug": "golden-punk",
+    "description": "100 Punk collectibles on golden version exclusive on ordinals",
+    "twitter_link": "https://twitter.com/pixiBTC",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Golden Woman",
     "inscription_icon": "e29aced3c59640d5ca5e2abe0fea6863eb5a33a3832e98c73391f1578fe3cd18i0",
     "supply": "20",
@@ -4960,14 +5020,14 @@
     "website_link": ""
   },
   {
-    "name": "Insignia Art",
-    "inscription_icon": "b942bbffece250629ea5e3bf164a381dee69183f6cea40424d7557b22f11ee13i0",
-    "supply": "16",
+    "name": "Insignia",
+    "inscription_icon": "97268e29df65891c098046afebf4a0155cf5c6a2f7561f022eb2d2a4adc2d999i0",
+    "supply": "228",
     "slug": "insignia-art",
-    "description": "",
+    "description": "Insignia is a composable Bitcoin art primitive. No Mint. No Discord. Follow along for updates.",
     "twitter_link": "https://twitter.com/insignia_art",
     "discord_link": "",
-    "website_link": ""
+    "website_link": "https://ordinals.com/preview/95f6909988dba38f1140d536c9cc2fdcf635c1522f93834045b093f0d4c2fdd7i0"
   },
   {
     "name": "InterOrdinals",
@@ -5002,10 +5062,20 @@
   {
     "name": "japanese-insect-lab",
     "inscription_icon": "7716227c2365ac0cf381e6df184cf0aebe193cdb57fd29b2b1e1be5ed410ec59i0",
-    "supply": "18",
+    "supply": "31",
     "slug": "japanese-insect-lab",
     "description": "Insects existed before humans existed.We need to respect and study these insects.First of all, we start our research through manga of unique insects.",
     "twitter_link": "https://twitter.com/hachimitsu_boya",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Jewel Leaf Works",
+    "inscription_icon": "7259041cea4e0a28087fb26443440aed15e656667812052f213918a620f1881di0",
+    "supply": "7",
+    "slug": "jewelleaf-works",
+    "description": "ordinal",
+    "twitter_link": "",
     "discord_link": "",
     "website_link": ""
   },
@@ -5058,6 +5128,16 @@
     "twitter_link": "https://twitter.com/KarmeleonsNFT",
     "discord_link": "https://discord.gg/4E6P44KGgZ",
     "website_link": ""
+  },
+  {
+    "name": "Kawaii SKULL",
+    "inscription_icon": "d70cc86cedb2dfbe70550321dc661d5f50b99ac3f6a9d93bf7a90b18c690f860i0",
+    "supply": "10",
+    "slug": "kawaiiskullart",
+    "description": "Ordinal",
+    "twitter_link": "https://twitter.com/kawaiiskull_nft",
+    "discord_link": "https://discord.gg/ysh2vnua",
+    "website_link": "https://opensea.io/collection/kawaiiskull"
   },
   {
     "name": "KekleBerry",
@@ -5201,13 +5281,13 @@
   },
   {
     "name": "Library of Hex",
-    "inscription_icon": "6037762de140e173755ae2017173f79617d4b7431a774f5663535f2befefcccei0",
-    "supply": "47",
     "slug": "library-of-hex",
-    "description": "64 unique pairs of collectible sister spellbooks minted to both the Bitcoin and Ethereum blockchains. One for each permutation of Hex’s elemental dimensions (🌀 Flow 💥 Turmoil 💎 Zuànshí) and worldcrafting tools (🔮 Aethereal 🦠 Biocypher 🔱 Nextech). Zed Zeroth, an established British-licensed cryptoasset vendor, is bringing this groundbreaking collection to life by combining traditional pen-and-paper worldbuilding and digital graphic design with cutting-edge AI enhancement and Bitcoin Ordinal inscription technology.",
+    "supply": "64",
+    "description": "64 unique pairs of collectible spellbooks minted to both the bitcoin and Ethereum blockchains. One for each permutation of Hex’s elemental dimensions (🌀 Flow 💥 Turmoil 💎 Zuànshí) and worldcrafting tools (🔮 Aethereal 🦠 Biocypher 🔱 Nextech).\n\n“When Hex, Mother of Worlds, transcended to the beyond, wars raged over the knowledge hidden within her divine library. The spellbooks passed from sorcerer to apprentice, monarch to heir, defeated to victor. Those who mastered Hex’s inscriptions gained god-like powers, using them for miraculous good, devastating evil, and all that lies between.”\n\nZed Zeroth, an established British-licensed cryptoasset vendor, brings this groundbreaking collection to life with traditional pen-and-paper worldbuilding, digital graphic design, cutting-edge AI enhancement, and Bitcoin inscription technology.",
     "twitter_link": "",
-    "discord_link": "",
-    "website_link": ""
+    "discord_link": "https://discord.gg/whRbmYJ5U8",
+    "website_link": "https://zedtech.studio/",
+    "inscription_icon": "4eb61103035a1c8f92783c91c9c4646f45eab6f096851be4f58b4cc0855b355ci0"
   },
   {
     "name": "Lil Ordies",
@@ -5408,6 +5488,16 @@
     "twitter_link": "https://twitter.com/modordinal",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Meeems",
+    "inscription_icon": "7ebd1f2726772bc7b7a531334b3f4bb325ee06559b3cd2bd7b8e721320949e02i0",
+    "supply": "30",
+    "slug": "meeems",
+    "description": "Meeems are code-based pop artworks that stylistically reimagine ubiquitous meme formats as interactive on-chain SVG toys. Click & hold. Double-click. Edit the captions. Play, share, enjoy.",
+    "twitter_link": "https://twitter.com/dreeemtheartist",
+    "discord_link": "",
+    "website_link": "https://meeems.xyz"
   },
   {
     "name": "MegaPunks",
@@ -6370,6 +6460,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordignomes",
+    "inscription_icon": "749b4b81db950e3ee8c93a7855311528c47f35403c8f8484c13115c962b2ded4i0",
+    "supply": "500",
+    "slug": "ordignomes",
+    "description": "The OrdiGnomes of The Gnome Dome are an ancient and reclusive community on BTC. When a sludge filled pipeline is built on their precious land The Gnomes must rise up and travel a great journey to save the world they love.",
+    "twitter_link": "https://twitter.com/ordignomes",
+    "discord_link": "",
+    "website_link": "https://thegnomedome.com"
+  },
+  {
     "name": "Ordinal MEMES \"The Classics\"",
     "slug": "ordinal memes \"the classics\"",
     "supply": "50",
@@ -7092,8 +7192,8 @@
   {
     "name": "Ordinal Mini Doges",
     "slug": "ordinal-mini-doges",
-    "supply": "115",
-    "description": "Such mini, very cute, wow pixel art! 115 Mini Doges 24x24 with punk vibes, making it a truly unique PFP collection.",
+    "supply": "100",
+    "description": "100 Pixel Mini Doges 24x24. Genesis PFP collection!",
     "twitter_link": "https://twitter.com/minidogeart",
     "discord_link": "https://discord.gg/MUtGTYgqJ2",
     "website_link": "https://www.minidogeart.com/",
@@ -7276,8 +7376,8 @@
     "slug": "ordinal-pokemon",
     "description": "Own a piece of Pokemon history with Ordinal Pokemon. This exclusive collection features rare and powerful Pokemon from the first generation, with only 251 Founders Edition inscriptions available",
     "twitter_link": "https://twitter.com/ordinalpokemon",
-    "discord_link": "https://discord.gg/FDCrKyvRfq",
-    "website_link": ""
+    "discord_link": "https://discord.gg/ordinalpokemon",
+    "website_link": "https://dev-v5.generativeexplorer.com/content/908e11969d1988131511b12c5f424a33cb68aacdf31aa71e777f376e992a473ci0"
   },
   {
     "name": "Ordinal Portraits",
@@ -8200,14 +8300,14 @@
     "website_link": ""
   },
   {
-    "name": "ORDTIME",
-    "inscription_icon": "fff5975101761830e88f6747d27cb51249031f7608ad4510c48739e74830ff71i0",
+    "name": "Ordtime",
+    "inscription_icon": "8aa207fbf418f26e9fe66b0b368b2cd1d70fa035227ff6433b606836a0f7fc63i0",
     "supply": "1440",
     "slug": "ordtime",
-    "description": "",
+    "description": "1440 timestamp inscriptions, representing a minute within a day",
     "twitter_link": "https://twitter.com/ORD_Time",
     "discord_link": "https://discord.gg/3Qp9kCsHeC",
-    "website_link": ""
+    "website_link": "https://ordtime.com/"
   },
   {
     "name": "OrDucks",
@@ -8430,6 +8530,16 @@
     "inscription_icon": "4e32796b46a544901be6b81bde593a9d8a1fe5cd14c1e5d37e780ca9558f44bfi0"
   },
   {
+    "name": "Pixel Doges",
+    "slug": "pixel-doges",
+    "supply": "1015",
+    "description": "Wow! 1015 Pixel Mini Doges! Much Art!",
+    "twitter_link": "https://twitter.com/minidogeart",
+    "discord_link": "https://discord.gg/MUtGTYgqJ2",
+    "website_link": "https://www.minidogeart.com/",
+    "inscription_icon": "a212af5261d3ec60404cfa60dfe10801a09421b2edef471692022f16facb09bci0"
+  },
+  {
     "name": "Pixel Gremlins",
     "slug": "pixel-gremlins",
     "supply": "56",
@@ -8621,13 +8731,13 @@
   },
   {
     "name": "Pokemon Emerald",
-    "inscription_icon": "5eb61a26c07ed2e3e4142e33da774ee9f8302dbe5b8f4bc52632cdc2fd458cd8i0",
+    "inscription_icon": "66b976f62ad58347baeaf851d753facde677b726c582a2c23dc094fcacf9e877i0",
     "supply": "135",
     "slug": "pokemon-emerald",
-    "description": "Immerse yourself in the vibrant world of Pokemon with the Pokemon Emerald collection, masterfully designed by Ordinal Pokemon. This remarkable collection features an array of beloved and powerful Pokemon from the third generation, spanning a total of 135 iconic creatures. Join us on this exciting journey and catch them all! 🚀 https://discord.gg/ordinalpokemon https://twitter.com/ordinalpokemon\n           ",
-    "twitter_link": "",
-    "discord_link": "",
-    "website_link": ""
+    "description": "Immerse yourself in the vibrant world of Pokemon with the Pokemon Emerald ollection, masterfully designed by Ordinal Pokemon. This remarkable collection features an array of beloved and powerful Pokemon from the third generation, spanning a total of 135 iconic creatures.",
+    "twitter_link": "https://twitter.com/ordinalpokemon",
+    "discord_link": "https://discord.gg/ordinalpokemon",
+    "website_link": "https://ordinals.com/content/fe7d33b52d6d14530dc6e4c1f8d7ebbdbb77e967d63deead9335529c662d0d05i0"
   },
   {
     "name": "Pokemon Gen 1",
@@ -8641,13 +8751,13 @@
   },
   {
     "name": "Pokemon Pixels",
-    "inscription_icon": "62300252adaaa7f282ed8e9238fda3785c97f856b66373923e4096d99647e224i0",
+    "inscription_icon": "434fa73540f839f8d07427d72e88fccc0211eda9b468f6db9beca6a9ad3866c1i0",
     "supply": "278",
     "slug": "pokemon-pixels",
-    "description": "Become a part of Pokémon history with the Pokémon Pixels collection, the first complete Gen 1 and Gen 2 collection on Bitcoin, including all 28 Unown, crafted by Ordinal Pokémon. With only 278 limited edition Pokémon Pixels available, don't miss your chance to own these exclusive collectibles. Join us on this exciting journey and catch them all! :rocket: https://discord.gg/ordinalpokemon https://twitter.com/ordinalpokemon           ",
-    "twitter_link": "",
-    "discord_link": "",
-    "website_link": ""
+    "description": "The first complete Gen 1 and Gen 2 collection on Bitcoin, including all 28 Unown, crafted by Ordinal Pokemon. With only 278 limited edition Pokemon Pixels available, don't miss your chance to own these exclusive collectibles. Join us on this exciting journey and catch them all! :rocket:",
+    "twitter_link": "https://twitter.com/ordinalpokemon",
+    "discord_link": "https://discord.gg/ordinalpokemon",
+    "website_link": "https://ordinals.com/content/87d7bed7f0dfccbe5a1c64f7a08d563183d363c88e0cb0c93882822b0e06144bi0"
   },
   {
     "name": "Pokemon",
@@ -9941,13 +10051,13 @@
   },
   {
     "name": "The Netherlands",
-    "inscription_icon": "fe47feedb91452827ad04fadd7a01fe1941cf92ee7b7928aa495fd9aaa7e78c1i0",
-    "supply": "101",
     "slug": "the-netherlands",
-    "description": "",
+    "supply": "101",
+    "description": "This collection contains signs of the 101 largest, most amusing, international, oldest or youngest residential areas in the Netherlands!",
     "twitter_link": "https://twitter.com/_jeugdsentiment",
     "discord_link": "",
-    "website_link": ""
+    "website_link": "https://www.jeugdsentiment.com",
+    "inscription_icon": "e13f92770a11ff5570f898e27a7fcab5c7427750e70f6c737258949054324008i0"
   },
   {
     "name": "The Ordinables",
@@ -9984,7 +10094,7 @@
     "inscription_icon": "d183b1209e1a7b28f975da05c76d43ddaa3c8a0c928d21f394da160db439c246i0",
     "supply": "20",
     "slug": "the-punky-blinders-btc-collection",
-    "description": "",
+    "description": "A 24 x 24 and 158 x 158 pixel art collection based on the notorious Birmingham gang the Peaky Blinders",
     "twitter_link": "https://twitter.com/Cooley_NJ",
     "discord_link": "",
     "website_link": ""
@@ -10371,13 +10481,13 @@
   },
   {
     "name": "Tutifruti Woman",
-    "inscription_icon": "ffcef92327973be4c29579ad3f7207854484ba3246add43866c3ba8f086e716ai0",
-    "supply": "48",
     "slug": "tutifruti-woman",
-    "description": "",
+    "supply": "48",
+    "description": "The Tutifruti Woman digital art collection is a fascinating and vibrant work that fuses the beauty of nature with artistic expression. Each piece is a unique representation of a woman with hair made of exotic and tropical fruits, such as pineapples, mangoes, watermelons, and melons. Every detail of the work is meticulously created, from the texture and color of the fruits to the details on the woman's face, making each piece a masterpiece. The bright and juicy colors of the fruits are perfectly combined with the delicate and feminine features of the women, creating a surreal and energetic image. The collection conveys a message of female empowerment, showing the beauty and strength of women through the representation of nature. The work also celebrates the diversity and unique beauty of each woman, using the different shapes, sizes and colors of fruits to create a diverse range of portraits.",
     "twitter_link": "",
     "discord_link": "",
-    "website_link": ""
+    "website_link": "",
+    "inscription_icon": "cdd39f4a40983ee61dc582f2fb2a50a87f534b994d0de5c50f525308d1f6b710i0"
   },
   {
     "name": "Twelvefold",
@@ -10502,7 +10612,7 @@
   {
     "name": "Unseen Shades",
     "inscription_icon": "1215ef6bcd335a5ec798e85e18b9664d5492bc252a5b61f5896e3b2744515340i0",
-    "supply": "19",
+    "supply": "25",
     "slug": "unseen-shades",
     "description": "Biased Art",
     "twitter_link": "https://twitter.com/UnseenShades_",
@@ -10601,13 +10711,13 @@
   },
   {
     "name": "W95 Icons",
-    "inscription_icon": "ededd16a03f7825fa7abd4d8146522da86d0ad6850e395e77e7891c8497aaa8di0",
-    "supply": "67",
     "slug": "w95-icons",
-    "description": "",
+    "supply": "67",
+    "description": "The icons in this collection commemorate the first Windows operating system that many of us used during our childhoods. ",
     "twitter_link": "https://twitter.com/RetroPixelsC",
     "discord_link": "https://discord.gg/r3C2rqaEsg",
-    "website_link": ""
+    "website_link": "http://retropixelsclub.com",
+    "inscription_icon": "768f3a30f4419ae5bff19248ef1cb7ab767bdff315594780b8a689f3a3c01d4fi0"
   },
   {
     "name": "WAGMI With Wagyu",
@@ -10668,6 +10778,16 @@
     "twitter_link": "https://twitter.com/FarQWho",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Whale Ordinals",
+    "inscription_icon": "25281fb05e4af375f7c23632fe94d2717d2f7f845f7a7cee83cc8bb62ae04bd6i0",
+    "supply": "300",
+    "slug": "whale-ordinals",
+    "description": "Whale Ordinal is a collection of Whale NFTs that serve as a membership and a vote within our community",
+    "twitter_link": "https://twitter.com/whaleordinal",
+    "website_link": "",
+    "discord_link": ""
   },
   {
     "name": "Wild Tangz",
@@ -10737,7 +10857,7 @@
     "twitter_link": "https://twitter.com/w_ordinals",
     "discord_link": "",
     "website_link": "https://wordinals.art",
-    "inscription_icon": "https://ordinals.com/inscription/019145fff68d890b6ea6e6486e61221d412d90b9a7634ccd02628d365d0c1aeei0"
+    "inscription_icon": "019145fff68d890b6ea6e6486e61221d412d90b9a7634ccd02628d365d0c1aeei0"
   },
   {
     "name": "Wossums",
