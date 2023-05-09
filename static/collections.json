@@ -3240,14 +3240,14 @@
     "website_link": "https://linktr.ee/cryptoeggmen"
   },
   {
-    "name": "Crypto Funks",
-    "inscription_icon": "f4b0a3f552017d6d12f96f6761c3e4d97e31b1d93e773a550cd51eda844c0937i0",
-    "supply": "10",
+    "name": "Crypto Funks Genesis",
     "slug": "cryptofunks",
-    "description": "",
-    "twitter_link": "https://twitter.com/BGM_token",
+    "supply": "10",
+    "description": "Crypto Funks Genesis on bitcoin ordinals.",
+    "twitter_link": "",
     "discord_link": "",
-    "website_link": ""
+    "website_link": "",
+    "inscription_icon": "151def882a9495e4455c7e260d25623a1b14e20b7e7b860f0b21470c4f6abbebi0"
   },
   {
     "name": "Best of Crypto Slang",
@@ -4830,7 +4830,7 @@
     "website_link": ""
   },
   {
-    "name": "BTC Historical Collection",
+    "name": "Historical Collection",
     "slug": "historical-collection",
     "supply": "1000",
     "description": "The first collection dedicated to legendary historical people. 1000 NFT with a memorable artistic concept will not leave anyone indifferent. Each NFT is legendary and the only one painting in the collection depicting a historical figure of the past.",
@@ -9822,7 +9822,7 @@
   {
     "name": "Space Skelly Ordinals",
     "inscription_icon": "41fe9469afeb4d7c0eb783247f7e48858c9ac34926099851be7616d76290dfb9i0",
-    "supply": "71",
+    "supply": "100",
     "slug": "space-skellies",
     "description": "Space skellies traveled across the galaxy, discovering new planets and galaxies along the way. With each new adventure, the brave space skellies uncovered new mysteries of the universe.",
     "twitter_link": "https://twitter.com/SpaceSkellies",
