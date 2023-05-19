@@ -50,6 +50,16 @@
     "website_link": "https://cryptowagakki.com/"
   },
   {
+    "name": "<100k Club Admission Pass",
+    "inscription_icon": "c652eeec2ed137728df5d818177f62a57bc615cf05d2bc67c319456c4b7b2582i0",
+    "supply": "49",
+    "slug": "100k-club-admission-pass",
+    "description": "Welcome to the club. This is an artifact attesting you're early in the ordinals game.",
+    "discord_link": "https://discord.gg/jQcrs2kTjM",
+    "twitter_link": "https://twitter.com/CypherSatoshis",
+    "website_link": "https://cyphersatoshi.com/"
+  },
+  {
     "name": "122 Bitcoin LLaMaZ",
     "inscription_icon": "3ce9ced8c7cede502f3598ed2bdb584832f6147fa91f1aab79de86a8e6c9e0ddi0",
     "supply": "122",
@@ -1118,6 +1128,16 @@
     "discord_link": "",
     "website_link": "https://www.bit71.art/",
     "inscription_icon": "91c56080d5cb309b68dc02c92ecce54f1421b1391e2a615a07d763d63cc00a57i0"
+  },
+  {
+    "name": "Bitcoin Bones",
+    "inscription_icon": "c895dabc318ca095046521b1c1d0f27e5b2b0d99cbb2f401c6e66ffd644a14f0i0",
+    "supply": "1000",
+    "slug": "bitcoin-bones",
+    "description": "Bitcoin Bones is a 1000 PFP collection created with 32x32 pixel art inscribing on Ordinals, there are more than 100 traits. for Bitcoin community.",
+    "twitter_link": "https://twitter.com/0xsud0",
+    "discord_link": "",
+    "website_link": "https://oxsudo.bio.link/"
   },
   {
     "name": "Bitcoin Boos",
@@ -3720,6 +3740,16 @@
     "website_link": ""
   },
   {
+    "name": "dogooooo candy dots 01",
+    "inscription_icon": "3a06444b9bb25701450dfa04e1ac379c45dd8b79e93b054d81c42bbcb3c6cb65i0",
+    "supply": "5",
+    "slug": "dogooooo_candy_dots",
+    "description": "When dogooooooo they are broken down into low-resolution, cellular units, each piece is a nostalgic sweet candy.",
+    "twitter_link": "https://twitter.com/OoooohSay",
+    "discord_link": "",
+    "website_link": "https://lit.link/sayoooooh"
+  },
+  {
     "name": "dogooooo medal",
     "inscription_icon": "e552a1e9d829d440b1fb92f2c930f3730e2be7f3f8e94e65e2252f4cf3903b78i0",
     "supply": "3",
@@ -4730,6 +4760,16 @@
     "website_link": "https://cyphersatoshi.com/"
   },
   {
+    "name": "Half PI",
+    "inscription_icon": "d8359a2fde8e3ab5cee01ded72dd40c87b7c9f91371ab6a58ca208a7ade14b9ei0",
+    "supply": "101",
+    "slug": "half-pi",
+    "description": "Half PI is the right angle. This project is based on property of curl vector being perpendicular on the gradient vector.",
+    "twitter_link": "https://twitter.com/MaxGeneris",
+    "discord_link": "",
+    "website_link": "https://max-generis.super.site/"
+  },
+  {
     "name": "Handshake Ordinals",
     "slug": "handshake-ordinals",
     "supply": "48",
@@ -4882,11 +4922,11 @@
   {
     "name": "Honey Badgers",
     "inscription_icon": "01afbcf10b3031fe576c6e900559bc7f0d6ceb10d383655536fc17dd515140a2i0",
-    "supply": "2453",
+    "supply": "10000",
     "slug": "honey-badgers",
-    "description": "Honey Badgers is a gen 10k collection inscribed on the BTC Blockchain through Ordinals. It's an experiment to see if a native NFT community can emerge and thrive on the native BTC ecosystem.",
-    "twitter_link": "",
-    "discord_link": "",
+    "description": "Honey Badgers are a gen 10k collection inscribed on the BTC Blockchain through Ordinals. It's an experiment to see if a native NFT community can emerge and thrive on the native BTC ecosystem.",
+    "twitter_link": "https://twitter.com/HoneyBadgersBtc",
+    "discord_link": "https://discord.gg/honeybadgers",
     "website_link": ""
   },
   {
@@ -5234,7 +5274,7 @@
     "inscription_icon": "32454f3b5dd9b670c32e090739f57c22ed94c6c04a1bc3b85d3cb14854ad1823i0",
     "supply": "10",
     "slug": "landscape-of-the-heart",
-    "description": "pixel art and short sounds and text",
+    "description": "pixel art and short sounds music and text",
     "twitter_link": "https://twitter.com/tpseto",
     "discord_link": "",
     "website_link": "https://ordinalswallet.com/address/bc1pszgxxp5fnvfw46t8arecyvdvaqs2c67ajjvfwxgl850c0ljfd56qphzxs9"
@@ -6012,7 +6052,7 @@
   {
     "name": "Nekohige Champ",
     "inscription_icon": "75fdc1231c90088e8952af0558dadb9bf0151b39f0de98043e2560322cb1b3d7i0",
-    "supply": "74",
+    "supply": "75",
     "slug": "nekohige-champ",
     "description": "Ordinal",
     "twitter_link": "https://mobile.twitter.com/Ryuzo6333",
@@ -6022,7 +6062,7 @@
   {
     "name": "Nekohige Color",
     "inscription_icon": "e4d33aab2bc8def29a830be412a6abe4cd0f8385abe050be03b6e2d4c03751bci0",
-    "supply": "10",
+    "supply": "13",
     "slug": "nekohige-color",
     "description": "",
     "twitter_link": "https://mobile.twitter.com/Ryuzo6333",
@@ -6307,7 +6347,7 @@
     "description": "Ord Puppet Inu Undoxxed Millionaire is an esoteric and absurd collection of 777 hand puppets, created with basic tools, lots of effort and passion. These puppets are a product of the fringes of the karmic grid, where the most unconventional and offbeat ideas are born. Not intended for use as anything but art. No roadmap, promises or guarantees or any of that nonsense. Don't treat this like a goddamn corporation okay?",
     "twitter_link": "https://twitter.com/lepuppeteerfou",
     "discord_link": "https://discord.gg/ngTs6pA6tb",
-    "website_link": "https://ordpuppetinu.art/"
+    "website_link": "https://ordpuppetinu.neocities.org/"
   },
   {
     "name": "Orange Squares",
@@ -6388,6 +6428,16 @@
     "twitter_link": "https://twitter.com/ordinal_games1",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "OrdBirds",
+    "inscription_icon": "0bfd52802336fd4d9f1d49c2e341a9adc0b1c93ccefd173d4c675f2bd8895ffbi0",
+    "supply": "1666",
+    "slug": "ordbirds",
+    "description": "OrdBirds are a community driven, generative art collection drawn in 24x24 that have invaded the Bitcoin blockchain.",
+    "twitter_link": "https://twitter.com/OrdBirds",
+    "discord_link": "http://discord.gg/hwpUeqysev",
+    "website_link": "https://ordbirds.xyz"
   },
   {
     "name": "Ordbits - MintPasses",
@@ -6778,6 +6828,16 @@
     "twitter_link": "https://twitter.com/OrdinalDiamonds",
     "discord_link": "https://discord.gg/Wp3UUCCx7u",
     "website_link": ""
+  },
+  {
+    "name": "Ordinal Dickbutts",
+    "slug": "ordinal-dickbutts",
+    "supply": "21",
+    "description": "Ordinal dickbutts\nFirst dickbutt collection on ordianals\nLow inscription numbers between 60972-61259 (First/last)\nOnly 21 available, super rare. Late stealth launch.",
+    "twitter_link": "https://twitter.com/ord_dickbutts",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "df677e2b762c790e0ec1fedbcbac2ba23ab32c6eb8bf09f64210ba185cb6f53ai0"
   },
   {
     "name": "Ordinal Doge Genesis",
@@ -9380,6 +9440,16 @@
     "inscription_icon": "4f40676ff023d7c9e5791b3d50977ba10bbd2f4087ac5e08ba806e4c32f15c14i0"
   },
   {
+    "name": "samurai-techniques-ordinals-#1",
+    "inscription_icon": "1104e9623070c3c4dd86de9a71c0c5879c2c5f43b1c0b5c25a5429495167bd46i0",
+    "supply": "16",
+    "slug": "samurai-techniques-ordinals",
+    "description": "samurai-shunga-pixelart",
+    "twitter_link": "https://twitter.com/SAMURAI_TEC48",
+    "discord_link": "https://discord.gg/jGwryHyd",
+    "website_link": "https://www.samuraitechniques.fashion/"
+  },
+  {
     "name": "Satoshis Samurais",
     "inscription_icon": "fe0a3aa0087c1c0c5d4fbee2633e97f38ebc6e37488e8fd67dec12435b3c5dcei0",
     "supply": "210",
@@ -10262,7 +10332,7 @@
   {
     "name": "The Taruguitos",
     "slug": "the-taruguitos",
-    "supply": "65",
+    "supply": "70",
     "description": "The story goes that some logs were stacked up as dry firewood in anticipation of a freezing winter. In a night of lightning and sparks, the little taruguitos came to life and dreamed of becoming real children. One of them learned how to use the blockchain and they became part of the Bitcoin blockchain forever.",
     "twitter_link": "https://twitter.com/the_taruguitos",
     "discord_link": "https://discord.gg/79CWjfk4Rq",
