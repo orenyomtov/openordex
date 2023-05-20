@@ -40,6 +40,16 @@
     "website_link": "https://link3.to/0xkyosuke"
   },
   {
+    "name": "10² Islands",
+    "inscription_icon": "270e7a2bc2da2a1fb61e0c991f876d4e25c7a383c75be9b9b48cb4ffc0152468i0",
+    "supply": "100",
+    "slug": "10-square-islands",
+    "description": "In homage to the milestones that have defined Proof-of-Work blockchains over the last decade, f2pool inscribes 10 bespoke artworks onto the Bitcoin network. 10² Islands features 10 sub-categories, each embodying a milestone. They include ASIC Isle, Shiba Shore, Ether Bay, Mining Mesa, SegWit Strand, Lightning Lagoon, ExaHash Haven, Halving Harbor, Volcano Cove, and Merge Marina.",
+    "twitter_link": "https://twitter.com/f2pool_official",
+    "discord_link": "https://discord.gg/KapbeYNN9e",
+    "website_link": "https://www.f2pool.com/nft"
+  },
+  {
     "name": "100 Music Waka Poems",
     "inscription_icon": "ee90b59063f37f6a7e3b9bd30af6bb23cf01b7c0d6ec994155f090d2dd0f7408i0",
     "supply": "100",
@@ -10332,7 +10342,7 @@
   {
     "name": "The Taruguitos",
     "slug": "the-taruguitos",
-    "supply": "70",
+    "supply": "99",
     "description": "The story goes that some logs were stacked up as dry firewood in anticipation of a freezing winter. In a night of lightning and sparks, the little taruguitos came to life and dreamed of becoming real children. One of them learned how to use the blockchain and they became part of the Bitcoin blockchain forever.",
     "twitter_link": "https://twitter.com/the_taruguitos",
     "discord_link": "https://discord.gg/79CWjfk4Rq",
