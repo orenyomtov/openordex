@@ -120,6 +120,16 @@
     "website_link": ""
   },
   {
+    "name": "16bit",
+    "slug": "16bit",
+    "supply": "110",
+    "description": "4x4",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": "",
+    "inscription_icon": "0c90a2a370d9cea0a1eb0b2153f6a6ffee52d98d7bb90bb84f5b8afb89b2e923i0"
+  },
+  {
     "name": "1 BTC FP",
     "inscription_icon": "35d36280c93421f454da9797e99c772b1dc00b4b2b0ffcee7c455fed64b829d4i0",
     "supply": "500",
@@ -288,6 +298,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Link To The Past Ordinals",
+    "slug": "a-link-to-the-past-ordinals",
+    "supply": "6",
+    "description": "A small personal collection of 5 Pixel Links which combine to create the 6 piece the gif animation.  ",
+    "twitter_link": "https://twitter.com/A_MALE_K",
+    "discord_link": "https://discord.gg/VGEdPN2H",
+    "website_link": "",
+    "inscription_icon": "Link"
   },
   {
     "name": "A Link to the Past",
@@ -5741,13 +5761,13 @@
   },
   {
     "name": "MNCHRMS",
-    "inscription_icon": "feae58160f0595a14066efac8c257260258bcbc5846af59c791fcf57f53e7fa5i0",
-    "supply": "162",
+    "inscription_icon": "cde91a481f29522ad8905103cbb5e96e7f6dbd6d8cca7c84188badaa16e885f7i0",
+    "supply": "10101",
     "slug": "mnchrms",
-    "description": "",
+    "description": "MNCHRMS, pronounced \"monochromes\", is a 10101 PFP collection on Bitcoin Ordinals. Using only black (hex code #000000) and white (hex code #FFFFFF) colors, MNCHRMS is bold, timeless, simple yet striking making it the fitting, classic, and perfect visual representation for Bitcoin.",
     "twitter_link": "https://twitter.com/MNCHRMSBTC",
-    "discord_link": "https://discord.gg/bt9BWtTMXE",
-    "website_link": ""
+    "discord_link": "https://discord.gg/MJFraAteB5",
+    "website_link": "https://mnchrms.com/"
   },
   {
     "name": "MoJa Ordinal",
@@ -6200,6 +6220,16 @@
     "website_link": ""
   },
   {
+    "name": "NPC Ordinals",
+    "inscription_icon": "b73493b3cda4146b6eae89f1541f8bb8c21674d923ecbeb09d198883509c434ei0",
+    "supply": "10000",
+    "slug": "npc-ordinals",
+    "description": "10,000 of the most ordinary NPCs on the Bitcoin Blockchain.",
+    "twitter_link": "https://twitter.com/NPCOrdinals",
+    "discord_link": "https://discord.gg/r9Uh5zPF",
+    "website_link": "https://inscribenow.io/collections/3c79b5d843010f06"
+  },
+  {
     "name": "NakaPepes",
     "inscription_icon": "fefff2d3444967bd5a0f016955f6e4b5a40a8cf31fb1c77044babac9e14d65f5i0",
     "supply": "250",
@@ -6287,16 +6317,6 @@
     "description": "",
     "twitter_link": "https://twitter.com/OrdinalMaxiBiz",
     "discord_link": "https://discord.gg/Grws8uBy",
-    "website_link": ""
-  },
-  {
-    "name": "Ordinal Meerkats Country Club",
-    "inscription_icon": "fff410f6b773f2f4424b3a85bcca02ef1cba87bd22734e7d461e335dc559dab9i0",
-    "supply": "204",
-    "slug": "omcc",
-    "description": "",
-    "twitter_link": "https://twitter.com/mmccsolana",
-    "discord_link": "https://discord.gg/mmcc",
     "website_link": ""
   },
   {
@@ -7310,6 +7330,16 @@
     "inscription_icon": "b80782e13ed27109a6c3058b09bb4d509caee8d8b2d16fad4f53942953717d39i0"
   },
   {
+    "name": "Ordinal Meerkats Country Club",
+    "slug": "ordinal-meerkats-country-club",
+    "supply": "10000",
+    "description": "An OG Sol project minting the very first collection on BTC in SOL using the Bitcoin Gumball Machine!",
+    "twitter_link": "https://twitter.com/mmccsolana",
+    "discord_link": "https://discord.gg/mmcc",
+    "website_link": "https://brrrbrrr.com",
+    "inscription_icon": "https://bafybeibm2h4hgehugrawwrzvrpu2i25x76tqoomrtfxeam3emys7qlp46q.ipfs.nftstorage.link/"
+  },
+  {
     "name": "ordinal mfers",
     "inscription_icon": "05df5c57e48cf515de5ddf3a37cb304b5e946724f21f516396bf3383afd25c6fi0",
     "supply": "50",
@@ -7992,8 +8022,8 @@
   {
     "name": "OrdinalBAPP",
     "slug": "ordinalbapp",
-    "supply": "500",
-    "description": "Exclusive collection of 500 Ordinals on Bitcoin. Each BAPP is unique and algorithmically generated, and allows access to members-only benefits which will be revealed over time.",
+    "supply": "350",
+    "description": "BAPPs are an exclusive collection of 350 Ordinals to own on Bitcoin! Each is unique and algorithmically generated and allows access to members-only benefits which will be revealed over time.",
     "twitter_link": "https://twitter.com/OrdinalBAPP",
     "discord_link": "https://discord.gg/EQtpjpEBNM",
     "website_link": "",
