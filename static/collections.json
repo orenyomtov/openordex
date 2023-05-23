@@ -75,7 +75,7 @@
     "supply": "122",
     "slug": "122-bitcoin-llamaz",
     "description": "",
-    "twitter_link": "https://twitter.com/pacificparadox",
+    "twitter_link": "https://twitter.com/BitcoinLlamaz",
     "discord_link": "https://discord.gg/fineart2hodl",
     "website_link": "https://fineart2hodl.com"
   },
@@ -477,6 +477,16 @@
     "slug": "animated-pordinals",
     "supply": "69",
     "twitter_link": "",
+    "website_link": ""
+  },
+  {
+    "description": "Welcome to 'Anons', a groundbreaking NFT collection that merges the realms of privacy, decentralization, and self-sovereignty. Delve into a captivating world of anonymous artistry, where artists and collectors embrace their true identities while retaining full control over their digital assets. Join us on this transformative journey, where individuality thrives and the power of blockchain technology amplifies the voices of the anonymous.",
+    "discord_link": "",
+    "inscription_icon": "2bcd7b156f6c7b3c12729eba8c15e3b5c597cb7198b401e45cd87263ca5a23e2i0",
+    "name": "Anons",
+    "slug": "anons",
+    "supply": "69",
+    "twitter_link": "https://twitter.com/OrdinalAnons",
     "website_link": ""
   },
   {
@@ -930,7 +940,7 @@
     "inscription_icon": "802eb2f7670219d1f16b8fc20cdadad6df009e674037cf7d7ee4b5c73b01154ei0"
   },
   {
-    "name": "BITAMIGOS",
+    "name": "Bitamigos",
     "inscription_icon": "7ffe658d0b54a08b1a11b5b9299be6bb78d2f1a743d39a0d7e1a62c28110bcf5i0",
     "supply": "",
     "slug": "bitamigos",
@@ -1888,6 +1898,16 @@
     "twitter_link": "https://twitter.com/333BTCBunny",
     "discord_link": "https://discord.gg/n2FmFJQ7Zs",
     "website_link": "https://bitcoinland.in"
+  },
+  {
+    "name": "Bit Bunnys",
+    "inscription_icon": "ff95ab651934e5617fb8ed4e74891d23621fba1407e30e3e65c1a1b53333cb62i0",
+    "supply": "1000",
+    "slug": "bitcoinbunnys",
+    "description": "",
+    "twitter_link": "https://twitter.com/BitcoinBunnys",
+    "discord_link": "https://twitter.com/BitcoinBunnys",
+    "website_link": ""
   },
   {
     "name": "Bitcoin Gauntlets",
@@ -5790,6 +5810,16 @@
     "website_link": ""
   },
   {
+    "name": "Monke ordinal",
+    "slug": "monke-ordinal",
+    "supply": "444",
+    "description": "FREE MINT 🟧 444 Monkes inscribed on Bitcoin ordinals",
+    "twitter_link": "https://twitter.com/MonkeOrdinals",
+    "discord_link": "https://discord.gg/xbaZ2z8r",
+    "website_link": "https://bitcoindickbutts.net",
+    "inscription_icon": "a5e85105a418ca3579e6d9b9062b32ddd82c9e5b0b9f5bb8b60080e3c613d915i0"
+  },
+  {
     "name": "Monkey Kingdom",
     "inscription_icon": "b7dbb42c79ca4f1a5f738fdc424ee51e0997b258b2d43060410222d3e4fd77cai0",
     "supply": "2222",
@@ -6047,6 +6077,16 @@
     "description": "",
     "twitter_link": "https://twitter.com/NakamotosOnBTC",
     "discord_link": "https://discord.gg/fmksygWh",
+    "website_link": ""
+  },
+  {
+    "name": "Naked Bitcoin Frogs Misprints",
+    "inscription_icon": "bc568abf9492dc141ab7ea31e20435b13c0d0e468f5ddff2273c01b34437a473i0",
+    "supply": "3355",
+    "slug": "naked-bitcoin-frogs-misprints",
+    "description": "These are not part of the official Bitcoin Frogs collection.",
+    "twitter_link": "",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -6840,6 +6880,16 @@
     "website_link": ""
   },
   {
+    "name": "ordinal dbag mfers",
+    "slug": "ordinal-dbag-mfers",
+    "supply": "69",
+    "description": "this ordinal is 1 of 69 dbag mfers burned from our community wallet originally on Cardano. mfers r doin what they want. what's next?",
+    "twitter_link": "https://twitter.com/DbagMfers",
+    "discord_link": "https://discord.gg/vZmASFjHXq",
+    "website_link": "https://dbagmfers.fun",
+    "inscription_icon": "710af58e57914a72f35c741baa880b991e24d26e9fce24c3f10cacfbcef5aed7i0"
+  },
+  {
     "name": "Ordinal DeadDegens",
     "inscription_icon": "9d0a9c3d62f6c588a89bc040d93908857ff674f77715e2e54d27a32132546689i0",
     "supply": "444",
@@ -7220,7 +7270,7 @@
     "website_link": ""
   },
   {
-    "name": "Ordinal JOMO",
+    "name": "JOMOHippo",
     "inscription_icon": "e83d5758bfb7722b26b6756fb04c28df51c39c27dfe82fecdec414d492036f82i0",
     "supply": "2600",
     "slug": "ordinal-jomo",
@@ -8580,6 +8630,16 @@
     "inscription_icon": "ddca5b9319e9c7aaee770b112b2027def5d0ba294fd2a32f1fb828c474ce58e5i0"
   },
   {
+    "name": "Pepe & Pepita",
+    "inscription_icon": "https://cdn.discordapp.com/attachments/914659419952934962/1107894733650530334/130.jpg",
+    "supply": "4374",
+    "slug": "pepe-pepita",
+    "description": "Pepe & Pepita",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Pepes of Ordinals",
     "slug": "pepe",
     "supply": "69",
@@ -9926,6 +9986,16 @@
     "slug": "sosc",
     "description": "",
     "twitter_link": "https://twitter.com/Satoshi_OSC",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Soy Pepes",
+    "inscription_icon": "5ce977241f7dc5c42ce36f2a4b1bb5732879aeec717276b2bc077577d77850cei0",
+    "supply": "1539",
+    "slug": "soy-pepes",
+    "description": "Soy Pepes",
+    "twitter_link": "",
     "discord_link": "",
     "website_link": ""
   },
