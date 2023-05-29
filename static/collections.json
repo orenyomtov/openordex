@@ -150,6 +150,16 @@
     "website_link": ""
   },
   {
+    "name": "21LawsOfBigCryptoBusiness",
+    "inscription_icon": "c8a3d2a3c157ed10a688373b34fb7d8173b58b98b3d370993b99c6bfcb69ef08i0",
+    "supply": "21",
+    "slug": "21bigbusiness",
+    "description": "",
+    "twitter_link": "https://twitter.com/huoyesan",
+    "discord_link": "https://discord.gg/FpJrTyaP",
+    "website_link": ""
+  },
+  {
     "name": "21 Million Jaburs",
     "slug": "21million-jaburs",
     "supply": "34.5",
@@ -520,6 +530,16 @@
     "website_link": "https://antimatter.nullish.org"
   },
   {
+    "name": "ApeRunners Gods",
+    "inscription_icon": "dc42432185b22b249a7ad8c5bbd06ac97ead24df8f35c52482079bc52fb545a2i0",
+    "supply": "8",
+    "slug": "ape-gods",
+    "description": "",
+    "twitter_link": "https://twitter.com/ApeRunnersBTC",
+    "discord_link": "https://discord.gg/aperunners",
+    "website_link": ""
+  },
+  {
     "name": "ApeRunners BTC",
     "inscription_icon": "ff75e344c23c23deba87281417c7ac51ec539942bab7fed2f5adfb9af9bf3a27i0",
     "supply": "1041",
@@ -810,6 +830,16 @@
     "website_link": ""
   },
   {
+    "name": "banksy superstar set2",
+    "inscription_icon": "092630a676d7c161e463b939f87726dca7c66bd1af74483075827f42da642c25i0",
+    "supply": "1",
+    "slug": "banksy2",
+    "description": "",
+    "twitter_link": "https://twitter.com/SpZjulienNFT",
+    "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
+  },
+  {
     "name": "BoomerCoins",
     "inscription_icon": "https://turbo.ordinalswallet.com/inscription/preview/",
     "supply": "0",
@@ -867,6 +897,16 @@
     "description": "A limited collection of 111 unique Ordinal Bastards living on the Bitcoin blockchain forever. Each Ordinal Bastard is crafted with love and passion, and designed pixel by pixel.",
     "twitter_link": "",
     "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Battle of BTC",
+    "inscription_icon": "ffe582723b667f419a0f8dc85c357a2fe573827f8c0f0f6a9aa0671a490d57d0i0",
+    "supply": "9956",
+    "slug": "battle-of-btc",
+    "description": "",
+    "twitter_link": "https://twitter.com/CrusadeStudios",
+    "discord_link": "https://discord.gg/frU6Ykr3kZ",
     "website_link": ""
   },
   {
@@ -2140,6 +2180,16 @@
     "website_link": ""
   },
   {
+    "name": "Bitcoin Pigs",
+    "inscription_icon": "ffff69f5ec12beb910cff9c0c82de0cb269561727bb754a32b39566aa97aec65i0",
+    "supply": "4444",
+    "slug": "bitcoinpigs",
+    "description": "",
+    "twitter_link": "https://twitter.com/BitcoinPigs",
+    "discord_link": "https://discord.gg/P7pDPqHFQB",
+    "website_link": ""
+  },
+  {
     "name": "Bitcoin Punks",
     "inscription_icon": "2d19554bb51891504424409677871f529a1decfa05748f1d6f64a76a36ebcb93i0",
     "supply": "10000",
@@ -2436,6 +2486,16 @@
     "slug": "bittyboners",
     "description": "",
     "twitter_link": "https://twitter.com/CryptoGirlMopar",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Bixels",
+    "inscription_icon": "ffeec33f926b5e39284021620abedfed96f73ba28da2d5cdcd6e28cac983ce85i0",
+    "supply": "9991",
+    "slug": "bixels",
+    "description": "",
+    "twitter_link": "https://twitter.com/BixelBit",
     "discord_link": "",
     "website_link": ""
   },
@@ -4550,6 +4610,16 @@
     "website_link": ""
   },
   {
+    "name": "Fibrations",
+    "inscription_icon": "fa8d3913047c64b376ded1a6e4c8e93984a1086d7a584fd87a00a32c52b744f6i0",
+    "supply": "6",
+    "slug": "fibrations",
+    "description": "",
+    "twitter_link": "https://twitter.com/Fibrated",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Ordinal Fine Art Society",
     "inscription_icon": "34397e39a0bf4b867a564d65465dffcca52e551cffaeb884c4e68909c09e4ad9i0",
     "supply": "10",
@@ -5250,6 +5320,16 @@
     "website_link": ""
   },
   {
+    "name": "Hazy Hippos",
+    "inscription_icon": "ff524187e5981fe81b9e6a191d50353b5c2e9c02b5607844442defb61b29eb4ai0",
+    "supply": "10",
+    "slug": "hazy_hippos",
+    "description": "",
+    "twitter_link": "https://twitter.com/HazyHippos",
+    "discord_link": "https://discord.gg/ZKbhdaSsg6",
+    "website_link": ""
+  },
+  {
     "name": "Hearty's Ordinal Homies",
     "inscription_icon": "ff517d652faef7b997bf71e4293a15b383e5c36f1e8d16596b54cccd80543b73i0",
     "supply": "105",
@@ -5397,6 +5477,16 @@
     "description": "Humanized Creatures is a creative collection composed of 108 unique art pieces inscribed on Bitcoin blockchain. The collection lets you own a piece of an humanized creature that gives you a unique identity and personality on web3.",
     "twitter_link": "https://twitter.com/HumanizedOrd",
     "discord_link": "https://discord.gg/J7T7xr2N",
+    "website_link": ""
+  },
+  {
+    "name": "Hunzburger",
+    "inscription_icon": "dfd4eff69ba1ccfde376804710d731ab11cee86e90556e23bf9293af3785fd69i0",
+    "supply": "10",
+    "slug": "hunzburger",
+    "description": "",
+    "twitter_link": "https://twitter.com/Hunger_Hunterz",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -9656,16 +9746,6 @@
     "slug": "plastic-bag-rabbits",
     "description": "ordinal",
     "twitter_link": "https://twitter.com/vinyl__rabbit/status/1655732961134907392?s=61&t=k45tD6U9SXAtR06YCB2GhA",
-    "discord_link": "",
-    "website_link": ""
-  },
-  {
-    "name": "Plastic Bag Rabbits",
-    "inscription_icon": "bd42e41f3da65f1942137bc6cb1f8f982c2cf2554edb12c50d292ad7ee892553i0",
-    "supply": "6",
-    "slug": "plastic_bag_rabbits",
-    "description": "",
-    "twitter_link": "https://twitter.com/vinyl__rabbit",
     "discord_link": "",
     "website_link": ""
   },
