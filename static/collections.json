@@ -2910,6 +2910,16 @@
     "website_link": ""
   },
   {
+    "name": "Bitcoin Maxis",
+    "inscription_icon": "https://pbs.twimg.com/profile_images/1663283120588587012/uGaMDkS4_400x400.jpg",
+    "supply": "5555",
+    "slug": "btc-maxis",
+    "description": "A collection of 5555 unique Bitcoin Maxi's inscribed as Ordinals",
+    "twitter_link": "https://twitter.com/bitcoinmaxis_",
+    "discord_link": "https://discord.gg/bitcoinmaxis",
+    "website_link": "https://bitcoinmaxis.gg"
+  },
+  {
     "name": "Btc Monkey Business",
     "inscription_icon": "d77723c887d844dac5aa823b53dc7baaa2372507f69fc3f595a81354914568e2i0",
     "supply": "47",
@@ -6532,7 +6542,7 @@
   {
     "description": "Web2 in the front, web3 in the back",
     "discord_link": "",
-    "inscription_icon": "40f5854ea2dd88acb81e9a482ab8ac582fd1588e80e55faa2dd640b3e23f2f0di0",
+    "inscription_icon": "https://media.ordinalswallet.com/ba7eacabb766eee85317d1039ac96bafdd13d80ea7701d00169a46168caa8efb.jpeg",
     "name": "Mullet Punks",
     "slug": "mullet-punks",
     "supply": "420",
