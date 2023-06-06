@@ -860,11 +860,11 @@
     "website_link": ""
   },
   {
-    "name": "banksy superstar set2",
+    "name": "Banksy superstar set2",
     "inscription_icon": "092630a676d7c161e463b939f87726dca7c66bd1af74483075827f42da642c25i0",
-    "supply": "1",
+    "supply": "6",
     "slug": "banksy2",
-    "description": "",
+    "description": "The banksy-Superstar set 2 ordinal Btc collection is a series of digital artworks created in the style of the renowned street artist banksy. Each artwork is unique and features elements of banksy's iconic style, including bold stenciling, political commentary, and a distinct sense of humor. If you're a fan of banksy's work or interested in collecting digital art, now is the time to get your hands on one of these unique ordinal Btc.",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
     "discord_link": "https://discord.gg/xdSqy4tfCZ",
     "website_link": ""
@@ -877,6 +877,16 @@
     "description": "",
     "twitter_link": "https://www.twitter.com/boomer_coins",
     "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Le Bar à Tapas by Lemonhaze",
+    "inscription_icon": "a461f726b8931e9c8f00850cde8fc1c8ef8087b9e77d2eb5e8f636dc9ade8873i0",
+    "supply": "6",
+    "slug": "bar-tapas-by-lemonhaze",
+    "description": "",
+    "twitter_link": "https://twitter.com/Ordinals10K",
+    "discord_link": "https://discord.gg/4A8jaMqdxs",
     "website_link": ""
   },
   {
@@ -951,7 +961,7 @@
   },
   {
     "name": "Bitcoin Bear Cubs",
-    "inscription_icon": "fffb69d2f42faf7e4dc326201afa47a393ba4d0bfd1d697582aac7f698bc3593i0",
+    "inscription_icon": "https://media.ordinalswallet.com/1c6d13cdb46010720a51ac028cf6abffeb3b55d15f23491c945b9e83e029fef1.jpeg",
     "supply": "10000",
     "slug": "bbc",
     "description": "",
@@ -2590,6 +2600,16 @@
     "website_link": ""
   },
   {
+    "name": "Bitraiders",
+    "inscription_icon": "ffc8f1641793d6797c458f8718c1b75490ea4e7c82f66219d58c0c6487a1e957i0",
+    "supply": "458",
+    "slug": "bitraiders",
+    "description": "",
+    "twitter_link": "https://twitter.com/BrcRaiders",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "BitScapes",
     "inscription_icon": "43a5c8418544b0a04f1a066b8c5acfeb40af52be9d2937c1b4a569e1c25c0e76i0",
     "supply": "96",
@@ -4067,6 +4087,16 @@
     "description": "Cypherpunks write code. Cypherpinks write Ordinals code! 100 pieces artworks celebrating the hard work of engineers working on Ordinals theory. Living on Ordinals. Forever Onchain.\n            ",
     "twitter_link": "",
     "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Cypherville Comics by Lemonhaze",
+    "inscription_icon": "ecad10c613ea28626bbf0a295d73f721673cd06a2271d08e0d520510a2bd3b72i0",
+    "supply": "3",
+    "slug": "cypherville-comics-by-lemonhaze",
+    "description": "",
+    "twitter_link": "https://twitter.com/Ordinals10K",
+    "discord_link": "https://discord.gg/4A8jaMqdxs",
     "website_link": ""
   },
   {
@@ -6820,6 +6850,16 @@
     "website_link": ""
   },
   {
+    "name": "Miscelleneous by Lemonhaze",
+    "inscription_icon": "fc05ffdfe30240b8414ad69a5e47b768f6e31fcc365ffaf09d78217325a4dd51i0",
+    "supply": "15",
+    "slug": "miscelleneous-by-lemonhaze",
+    "description": "",
+    "twitter_link": "https://twitter.com/Ordinals10K",
+    "discord_link": "https://discord.gg/4A8jaMqdxs ",
+    "website_link": ""
+  },
+  {
     "name": "Misprint Pixel G-Girl",
     "inscription_icon": "f2b6f1983d3517ba89173f1dd9383e52ffb363b217917c5bbac182eef1ba9400i0",
     "supply": "19",
@@ -7361,7 +7401,7 @@
   },
   {
     "name": "NPC Ordinals",
-    "inscription_icon": "b73493b3cda4146b6eae89f1541f8bb8c21674d923ecbeb09d198883509c434ei0",
+    "inscription_icon": "https://media.ordinalswallet.com/90dd3bc164a06a250994092eb186a483f9f2b235f2661aecd529509757a2fd9d.jpeg",
     "supply": "10000",
     "slug": "npc-ordinals",
     "description": "10,000 of the most ordinary NPCs on the Bitcoin Blockchain.",
@@ -9760,6 +9800,16 @@
     "website_link": "http://ordinalsatoshis.xyz"
   },
   {
+    "name": "OrdinalsEgg",
+    "slug": "ordinalsegg",
+    "supply": "690",
+    "description": "Ordinals Egg are 690 experimental collectibles that implementing the protocol technology of GBRC-721 developed. Grab some interesting eggs to save it forever on Bitcoin. Have a nice egg.",
+    "twitter_link": "https://twitter.com/0xTT957",
+    "discord_link": "https://discord.gg/CT3ZFPQZPu",
+    "website_link": "",
+    "inscription_icon": "7ea7463e99b5f9ad230a8cd09bb42c394c3104161b66aae44bbe70064ca6c019i0"
+  },
+  {
     "name": "Ordinary Apes",
     "inscription_icon": "adbdf835c1d7e560bb1bbf2ae4ce88f9da5b4c04551cd83eacfc4b72a3493794i0",
     "supply": "100",
@@ -10195,9 +10245,9 @@
     "supply": "1250",
     "slug": "pingoos",
     "description": "Pingoos by Egloo Labs. The coldest Ordinal colony in the Arctic.",
-    "twitter_link": "https://twitter.com/PingoosNFT",
-    "discord_link": "https://discord.com/invite/pingoosnft",
-    "website_link": "https://pingoos.io/"
+    "twitter_link": "https://twitter.com/PingoosOrd",
+    "discord_link": "https://discord.gg/pingoosord",
+    "website_link": ""
   },
   {
     "name": "Pirate Jess - Letter from CEO",
@@ -10218,6 +10268,16 @@
     "discord_link": "https://discord.gg/RS3CYhT9t2",
     "website_link": "https://discord.gg/RS3CYhT9t2",
     "inscription_icon": "3a8f8e2770aef1808055770fe5c7f82d3f7719dfd2d4a9d08a136ce5071e883fi0"
+  },
+  {
+    "name": "Pixel Bitcoin Punks",
+    "inscription_icon": "https://media.ordinalswallet.com/b82ac7dd83b4f916278ec5fc339b4e267eb75293a81a3a5546a1be54bd549c5f.png",
+    "supply": "0",
+    "slug": "pixel-bitcoin-punks",
+    "description": " ",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "pixelboars",
@@ -10328,6 +10388,16 @@
     "supply": "1563",
     "website_link": "",
     "twitter_link": "https://twitter.com/PepesPixel"
+  },
+  {
+    "name": "Pixel Piggy",
+    "inscription_icon": "b0efb2f9de9a8ffd226f699f363e4d9e71f1d71d71d7bbd57d0945fe7c0856aei0",
+    "supply": "",
+    "slug": "pixel-piggy",
+    "description": "",
+    "twitter_link": "https://twitter.com/PixelPiggie",
+    "discord_link": "",
+    "website_link": ""
   },
   {
     "name": "PixelQuote NFT",
@@ -11290,6 +11360,16 @@
     "website_link": ""
   },
   {
+    "name": "Satoria Corp",
+    "inscription_icon": "6423f923229ff56591c8f3b6d770b34a12211c3adcea0dac8d3d72e5195fd86ai0",
+    "supply": "728",
+    "slug": "satoria-corp",
+    "description": "Satoria Corp Domination",
+    "twitter_link": "https://twitter.com/btcordinal",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Satoshi Kingdoms",
     "inscription_icon": "805d81db56677ae6e91699d8ca7dd01bac4e0cff2b7a1caf95ebfb29620842b3i0",
     "supply": "212",
@@ -11780,6 +11860,16 @@
     "website_link": ""
   },
   {
+    "name": "Soy Cartel",
+    "slug": "soy-cartel",
+    "supply": "1",
+    "description": "The Dopest of the Soy Pepe Fan Art Brought To Life By @1soysauce.",
+    "twitter_link": "https://twitter.com/1soysauce",
+    "discord_link": "",
+    "website_link": "https://twetch.com/u/1339",
+    "inscription_icon": "9eae5933fc6e8d5a502a8e07c6a556f05bc8b9ece9bb6c8b67514276c3a30e25i0"
+  },
+  {
     "name": "Soy Pepes",
     "inscription_icon": "5ce977241f7dc5c42ce36f2a4b1bb5732879aeec717276b2bc077577d77850cei0",
     "supply": "1539",
@@ -11900,6 +11990,16 @@
     "website_link": ""
   },
   {
+    "name": "Strokes by zond",
+    "inscription_icon": "facd59ddb3d1822b6433eb297a1c4e11d46b75bb98559e3167f4f12e367da28ei0",
+    "supply": "16",
+    "slug": "strokes-by-zond",
+    "description": "",
+    "twitter_link": "https://twitter.com/imgdotart",
+    "discord_link": "https://discord.gg/nzQvtTfGJY",
+    "website_link": ""
+  },
+  {
     "name": "Studio Roach",
     "slug": "studio-roach",
     "supply": "4",
@@ -12007,6 +12107,16 @@
     "description": "",
     "twitter_link": "",
     "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Tad Small by Lemonhaze",
+    "inscription_icon": "8cce7cd9f33a4ac342335c2d6c196236640138030ef198a295ad1061840e5163i0",
+    "supply": "3",
+    "slug": "tad-small-by-lemonhaze",
+    "description": "",
+    "twitter_link": "https://twitter.com/Ordinals10K",
+    "discord_link": "https://discord.gg/4A8jaMqdxs",
     "website_link": ""
   },
   {
@@ -12810,6 +12920,16 @@
     "website_link": "https://nullish.org"
   },
   {
+    "name": "Unconditionals",
+    "inscription_icon": "f5a6ca055b8acb408af277eeb8ac0e726a04cc38d7358b5d1a174e64378f0805i0",
+    "supply": "32",
+    "slug": "unconditionals",
+    "description": "",
+    "twitter_link": "https://twitter.com/TechCapo",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "understanding",
     "inscription_icon": "899557670f539d7d065957fde638a0eaac6b0b7e6e20d07dd5c57d5f44c4e392i0",
     "supply": "4",
@@ -12840,6 +12960,16 @@
     "inscription_icon": "7c830dee56d70a204a5717bf65e17b83257d0707ab6bb2a96aee20270ea9aa06i0"
   },
   {
+    "name": "Unisat Names",
+    "inscription_icon": "https://media.ordinalswallet.com/3110a6cd9d8d7771d8b0917f6c71f97ecfcf89ac4be71f52f3ced094701476ee.png",
+    "supply": "41676",
+    "slug": "unisat-names",
+    "description": "Unisat Names | .unisat namespace on Bitcoin using ordinals\n",
+    "twitter_link": "https://twitter.com/unisat_wallet",
+    "discord_link": "",
+    "website_link": "https://unisat.io/"
+  },
+  {
     "name": "UniSat OG PASS",
     "inscription_icon": "b6ef5e4121d81fe11e55fd38c680064ea69addb42787e63ec6982d7349c69b3bi0",
     "supply": "125",
@@ -12858,6 +12988,16 @@
     "twitter_link": "https://twitter.com/Unordinals",
     "discord_link": "https://discord.gg/unordinals",
     "website_link": "https://unordinals.com/"
+  },
+  {
+    "name": "Unreleased CryptoSkulls",
+    "inscription_icon": "ec5580e70a59edf25e55af582a54585d17fd3842f9bf7f86fe47330e91cdbd7ci0",
+    "supply": "10",
+    "slug": "unreleased-cryptoskulls",
+    "description": "",
+    "twitter_link": "https://twitter.com/Crypto_Skulls",
+    "discord_link": "https://discord.com/invite/bzbMMnk",
+    "website_link": ""
   },
   {
     "name": "Unseen Shades",
@@ -12920,6 +13060,26 @@
     "website_link": ""
   },
   {
+    "name": "VeryLongPepes",
+    "inscription_icon": "f2a8c7269e7974cb3ac5bbb6bf2fda08a36bdc7c080686b2cb6656bcdcaa28b5i0",
+    "supply": "20",
+    "slug": "very-long-pepes",
+    "description": "",
+    "twitter_link": "https://twitter.com/fuga_135",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Vexed Apes Gods",
+    "inscription_icon": "f0355827a60fc5564ce6bacc99c1736152bf7a628c7125d1dd60d6a143034aaei0",
+    "supply": "5",
+    "slug": "vexedapesgods",
+    "description": "",
+    "twitter_link": "https://twitter.com/VexedApesClub",
+    "discord_link": "https://discord.com/invite/Hs2ykJzqDN",
+    "website_link": ""
+  },
+  {
     "name": "Van Gogh's painting",
     "inscription_icon": "ffe9639482eff8db2aca6cdac9a5881ade4dd2860b428e36580c527818e7a8b8i0",
     "supply": "334",
@@ -12927,6 +13087,16 @@
     "description": "",
     "twitter_link": "https://twitter.com/vangogh54346624",
     "discord_link": "https://discord.gg/zdmMrztA",
+    "website_link": ""
+  },
+  {
+    "name": "Vibeland",
+    "inscription_icon": "f8a0a7c2b2ed82669d2fd1c62f3fe2a1d517de9ba6ae69c95e19aad163d50aeei0",
+    "supply": "33",
+    "slug": "vibeland",
+    "description": "",
+    "twitter_link": "https://twitter.com/vibelandwtf",
+    "discord_link": "",
     "website_link": ""
   },
   {
@@ -12982,9 +13152,9 @@
   {
     "name": "wagmi ordinals",
     "inscription_icon": "e6a33ab395e295306e06c34f84aa683e37e08ea826e2c2b6797ab17e82a92d3di0",
-    "supply": "28",
+    "supply": "29",
     "slug": "wagmiordinals",
-    "description": "28 ordinals rescue from 1k collection,they rug us, we try to save it !! and we will @SpZjulienNFT",
+    "description": "29 ordinals rescue from 1k collection,they rug us, we try to save it !! and we will @SpZjulienNFT",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
     "discord_link": "https://discord.gg/xdSqy4tfCZ",
     "website_link": ""
@@ -13027,6 +13197,26 @@
     "description": "",
     "twitter_link": "https://twitter.com/FarQWho",
     "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "Wildcat Alliance: Bitcoin Ligers",
+    "inscription_icon": "ffe1b1ab733f4410760b9e358d32a4721e7378b722e1ec7a523bf685c4ac116ei0",
+    "supply": "292",
+    "slug": "wca_btc_ligers",
+    "description": "",
+    "twitter_link": "http://www.twitter.com/WildcatAlliance",
+    "discord_link": "https://discord.gg/WildcatAlliance",
+    "website_link": ""
+  },
+  {
+    "name": "Wildcat Alliance: Uncommon Sats",
+    "inscription_icon": "d181a17065ad291d6830e167514f36f2f278dc5d26f139e74b266575f541736bi0",
+    "supply": "7",
+    "slug": "wcararesats",
+    "description": "",
+    "twitter_link": "https://twitter.com/WildcatAlliance",
+    "discord_link": "https://discord.gg/wildcatalliance",
     "website_link": ""
   },
   {
@@ -13190,6 +13380,16 @@
     "website_link": ""
   },
   {
+    "name": "XBT Names",
+    "inscription_icon": "https://media.ordinalswallet.com/42586bc8f4dd685635e3dac94b50867b09febb8b747ddf2769b5b1f926642adc.png",
+    "supply": "9426",
+    "slug": "xbt-names",
+    "description": "XBT Names | .xbt namespace on Bitcoin using ordinals\n",
+    "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "XBT.ART OG Collection",
     "slug": "xbtart",
     "supply": "14",
@@ -13236,6 +13436,16 @@
     "slug": "xen-pets",
     "description": "Xen Pets are the latest addition to the Ordinals collections and are brought to life on the BTC blockchain through AI technology.",
     "twitter_link": "",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
+    "name": "XENKnights",
+    "inscription_icon": "fa234b5f6d7fdbfb54f6458fbca069e8c548a3cb31060cd7516f6dfa40a7dabdi0",
+    "supply": "100",
+    "slug": "xenknights",
+    "description": "",
+    "twitter_link": "https://twitter.com/mrJackLevin/",
     "discord_link": "",
     "website_link": ""
   },
