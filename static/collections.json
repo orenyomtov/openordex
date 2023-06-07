@@ -2300,6 +2300,16 @@
     "website_link": ""
   },
   {
+    "name": "Bitcoin Og Ape Club",
+    "inscription_icon": "87ce30a9a4dcd9768aee9a046f1cfb1c579f8720ed0012c0ff1cc6718c8f029ci0",
+    "supply": "10000",
+    "slug": "bitcoinogapeclub",
+    "description": "OG Ape Club on BRC",
+    "twitter_link": "https://twitter.com/OG_Ape_Club",
+    "discord_link": "",
+    "website_link": "https://www.mintogac.com/"
+  },
+  {
     "name": "Bitcoin Ordinals",
     "inscription_icon": "6d91d0f67c74ec6fc59cc7b6bd02a9980ced3303c0306d07ad0e87664adb6ceai0",
     "supply": "5",
@@ -3778,6 +3788,16 @@
     "twitter_link": "https://twitter.com/modordinal",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Convergence's partners Pepe",
+    "inscription_icon": "1b6a7eef9efe9189c655aa73398f30f34e8cc6125e8a305f01a0b9a543b01774i0",
+    "supply": "13",
+    "slug": "convergence-partners-pepe",
+    "description": "A collection of 13 unique pepes for Convergence's partners to celebrate Convergence's first anniversary",
+    "twitter_link": "https://twitter.com/Convergence_fi",
+    "discord_link": "",
+    "website_link": "https://cvg.finance"
   },
   {
     "name": "Convergence Pepe",
@@ -5440,6 +5460,16 @@
     "website_link": ""
   },
   {
+    "name": "GLTN BITS",
+    "inscription_icon": "65be0337666282cc11c983fdd796c5943f082a1f91abad8f82cd4807a9887367i0",
+    "supply": "1000",
+    "slug": "gltn-bits",
+    "description": "GLTN BITS is a collection of 1,000 handmade 1/1 abstract ordinals inscribed one-at-a-time on the Bitcoin blockchain. The goal of GLTN BITS is to create immutable numismatic value to satoshis via creativity and color. Each ordinal is created by a naturally generative process, captured digitally, separated and arranged into a unique and interesting new creation, then reduced to a raw pixelated form. Current release: 1-36 of 1000",
+    "twitter_link": "https://twitter.com/boogee_nft",
+    "discord_link": "",
+    "website_link": "https://boogee.io"
+  },
+  {
     "name": "Glyphs",
     "inscription_icon": "6a867cc63708ceb2d196eb378c834731627a3c7f94142d238e4a3f7dc8148408i0",
     "supply": "512",
@@ -5902,7 +5932,7 @@
   {
     "name": "HUG",
     "inscription_icon": "e8818860775bca9895abb8e551390eeb710c887b5d7dcc190230a0bd6a61de2ci0",
-    "supply": "18",
+    "supply": "23",
     "slug": "hug",
     "description": "This is a collection of artwork that expresses various forms of affection through the act of hugging, regardless of gender, age, or type. Love your neighbor, Love every ordinary people.",
     "twitter_link": "https://twitter.com/JellyheadsO",
@@ -5988,6 +6018,16 @@
     "discord_link": "https://discord.gg/xqJ9ZEeTvn",
     "website_link": "http://www.3doclub.com",
     "inscription_icon": "43a0dd335f1138dfd32d4f786851b082d64695bd5ce42f4a5badf40cabf85950i0"
+  },
+  {
+    "name": "iDclub Pass",
+    "slug": "idclub-pass",
+    "supply": "500",
+    "description": "iDclub Pass NFT, OG Member * 150, Club Member * 350.",
+    "twitter_link": "https://twitter.com/idclub_ord",
+    "discord_link": "https://discord.gg/idclub",
+    "website_link": "https://www.idclub.io",
+    "inscription_icon": "1be8c6f997886ec03c26cbc82764e0ee681b6ee22cc760f6add4cfc7f75bc70fi0"
   },
   {
     "name": "Illicit Shrooms",
@@ -6258,6 +6298,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "KREWBITS",
+    "inscription_icon": "71c718c85960642fb26cc4bee48c594f09833ff3e95f4cb2e79b980e615c8f09i0",
+    "supply": "210",
+    "slug": "krewbits",
+    "description": "An exclusive collection of cold-blooded, byte-perfect lizards available exclusively to holders of The KRΞW NFTs on Ethereum. 100% commercial rights.",
+    "twitter_link": "https://twitter.com/KarmeleonsNFT",
+    "discord_link": "https://discord.gg/4E6P44KGgZ",
+    "website_link": "https://thekrew.xyz"
   },
   {
     "name": "Landscape of the heart",
@@ -11748,6 +11798,16 @@
     "twitter_link": "https://twitter.com/SkullxNFT",
     "discord_link": "https://discord.gg/skullx",
     "website_link": "https://www.skullx.com"
+  },
+  {
+    "name": "Sky Squiggles",
+    "inscription_icon": "879ca8f56603c50d4eddbd2b5ddb84bd8401db3680318d4aab283411fa02e125i0",
+    "supply": "100",
+    "slug": "sky-squiggles",
+    "description": "One hundred finger-drawn squiggles using Apple Notes' draw tool. Created across tens of flights over four years.",
+    "twitter_link": "https://twitter.com/quantize_d",
+    "discord_link": "https://twitter.com/quantize_d",
+    "website_link": "https://twitter.com/quantize_d"
   },
   {
     "name": "Slice of Life Pepe",
