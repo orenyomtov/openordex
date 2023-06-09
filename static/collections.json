@@ -380,6 +380,16 @@
     "website_link": ""
   },
   {
+    "name": "Abstraordinals",
+    "slug": "abstraordinals",
+    "supply": "100",
+    "description": "A collection of 100 abstract pixel artworks inscribed on BTC blockchain exclusively on special sats.",
+    "twitter_link": "https://twitter.com/abstraordinals",
+    "discord_link": "https://discord.gg/abstraordinal",
+    "website_link": "https://abstraordinal.art/",
+    "inscription_icon": "9be45b4e25b12bc8bcc2c296784b9cc961ffc4bfd46319ac1d37460ea644c698i0"
+  },
+  {
     "name": "abstrordinals",
     "slug": "abstrordinals",
     "supply": "10",
@@ -735,9 +745,9 @@
     "supply": "12",
     "slug": "av1-cubes",
     "description": "12 early under 6675 inscriptions on behalf of the company Aviary Tech - Software provider building decentralized identity technology.",
-    "twitter_link": "",
-    "discord_link": "",
-    "website_link": ""
+    "twitter_link": "https://twitter.com/aviarytech",
+    "discord_link": "https://discord.com/invite/NbQhngPaMT",
+    "website_link": "https://aviary.tech"
   },
   {
     "name": "Amazon Warriors World",
@@ -2736,7 +2746,7 @@
     "slug": "blocked-blocks",
     "description": "A collection of pixelated blocks on the Bitcoin blockchain.",
     "twitter_link": "https://twitter.com/ordinalsreserve",
-    "discord_link": "https://discord.com/invite/YU5m2SqF48",
+    "discord_link": "https://discord.com/invite/PZNr7XGbHp",
     "website_link": "https://ordinalsreserve.com"
   },
   {
@@ -4692,7 +4702,7 @@
   {
     "name": "eat up Bitcoin",
     "inscription_icon": "ac00f045e0464d78365c2f504be7abe110eb4111db05b9bbe198d07c8aee4d15i0",
-    "supply": "30",
+    "supply": "35",
     "slug": "eat_up_bitcoin",
     "description": "To find our dreams and future, eat up Bitcoin!",
     "twitter_link": "https://twitter.com/Spectrum_NFTart",
@@ -4811,13 +4821,13 @@
   },
   {
     "name": "Endangered Ordinals",
-    "inscription_icon": "fef75f770d1d806b43ee738ba4153e915f2dd93b920ed215e98bb3050051f193i0",
+    "inscription_icon": "3fc8d3bc4536c959953c02f53bc239f7f45599874092c3ff372340e59c169ab3i0",
     "supply": "63",
     "slug": "endangered-ordinals",
-    "description": "",
+    "description": "Endangered Ordinals is a series of verifiable collectibles featuring hand illustrated depictions of endangered animals. The Holocene mass extinction is happening all around us and it is under our stewardship that the earth loses 150-200 plant and animal species a day. With this series we hope to bring attention to the crisis of rapidly declining global biodiversity. By connecting art and conservation, we aim to spark a deeper understanding and appreciation for the irreplaceable natural treasures we stand to lose. Ordinals Reserve will donate 5.1% of the sale of each Endangered Ordinal to the WWF.",
     "twitter_link": "https://twitter.com/ordinalsreserve",
     "discord_link": "https://discord.com/invite/PZNr7XGbHp",
-    "website_link": ""
+    "website_link": "https://ordinalsreserve.com"
   },
   {
     "name": "Bitcoin: Enduring Value",
@@ -4858,6 +4868,16 @@
     "discord_link": "https://discord.gg/murxQgMe9A",
     "website_link": "https://www.metaconstruct.com",
     "inscription_icon": "db693a144747766ebbd4fdfd8bb38f6739f68493e5011f22d7b7b727c036abf4i0"
+  },
+  {
+    "name": "OP_FALSE OP_IF … OP_ENDIF",
+    "inscription_icon": "1686bb4c2c22b9866d3d945887ec994fad2e93e908201c1f98a2ec0c004f360ai0",
+    "supply": "51",
+    "slug": "envelopes",
+    "description": "On April 4th 2023, Ordinals Reserve paid tribute to Sat Black, the world's first digital verifiable collectible, by airdropping envelopes to all of the collectors.",
+    "twitter_link": "https://twitter.com/ordinalsreserve",
+    "discord_link": "https://discord.com/invite/PZNr7XGbHp",
+    "website_link": "https://ordinalsreserve.com"
   },
   {
     "name": "EspressOrdinals Holiday Edition",
@@ -7376,7 +7396,7 @@
     "slug": "ninja-city",
     "description": "Among the sparsely populated burnt-out buildings of a once prosperous metropolis, ninja clans wage war upon each other, battling it out in sewers, on rooftops, and behind dumpsters in dark alleys. Day and night they fight and die for one simple goal: gaining full control of a lucrative criminal underworld. No one is safe in NINJA CITY. Created by Harold Richter.",
     "twitter_link": "https://twitter.com/ordinalsreserve",
-    "discord_link": "https://discord.com/invite/YU5m2SqF48",
+    "discord_link": "https://discord.com/invite/PZNr7XGbHp",
     "website_link": "https://ordinalsreserve.com"
   },
   {
@@ -11366,7 +11386,7 @@
     "slug": "sat-black",
     "description": "Sat Black is a groundbreaking digital verifiable collectible. It includes a unique pen and ink illustration referencing the first physical verifiable collectible, the Penny Black stamp, released in 1840 and considered a collectibles cultural icon. The Penny Black was the first adhesive postage stamp used in a public postal system. Each individual stamp featured 2 letters identifying its location on the printing plate. The Sat Black uses ordinal theory to inscribe a verifiable credential onto a specific satoshi with a variety of metadata, including a digital signature proving authenticity. This digital collectible uses decentralized identifiers and verifiable credentials to create new opportunities for true utility with ordinals. Art by Harold Richter.",
     "twitter_link": "https://twitter.com/ordinalsreserve",
-    "discord_link": "https://discord.com/invite/YU5m2SqF48",
+    "discord_link": "https://discord.com/invite/PZNr7XGbHp",
     "website_link": "https://ordinalsreserve.com"
   },
   {
