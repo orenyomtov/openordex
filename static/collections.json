@@ -7010,11 +7010,11 @@
     "inscription_icon": "4eb61103035a1c8f92783c91c9c4646f45eab6f096851be4f58b4cc0855b355ci0"
   },
   {
-    "name": "Like Lichtenstein",
+    "name": "Like Lichtenstein ROY",
     "inscription_icon": "96bb02ef8cccf2f22c34f9f2a6616cf6871712907bc60f7b1b39456ff27e8dd1i0",
-    "supply": "5",
+    "supply": "9",
     "slug": "like_lichtenstein",
-    "description": "This is the \"Like Lichtenstein\" art collection, an homage to the dearly respected Roy Lichtenstein. This collection features animations in SVG format, which is still a rarity in the world of ordinals. We will be adding to the collection.",
+    "description": "This is the \"Like Lichtenstein ROY\" art collection, an homage to the dearly respected Roy Lichtenstein. This collection features animations in SVG format, which is still a rarity in the world of ordinals. We will be adding to the collection.",
     "twitter_link": "https://twitter.com/chun_onchain",
     "discord_link": "",
     "website_link": "https://credit-city.net/ordinals/"
@@ -12880,16 +12880,6 @@
     "website_link": ""
   },
   {
-    "name": "Suadi",
-    "inscription_icon": "9bfbf752c86cd2eb476652a9cbf0e7011c18c9a0df43ab140f47eb5ca8e46509i0",
-    "supply": "10",
-    "slug": "saudi_best",
-    "description": "",
-    "twitter_link": "https://twitter.com/TheSaudisNFT",
-    "discord_link": "https://discord.gg/thesaudisnft",
-    "website_link": ""
-  },
-  {
     "name": "The Saudis",
     "inscription_icon": "13382ff46fe5ccb51a92fe3b6930a293c9c8911f8defd0bd895690604758fe75i0",
     "supply": "545",
@@ -13078,6 +13068,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "Sidekast Ordinals",
+    "inscription_icon": "c7507e3054aa2074b2a3ed488ed5bace0f1c3787c7604c8108b7ff54b1baa80ei0",
+    "supply": "222",
+    "slug": "sidekast-ordinals",
+    "description": "Start your journey with Sidekast - 222 unique Sidekast Ordinals on the Bitcoin blockchain.",
+    "twitter_link": "https://twitter.com/Sidekast",
+    "discord_link": "https://discord.gg/sidekast",
+    "website_link": "https://sidekast.io/"
   },
   {
     "name": "Shorty The Hamster",
@@ -15068,6 +15068,16 @@
     "twitter_link": "",
     "discord_link": "",
     "website_link": ""
+  },
+  {
+    "name": "YZYMIGOS",
+    "slug": "yzymigos",
+    "supply": "111",
+    "description": "111 highly collectible Kanye West pixel art Ordinal Inscriptions immutable on BTC 🟧 🐻 HAAAAAANNNNNNN 🟧 🐻 est 2023 by \n@PxPshrz",
+    "twitter_link": "https://twitter.com/yzymigos",
+    "discord_link": "https://discord.gg/pxpshrz",
+    "website_link": "https://twitter.com/pxpshrz",
+    "inscription_icon": "49b35bdafe831dbe1570b97f88d6fa33292abc738e5154bb1082d2d502d6d649i0"
   },
   {
     "name": "Zoide Asian Warriors",
