@@ -12560,6 +12560,16 @@
     "website_link": "https://2dot99.com"
   },
   {
+    "name": "Recursive PEPE",
+    "inscription_icon": "110047f2897a5138e68c01e7c5c08552a628c64bfa29b7daa15bedab8bb376fbi0",
+    "supply": "50",
+    "slug": "recursive-pepe",
+    "description": "First recursive pepe PFP project on bitcoin blockchain. Art 100% original, simple and funny traits.",
+    "twitter_link": "https://twitter.com/RecursivePepe",
+    "discord_link": "https://discord.gg/WzNvs4xeZh",
+    "website_link": ""
+  },
+  {
     "name": "Recursive Punks Alpha",
     "inscription_icon": "5295fc0243eb46199dbbbdd178d2328228b91ffc7901f48dca51cfc8b35bd5d2i0",
     "supply": "1000",
