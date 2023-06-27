@@ -5150,6 +5150,16 @@
     "inscription_icon": "#4"
   },
   {
+    "name": "Dropouts",
+    "slug": "dropouts",
+    "supply": "1295",
+    "description": "An original avatar project on Bitcoin via Ordinals 🌟 Created in 2020 by arttbat",
+    "twitter_link": "https://twitter.com/DropoutsBTC",
+    "discord_link": "https://discord.gg/vuFd5WfX",
+    "website_link": "https://dropouts.co/",
+    "inscription_icon": "c8ca5b58d77dc071ffe8648230b109868e47d9725b3b6a0b0dab31db82c74e58i0"
+  },
+  {
     "name": "Ordinal Duelyst",
     "inscription_icon": "d50189391df769b142afcf046852ae41a1715ec0754996d61d0733edd41201dfi0",
     "supply": "54",
@@ -13338,6 +13348,16 @@
     "twitter_link": "https://twitter.com/rarity_garden",
     "discord_link": "https://discord.gg/Ur8XGaurSd",
     "website_link": "https://rarity.garden/ordinals-bridge"
+  },
+  {
+    "name": "Seize CTRL",
+    "inscription_icon": "2f4b5b57dfb6ebb9a0174b1b7a53e33eab29198a6febbd7c34136508dedccaf5i0",
+    "supply": "404",
+    "slug": "seize-ctrl",
+    "description": "404 artworks inscribed on Uncommon Satoshis by CTRL. Every piece is a direct descendant of the first Rare Satoshi inscription. CTRL is a Bitcoin native brand evolving culture for the post-fiat future.",
+    "twitter_link": "https://twitter.com/SeizeCTRL",
+    "discord_link": "https://discord.com/invite/seizectrl",
+    "website_link": "https://www.seizectrl.io/"
   },
   {
     "name": "SEIZON GOLD",
