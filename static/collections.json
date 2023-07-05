@@ -952,7 +952,7 @@
   {
     "name": "Banksy superstar set2",
     "inscription_icon": "092630a676d7c161e463b939f87726dca7c66bd1af74483075827f42da642c25i0",
-    "supply": "8",
+    "supply": "12",
     "slug": "banksy2",
     "description": "The banksy-Superstar set 2 ordinal Btc collection is a series of digital artworks created in the style of the renowned street artist banksy. Each artwork is unique and features elements of banksy's iconic style, including bold stenciling, political commentary, and a distinct sense of humor. If you're a fan of banksy's work or interested in collecting digital art, now is the time to get your hands on one of these unique ordinal Btc.",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
@@ -962,7 +962,7 @@
   {
     "name": "Banksy superstar Palindrome edition",
     "inscription_icon": "dc39119e1f7ecb392c15d5fea0c0f0c0c7143f8dc985f68a469d2b1493e08cc6i0",
-    "supply": "10",
+    "supply": "31",
     "slug": "banksys2palindrome",
     "description": "The banksy-Superstar palindrome edition collection is a series of digital artworks created in the style of the renowned street artist banksy.ALL inscribed on rare plaindrome sats and One RARE uncommon too, some artwork is unique and features elements of banksy's iconic style, including bold stenciling, political commentary, and a distinct sense of humor. If you're a fan of banksy's work or interested in collecting digital art, now is the time to get your hands on one of these unique ordinal Btc.",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
@@ -2008,6 +2008,16 @@
     "twitter_link": "",
     "discord_link": "https://discord.gg/6sWcHFJkfG",
     "website_link": ""
+  },
+  {
+    "name": "Bitcoin Miner Originals",
+    "inscription_icon": "9ab1d7aa7820c5a54fb1d8c2e77c7a8784cf4449102f818fe1e9028fe8a94762i0",
+    "supply": "256",
+    "slug": "bitcoin-miner-originals",
+    "description": "OG Ordinals on the Blockchain",
+    "twitter_link": "https://twitter.com/BitcoinMiners_",
+    "discord_link": "https://discord.gg/bitcoinminers",
+    "website_link": "https://btcminers.io"
   },
   {
     "name": "Bitcoin Monkes",
@@ -10330,6 +10340,16 @@
     "website_link": ""
   },
   {
+    "name": "Ordinal Rugs",
+    "inscription_icon": "44731c310e77129d80762c8df3985776a3f153d4fe7fa175905d347914aefb37i0",
+    "supply": "147",
+    "slug": "ordinal-rugs",
+    "description": "A unique collection of hand drawn rugs inscribed onto the bitcoin blockchain",
+    "twitter_link": "https://twitter.com/ordinalrugs",
+    "discord_link": "https://discord.com/invite/ordinalrugs",
+    "website_link": "https://www.ordinalrugs.com/"
+  },
+  {
     "name": "Ordinal Satoshis",
     "inscription_icon": "5240ddfc35e20471f8f03ab13ad1b7b49d22d1551eff3f2a6a16b4b53104dbbai0",
     "supply": "100",
@@ -13782,9 +13802,19 @@
   {
     "name": "SpZjulien love Asia",
     "inscription_icon": "a1aab6aad2e578d1acd13d5b4d1c65d7f9b90646e72871f6bc19d8c878d1b616i0",
-    "supply": "10",
+    "supply": "25",
     "slug": "spzasia",
-    "description": "10 incredible art inscribed on Rare sats Block 9",
+    "description": "25 incredible art inscribed on Rare sats Block 9",
+    "twitter_link": "https://twitter.com/SpZjulienNFT",
+    "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
+  },
+  {
+    "name": "SpZjulien wave shape",
+    "inscription_icon": "f47ae486b744010251aa179a6e85110b71295af533f93b110867f900579d0462i0",
+    "supply": "30",
+    "slug": "spzshape",
+    "description": "  In the realm of Luminaria, angels were trapped in the SpZjulien wave shape. Seraphina, a determined angel, sought to free them. She discovered a prophecy of escape during a celestial alignment. With astronomer Orion's help, they devised a plan. At the hour of alignment, they gathered in Luminaria. Seraphina channeled celestial magic, freeing the angels with a burst of light. They soared through the skies, spreading love and compassion. Seraphina became a legendary symbol of bravery and hope.will you find more angel  ??? ルミナリエでは天使たちがSpZjulienの波動に囚われていた。セラフィーナは天使たちを解放することを決意し、天体の配列の中からその脱出の予言を発見した。天文学者オリオンの助けを借りて計画を練り、天体の配列の時が来ると彼らはルミナリエに集まった。セラフィーナは天空の魔法を使い、光のエネルギーで天使たちを解放した。天使たちは大空を駆け巡り、愛と慈愛を広めた。 そしてセラフィーナは勇気と希望の伝説的なシンボルとなった。 あなたは天使を見つけることができますか？",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
     "discord_link": "https://discord.gg/xdSqy4tfCZ",
     "website_link": ""
