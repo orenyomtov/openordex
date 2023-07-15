@@ -11890,6 +11890,16 @@
     "inscription_icon": "93f94294166257b863d7272f506471dcf3d51a3c92f660d3116eb9d6e932e7a6i0"
   },
   {
+    "description": "The collection includes all Pixel Pepes inscribed on rare sats in the cards created by Ordinals Wallet.",
+    "discord_link": "https://discord.gg/ordinalswallet",
+    "inscription_icon": "f657368e9593f998be2de980a03ee4f46241f64680293c77bb44f50b01a33482i0",
+    "name": "Pixel Pepes Rare Card",
+    "slug": "pixel-pepes-rare-card",
+    "supply": "1563",
+    "website_link": "",
+    "twitter_link": "https://twitter.com/PepesPixel"
+  },
+  {
     "description": "The first ever airdrop on the Bitcoin network. 1563 rare Pixel Pepes airdropped to users who had made a transaction on ordinalswallet.com before block 777888.",
     "discord_link": "https://discord.gg/ordinalswallet",
     "inscription_icon": "47c1d21c508f6d49dfde64d958f14acd041244e1bb616f9b78114b8d9dc7b945i0",
@@ -14690,6 +14700,16 @@
     "website_link": ""
   },
   {
+    "name": "triangle-d",
+    "inscription_icon": "68d46278f113c0ca648ef154944251e2ec68f28a0c32e9950197c6ba45fb321di0",
+    "supply": "50",
+    "slug": "triangle-d",
+    "description": "triangle-d is the creature & object based on a triangle.total 50 types.",
+    "twitter_link": "https://twitter.com/tokyo_d_jpn",
+    "discord_link": "",
+    "website_link": "https://lit.link/tokyod"
+  },
+  {
     "name": "Tribe Ordinals",
     "inscription_icon": "ffeea83c1092b5aa19aada627647156b0b9ca4235882a6cee6167a0d3c49efc9i0",
     "supply": "450",
@@ -14952,7 +14972,7 @@
   {
     "name": "UniSat OG PASS",
     "inscription_icon": "b6ef5e4121d81fe11e55fd38c680064ea69addb42787e63ec6982d7349c69b3bi0",
-    "supply": "125",
+    "supply": "173",
     "slug": "unisat-og-pass",
     "description": "",
     "twitter_link": "https://twitter.com/unisat_wallet",
