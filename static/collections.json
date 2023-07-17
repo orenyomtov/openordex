@@ -13250,6 +13250,16 @@
     "website_link": ""
   },
   {
+    "name": "Satoshits",
+    "slug": "satoshits",
+    "supply": "69",
+    "description": "The first Shit on the #Bitcoin Blockchain // 100% Original art, 100% on Bitcoin, 100% Shit 💩 STARTING SUB 100K INSCRIPTIONS✅\n",
+    "twitter_link": "https://twitter.com/Satoshits_BTC",
+    "discord_link": "",
+    "website_link": "https://satoshits.wtf",
+    "inscription_icon": "52ff7f42c5dc95ab19b5356b1b366bfea27844b40b5e2bc87b20346841dc8109i0"
+  },
+  {
     "name": "Satoshi Wands",
     "inscription_icon": "fbbfa6742dc4188ae5b352bd73fc35d42d9a7249daa4091c5907ecec2767860fi0",
     "supply": "54",
