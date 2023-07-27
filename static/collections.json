@@ -9060,6 +9060,16 @@
     "website_link": "https://thegnomedome.com"
   },
   {
+    "name": "Ordillas",
+    "slug": "ordillas",
+    "supply": "2230",
+    "description": "A collection of 2,230 Ordillas inscribed onto the Bitcoin blockchain. Home to all those aping ordinals. Welcome to the jungle!",
+    "twitter_link": "https://twitter.com/ordillasbtc",
+    "discord_link": "https://discord.gg/ordillasbtc",
+    "website_link": "https://ordillas.com/",
+    "inscription_icon": "fcf44b289579b3ea5277e43435d9561b00e4a34a487f37c1d1d7705582ac841ai0"
+  },
+  {
     "name": "OrdiMando Recursive",
     "inscription_icon": "f95345407d595db6dd6f81c82db9e070cbd0f1e199b42b802f1690f2b242828ei0",
     "supply": "999",
@@ -12120,6 +12130,16 @@
     "website_link": ""
   },
   {
+    "name": "Plastica",
+    "inscription_icon": "f689111e515bad80b01a79e9c682f17eb9fbaeb0d22570b6d61be49f1aace036i0",
+    "supply": "40",
+    "slug": "plastica",
+    "description": "Plastica is a real time endless generative animation of a periodic surface continuously deformed by noise (FBM) with ray-marching rendering that gives a plastic look and behavior.The shapes formed by maximum and minimum of the rendered surfaces, even if completely abstract, can be viewed as something halfway between synthetic and organic matter. The variety of the 23 palettes contributes to this synthetic / organic vision.The rendering is implemented in vanilla Javascript WebGL with GLSL shader. The hash of the blockchain transaction is used to seed the PRNG (Pseudo Random Number generator) giving rise to features variation in the minted pieces.Requires a WebGL compatible browser and a recent PC with GPU.5 features/traits:- Palette (23 palettes)- Surface (8 kind of different surfaces)- FOV (in arbitrary unit)- Angle- ScaleINTERACTION[1] 1080x1080 resolution (default)[2] 2160x2160 resolution[s] save at current resolution",
+    "twitter_link": "https://twitter.com/Waterflowing0",
+    "discord_link": "",
+    "website_link": ""
+  },
+  {
     "name": "Plein Err",
     "inscription_icon": "c8b331a24873016fe9d2801f6a406ae1ec10e2f543469672958e62417a6311a9i0",
     "supply": "42",
@@ -13250,6 +13270,16 @@
     "website_link": ""
   },
   {
+    "name": "Satoshits",
+    "slug": "satoshits",
+    "supply": "69",
+    "description": "The first Shit on the #Bitcoin Blockchain // 100% Original art, 100% on Bitcoin, 100% Shit 💩 STARTING SUB 100K INSCRIPTIONS✅\n",
+    "twitter_link": "https://twitter.com/Satoshits_BTC",
+    "discord_link": "",
+    "website_link": "https://satoshits.wtf",
+    "inscription_icon": "52ff7f42c5dc95ab19b5356b1b366bfea27844b40b5e2bc87b20346841dc8109i0"
+  },
+  {
     "name": "Satoshi Wands",
     "inscription_icon": "fbbfa6742dc4188ae5b352bd73fc35d42d9a7249daa4091c5907ecec2767860fi0",
     "supply": "54",
@@ -13815,6 +13845,16 @@
     "supply": "25",
     "slug": "spzasia",
     "description": "25 incredible art inscribed on Rare sats Block 9",
+    "twitter_link": "https://twitter.com/SpZjulienNFT",
+    "discord_link": "https://discord.gg/xdSqy4tfCZ",
+    "website_link": ""
+  },
+  {
+    "name": "SpZjulien Bybits",
+    "inscription_icon": "a13f3805dc04d36fd582e125b1fc34dd457750de860732b114f18389cecca203i0",
+    "supply": "28",
+    "slug": "spzbybits",
+    "description": "Meet SpZjulien Bybits",
     "twitter_link": "https://twitter.com/SpZjulienNFT",
     "discord_link": "https://discord.gg/xdSqy4tfCZ",
     "website_link": ""
