@@ -26,6 +26,10 @@ const wallets = [
         name: 'Sparrow',
         url: 'https://sparrowwallet.com/download/',
     },
+    {
+        name: 'OrdinalSafe',
+        url: 'https://ordinalsafe.xyz'
+    }
 ].sort((a, b) => 0.5 - Math.random())
 const walletsListHtml = wallets.map(x => `<a href="${x.url}" target="_blank">${x.name}</a>`).join(' or ')
 
@@ -107,6 +111,10 @@ function getInstalledWalletName() {
     if (window?.BitcoinProvider?.signTransaction?.toString()?.includes('Psbt')) {
         return 'Xverse'
     }
+
+    if (typeof window.ordinalSafe !== 'undefined') {
+        return 'OrdinalSafe'
+    }
 }
 
 async function getHiroWalletAddresses() {
@@ -150,6 +158,10 @@ async function getWalletAddress(type = 'cardinal') {
 
     if (typeof window.StacksProvider !== 'undefined') {
         return (await getHiroWalletAddresses())?.[type]
+    }
+
+    if (typeof window.ordinalSafe !== 'undefined') {
+        return (await ordinalSafe.requestAccounts())?.[0]
     }
 }
 
@@ -437,6 +449,8 @@ async function signPSBTUsingWallet(psbtBase64) {
                 }
             })
         })
+    } else if (installedWalletName == 'OrdinalSafe') {
+        return await ordinalSafe.signPsbt(base64ToHex(psbtBase64))
     }
 }
 
@@ -479,7 +493,7 @@ async function signPSBTUsingWalletAndBroadcast(inputId) {
         window.open(`${baseMempoolUrl}/tx/${txId}`, "_blank")
     } catch (e) {
         console.error(e)
-        alert(e)
+        alert(e?.message || e)
     }
 }
 
@@ -888,12 +902,22 @@ async function inscriptionPage() {
             for (const output in tx.outs) {
                 try { tx.setWitness(parseInt(output), []) } catch { }
             }
-            psbt.addInput({
-                hash: utxo.txid,
-                index: utxo.vout,
-                nonWitnessUtxo: tx.toBuffer(),
-                // witnessUtxo: tx.outs[utxo.vout],
-            });
+
+            if (installedWalletName === 'OrdinalSafe'){
+                psbt.addInput({
+                    hash: utxo.txid,
+                    index: utxo.vout,
+                    // nonWitnessUtxo: tx.toBuffer(),
+                    witnessUtxo: tx.outs[utxo.vout],
+                });
+            } else {
+                psbt.addInput({
+                    hash: utxo.txid,
+                    index: utxo.vout,
+                    nonWitnessUtxo: tx.toBuffer(),
+                    // witnessUtxo: tx.outs[utxo.vout],
+                });
+            }
 
             totalValue += utxo.value
         }
@@ -926,12 +950,22 @@ async function inscriptionPage() {
         for (const output in tx.outs) {
             try { tx.setWitness(parseInt(output), []) } catch { }
         }
-        psbt.addInput({
-            hash: dummyUtxo.txid,
-            index: dummyUtxo.vout,
-            nonWitnessUtxo: tx.toBuffer(),
-            // witnessUtxo: tx.outs[dummyUtxo.vout],
-        });
+
+        if(installedWalletName === 'OrdinalSafe'){
+            psbt.addInput({
+                hash: dummyUtxo.txid,
+                index: dummyUtxo.vout,
+                // nonWitnessUtxo: tx.toBuffer(),
+                witnessUtxo: tx.outs[dummyUtxo.vout],
+            });
+        } else {
+            psbt.addInput({
+                hash: dummyUtxo.txid,
+                index: dummyUtxo.vout,
+                nonWitnessUtxo: tx.toBuffer(),
+                // witnessUtxo: tx.outs[dummyUtxo.vout],
+            });
+        }
 
         // Add inscription output
         psbt.addOutput({
@@ -956,12 +990,22 @@ async function inscriptionPage() {
                 try { tx.setWitness(parseInt(output), []) } catch { }
             }
 
-            psbt.addInput({
-                hash: utxo.txid,
-                index: utxo.vout,
-                nonWitnessUtxo: tx.toBuffer(),
-                // witnessUtxo: tx.outs[utxo.vout],
-            });
+            if (installedWalletName === 'OrdinalSafe'){
+                psbt.addInput({
+                    hash: utxo.txid,
+                    index: utxo.vout,
+                    // nonWitnessUtxo: tx.toBuffer(),
+                    witnessUtxo: tx.outs[utxo.vout],
+                });
+            } else {
+                psbt.addInput({
+                    hash: utxo.txid,
+                    index: utxo.vout,
+                    nonWitnessUtxo: tx.toBuffer(),
+                    // witnessUtxo: tx.outs[utxo.vout],
+                });
+            }
+
 
             totalValue += utxo.value
             totalPaymentValue += utxo.value

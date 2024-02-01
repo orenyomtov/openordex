@@ -7,7 +7,7 @@ An inscription order is a `kind 802` event that is used to publish a signed orde
 
 # Event Content
 
-`event.content` is the signed Partially Signed Bitcoin Transaction (PSBT).
+`event.content` is the Partially Signed Bitcoin Transaction (PSBT) encoded in base64.
 
 # Tags
 The following tags are included in the event:
@@ -22,6 +22,8 @@ The following tags are included in the event:
 # Verification
 The client should verify that the following conditions are met:
 * The PSBT is valid and signed.
+  * For a sell order, the PSBT should have a single input and single output and signed with SIGHASH_SINGLE | ANYONECANPAY
+  * For a buy order, all inputs should be signed except the input that contains the inscription, which will be unsigned.
 * The UTXO in which the inscription currently resides is the same as the one in the event.
 * The UTXO in the event is the same as the one in the PSBT.
 * The price in the event is the same as the output value in the PSBT.
